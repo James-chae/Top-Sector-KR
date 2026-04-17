@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Sector KR</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand-card panel">
+        <div>
+          <h1>주도주 레이다</h1>
+          <p class="sub">한국 주도주 / 주도섹터 / 주도섹터 달력 / 한국일정 MVP</p>
+        </div>
+        <div class="topbar-right">
+          <div class="chip"><span class="dot"></span><span id="krClock">KR --:--:--</span></div>
+          <button id="refreshBtn" class="refresh-btn">새로고침</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-grid">
+      <div class="panel hero-card">
+        <div class="hero-label">기준일</div>
+        <div id="heroTradeDate" class="hero-value">-</div>
+        <div id="heroSession" class="hero-sub">-</div>
+      </div>
+      <div class="panel hero-card">
+        <div class="hero-label">상위 주도섹터 수</div>
+        <div id="heroSectorCount" class="hero-value">-</div>
+        <div id="heroMarketBias" class="hero-sub">-</div>
+      </div>
+      <div class="panel hero-card">
+        <div class="hero-label">오늘의 주도주 수</div>
+        <div id="heroLeaderCount" class="hero-value">-</div>
+        <div id="heroFilteredEtf" class="hero-sub">-</div>
+      </div>
+      <div class="panel hero-card">
+        <div class="hero-label">최근 기록일수</div>
+        <div id="heroHistoryCount" class="hero-value">-</div>
+        <div id="heroUpdatedAt" class="hero-sub">-</div>
+      </div>
+    </section>
+
+    <nav class="main-tabs">
+      <button class="tab-btn active" data-tab="dashboard">주도주</button>
+      <button class="tab-btn" data-tab="calendar">주도섹터달력</button>
+      <button class="tab-btn" data-tab="kr-calendar">한국일정</button>
+    </nav>
+
+    <main>
+      <section id="screen-dashboard" class="screen active">
+        <div class="dashboard-grid">
+          <div class="main-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>오늘의 주도주</h2>
+                  <p class="sub">거래대금 + 등락률 중심 최소판</p>
+                </div>
+              </div>
+              <div id="leadersList" class="list-wrap"></div>
+            </section>
+          </div>
+
+          <div class="side-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>상위 주도섹터</h2>
+                  <p class="sub">점수 상위 8개 섹터</p>
+                </div>
+              </div>
+              <div id="sectorCards" class="sector-wrap"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-calendar" class="screen">
+        <div class="calendar-layout">
+          <div class="main-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>주도섹터 달력</h2>
+                  <p class="sub">최근 누적 기록 기준 · 월~금 표시</p>
+                </div>
+                <div class="calendar-nav">
+                  <button id="prevMonthBtn" class="nav-btn">◀ 이전달</button>
+                  <button id="todayMonthBtn" class="nav-btn">오늘</button>
+                  <button id="nextMonthBtn" class="nav-btn">다음달 ▶</button>
+                </div>
+              </div>
+              <div class="calendar-headline" id="calendarMonthLabel">-</div>
+              <div class="weekday-grid" id="weekdayGrid"></div>
+              <div class="calendar-grid" id="calendarGrid"></div>
+            </section>
+          </div>
+
+          <div class="side-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>최근 10일 섹터 카운트</h2>
+                  <p class="sub">80점 이상 기준</p>
+                </div>
+              </div>
+              <div id="recentCounts" class="count-wrap"></div>
+            </section>
+
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>오늘의 주도섹터</h2>
+                  <p class="sub">달력 기준 요약</p>
+                </div>
+              </div>
+              <div id="todaySectorSummary" class="count-wrap"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-kr-calendar" class="screen">
+        <div class="kr-calendar-layout">
+          <div class="main-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>한국일정</h2>
+                  <p class="sub">지금은 UI 최소판만 추가 · 데이터 수집/자동화는 나중에 분리 적용</p>
+                </div>
+                <div class="calendar-nav">
+                  <button id="krPrevMonthBtn" class="nav-btn">◀ 이전달</button>
+                  <button id="krTodayMonthBtn" class="nav-btn">오늘</button>
+                  <button id="krNextMonthBtn" class="nav-btn">다음달 ▶</button>
+                </div>
+              </div>
+
+              <div class="info-strip-wrap">
+                <div class="info-strip">
+                  <div class="info-strip-title">오늘 일정 자동 강조</div>
+                  <div class="info-strip-body">오늘 핵심 일정 없음</div>
+                </div>
+                <div class="info-strip">
+                  <div class="info-strip-title">트레이딩 체크</div>
+                  <div class="info-strip-body">금통위/CPI/옵션만기 전후에는 주도섹터 지속 여부 우선 확인</div>
+                </div>
+              </div>
+
+              <div class="calendar-headline" id="krCalendarMonthLabel">-</div>
+              <div class="weekday-grid" id="krWeekdayGrid"></div>
+              <div class="calendar-grid kr-calendar-grid" id="krCalendarGrid"></div>
+            </section>
+          </div>
+
+          <div class="side-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>한국일정 요약</h2>
+                  <p class="sub">이번달 체크용 UI 최소판</p>
+                </div>
+              </div>
+              <div class="summary-stack">
+                <div class="summary-box">
+                  <div class="summary-title">오늘/이번주 체크</div>
+                  <div class="summary-body">표시할 일정 없음</div>
+                </div>
+                <div class="summary-box">
+                  <div class="summary-title">이번달 최우선 일정</div>
+                  <div class="summary-body">표시할 일정 없음</div>
+                </div>
+                <div class="summary-box">
+                  <div class="summary-title">수동 입력 일정</div>
+                  <div class="summary-body">표시할 일정 없음</div>
+                </div>
+                <div class="summary-box">
+                  <div class="summary-title">소스 원칙</div>
+                  <div class="summary-body">한국은행·통계청 공시 일정 우선 + 로컬 수동 입력용 자리. 현재는 UI만 선반영.</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,10 +1,172 @@
 {
   "meta": {
-    "updated_at": "2026-04-20 11:58:35",
-    "retention_days": 183,
-    "history_count": 2
+    "generated_at_kst": "2026-04-20 21:18:05",
+    "days": 12,
+    "source_status": "sample_pipeline"
   },
   "history": [
+    {
+      "date": "2026-03-31",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 90
+        },
+        {
+          "name": "AI",
+          "score": 84
+        },
+        {
+          "name": "전선",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "date": "2026-04-01",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 91
+        },
+        {
+          "name": "전력설비",
+          "score": 86
+        },
+        {
+          "name": "AI",
+          "score": 82
+        }
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "sectors": [
+        {
+          "name": "전력설비",
+          "score": 88
+        },
+        {
+          "name": "반도체",
+          "score": 87
+        },
+        {
+          "name": "조선",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "date": "2026-04-03",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 93
+        },
+        {
+          "name": "AI",
+          "score": 85
+        },
+        {
+          "name": "유리기판",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "date": "2026-04-06",
+      "sectors": [
+        {
+          "name": "방산",
+          "score": 82
+        },
+        {
+          "name": "조선",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "date": "2026-04-07",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 89
+        },
+        {
+          "name": "전력설비",
+          "score": 84
+        },
+        {
+          "name": "방산",
+          "score": 80
+        }
+      ]
+    },
+    {
+      "date": "2026-04-08",
+      "sectors": [
+        {
+          "name": "전력설비",
+          "score": 90
+        },
+        {
+          "name": "AI",
+          "score": 86
+        },
+        {
+          "name": "반도체",
+          "score": 84
+        }
+      ]
+    },
+    {
+      "date": "2026-04-09",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 94
+        },
+        {
+          "name": "조선",
+          "score": 82
+        }
+      ]
+    },
+    {
+      "date": "2026-04-10",
+      "sectors": [
+        {
+          "name": "전력설비",
+          "score": 87
+        },
+        {
+          "name": "방산",
+          "score": 82
+        },
+        {
+          "name": "반도체",
+          "score": 81
+        }
+      ]
+    },
+    {
+      "date": "2026-04-13",
+      "sectors": [
+        {
+          "name": "반도체",
+          "score": 92
+        },
+        {
+          "name": "전력설비",
+          "score": 88
+        },
+        {
+          "name": "AI",
+          "score": 84
+        }
+      ]
+    },
     {
       "date": "2026-04-17",
       "market_bias": "risk_on",
@@ -108,103 +270,18 @@
     },
     {
       "date": "2026-04-20",
-      "market_bias": "risk_on",
-      "top_sectors": [
+      "sectors": [
         {
-          "sector1": "반도체",
-          "sector_score": 95.45,
-          "stock_count": 21,
-          "sector_total_trading_value": 107678,
-          "sector_avg_change_pct": 4.94,
-          "top_stock_names": [
-            "주성엔지니어링",
-            "이수페타시스",
-            "SK하이닉스"
-          ]
+          "name": "반도체",
+          "score": 99.0
         },
         {
-          "sector1": "2차전지",
-          "sector_score": 90.61,
-          "stock_count": 11,
-          "sector_total_trading_value": 19416,
-          "sector_avg_change_pct": 4.27,
-          "top_stock_names": [
-            "삼성SDI",
-            "에코프로머티",
-            "에코프로"
-          ]
+          "name": "전력설비",
+          "score": 59.5
         },
         {
-          "sector1": "양자암호",
-          "sector_score": 85.0,
-          "stock_count": 4,
-          "sector_total_trading_value": 10574,
-          "sector_avg_change_pct": 9.06,
-          "top_stock_names": [
-            "엑스게이트",
-            "드림시큐리티",
-            "아이씨티케이"
-          ]
-        },
-        {
-          "sector1": "통신",
-          "sector_score": 83.03,
-          "stock_count": 6,
-          "sector_total_trading_value": 11337,
-          "sector_avg_change_pct": 3.22,
-          "top_stock_names": [
-            "빛과전자",
-            "서진시스템",
-            "쏠리드"
-          ]
-        },
-        {
-          "sector1": "전력",
-          "sector_score": 82.12,
-          "stock_count": 8,
-          "sector_total_trading_value": 13146,
-          "sector_avg_change_pct": 2.79,
-          "top_stock_names": [
-            "대한전선",
-            "PS일렉트로닉스",
-            "HD현대일렉트릭"
-          ]
-        },
-        {
-          "sector1": "IT서비스",
-          "sector_score": 78.79,
-          "stock_count": 7,
-          "sector_total_trading_value": 6075,
-          "sector_avg_change_pct": 8.54,
-          "top_stock_names": [
-            "아톤",
-            "오픈베이스",
-            "에스넷"
-          ]
-        },
-        {
-          "sector1": "바이오",
-          "sector_score": 78.64,
-          "stock_count": 11,
-          "sector_total_trading_value": 10419,
-          "sector_avg_change_pct": 3.56,
-          "top_stock_names": [
-            "수젠텍",
-            "알지노믹스",
-            "셀리드"
-          ]
-        },
-        {
-          "sector1": "우주",
-          "sector_score": 74.85,
-          "stock_count": 6,
-          "sector_total_trading_value": 9389,
-          "sector_avg_change_pct": 2.38,
-          "top_stock_names": [
-            "퍼스텍",
-            "아주IB투자",
-            "미래에셋벤처투자"
-          ]
+          "name": "조선",
+          "score": 48.0
         }
       ]
     }

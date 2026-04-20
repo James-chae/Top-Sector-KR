@@ -1,8 +1,8 @@
 {
-  "trade_date": "2026-04-20",
-  "generated_at_kst": "2026-04-20 23:23:29",
+  "trade_date": "2026-04-21",
+  "generated_at_kst": "2026-04-21 00:55:31",
   "mode": "sample_scoring",
-  "session_state": "keep_after_close",
+  "session_state": "hold_previous_close",
   "pipeline_ok": true,
   "source": "run_kr_pipeline_orchestrator",
   "counts": {
@@ -10,7 +10,7 @@
     "market_raw_rows": 8,
     "leader_count": 6,
     "sector_count": 4,
-    "calendar_days": 12
+    "calendar_days": 13
   },
   "notes": "sample overwrite 제거. 개별 스크립트 실행 결과를 집계하는 오케스트레이터."
 }

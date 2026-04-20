@@ -1,191 +1,131 @@
-# -*- coding: utf-8 -*-
 from __future__ import annotations
 
 import json
-import sys
-from datetime import datetime, timedelta
+from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 
-ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = ROOT / "data"
-
-LEADER_BOARD_PATH = DATA_DIR / "leader_board.json"
-HISTORY_PATH = DATA_DIR / "sector_calendar_history.json"
-
-RETENTION_DAYS = 183
-MAX_SECTORS_PER_DAY = 8
-MAX_STOCK_NAMES_PER_SECTOR = 3
+@dataclass
+class Paths:
+    root: Path
+    data_dir: Path
+    leader_board: Path
+    sector_calendar_history: Path
 
 
-def read_json(path: Path, default=None):
+def build_paths() -> Paths:
+    script_path = Path(__file__).resolve()
+    root = script_path.parent.parent
+    data_dir = root / "data"
+    return Paths(
+        root=root,
+        data_dir=data_dir,
+        leader_board=data_dir / "leader_board.json",
+        sector_calendar_history=data_dir / "sector_calendar_history.json",
+    )
+
+
+def read_json(path: Path, default: Any = None) -> Any:
     if not path.exists():
         return default
-    return json.loads(path.read_text(encoding="utf-8"))
-
-
-def write_json(path: Path, payload: dict) -> None:
-    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-
-
-def clean_text(v) -> str:
-    if v is None:
-        return ""
-    return str(v).strip()
-
-
-def to_float(v, default=0.0) -> float:
-    if v is None:
-        return default
-    s = str(v).strip().replace(",", "").replace("+", "").replace("%", "")
-    if not s:
-        return default
     try:
-        return float(s)
+        return json.loads(path.read_text(encoding="utf-8"))
     except Exception:
         return default
 
 
-def to_int(v, default=0) -> int:
-    if v is None:
-        return default
-    s = str(v).strip().replace(",", "").replace("+", "").replace("%", "")
-    if not s:
-        return default
-    try:
-        return int(float(s))
-    except Exception:
-        return default
+def write_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
 
 
-def pick_trade_date(leader_board: dict) -> str:
-    meta = leader_board.get("meta", {})
-    trade_date = clean_text(meta.get("trade_date", ""))
-    if trade_date:
-        return trade_date
-    return datetime.now().strftime("%Y-%m-%d")
-
-
-def normalize_sector_item(item: dict) -> dict:
-    stocks = item.get("top_stocks") or item.get("stocks") or []
-    top_names = []
-
-    for s in stocks[:MAX_STOCK_NAMES_PER_SECTOR]:
-        name = clean_text(s.get("name", ""))
-        if name:
-            top_names.append(name)
-
+def normalize_sector_item(item: dict[str, Any]) -> dict[str, Any]:
     return {
-        "sector1": clean_text(item.get("sector1", item.get("sector", "기타"))),
-        "sector_score": round(to_float(item.get("sector_score", item.get("total", 0))), 4),
-        "stock_count": to_int(item.get("stock_count", len(stocks))),
-        "sector_total_trading_value": to_int(item.get("sector_total_trading_value", item.get("total", 0))),
-        "sector_avg_change_pct": round(to_float(item.get("sector_avg_change_pct", item.get("avg_change", 0))), 4),
-        "top_stock_names": top_names,
+        "name": str(item.get("sector", item.get("name", "기타"))),
+        "score": round(float(item.get("score", 0) or 0), 1),
     }
 
 
-def build_today_entry(leader_board: dict) -> dict:
-    trade_date = pick_trade_date(leader_board)
-    summary = leader_board.get("summary", {})
-    market_bias = clean_text(summary.get("market_bias", leader_board.get("market_bias", "neutral")))
+def build_today_entry(leader_board: dict[str, Any]) -> dict[str, Any]:
+    meta = leader_board.get("meta", {})
+    trade_date = str(meta.get("trade_date", "")).strip()
+    if not trade_date:
+        raise ValueError("leader_board.json meta.trade_date 값이 없습니다.")
 
-    raw_sectors = leader_board.get("top_sectors", [])[:MAX_SECTORS_PER_DAY]
-    top_sectors = [
-        normalize_sector_item(x)
-        for x in raw_sectors
-        if clean_text(x.get("sector1", x.get("sector", "")))
-    ]
+    top_sectors = leader_board.get("top_sectors", []) or []
+    sectors = [normalize_sector_item(item) for item in top_sectors[:3]]
 
     return {
         "date": trade_date,
-        "market_bias": market_bias,
-        "top_sectors": top_sectors,
+        "sectors": sectors,
     }
 
 
-def filter_retention(history_rows: list[dict], today_str: str) -> list[dict]:
-    try:
-        today_dt = datetime.strptime(today_str, "%Y-%m-%d")
-    except Exception:
-        today_dt = datetime.now()
+def merge_history(existing_history: list[dict[str, Any]], today_entry: dict[str, Any]) -> list[dict[str, Any]]:
+    merged_by_date: dict[str, dict[str, Any]] = {}
 
-    min_dt = today_dt - timedelta(days=RETENTION_DAYS)
+    for item in existing_history:
+        date_value = str(item.get("date", "")).strip()
+        if date_value:
+            merged_by_date[date_value] = item
 
-    kept = []
-    for row in history_rows:
-        d = clean_text(row.get("date", ""))
-        try:
-            row_dt = datetime.strptime(d, "%Y-%m-%d")
-        except Exception:
-            continue
-        if row_dt >= min_dt:
-            kept.append(row)
+    merged_by_date[today_entry["date"]] = today_entry
 
-    kept.sort(key=lambda x: x.get("date", ""))
-    return kept
+    merged = sorted(
+        merged_by_date.values(),
+        key=lambda item: str(item.get("date", "")),
+    )
+
+    return merged[-120:]
 
 
-def upsert_history(existing_payload: dict | None, today_entry: dict) -> dict:
-    if not existing_payload or not isinstance(existing_payload, dict):
-        existing_payload = {"meta": {}, "history": []}
+def build_payload(
+    leader_board: dict[str, Any],
+    existing_payload: dict[str, Any] | None,
+) -> dict[str, Any]:
+    meta = leader_board.get("meta", {})
+    generated_at_kst = meta.get("generated_at_kst", "")
+    today_entry = build_today_entry(leader_board)
 
-    history = existing_payload.get("history", [])
-    if not isinstance(history, list):
-        history = []
+    existing_history = []
+    if isinstance(existing_payload, dict):
+        existing_history = existing_payload.get("history", []) or []
 
-    target_date = today_entry["date"]
-    replaced = False
-    new_history = []
+    merged_history = merge_history(existing_history, today_entry)
 
-    for row in history:
-        if clean_text(row.get("date", "")) == target_date:
-            new_history.append(today_entry)
-            replaced = True
-        else:
-            new_history.append(row)
-
-    if not replaced:
-        new_history.append(today_entry)
-
-    new_history = filter_retention(new_history, target_date)
-
-    payload = {
+    return {
         "meta": {
-            "updated_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "retention_days": RETENTION_DAYS,
-            "history_count": len(new_history),
+            "generated_at_kst": generated_at_kst,
+            "days": len(merged_history),
+            "source_status": "update_sector_calendar_from_leader_board",
         },
-        "history": new_history,
+        "history": merged_history,
     }
-    return payload
 
 
 def main() -> None:
-    if not LEADER_BOARD_PATH.exists():
-        raise FileNotFoundError(f"leader_board.json 없음: {LEADER_BOARD_PATH}")
+    paths = build_paths()
 
-    leader_board = read_json(LEADER_BOARD_PATH, {})
-    if not leader_board:
-        raise RuntimeError("leader_board.json 이 비어 있음")
+    leader_board = read_json(paths.leader_board, default=None)
+    if not leader_board or "top_sectors" not in leader_board:
+        raise SystemExit(
+            "[ERROR] data/leader_board.json 이 없습니다. 먼저 scripts/score_leaders.py 를 실행하세요."
+        )
 
-    today_entry = build_today_entry(leader_board)
-    existing_payload = read_json(HISTORY_PATH, {"meta": {}, "history": []})
-    new_payload = upsert_history(existing_payload, today_entry)
+    existing_payload = read_json(paths.sector_calendar_history, default=None)
+    payload = build_payload(leader_board, existing_payload)
+    write_json(paths.sector_calendar_history, payload)
 
-    DATA_DIR.mkdir(parents=True, exist_ok=True)
-    write_json(HISTORY_PATH, new_payload)
-
-    print(f"[OK] sector_calendar_history.json 생성/업데이트 완료 -> {HISTORY_PATH}")
-    print(f"[INFO] trade_date={today_entry['date']}")
-    print(f"[INFO] market_bias={today_entry['market_bias']}")
-    print(f"[INFO] top_sector_count={len(today_entry['top_sectors'])}")
-    print(f"[INFO] history_count={new_payload['meta']['history_count']}")
+    print("[OK] update_sector_calendar.py completed")
+    print(f" - root: {paths.root}")
+    print(f" - sector_calendar_history.json: {paths.sector_calendar_history}")
+    print(f" - history_days: {payload['meta']['days']}")
+    print(f" - latest_date: {payload['history'][-1]['date'] if payload['history'] else '-'}")
 
 
 if __name__ == "__main__":
-    try:
-        main()
-    except Exception as exc:
-        print(f"[ERROR] {exc}", file=sys.stderr)
-        sys.exit(1)
+    main()

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "trade_date": "2026-04-20",
   "generated_at_kst": "2026-04-20 21:34:40",
   "mode": "sample_scoring",
@@ -11,6 +12,22 @@
     "leader_count": 6,
     "sector_count": 4,
     "calendar_days": 12
+=======
+  "generated_at": "2026-04-20 23:16:08",
+  "pipeline": "kr_only",
+  "status": "ok",
+  "latest": {
+    "count": 3969,
+    "session_state": "final_hold",
+    "generated_at": "2026-04-20 23:16:06",
+    "generated_at_kst": "2026-04-20 23:16:06 KST"
+>>>>>>> 787ce26 (feat: connect KR live pipeline and restore KR-only app)
   },
-  "notes": "sample overwrite 제거. 개별 스크립트 실행 결과를 집계하는 오케스트레이터."
+  "market_raw": {
+    "market_raw_count": 2650,
+    "tracked_sector_count": 51,
+    "unmatched_sector_stock_count": 111,
+    "filtered_etf_stock_count": 1208,
+    "ignored_other_sector_stock_count": 0
+  }
 }

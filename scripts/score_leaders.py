@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
+
 DEFAULT_CONFIG: dict[str, Any] = {
     "leader_count": 20,
     "min_trading_value_okrw": 1000,
@@ -62,18 +63,10 @@ def write_json(path: Path, payload: Any) -> None:
 
 
 def ensure_default_config(path: Path) -> dict[str, Any]:
-    loaded = read_json(path, default=None)
-    if isinstance(loaded, dict) and loaded:
-        config = dict(DEFAULT_CONFIG)
-        config.update(loaded)
-        weights = dict(DEFAULT_CONFIG.get("weights", {}))
-        weights.update(loaded.get("weights", {}))
-        config["weights"] = weights
-
-        if "min_trading_value_eok" in config and "min_trading_value_okrw" not in config:
-            config["min_trading_value_okrw"] = config["min_trading_value_eok"]
-        write_json(path, config)
-        return config
+    if path.exists():
+        loaded = read_json(path, default=None)
+        if isinstance(loaded, dict) and loaded:
+            return loaded
 
     write_json(path, DEFAULT_CONFIG)
     return DEFAULT_CONFIG.copy()
@@ -94,15 +87,16 @@ def normalize(value: float, max_value: float) -> float:
     return max(0.0, min(1.0, value / max_value))
 
 
-def pick_sector(row: dict[str, Any]) -> str:
-    sector2 = str(row.get("sector2", "")).strip()
-    sector1 = str(row.get("sector1", row.get("sector", ""))).strip()
-    return sector2 or sector1 or "기타"
+def get_sector_name(row: dict[str, Any]) -> str:
+    sector2 = str(row.get("sector2", "") or "").strip()
+    sector1 = str(row.get("sector1", "") or "").strip()
+    sector = str(row.get("sector", "") or "").strip()
+    return sector2 or sector1 or sector or "기타"
 
 
-def pick_trading_value(row: dict[str, Any]) -> float:
+def get_trading_value(row: dict[str, Any]) -> float:
     return to_float(
-        row.get("trading_value_okrw", row.get("trading_value_eok", row.get("trading_value", 0))),
+        row.get("trading_value_okrw", row.get("trading_value_eok", 0)),
         0.0,
     )
 
@@ -113,16 +107,15 @@ def build_scored_rows(rows: list[dict[str, Any]], config: dict[str, Any]) -> lis
     w_change = to_float(weights.get("change_pct", 30))
     w_volume = to_float(weights.get("volume", 5))
 
-    max_trading = max((pick_trading_value(row) for row in rows), default=0.0)
+    max_trading = max((get_trading_value(row) for row in rows), default=0.0)
     max_change = max((max(0.0, to_float(row.get("change_pct", 0))) for row in rows), default=0.0)
     max_volume = max((to_float(row.get("volume", 0)) for row in rows), default=0.0)
 
     scored_rows: list[dict[str, Any]] = []
     for row in rows:
-        trading_value = pick_trading_value(row)
+        trading_value = get_trading_value(row)
         change_pct = to_float(row.get("change_pct", 0))
         volume = to_float(row.get("volume", 0))
-        sector = pick_sector(row)
 
         score = (
             normalize(trading_value, max_trading) * w_trading
@@ -131,34 +124,33 @@ def build_scored_rows(rows: list[dict[str, Any]], config: dict[str, Any]) -> lis
         )
 
         enriched = dict(row)
-        enriched["sector"] = sector
-        enriched["trading_value_okrw"] = round(trading_value, 2)
+        enriched["sector"] = get_sector_name(row)
+        enriched["trading_value_okrw"] = trading_value
         enriched["score"] = round(score, 2)
         scored_rows.append(enriched)
 
     return scored_rows
 
 
-def get_min_trading_value(config: dict[str, Any]) -> float:
-    if "min_trading_value_okrw" in config:
-        return to_float(config.get("min_trading_value_okrw", 1000))
-    return to_float(config.get("min_trading_value_eok", 1000))
-
-
 def filter_leader_candidates(rows: list[dict[str, Any]], config: dict[str, Any]) -> list[dict[str, Any]]:
-    min_trading = get_min_trading_value(config)
-    min_change = to_float(config.get("min_change_pct", 1.0))
+    min_trading = to_float(
+        config.get("min_trading_value_okrw", config.get("min_trading_value_eok", 1000)),
+        1000,
+    )
+    min_change = to_float(config.get("min_change_pct", 1.0), 1.0)
 
     filtered = [
         row for row in rows
-        if pick_trading_value(row) >= min_trading and to_float(row.get("change_pct", 0)) >= min_change
+        if get_trading_value(row) >= min_trading
+        and to_float(row.get("change_pct", 0)) >= min_change
     ]
     if filtered:
         return filtered
 
     fallback = [
         row for row in rows
-        if pick_trading_value(row) >= min_trading * 0.7 and to_float(row.get("change_pct", 0)) >= 0.5
+        if get_trading_value(row) >= min_trading * 0.7
+        and to_float(row.get("change_pct", 0)) >= 0.5
     ]
     return fallback
 
@@ -171,7 +163,7 @@ def select_leaders(rows: list[dict[str, Any]], config: dict[str, Any]) -> list[d
         rows,
         key=lambda row: (
             to_float(row.get("score", 0)),
-            pick_trading_value(row),
+            get_trading_value(row),
             to_float(row.get("change_pct", 0)),
         ),
         reverse=True,
@@ -181,7 +173,7 @@ def select_leaders(rows: list[dict[str, Any]], config: dict[str, Any]) -> list[d
     sector_counts: dict[str, int] = {}
 
     for row in ranked:
-        sector = pick_sector(row)
+        sector = get_sector_name(row)
         if sector_counts.get(sector, 0) >= per_sector_max:
             continue
 
@@ -201,7 +193,7 @@ def build_top_sectors(leaders: list[dict[str, Any]], config: dict[str, Any]) -> 
     sector_stats: dict[str, dict[str, Any]] = {}
 
     for row in leaders:
-        sector = pick_sector(row)
+        sector = get_sector_name(row)
         stat = sector_stats.setdefault(
             sector,
             {
@@ -217,7 +209,7 @@ def build_top_sectors(leaders: list[dict[str, Any]], config: dict[str, Any]) -> 
         stat["change_sum"] += to_float(row.get("change_pct", 0))
         stat["top_trading_value_okrw"] = max(
             stat["top_trading_value_okrw"],
-            pick_trading_value(row),
+            get_trading_value(row),
         )
 
     sector_list: list[dict[str, Any]] = []
@@ -260,6 +252,14 @@ def detect_market_bias(top_sectors: list[dict[str, Any]]) -> str:
     return f"{top_name} 중심 강세 / 상위섹터 점수 {top_score:.1f}"
 
 
+def infer_mode(session_state: str) -> str:
+    if session_state == "intraday":
+        return "intraday"
+    if session_state == "preopen_nxt":
+        return "preopen_nxt"
+    return "closing"
+
+
 def build_leader_board_payload(market_raw: dict[str, Any], config: dict[str, Any]) -> dict[str, Any]:
     source_rows = market_raw.get("rows", [])
     scored_rows = build_scored_rows(source_rows, config)
@@ -269,26 +269,28 @@ def build_leader_board_payload(market_raw: dict[str, Any], config: dict[str, Any
 
     for row in leaders:
         row["score"] = round(to_float(row.get("score", 0)), 1)
-        row["trading_value_okrw"] = round(pick_trading_value(row), 2)
-        row["sector"] = pick_sector(row)
 
     meta = market_raw.get("meta", {})
-    summary = market_raw.get("summary", {})
+    trade_date = meta.get("trade_date", "")
+    generated_at_kst = meta.get("generated_at_kst", meta.get("generated_at", ""))
+    session_state = meta.get("session_state", "")
 
     return {
         "meta": {
-            "trade_date": meta.get("trade_date", ""),
-            "generated_at_kst": meta.get("generated_at_kst", meta.get("generated_at", "")),
-            "mode": "kr_scoring",
-            "session_state": meta.get("session_state", meta.get("latest_session_state", "")),
+            "trade_date": trade_date,
+            "generated_at_kst": generated_at_kst,
+            "mode": infer_mode(session_state),
+            "session_state": session_state,
             "leader_count": len(leaders),
             "sector_count": len(top_sectors),
             "market_bias": detect_market_bias(top_sectors),
-            "filtered_etf": f"ETF/ETN 제외 {int(summary.get('filtered_etf_stock_count', 0))}건",
-            "source_status": "score_leaders_from_market_raw",
+            "filtered_etf": "ETF 제외 적용",
+            "source_status": "score_leaders_from_market_raw_real",
             "config": {
                 "leader_count": int(config.get("leader_count", 20)),
-                "min_trading_value_okrw": get_min_trading_value(config),
+                "min_trading_value_okrw": to_float(
+                    config.get("min_trading_value_okrw", config.get("min_trading_value_eok", 1000))
+                ),
                 "min_change_pct": to_float(config.get("min_change_pct", 1.0)),
                 "top_sector_count": int(config.get("top_sector_count", 8)),
                 "per_sector_max": int(config.get("per_sector_max", 3)),
@@ -304,9 +306,7 @@ def main() -> None:
     paths = build_paths()
     market_raw = read_json(paths.market_raw, default=None)
     if not market_raw or "rows" not in market_raw:
-        raise SystemExit(
-            "[ERROR] data/market_raw.json 이 없습니다. 먼저 scripts/build_market_raw_from_latest_krx.py 를 실행하세요."
-        )
+        raise SystemExit("[ERROR] data/market_raw.json 이 없습니다. 먼저 scripts/build_market_raw_from_latest_krx.py 를 실행하세요.")
 
     config = ensure_default_config(paths.scoring_config)
     payload = build_leader_board_payload(market_raw, config)

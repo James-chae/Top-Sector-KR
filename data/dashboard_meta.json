@@ -1,16 +1,16 @@
 {
   "trade_date": "2026-04-21",
-  "generated_at_kst": "2026-04-21 00:55:31",
-  "mode": "sample_scoring",
-  "session_state": "hold_previous_close",
+  "generated_at_kst": "2026-04-21 14:32:13 KST",
+  "mode": "closing",
+  "session_state": "",
   "pipeline_ok": true,
-  "source": "run_kr_pipeline_orchestrator",
+  "source": "run_kr_pipeline_real",
   "counts": {
-    "latest_krx_rows": 8,
-    "market_raw_rows": 8,
-    "leader_count": 6,
-    "sector_count": 4,
+    "latest_krx_rows": 3966,
+    "market_raw_rows": 2650,
+    "leader_count": 20,
+    "sector_count": 8,
     "calendar_days": 13
   },
-  "notes": "sample overwrite 제거. 개별 스크립트 실행 결과를 집계하는 오케스트레이터."
+  "notes": "real pipeline: fetch -> market_raw -> score -> calendar"
 }

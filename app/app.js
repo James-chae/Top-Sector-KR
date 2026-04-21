@@ -1,13 +1,13 @@
 const DEFAULT_LEADER_BOARD = {
   meta: {
-    trade_date: "2026-04-20",
-    generated_at_kst: "2026-04-20 15:30:00",
-    mode: "sample_scoring",
-    session_state: "kr_open",
+    trade_date: "",
+    generated_at_kst: "",
+    mode: "",
+    session_state: "",
     leader_count: 0,
     sector_count: 0,
     market_bias: "데이터 로딩 대기",
-    filtered_etf: "ETF 제외 기준 준비중"
+    filtered_etf: ""
   },
   top_sectors: [],
   leaders: []
@@ -15,7 +15,7 @@ const DEFAULT_LEADER_BOARD = {
 
 const DEFAULT_CALENDAR = {
   meta: {
-    generated_at_kst: "2026-04-20 15:30:00",
+    generated_at_kst: "",
     days: 0
   },
   history: []
@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   bindTabs();
   bindButtons();
   await loadData();
+  syncCalendarDateToTradeDate();
   renderAll();
 });
 
@@ -75,6 +76,7 @@ function bindButtons() {
   if (refreshBtn) {
     refreshBtn.addEventListener("click", async () => {
       await loadData(true);
+      syncCalendarDateToTradeDate();
       renderAll();
     });
   }
@@ -89,39 +91,74 @@ function bindCalendarNav(prevId, todayId, nextId) {
 
   if (prev) {
     prev.addEventListener("click", () => {
-      state.calendarDate.setMonth(state.calendarDate.getMonth() - 1);
+      state.calendarDate = new Date(
+        state.calendarDate.getFullYear(),
+        state.calendarDate.getMonth() - 1,
+        1
+      );
       renderCalendar();
     });
   }
 
   if (today) {
     today.addEventListener("click", () => {
-      state.calendarDate = new Date();
+      syncCalendarDateToTradeDate(true);
       renderCalendar();
     });
   }
 
   if (next) {
     next.addEventListener("click", () => {
-      state.calendarDate.setMonth(state.calendarDate.getMonth() + 1);
+      state.calendarDate = new Date(
+        state.calendarDate.getFullYear(),
+        state.calendarDate.getMonth() + 1,
+        1
+      );
       renderCalendar();
     });
   }
 }
 
 async function loadData(force = false) {
-  state.leaderBoard = await safeFetchJson("../data/leader_board.json", DEFAULT_LEADER_BOARD, force);
-  state.calendarHistory = await safeFetchJson("../data/sector_calendar_history.json", DEFAULT_CALENDAR, force);
+  state.leaderBoard = await safeFetchJson(`../data/leader_board.json`, DEFAULT_LEADER_BOARD, force);
+  state.calendarHistory = await safeFetchJson(`../data/sector_calendar_history.json`, DEFAULT_CALENDAR, force);
 }
 
 async function safeFetchJson(url, fallback, force = false) {
   try {
-    const requestUrl = force ? `${url}?t=${Date.now()}` : url;
-    const response = await fetch(requestUrl, { cache: "no-store" });
+    const requestUrl = force ? `${url}?t=${Date.now()}` : `${url}?t=${Date.now()}`;
+    const response = await fetch(requestUrl, {
+      cache: "no-store",
+      headers: {
+        "Cache-Control": "no-cache"
+      }
+    });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return await response.json();
   } catch (error) {
+    console.warn(`safeFetchJson fallback: ${url}`, error);
     return fallback;
+  }
+}
+
+function syncCalendarDateToTradeDate(force = false) {
+  const tradeDate = state.leaderBoard?.meta?.trade_date;
+  const parsed = parseYmdLocal(tradeDate);
+  if (!parsed) {
+    if (force) {
+      const now = new Date();
+      state.calendarDate = new Date(now.getFullYear(), now.getMonth(), 1);
+    }
+    return;
+  }
+
+  if (
+    force ||
+    !state.calendarDate ||
+    state.calendarDate.getFullYear() !== parsed.getFullYear() ||
+    state.calendarDate.getMonth() !== parsed.getMonth()
+  ) {
+    state.calendarDate = new Date(parsed.getFullYear(), parsed.getMonth(), 1);
   }
 }
 
@@ -137,20 +174,30 @@ function renderAll() {
 function renderHero() {
   const meta = state.leaderBoard.meta || {};
   setText("heroTradeDate", meta.trade_date || "-");
-  setText("heroSession", `${meta.mode || "-"} / ${meta.session_state || "-"}`);
+  setText("heroSession", buildHeroSessionText(meta));
   setText("heroSectorCount", `${meta.sector_count ?? "-"}`);
   setText("heroMarketBias", meta.market_bias || "-");
   setText("heroLeaderCount", `${meta.leader_count ?? "-"}`);
-  setText("heroFilteredEtf", meta.filtered_etf || "-");
+  setText("heroFilteredEtf", meta.filtered_etf || "ETF 제외 적용");
   setText("heroHistoryCount", `${state.calendarHistory.meta?.days ?? "-"}`);
-  setText("heroUpdatedAt", meta.generated_at_kst || state.calendarHistory.meta?.generated_at_kst || "-");
+  setText(
+    "heroUpdatedAt",
+    meta.generated_at_kst || state.calendarHistory.meta?.generated_at_kst || "-"
+  );
+}
+
+function buildHeroSessionText(meta) {
+  const parts = [];
+  if (meta.mode) parts.push(meta.mode);
+  if (meta.session_state) parts.push(meta.session_state);
+  return parts.length ? parts.join(" / ") : "-";
 }
 
 function renderLeaders() {
   const wrap = document.getElementById("leadersList");
   if (!wrap) return;
 
-  const leaders = state.leaderBoard.leaders || [];
+  const leaders = Array.isArray(state.leaderBoard.leaders) ? state.leaderBoard.leaders : [];
   if (!leaders.length) {
     wrap.innerHTML = `<div class="empty-state">표시할 주도주 데이터가 없습니다.</div>`;
     return;
@@ -159,22 +206,25 @@ function renderLeaders() {
   wrap.innerHTML = leaders.map((item) => {
     const highlightClass = getHighlightClass(item);
     const changeClass = Number(item.change_pct) >= 0 ? "up" : "down";
+    const code = item.code || item.ticker || "-";
+    const sectorName = getFinalSectorName(item);
+    const tradingValue = item.trading_value_okrw ?? item.trading_value_eok ?? 0;
 
     return `
       <div class="leader-card">
         <div class="rank-badge">#${item.rank ?? "-"}</div>
         <div class="leader-main">
           <div class="leader-name ${highlightClass}">${escapeHtml(item.name || "-")}</div>
-          <div class="leader-meta">${escapeHtml(item.ticker || "-")} · 점수 ${num(item.score, 0)} · 거래량 ${formatNumber(item.volume)}</div>
+          <div class="leader-meta">${escapeHtml(code)} · 점수 ${num(item.score, 0)} · 거래량 ${formatNumber(item.volume)}</div>
         </div>
-        <div class="leader-sector ${highlightClass}">${escapeHtml(item.sector || "-")}</div>
+        <div class="leader-sector ${highlightClass}">${escapeHtml(sectorName)}</div>
         <div class="metric-box">
           <div class="metric-label">등락률</div>
           <div class="metric-value ${changeClass}">${signedPercent(item.change_pct)}</div>
         </div>
         <div class="metric-box">
           <div class="metric-label">거래대금</div>
-          <div class="metric-value">${formatEok(item.trading_value_eok)}</div>
+          <div class="metric-value">${formatEok(tradingValue)}</div>
         </div>
       </div>
     `;
@@ -185,7 +235,7 @@ function renderSectors() {
   const wrap = document.getElementById("sectorCards");
   if (!wrap) return;
 
-  const sectors = state.leaderBoard.top_sectors || [];
+  const sectors = Array.isArray(state.leaderBoard.top_sectors) ? state.leaderBoard.top_sectors : [];
   if (!sectors.length) {
     wrap.innerHTML = `<div class="empty-state">표시할 주도섹터 데이터가 없습니다.</div>`;
     return;
@@ -194,7 +244,10 @@ function renderSectors() {
   wrap.innerHTML = sectors.map((item) => {
     const score = Number(item.score) || 0;
     const width = Math.max(10, Math.min(score, 100));
-    const bandClass = score >= 90 ? "band-90" : score >= 80 ? "band-80" : score >= 70 ? "band-70" : "band-low";
+    const bandClass =
+      score >= 90 ? "band-90" :
+      score >= 80 ? "band-80" :
+      score >= 70 ? "band-70" : "band-low";
 
     return `
       <div class="sector-card">
@@ -216,6 +269,7 @@ function renderSectors() {
 
 function renderCalendar() {
   setWeekdays("weekdayGrid");
+
   const label = document.getElementById("calendarMonthLabel");
   const grid = document.getElementById("calendarGrid");
   if (!label || !grid) return;
@@ -238,22 +292,41 @@ function setWeekdays(targetId) {
 function buildWeekdayMonthCells(dateObj, history) {
   const year = dateObj.getFullYear();
   const month = dateObj.getMonth();
+  const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0).getDate();
-  const map = new Map((history || []).map((item) => [item.date, item]));
+
+  const historyMap = new Map(
+    (history || []).map((item) => [item.date, item])
+  );
+
   const cells = [];
+  const firstWeekday = firstDay.getDay(); // 0 일 ~ 6 토
+  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1; // 월=0 기준
+
+  for (let i = 0; i < mondayOffset; i += 1) {
+    cells.push({
+      empty: true,
+      day: "",
+      sectors: []
+    });
+  }
 
   for (let day = 1; day <= lastDay; day += 1) {
     const d = new Date(year, month, day);
     const weekday = d.getDay();
-    if (weekday === 0 || weekday === 6) continue;
+
+    if (weekday === 0 || weekday === 6) {
+      continue;
+    }
 
     const dateStr = formatDate(d);
-    const found = map.get(dateStr);
+    const found = historyMap.get(dateStr);
 
     cells.push({
+      empty: false,
       date: dateStr,
       day,
-      sectors: found?.sectors || []
+      sectors: Array.isArray(found?.sectors) ? found.sectors : []
     });
   }
 
@@ -261,9 +334,15 @@ function buildWeekdayMonthCells(dateObj, history) {
 }
 
 function renderCalendarCell(item) {
+  if (item.empty) {
+    return `<div class="calendar-cell" style="visibility:hidden;"></div>`;
+  }
+
   const sectors = (item.sectors || []).slice(0, 3);
   const body = sectors.length
-    ? sectors.map((sector) => `<div class="calendar-sector-item">${escapeHtml(sector.name)} (${num(sector.score, 0)})</div>`).join("")
+    ? sectors
+        .map((sector) => `<div class="calendar-sector-item">${escapeHtml(sector.name)} (${num(sector.score, 0)})</div>`)
+        .join("")
     : `<div class="calendar-sector-item" style="color:#8fa0bf;">기록 없음</div>`;
 
   return `
@@ -278,7 +357,7 @@ function renderRecentCounts() {
   const wrap = document.getElementById("recentCounts");
   if (!wrap) return;
 
-  const history = state.calendarHistory.history || [];
+  const history = Array.isArray(state.calendarHistory.history) ? state.calendarHistory.history : [];
   const recent = history.slice(-10);
   const counts = {};
 
@@ -291,7 +370,7 @@ function renderRecentCounts() {
   });
 
   const rows = Object.entries(counts)
-    .sort((a, b) => b[1] - a[1])
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
     .slice(0, 8);
 
   if (!rows.length) {
@@ -319,14 +398,18 @@ function renderTodaySectorSummary() {
 
   wrap.innerHTML = sectors.map((item, idx) => `
     <div class="count-item">
-      <div class="count-title">${idx + 1}. ${escapeHtml(item.sector)}</div>
+      <div class="count-title">${idx + 1}. ${escapeHtml(item.sector || "-")}</div>
       <div class="count-body">점수 ${num(item.score, 0)} / 주도주 ${num(item.leaders, 0)}개 / 평균 ${signedPercent(item.avg_change_pct)}</div>
     </div>
   `).join("");
 }
 
+function getFinalSectorName(item) {
+  return item.sector || item.sector1 || item.sector2 || "-";
+}
+
 function getHighlightClass(item) {
-  const trading = Number(item.trading_value_eok) || 0;
+  const trading = Number(item.trading_value_okrw ?? item.trading_value_eok) || 0;
   const change = Number(item.change_pct) || 0;
   if (trading >= 3000 && change >= 5) return "highlight-strong";
   if (trading >= 1000 && change >= 5) return "highlight-mid";
@@ -364,6 +447,13 @@ function formatDate(date) {
   const m = `${date.getMonth() + 1}`.padStart(2, "0");
   const d = `${date.getDate()}`.padStart(2, "0");
   return `${y}-${m}-${d}`;
+}
+
+function parseYmdLocal(text) {
+  if (!text || typeof text !== "string") return null;
+  const m = text.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!m) return null;
+  return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
 }
 
 function escapeHtml(value) {

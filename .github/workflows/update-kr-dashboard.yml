@@ -3,10 +3,10 @@ name: Update KR Dashboard Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "50 22 * * *"
-    - cron: "0-55/5 23 * * 0-4"
-    - cron: "0-55/5 0-10 * * 1-5"
-    - cron: "0 11 * * 1-5"
+    - cron: "50 22 * * *"         # KST 07:50
+    - cron: "3-58/5 23 * * 0-4"   # KST 08:03~08:58
+    - cron: "3-58/5 0-10 * * 1-5" # KST 09:03~19:58
+    - cron: "3 11 * * 1-5"        # KST 20:03
 
 permissions:
   contents: write
@@ -14,7 +14,7 @@ permissions:
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
@@ -40,19 +40,34 @@ jobs:
       - name: Ensure directories
         run: |
           mkdir -p data
-          mkdir -p config
           mkdir -p scripts
 
-      - name: Run KR real pipeline
+      - name: Check schedule window
+        id: schedule_check
         run: |
-          python ./scripts/check_schedule_window.py --now
+          RESULT=$(python ./scripts/check_schedule_window.py --now --machine)
+          echo "$RESULT"
+          SHOULD_RUN=$(echo "$RESULT" | grep '^should_run_pipeline=' | cut -d'=' -f2)
+          SESSION_STATE=$(echo "$RESULT" | grep '^session_state=' | cut -d'=' -f2)
+          echo "should_run=$SHOULD_RUN" >> $GITHUB_OUTPUT
+          echo "session_state=$SESSION_STATE" >> $GITHUB_OUTPUT
+
+      - name: Run KR real pipeline
+        if: github.event_name == 'workflow_dispatch' || steps.schedule_check.outputs.should_run == 'true'
+        run: |
           python ./scripts/run_kr_pipeline.py
 
+      - name: Skip pipeline outside allowed window
+        if: github.event_name == 'schedule' && steps.schedule_check.outputs.should_run != 'true'
+        run: |
+          echo "Skip pipeline: outside allowed window"
+          echo "session_state=${{ steps.schedule_check.outputs.session_state }}"
+
       - name: Show generated files
+        if: github.event_name == 'workflow_dispatch' || steps.schedule_check.outputs.should_run == 'true'
         run: |
           ls -la ./data
           python - <<'PY'
-          import json
           from pathlib import Path
 
           for name in [
@@ -70,6 +85,7 @@ jobs:
           PY
 
       - name: Commit and push data updates
+        if: github.event_name == 'workflow_dispatch' || steps.schedule_check.outputs.should_run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

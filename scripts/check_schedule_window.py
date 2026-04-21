@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import sys
 from dataclasses import dataclass
 from datetime import datetime
 from zoneinfo import ZoneInfo
@@ -62,13 +63,13 @@ def classify_session(dt: datetime) -> SessionResult:
             is_weekday=True,
             session_state="reset",
             board_label="reset",
-            should_run_pipeline=False,
-            note="07:50~07:59는 reset 구간, 화면/자동화 분리 확인용",
+            should_run_pipeline=True,
+            note="07:50~07:59는 reset 구간",
         )
 
     if hhmm < 2000:
         minute = dt.minute
-        should_run = (minute % 5 == 0)
+        should_run = (minute % 5 == 3)
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
             hhmm=hhmm,
@@ -76,10 +77,10 @@ def classify_session(dt: datetime) -> SessionResult:
             session_state="live_update_window",
             board_label="장중/주간 갱신",
             should_run_pipeline=should_run,
-            note="08:00~19:55는 5분 단위 갱신 구간",
+            note="08:03~19:58는 5분 단위 갱신 구간(정각 회피)",
         )
 
-    if hhmm == 2000:
+    if hhmm == 2003:
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
             hhmm=hhmm,
@@ -87,7 +88,7 @@ def classify_session(dt: datetime) -> SessionResult:
             session_state="final_update",
             board_label="최종 반영",
             should_run_pipeline=True,
-            note="20:00는 당일 최종 반영 시점",
+            note="20:03는 당일 최종 반영 시점",
         )
 
     return SessionResult(
@@ -97,7 +98,7 @@ def classify_session(dt: datetime) -> SessionResult:
         session_state="final_hold",
         board_label="최종 유지",
         should_run_pipeline=False,
-        note="20:00 이후는 최종 데이터 유지",
+        note="20:03 이후는 최종 데이터 유지",
     )
 
 
@@ -127,16 +128,22 @@ def print_result(result: SessionResult) -> None:
     print(f"설명               : {result.note}")
 
 
+def print_machine_result(result: SessionResult) -> None:
+    print(f"should_run_pipeline={'true' if result.should_run_pipeline else 'false'}")
+    print(f"session_state={result.session_state}")
+    print(f"board_label={result.board_label}")
+
+
 def run_default_samples() -> None:
     samples = [
-        "2026-04-17 07:49",
-        "2026-04-17 07:50",
-        "2026-04-17 07:55",
-        "2026-04-17 08:00",
-        "2026-04-17 08:05",
-        "2026-04-17 19:55",
-        "2026-04-17 20:00",
-        "2026-04-17 20:05",
+        "2026-04-21 07:49",
+        "2026-04-21 07:50",
+        "2026-04-21 07:55",
+        "2026-04-21 08:03",
+        "2026-04-21 08:08",
+        "2026-04-21 19:58",
+        "2026-04-21 20:03",
+        "2026-04-21 20:05",
     ]
 
     print("[기본 샘플 테스트 시작]")
@@ -144,35 +151,33 @@ def run_default_samples() -> None:
         dt = parse_input_time(item)
         result = classify_session(dt)
         print_result(result)
+        print_machine_result(result)
+        print("-" * 72)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Top-Sector-KR 시간대 판정 검증")
-    parser.add_argument(
-        "--time",
-        type=str,
-        help='예: "2026-04-17 07:55" 또는 "2026-04-17 20:00:00"',
-    )
-    parser.add_argument(
-        "--now",
-        action="store_true",
-        help="현재 KST 시각으로 판정",
-    )
+    parser.add_argument("--time", type=str, help='예: "2026-04-21 07:55"')
+    parser.add_argument("--now", action="store_true", help="현재 KST 시각으로 판정")
+    parser.add_argument("--machine", action="store_true", help="기계용 출력만 표시")
     args = parser.parse_args()
 
     if args.now:
-        now_kst = datetime.now(KST)
-        result = classify_session(now_kst)
-        print_result(result)
-        return
-
-    if args.time:
+        dt = datetime.now(KST)
+    elif args.time:
         dt = parse_input_time(args.time)
-        result = classify_session(dt)
-        print_result(result)
+    else:
+        run_default_samples()
         return
 
-    run_default_samples()
+    result = classify_session(dt)
+
+    if args.machine:
+        print_machine_result(result)
+        sys.exit(0)
+
+    print_result(result)
+    print_machine_result(result)
 
 
 if __name__ == "__main__":

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-04-22",
-    "generated_at_kst": "2026-04-22 09:03:32",
+    "generated_at_kst": "2026-04-22 09:13:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 37.2",
+    "leader_count": 6,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 64.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,114 @@
   },
   "top_sectors": [
     {
+      "sector": "반도체",
+      "score": 64.8,
+      "leaders": 2,
+      "avg_change_pct": 2.35
+    },
+    {
+      "sector": "우주",
+      "score": 52.0,
+      "leaders": 2,
+      "avg_change_pct": 19.59
+    },
+    {
       "sector": "2차전지",
-      "score": 37.2,
-      "leaders": 1,
-      "avg_change_pct": 4.19
+      "score": 47.9,
+      "leaders": 2,
+      "avg_change_pct": 3.98
     }
   ],
   "leaders": [
     {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 222500,
+      "change_value": 0,
+      "change_pct": 1.6,
+      "volume": 2492323,
+      "trading_value_okrw": 5545.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 61.1,
+      "rank": 1
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "market": "KOSDAQ",
+      "price": 57700,
+      "change_value": 0,
+      "change_pct": 21.86,
+      "volume": 2851215,
+      "trading_value_okrw": 1645.0,
+      "sector1": "금융",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 39.9,
+      "rank": 2
+    },
+    {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 672000,
+      "price": 671000,
       "change_value": 0,
-      "change_pct": 4.19,
-      "volume": 133674,
-      "trading_value_okrw": 898.0,
+      "change_pct": 4.03,
+      "volume": 426575,
+      "trading_value_okrw": 2862.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 28.9,
-      "rank": 1
+      "score": 34.6,
+      "rank": 3
+    },
+    {
+      "code": "027360",
+      "name": "아주IB투자",
+      "market": "KOSDAQ",
+      "price": 14220,
+      "change_value": 0,
+      "change_pct": 17.33,
+      "volume": 8560626,
+      "trading_value_okrw": 1217.0,
+      "sector1": "증권",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 31.9,
+      "rank": 4
+    },
+    {
+      "code": "222080",
+      "name": "씨아이에스",
+      "market": "KOSDAQ",
+      "price": 16950,
+      "change_value": 0,
+      "change_pct": 3.92,
+      "volume": 9476102,
+      "trading_value_okrw": 1606.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 22.8,
+      "rank": 5
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 796000,
+      "change_value": 0,
+      "change_pct": 3.11,
+      "volume": 204102,
+      "trading_value_okrw": 1624.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 20.4,
+      "rank": 6
     }
   ]
 }

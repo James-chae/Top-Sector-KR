@@ -12,7 +12,7 @@
       <div class="brand-card panel">
         <div>
           <h1>주도주 레이다</h1>
-          <p class="sub">한국 전용 · 오늘의 주도섹터 / 오늘의 주도주 / 주도섹터 달력</p>
+          <p class="sub">한국 전용 · 오늘의 주도섹터 / 오늘의 주도주 / 주도섹터 달력 / 일정</p>
         </div>
         <div class="topbar-right">
           <div class="chip"><span class="dot"></span><span id="krClock">KR --:--:--</span></div>
@@ -47,6 +47,7 @@
     <nav class="main-tabs">
       <button class="tab-btn active" data-tab="dashboard">주도주</button>
       <button class="tab-btn" data-tab="calendar">주도섹터달력</button>
+      <button class="tab-btn" data-tab="schedule">일정</button>
     </nav>
 
     <main>
@@ -118,6 +119,68 @@
                 </div>
               </div>
               <div id="todaySectorSummary" class="count-wrap"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section id="screen-schedule" class="screen">
+        <div class="calendar-layout">
+          <div class="main-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>일정</h2>
+                  <p class="sub">공식 일정 + 수동 일정 · 월~금 표시</p>
+                </div>
+                <div class="calendar-nav">
+                  <button id="prevScheduleMonthBtn" class="nav-btn">◀ 이전달</button>
+                  <button id="todayScheduleMonthBtn" class="nav-btn">오늘</button>
+                  <button id="nextScheduleMonthBtn" class="nav-btn">다음달 ▶</button>
+                </div>
+              </div>
+
+              <div class="schedule-toolbar">
+                <div class="schedule-filter-chip active" data-schedule-filter="all">전체</div>
+                <div class="schedule-filter-chip" data-schedule-filter="KR">한국</div>
+                <div class="schedule-filter-chip" data-schedule-filter="US">미국</div>
+                <div class="schedule-filter-chip" data-schedule-filter="manual">수동 일정</div>
+              </div>
+
+              <div class="calendar-headline" id="scheduleMonthLabel">-</div>
+              <div class="weekday-grid" id="scheduleWeekdayGrid"></div>
+              <div class="calendar-grid schedule-grid" id="scheduleGrid"></div>
+            </section>
+          </div>
+
+          <div class="side-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>이번달 핵심 일정</h2>
+                  <p class="sub">노란 강조 = FOMC / 옵션만기 / 선옵만기</p>
+                </div>
+              </div>
+              <div id="scheduleSummaryList" class="count-wrap"></div>
+            </section>
+
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>수동 일정 안내</h2>
+                  <p class="sub">repo 반영 시 사이트에서 바로 표시</p>
+                </div>
+              </div>
+              <div class="count-wrap">
+                <div class="count-item">
+                  <div class="count-title">manual_events.json</div>
+                  <div class="count-body">한국/미국 기업 실적, 개인 체크 일정은 직접 추가하면 됩니다.</div>
+                </div>
+                <div class="count-item">
+                  <div class="count-title">시간 표기 규칙</div>
+                  <div class="count-body">미국 일정은 미국 현지일·현지시간(ET), 한국 일정은 한국 날짜 기준으로 표시합니다.</div>
+                </div>
+              </div>
             </section>
           </div>
         </div>

@@ -21,10 +21,17 @@ const DEFAULT_CALENDAR = {
   history: []
 };
 
+const DEFAULT_SCHEDULE = [];
+
 const state = {
   leaderBoard: DEFAULT_LEADER_BOARD,
   calendarHistory: DEFAULT_CALENDAR,
-  calendarDate: new Date()
+  calendarDate: new Date(),
+  scheduleDate: new Date(),
+  scheduleFilter: "all",
+  krSchedule: DEFAULT_SCHEDULE,
+  usSchedule: DEFAULT_SCHEDULE,
+  manualSchedule: DEFAULT_SCHEDULE
 };
 
 const SECTOR_COLOR_MAP = {
@@ -54,8 +61,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   startClock();
   bindTabs();
   bindButtons();
+  bindScheduleFilters();
   await loadData();
   syncCalendarDateToTradeDate();
+  syncScheduleDateToToday();
   renderAll();
 });
 
@@ -104,47 +113,69 @@ function bindButtons() {
     });
   }
 
-  bindCalendarNav("prevMonthBtn", "todayMonthBtn", "nextMonthBtn");
+  bindCalendarNav("prevMonthBtn", "todayMonthBtn", "nextMonthBtn", "calendar");
+  bindCalendarNav("prevScheduleMonthBtn", "todayScheduleMonthBtn", "nextScheduleMonthBtn", "schedule");
 }
 
-function bindCalendarNav(prevId, todayId, nextId) {
+function bindCalendarNav(prevId, todayId, nextId, mode) {
   const prev = document.getElementById(prevId);
   const today = document.getElementById(todayId);
   const next = document.getElementById(nextId);
 
   if (prev) {
     prev.addEventListener("click", () => {
-      state.calendarDate = new Date(
-        state.calendarDate.getFullYear(),
-        state.calendarDate.getMonth() - 1,
-        1
-      );
-      renderCalendar();
+      if (mode === "calendar") {
+        state.calendarDate = new Date(state.calendarDate.getFullYear(), state.calendarDate.getMonth() - 1, 1);
+        renderCalendar();
+      } else {
+        state.scheduleDate = new Date(state.scheduleDate.getFullYear(), state.scheduleDate.getMonth() - 1, 1);
+        renderSchedule();
+      }
     });
   }
 
   if (today) {
     today.addEventListener("click", () => {
-      syncCalendarDateToTradeDate(true);
-      renderCalendar();
+      if (mode === "calendar") {
+        syncCalendarDateToTradeDate(true);
+        renderCalendar();
+      } else {
+        syncScheduleDateToToday(true);
+        renderSchedule();
+      }
     });
   }
 
   if (next) {
     next.addEventListener("click", () => {
-      state.calendarDate = new Date(
-        state.calendarDate.getFullYear(),
-        state.calendarDate.getMonth() + 1,
-        1
-      );
-      renderCalendar();
+      if (mode === "calendar") {
+        state.calendarDate = new Date(state.calendarDate.getFullYear(), state.calendarDate.getMonth() + 1, 1);
+        renderCalendar();
+      } else {
+        state.scheduleDate = new Date(state.scheduleDate.getFullYear(), state.scheduleDate.getMonth() + 1, 1);
+        renderSchedule();
+      }
     });
   }
+}
+
+function bindScheduleFilters() {
+  document.querySelectorAll(".schedule-filter-chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll(".schedule-filter-chip").forEach((c) => c.classList.remove("active"));
+      chip.classList.add("active");
+      state.scheduleFilter = chip.dataset.scheduleFilter || "all";
+      renderSchedule();
+    });
+  });
 }
 
 async function loadData(force = false) {
   state.leaderBoard = await safeFetchJson(`../data/leader_board.json`, DEFAULT_LEADER_BOARD, force);
   state.calendarHistory = await safeFetchJson(`../data/sector_calendar_history.json`, DEFAULT_CALENDAR, force);
+  state.krSchedule = await safeFetchJson(`../data/kr_calendar_official.json`, DEFAULT_SCHEDULE, force);
+  state.usSchedule = await safeFetchJson(`../data/us_calendar_official.json`, DEFAULT_SCHEDULE, force);
+  state.manualSchedule = await safeFetchJson(`../data/manual_events.json`, DEFAULT_SCHEDULE, force);
 }
 
 async function safeFetchJson(url, fallback, force = false) {
@@ -152,9 +183,7 @@ async function safeFetchJson(url, fallback, force = false) {
     const requestUrl = `${url}?t=${Date.now()}`;
     const response = await fetch(requestUrl, {
       cache: "no-store",
-      headers: {
-        "Cache-Control": "no-cache"
-      }
+      headers: { "Cache-Control": "no-cache" }
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return await response.json();
@@ -185,6 +214,18 @@ function syncCalendarDateToTradeDate(force = false) {
   }
 }
 
+function syncScheduleDateToToday(force = false) {
+  const now = new Date();
+  if (
+    force ||
+    !state.scheduleDate ||
+    state.scheduleDate.getFullYear() !== now.getFullYear() ||
+    state.scheduleDate.getMonth() !== now.getMonth()
+  ) {
+    state.scheduleDate = new Date(now.getFullYear(), now.getMonth(), 1);
+  }
+}
+
 function renderAll() {
   renderHero();
   renderLeaders();
@@ -192,6 +233,7 @@ function renderAll() {
   renderCalendar();
   renderRecentCounts();
   renderTodaySectorSummary();
+  renderSchedule();
 }
 
 function renderHero() {
@@ -203,10 +245,7 @@ function renderHero() {
   setText("heroLeaderCount", `${meta.leader_count ?? "-"}`);
   setText("heroFilteredEtf", meta.filtered_etf || "ETF 제외 적용");
   setText("heroHistoryCount", `${state.calendarHistory.meta?.days ?? "-"}`);
-  setText(
-    "heroUpdatedAt",
-    meta.generated_at_kst || state.calendarHistory.meta?.generated_at_kst || "-"
-  );
+  setText("heroUpdatedAt", meta.generated_at_kst || state.calendarHistory.meta?.generated_at_kst || "-");
 }
 
 function buildHeroSessionText(meta) {
@@ -493,6 +532,183 @@ function renderTodaySectorSummary() {
       </div>
     `;
   }).join("");
+}
+
+function renderSchedule() {
+  setWeekdays("scheduleWeekdayGrid");
+
+  const label = document.getElementById("scheduleMonthLabel");
+  const grid = document.getElementById("scheduleGrid");
+  const summary = document.getElementById("scheduleSummaryList");
+  if (!label || !grid || !summary) return;
+
+  const current = state.scheduleDate;
+  label.textContent = `${current.getFullYear()}년 ${current.getMonth() + 1}월`;
+
+  const monthEvents = getScheduleEventsForMonth(current);
+  const cells = buildScheduleCells(current, monthEvents);
+  grid.innerHTML = cells.map(renderScheduleCell).join("");
+  summary.innerHTML = renderScheduleSummary(monthEvents);
+}
+
+function getScheduleEventsForMonth(dateObj) {
+  const year = dateObj.getFullYear();
+  const month = dateObj.getMonth();
+
+  const allEvents = [
+    ...(Array.isArray(state.krSchedule) ? state.krSchedule : []),
+    ...(Array.isArray(state.usSchedule) ? state.usSchedule : []),
+    ...(Array.isArray(state.manualSchedule) ? state.manualSchedule : [])
+  ];
+
+  return allEvents
+    .map(normalizeScheduleEvent)
+    .filter((event) => {
+      if (!event.dateObj) return false;
+      if (event.dateObj.getFullYear() !== year || event.dateObj.getMonth() !== month) return false;
+      if (state.scheduleFilter === "all") return true;
+      if (state.scheduleFilter === "manual") return event.source_type === "manual";
+      return event.market === state.scheduleFilter;
+    })
+    .sort((a, b) => a.date.localeCompare(b.date) || (priorityRank(a.priority) - priorityRank(b.priority)));
+}
+
+function normalizeScheduleEvent(item) {
+  const date = cleanText(item.date);
+  const dateObj = parseYmdLocal(date);
+  return {
+    date,
+    dateObj,
+    end_date: cleanText(item.end_date),
+    market: cleanText(item.market || inferMarket(item)),
+    title: cleanText(item.title),
+    category: cleanText(item.category || "general"),
+    priority: cleanText(item.priority || "medium"),
+    display_color: cleanText(item.display_color || ""),
+    time_local: cleanText(item.time_local || ""),
+    timezone: cleanText(item.timezone || ""),
+    source_type: cleanText(item.source_type || "official"),
+    notes: cleanText(item.notes || "")
+  };
+}
+
+function inferMarket(item) {
+  const title = cleanText(item.title);
+  return /FOMC|Fed|PPI|PCE|GDP|고용보고서|실업률|소매판매|옵션만기/.test(title) ? "US" : "KR";
+}
+
+function buildScheduleCells(dateObj, events) {
+  const year = dateObj.getFullYear();
+  const month = dateObj.getMonth();
+  const firstDay = new Date(year, month, 1);
+  const lastDay = new Date(year, month + 1, 0).getDate();
+
+  const eventsMap = new Map();
+  events.forEach((event) => {
+    const arr = eventsMap.get(event.date) || [];
+    arr.push(event);
+    eventsMap.set(event.date, arr);
+  });
+
+  const cells = [];
+  const firstWeekday = firstDay.getDay();
+  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1;
+
+  for (let i = 0; i < mondayOffset; i += 1) {
+    cells.push({ empty: true, day: "", events: [] });
+  }
+
+  for (let day = 1; day <= lastDay; day += 1) {
+    const d = new Date(year, month, day);
+    const weekday = d.getDay();
+    if (weekday === 0 || weekday === 6) continue;
+    const dateStr = formatDate(d);
+    cells.push({
+      empty: false,
+      date: dateStr,
+      day,
+      events: eventsMap.get(dateStr) || []
+    });
+  }
+
+  return cells;
+}
+
+function renderScheduleCell(item) {
+  if (item.empty) {
+    return `<div class="calendar-cell schedule-cell is-empty" style="visibility:hidden;"></div>`;
+  }
+
+  const events = (item.events || []).slice(0, 4);
+  const body = events.length
+    ? events.map((event) => {
+        const cls = getScheduleEventClass(event);
+        const meta = [
+          event.market ? event.market : "",
+          event.time_local ? event.time_local : "",
+          event.end_date ? "~" : ""
+        ].filter(Boolean).join(" ");
+        return `
+          <div class="schedule-event ${cls}">
+            <div class="schedule-event-title">${escapeHtml(event.title)}${event.end_date ? " 기간" : ""}</div>
+            ${meta ? `<div class="schedule-event-meta">${escapeHtml(meta)}</div>` : ""}
+          </div>
+        `;
+      }).join("")
+    : ``;
+
+  return `
+    <div class="calendar-cell schedule-cell">
+      <div class="calendar-day">${item.day}</div>
+      <div class="calendar-sector-list">${body}</div>
+    </div>
+  `;
+}
+
+function renderScheduleSummary(events) {
+  const important = events
+    .filter((event) => event.priority === "high" || event.display_color === "yellow" || event.category === "option")
+    .slice(0, 12);
+
+  if (!important.length) {
+    return `<div class="empty-state">이번달 표시할 일정이 없습니다.</div>`;
+  }
+
+  return important.map((event) => {
+    const cls = getScheduleEventClass(event);
+    const dateLabel = event.end_date ? `${event.date} ~ ${event.end_date}` : event.date;
+    const metaParts = [];
+    if (event.market) metaParts.push(event.market);
+    if (event.time_local) metaParts.push(event.time_local);
+    if (event.timezone) metaParts.push(event.timezone);
+    return `
+      <div class="count-item">
+        <div class="count-title ${cls}">${escapeHtml(event.title)}${event.end_date ? " 기간" : ""}</div>
+        <div class="count-body">${escapeHtml(dateLabel)}${metaParts.length ? " · " + escapeHtml(metaParts.join(" · ")) : ""}</div>
+      </div>
+    `;
+  }).join("");
+}
+
+function getScheduleEventClass(event) {
+  if (event.display_color === "yellow") return "schedule-highlight-yellow";
+  if (event.display_color === "red") return "schedule-highlight-red";
+  if (event.source_type === "manual") return "schedule-highlight-manual";
+  if (event.category === "policy") return "schedule-highlight-yellow";
+  if (event.category === "option" || event.category === "derivatives") return "schedule-highlight-yellow";
+  if (event.category === "holiday") return "schedule-highlight-blue";
+  return "schedule-highlight-default";
+}
+
+function priorityRank(priority) {
+  if (priority === "high") return 0;
+  if (priority === "medium") return 1;
+  return 2;
+}
+
+function cleanText(v) {
+  if (v === null || v === undefined) return "";
+  return String(v).trim();
 }
 
 function getFinalSectorName(item) {

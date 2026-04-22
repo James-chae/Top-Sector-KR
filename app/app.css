@@ -557,12 +557,336 @@ button { font: inherit; }
 }
 
 @media (max-width: 760px) {
-  .app { padding: 14px 10px 28px; }
-  .brand-card { flex-direction: column; align-items: flex-start; }
-  .brand-card h1 { font-size: 28px; }
-  .hero-grid { grid-template-columns: 1fr; }
-  .section-head h2 { font-size: 28px; }
-  .calendar-cell { min-height: 110px; }
-  .count-summary-grid { grid-template-columns: 1fr; }
-  .count-graph-row { grid-template-columns: 24px 72px minmax(0, 1fr) 40px; }
+  .app {
+    padding: 8px 6px 18px;
+  }
+
+  .topbar { margin-bottom: 8px; }
+
+  .panel {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .brand-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+  }
+
+  .brand-card h1 {
+    font-size: 20px;
+    margin: 0 0 2px;
+    letter-spacing: -0.6px;
+  }
+
+  .sub {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .chip {
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .refresh-btn {
+    min-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .hero-card {
+    min-height: 82px;
+    padding: 10px 10px 8px;
+  }
+
+  .hero-label {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .hero-value {
+    font-size: 18px;
+    margin-bottom: 6px;
+    letter-spacing: -0.3px;
+  }
+
+  .hero-sub {
+    font-size: 11px;
+    line-height: 1.25;
+  }
+
+  .main-tabs {
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+
+  .tab-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .dashboard-grid,
+  .calendar-layout {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .section-head {
+    gap: 8px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+
+  .section-head h2 {
+    font-size: 18px;
+    margin: 0 0 2px;
+    letter-spacing: -0.3px;
+  }
+
+  .list-wrap, .sector-wrap, .count-wrap {
+    gap: 8px;
+  }
+
+  .leader-card {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 8px;
+    padding: 8px;
+    border-radius: 12px;
+  }
+
+  .rank-badge {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    font-size: 14px;
+  }
+
+  .leader-name {
+    font-size: 15px;
+    margin-bottom: 3px;
+    line-height: 1.2;
+  }
+
+  .leader-meta {
+    font-size: 11px;
+    line-height: 1.3;
+  }
+
+  .leader-sector {
+    font-size: 13px;
+  }
+
+  .metric-box {
+    text-align: left;
+  }
+
+  .metric-label {
+    font-size: 10px;
+    margin-bottom: 2px;
+  }
+
+  .metric-value {
+    font-size: 15px;
+  }
+
+  .sector-card {
+    padding: 10px;
+    border-radius: 14px;
+  }
+
+  .sector-top {
+    margin-bottom: 8px;
+  }
+
+  .sector-name {
+    font-size: 16px;
+  }
+
+  .sector-score {
+    font-size: 16px;
+  }
+
+  .score-bar {
+    height: 22px;
+  }
+
+  .score-bar-fill {
+    font-size: 12px;
+    min-width: 36px;
+  }
+
+  .sector-sub {
+    margin-top: 8px;
+    font-size: 11px;
+  }
+
+  .sector-leader-list {
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .sector-leader-item {
+    padding: 7px 8px;
+    gap: 8px;
+    border-radius: 12px;
+  }
+
+  .sector-leader-rank {
+    width: 22px;
+    height: 22px;
+    font-size: 11px;
+    border-radius: 8px;
+  }
+
+  .sector-leader-name {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  .sector-leader-meta {
+    font-size: 10px;
+  }
+
+  .sector-leader-change {
+    font-size: 12px;
+  }
+
+  .calendar-nav {
+    gap: 6px;
+  }
+
+  .nav-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .calendar-headline {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .weekday-grid,
+  .calendar-grid {
+    gap: 6px;
+  }
+
+  .weekday-cell {
+    padding: 7px 4px;
+    font-size: 11px;
+    border-radius: 10px;
+  }
+
+  .calendar-cell {
+    min-height: 86px;
+    padding: 7px;
+    border-radius: 12px;
+  }
+
+  .calendar-day {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .calendar-sector-list {
+    gap: 4px;
+  }
+
+  .calendar-sector-item {
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .count-summary-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .count-summary-card,
+  .count-item,
+  .count-graph-panel {
+    padding: 10px;
+    border-radius: 12px;
+  }
+
+  .count-summary-label,
+  .count-graph-caption {
+    font-size: 11px;
+  }
+
+  .count-summary-value {
+    font-size: 15px;
+  }
+
+  .count-summary-sub {
+    font-size: 10px;
+  }
+
+  .count-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
+
+  .count-body {
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .count-graph-list {
+    gap: 8px;
+  }
+
+  .count-graph-row {
+    grid-template-columns: 20px 54px minmax(0, 1fr) 30px;
+    gap: 5px;
+  }
+
+  .count-graph-rank,
+  .count-graph-value {
+    font-size: 10px;
+  }
+
+  .count-graph-name {
+    font-size: 11px;
+  }
+
+  .count-graph-track {
+    gap: 2px;
+  }
+
+  .count-dot {
+    height: 9px;
+  }
+
+  .empty-state {
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
 }

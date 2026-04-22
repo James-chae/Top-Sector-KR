@@ -27,6 +27,29 @@ const state = {
   calendarDate: new Date()
 };
 
+const SECTOR_COLOR_MAP = {
+  "반도체": "sector-color-yellow",
+  "우주": "sector-color-cyan",
+  "방산": "sector-color-orange",
+  "전력설비": "sector-color-red",
+  "전력": "sector-color-red",
+  "조선": "sector-color-blue",
+  "에너지": "sector-color-green",
+  "2차전지": "sector-color-violet",
+  "AI": "sector-color-pink",
+  "원전": "sector-color-lime",
+  "화학": "sector-color-gold",
+  "철강": "sector-color-silver",
+  "자동차": "sector-color-white",
+  "금융": "sector-color-mint",
+  "건설": "sector-color-sand",
+  "유리기판": "sector-color-cyan",
+  "로봇": "sector-color-violet",
+  "바이오": "sector-color-pink",
+  "미디어": "sector-color-gold",
+  "게임": "sector-color-mint"
+};
+
 document.addEventListener("DOMContentLoaded", async () => {
   startClock();
   bindTabs();
@@ -126,7 +149,7 @@ async function loadData(force = false) {
 
 async function safeFetchJson(url, fallback, force = false) {
   try {
-    const requestUrl = force ? `${url}?t=${Date.now()}` : `${url}?t=${Date.now()}`;
+    const requestUrl = `${url}?t=${Date.now()}`;
     const response = await fetch(requestUrl, {
       cache: "no-store",
       headers: {
@@ -217,7 +240,7 @@ function renderLeaders() {
           <div class="leader-name ${highlightClass}">${escapeHtml(item.name || "-")}</div>
           <div class="leader-meta">${escapeHtml(code)} · 점수 ${num(item.score, 0)} · 거래량 ${formatNumber(item.volume)}</div>
         </div>
-        <div class="leader-sector ${highlightClass}">${escapeHtml(sectorName)}</div>
+        <div class="leader-sector ${highlightClass} ${getSectorColorClass(sectorName)}">${escapeHtml(sectorName)}</div>
         <div class="metric-box">
           <div class="metric-label">등락률</div>
           <div class="metric-value ${changeClass}">${signedPercent(item.change_pct)}</div>
@@ -241,7 +264,7 @@ function renderSectors() {
     return;
   }
 
-  wrap.innerHTML = sectors.map((item) => {
+  wrap.innerHTML = sectors.map((item, index) => {
     const score = Number(item.score) || 0;
     const width = Math.max(10, Math.min(score, 100));
     const bandClass =
@@ -249,10 +272,33 @@ function renderSectors() {
       score >= 80 ? "band-80" :
       score >= 70 ? "band-70" : "band-low";
 
+    const sectorName = item.sector || "-";
+    const textColorClass = index <= 2 ? "sector-color-yellow" : "sector-color-white";
+    const leaders = getSectorLeaderItems(sectorName).slice(0, 3);
+
+    const leadersHtml = leaders.length
+      ? `
+        <div class="sector-leader-list">
+          ${leaders.map((leader, leaderIndex) => `
+            <div class="sector-leader-item">
+              <div class="sector-leader-left">
+                <div class="sector-leader-rank">${leaderIndex + 1}</div>
+                <div class="sector-leader-main">
+                  <div class="sector-leader-name ${textColorClass}">${escapeHtml(leader.name || "-")}</div>
+                  <div class="sector-leader-meta">${escapeHtml(leader.code || leader.ticker || "-")} · ${formatEok(leader.trading_value_okrw ?? leader.trading_value_eok ?? 0)}</div>
+                </div>
+              </div>
+              <div class="sector-leader-change ${Number(leader.change_pct) >= 0 ? "up" : "down"}">${signedPercent(leader.change_pct)}</div>
+            </div>
+          `).join("")}
+        </div>
+      `
+      : "";
+
     return `
       <div class="sector-card">
         <div class="sector-top">
-          <div class="sector-name">${escapeHtml(item.sector || "-")}</div>
+          <div class="sector-name ${textColorClass}">${escapeHtml(sectorName)}</div>
           <div class="sector-score">${num(score, 0)}</div>
         </div>
         <div class="score-bar">
@@ -262,6 +308,7 @@ function renderSectors() {
           <span>주도주 ${num(item.leaders, 0)}개</span>
           <span>평균 ${signedPercent(item.avg_change_pct)}</span>
         </div>
+        ${leadersHtml}
       </div>
     `;
   }).join("");
@@ -295,29 +342,21 @@ function buildWeekdayMonthCells(dateObj, history) {
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0).getDate();
 
-  const historyMap = new Map(
-    (history || []).map((item) => [item.date, item])
-  );
+  const historyMap = new Map((history || []).map((item) => [item.date, item]));
 
   const cells = [];
-  const firstWeekday = firstDay.getDay(); // 0 일 ~ 6 토
-  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1; // 월=0 기준
+  const firstWeekday = firstDay.getDay();
+  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1;
 
   for (let i = 0; i < mondayOffset; i += 1) {
-    cells.push({
-      empty: true,
-      day: "",
-      sectors: []
-    });
+    cells.push({ empty: true, day: "", sectors: [] });
   }
 
   for (let day = 1; day <= lastDay; day += 1) {
     const d = new Date(year, month, day);
     const weekday = d.getDay();
 
-    if (weekday === 0 || weekday === 6) {
-      continue;
-    }
+    if (weekday === 0 || weekday === 6) continue;
 
     const dateStr = formatDate(d);
     const found = historyMap.get(dateStr);
@@ -341,7 +380,11 @@ function renderCalendarCell(item) {
   const sectors = (item.sectors || []).slice(0, 3);
   const body = sectors.length
     ? sectors
-        .map((sector) => `<div class="calendar-sector-item">${escapeHtml(sector.name)} (${num(sector.score, 0)})</div>`)
+        .map((sector) => {
+          const name = sector.name || "-";
+          const colorClass = getSectorColorClass(name);
+          return `<div class="calendar-sector-item ${colorClass}">${escapeHtml(name)} (${num(sector.score, 0)})</div>`;
+        })
         .join("")
     : `<div class="calendar-sector-item" style="color:#8fa0bf;">기록 없음</div>`;
 
@@ -358,32 +401,73 @@ function renderRecentCounts() {
   if (!wrap) return;
 
   const history = Array.isArray(state.calendarHistory.history) ? state.calendarHistory.history : [];
-  const recent = history.slice(-10);
+  const recent = history.slice(-20);
   const counts = {};
+  const lastSeen = {};
 
-  recent.forEach((day) => {
+  recent.forEach((day, dayIndex) => {
     (day.sectors || []).forEach((sector) => {
       if ((Number(sector.score) || 0) >= 80) {
-        counts[sector.name] = (counts[sector.name] || 0) + 1;
+        const name = sector.name;
+        counts[name] = (counts[name] || 0) + 1;
+        lastSeen[name] = dayIndex;
       }
     });
   });
 
   const rows = Object.entries(counts)
-    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "ko"))
+    .map(([name, count]) => {
+      const unseenDays = lastSeen[name] === undefined ? 999 : (recent.length - 1 - lastSeen[name]);
+      const adjusted = Math.max(0, count - (unseenDays >= 3 ? 1 : 0));
+      return { name, count: adjusted };
+    })
+    .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name, "ko"))
     .slice(0, 8);
 
   if (!rows.length) {
-    wrap.innerHTML = `<div class="empty-state">최근 10일 카운트 데이터가 없습니다.</div>`;
+    wrap.innerHTML = `<div class="empty-state">최근 20거래일 카운트 데이터가 없습니다.</div>`;
     return;
   }
 
-  wrap.innerHTML = rows.map(([name, count]) => `
-    <div class="count-item">
-      <div class="count-title">${escapeHtml(name)}</div>
-      <div class="count-body">최근 10일 중 ${count}회 상위 기록</div>
+  const summaryHtml = `
+    <div class="count-summary-grid">
+      <div class="count-summary-card">
+        <div class="count-summary-label">집계 기간</div>
+        <div class="count-summary-value">최근 20거래일</div>
+        <div class="count-summary-sub">3거래일 미등장 시 -1 감산</div>
+      </div>
+      <div class="count-summary-card">
+        <div class="count-summary-label">히스토리 일수</div>
+        <div class="count-summary-value">${history.length}일</div>
+        <div class="count-summary-sub">최대 7개 섹터 표시</div>
+      </div>
     </div>
-  `).join("");
+  `;
+
+  const rowsHtml = rows.map((row, idx) => {
+    const colorClass = getSectorColorClass(row.name);
+    const activeCount = Math.max(0, Math.min(20, row.count));
+    const cells = Array.from({ length: 20 }, (_, i) =>
+      `<span class="count-dot ${i < activeCount ? "active" : ""} ${colorClass}"></span>`
+    ).join("");
+
+    return `
+      <div class="count-graph-row">
+        <div class="count-graph-rank">${idx + 1}.</div>
+        <div class="count-graph-name ${colorClass}">${escapeHtml(row.name)}</div>
+        <div class="count-graph-track">${cells}</div>
+        <div class="count-graph-value">${row.count}회</div>
+      </div>
+    `;
+  }).join("");
+
+  wrap.innerHTML = `
+    ${summaryHtml}
+    <div class="count-graph-panel">
+      <div class="count-graph-caption">최근 20거래일 상위 섹터(80점 이상) 출현 횟수 · 최근성 감산 반영</div>
+      <div class="count-graph-list">${rowsHtml}</div>
+    </div>
+  `;
 }
 
 function renderTodaySectorSummary() {
@@ -396,16 +480,35 @@ function renderTodaySectorSummary() {
     return;
   }
 
-  wrap.innerHTML = sectors.map((item, idx) => `
-    <div class="count-item">
-      <div class="count-title">${idx + 1}. ${escapeHtml(item.sector || "-")}</div>
-      <div class="count-body">점수 ${num(item.score, 0)} / 주도주 ${num(item.leaders, 0)}개 / 평균 ${signedPercent(item.avg_change_pct)}</div>
-    </div>
-  `).join("");
+  wrap.innerHTML = sectors.map((item, idx) => {
+    const sectorName = item.sector || "-";
+    const colorClass = getSectorColorClass(sectorName);
+    const leaderNames = getSectorLeaderItems(sectorName).slice(0, 3).map((x) => x.name).filter(Boolean);
+    const namesText = leaderNames.length ? ` (${leaderNames.map(escapeHtml).join(", ")})` : "";
+
+    return `
+      <div class="count-item">
+        <div class="count-title ${colorClass}">${idx + 1}. ${escapeHtml(sectorName)}${namesText}</div>
+        <div class="count-body">점수 ${num(item.score, 0)} / 주도주 ${num(item.leaders, 0)}개 / 평균 ${signedPercent(item.avg_change_pct)}</div>
+      </div>
+    `;
+  }).join("");
 }
 
 function getFinalSectorName(item) {
   return item.sector || item.sector1 || item.sector2 || "-";
+}
+
+function getSectorLeaderItems(sectorName) {
+  const leaders = Array.isArray(state.leaderBoard.leaders) ? state.leaderBoard.leaders : [];
+  return leaders
+    .filter((item) => getFinalSectorName(item) === sectorName)
+    .sort((a, b) => (Number(b.score) || 0) - (Number(a.score) || 0))
+    .slice(0, 3);
+}
+
+function getSectorColorClass(sectorName) {
+  return SECTOR_COLOR_MAP[sectorName] || "sector-color-default";
 }
 
 function getHighlightClass(item) {

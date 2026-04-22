@@ -230,7 +230,7 @@ button { font: inherit; }
 
 .metric-box { text-align: right; }
 .metric-label { color: var(--muted); font-size: 13px; margin-bottom: 4px; }
-.metric-value { font-size: 22px; font-weight: 800; }
+.metric-value { font-size: 22px; font-weight: 800; white-space: nowrap; }
 .metric-value.up { color: var(--red); }
 .metric-value.down { color: var(--blue); }
 
@@ -613,29 +613,33 @@ button { font: inherit; }
 
   .hero-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+    gap: 6px;
     margin-bottom: 8px;
   }
 
   .hero-card {
-    min-height: 82px;
-    padding: 10px 10px 8px;
+    min-height: 72px;
+    padding: 8px 9px 7px;
   }
 
   .hero-label {
     font-size: 11px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .hero-value {
-    font-size: 18px;
-    margin-bottom: 6px;
-    letter-spacing: -0.3px;
+    font-size: 15px;
+    margin-bottom: 4px;
+    letter-spacing: -0.4px;
   }
 
   .hero-sub {
-    font-size: 11px;
-    line-height: 1.25;
+    font-size: 10px;
+    line-height: 1.2;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .main-tabs {
@@ -672,45 +676,75 @@ button { font: inherit; }
   }
 
   .leader-card {
-    grid-template-columns: 44px minmax(0, 1fr);
-    gap: 8px;
+    grid-template-columns: 40px minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas:
+      "rank main main"
+      "rank sector sector"
+      "rank change trading";
+    gap: 4px 8px;
     padding: 8px;
     border-radius: 12px;
+    align-items: start;
   }
 
   .rank-badge {
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
-    font-size: 14px;
+    grid-area: rank;
+    width: 34px;
+    height: 34px;
+    border-radius: 11px;
+    font-size: 13px;
+    align-self: start;
+  }
+
+  .leader-main {
+    grid-area: main;
+    min-width: 0;
   }
 
   .leader-name {
     font-size: 15px;
-    margin-bottom: 3px;
-    line-height: 1.2;
+    margin-bottom: 2px;
+    line-height: 1.15;
   }
 
   .leader-meta {
-    font-size: 11px;
-    line-height: 1.3;
+    font-size: 10px;
+    line-height: 1.25;
   }
 
   .leader-sector {
-    font-size: 13px;
+    grid-area: sector;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-top: 1px;
+  }
+
+  .leader-card > .metric-box:nth-child(4) {
+    grid-area: change;
+  }
+
+  .leader-card > .metric-box:nth-child(5) {
+    grid-area: trading;
   }
 
   .metric-box {
     text-align: left;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    min-width: 0;
   }
 
   .metric-label {
     font-size: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .metric-value {
-    font-size: 15px;
+    font-size: 12px;
+    line-height: 1.1;
+    white-space: nowrap;
   }
 
   .sector-card {

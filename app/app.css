@@ -364,7 +364,7 @@ button { font: inherit; }
   border-radius: 12px;
   border: 1px solid var(--line);
   background: rgba(255,255,255,0.03);
-  color: var(--muted);
+  color: #8fe7d3;
   font-weight: 800;
 }
 
@@ -926,7 +926,6 @@ button { font: inherit; }
 }
 
 
-
 .schedule-toolbar {
   display: flex;
   gap: 8px;
@@ -982,6 +981,15 @@ button { font: inherit; }
 .schedule-highlight-manual { color: #91f5dc; }
 .schedule-highlight-default { color: #eef3ff; }
 
+.schedule-cell.is-today {
+  border: 2px solid #ffd84d;
+  box-shadow: 0 0 0 1px rgba(255, 216, 77, 0.18), 0 0 18px rgba(255, 216, 77, 0.12);
+}
+
+.schedule-cell.is-today .calendar-day {
+  color: #ffd84d;
+}
+
 @media (max-width: 760px) {
   .schedule-toolbar {
     gap: 6px;
@@ -1003,5 +1011,27 @@ button { font: inherit; }
 
   .schedule-event-meta {
     font-size: 9px;
+  }
+
+  .schedule-cell.is-today {
+    border-width: 2px;
+    box-shadow: 0 0 0 1px rgba(255, 216, 77, 0.14), 0 0 12px rgba(255, 216, 77, 0.10);
+  }
+}
+
+
+.calendar-cell.is-today {
+  border: 2px solid #ffd84d;
+  box-shadow: 0 0 0 1px rgba(255, 216, 77, 0.18), 0 0 18px rgba(255, 216, 77, 0.12);
+}
+
+.calendar-cell.is-today .calendar-day {
+  color: #ffd84d;
+}
+
+@media (max-width: 760px) {
+  .calendar-cell.is-today {
+    border-width: 2px;
+    box-shadow: 0 0 0 1px rgba(255, 216, 77, 0.14), 0 0 12px rgba(255, 216, 77, 0.10);
   }
 }

@@ -394,12 +394,9 @@ function buildWeekdayMonthCells(dateObj, history) {
   for (let day = 1; day <= lastDay; day += 1) {
     const d = new Date(year, month, day);
     const weekday = d.getDay();
-
     if (weekday === 0 || weekday === 6) continue;
-
     const dateStr = formatDate(d);
     const found = historyMap.get(dateStr);
-
     cells.push({
       empty: false,
       date: dateStr,
@@ -407,7 +404,6 @@ function buildWeekdayMonthCells(dateObj, history) {
       sectors: Array.isArray(found?.sectors) ? found.sectors : []
     });
   }
-
   return cells;
 }
 
@@ -415,6 +411,10 @@ function renderCalendarCell(item) {
   if (item.empty) {
     return `<div class="calendar-cell" style="visibility:hidden;"></div>`;
   }
+
+  const today = new Date();
+  const todayStr = formatDate(new Date(today.getFullYear(), today.getMonth(), today.getDate()));
+  const isToday = item.date === todayStr;
 
   const sectors = (item.sectors || []).slice(0, 3);
   const body = sectors.length
@@ -428,7 +428,7 @@ function renderCalendarCell(item) {
     : `<div class="calendar-sector-item" style="color:#8fa0bf;">기록 없음</div>`;
 
   return `
-    <div class="calendar-cell">
+    <div class="calendar-cell ${isToday ? "is-today" : ""}">
       <div class="calendar-day">${item.day}</div>
       <div class="calendar-sector-list">${body}</div>
     </div>
@@ -524,7 +524,6 @@ function renderTodaySectorSummary() {
     const colorClass = getSectorColorClass(sectorName);
     const leaderNames = getSectorLeaderItems(sectorName).slice(0, 3).map((x) => x.name).filter(Boolean);
     const namesText = leaderNames.length ? ` (${leaderNames.map(escapeHtml).join(", ")})` : "";
-
     return `
       <div class="count-item">
         <div class="count-title ${colorClass}">${idx + 1}. ${escapeHtml(sectorName)}${namesText}</div>
@@ -639,6 +638,10 @@ function renderScheduleCell(item) {
     return `<div class="calendar-cell schedule-cell is-empty" style="visibility:hidden;"></div>`;
   }
 
+  const today = new Date();
+  const todayStr = formatDate(new Date(today.getFullYear(), today.getMonth(), today.getDate()));
+  const isToday = item.date === todayStr;
+
   const events = (item.events || []).slice(0, 4);
   const body = events.length
     ? events.map((event) => {
@@ -658,7 +661,7 @@ function renderScheduleCell(item) {
     : ``;
 
   return `
-    <div class="calendar-cell schedule-cell">
+    <div class="calendar-cell schedule-cell ${isToday ? "is-today" : ""}">
       <div class="calendar-day">${item.day}</div>
       <div class="calendar-sector-list">${body}</div>
     </div>

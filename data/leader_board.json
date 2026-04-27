@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-04-27",
-    "generated_at_kst": "2026-04-27 20:01:38",
+    "trade_date": "2026-04-28",
+    "generated_at_kst": "2026-04-28 08:01:36",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 90.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 90.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,49 +25,49 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 90.3,
+      "score": 90.8,
       "leaders": 3,
       "avg_change_pct": 11.47
     },
     {
       "sector": "통신",
-      "score": 51.3,
+      "score": 54.3,
       "leaders": 1,
       "avg_change_pct": 19.91
     },
     {
       "sector": "전력",
-      "score": 49.5,
+      "score": 50.6,
       "leaders": 3,
       "avg_change_pct": 14.3
     },
     {
       "sector": "증권",
-      "score": 47.6,
+      "score": 50.2,
       "leaders": 1,
       "avg_change_pct": 29.89
     },
     {
       "sector": "로봇",
-      "score": 46.7,
+      "score": 46.8,
       "leaders": 3,
       "avg_change_pct": 13.65
     },
     {
       "sector": "자율주행",
-      "score": 35.3,
+      "score": 36.5,
       "leaders": 1,
       "avg_change_pct": 20.35
     },
     {
       "sector": "조선",
-      "score": 34.2,
+      "score": 34.3,
       "leaders": 1,
       "avg_change_pct": 16.45
     },
     {
       "sector": "기타",
-      "score": 33.0,
+      "score": 33.1,
       "leaders": 1,
       "avg_change_pct": 19.38
     }
@@ -85,7 +85,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 70.8,
+      "score": 71.0,
       "rank": 1
     },
     {
@@ -100,7 +100,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 60.8,
+      "score": 61.8,
       "rank": 2
     },
     {
@@ -115,7 +115,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 49.2,
+      "score": 49.4,
       "rank": 3
     },
     {
@@ -130,7 +130,7 @@
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 34.6,
+      "score": 37.2,
       "rank": 4
     },
     {
@@ -145,8 +145,38 @@
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 33.3,
+      "score": 36.3,
       "rank": 5
+    },
+    {
+      "code": "209640",
+      "name": "와이제이링크",
+      "market": "KOSDAQ",
+      "price": 9050,
+      "change_value": 0,
+      "change_pct": 20.35,
+      "volume": 25279545,
+      "trading_value_okrw": 2287.0,
+      "sector1": "자율주행",
+      "sector2": "",
+      "sector": "자율주행",
+      "score": 24.8,
+      "rank": 6
+    },
+    {
+      "code": "006340",
+      "name": "대원전선",
+      "market": "KOSPI",
+      "price": 10170,
+      "change_value": 0,
+      "change_pct": 12.75,
+      "volume": 61900760,
+      "trading_value_okrw": 6295.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 24.4,
+      "rank": 7
     },
     {
       "code": "108490",
@@ -161,7 +191,7 @@
       "sector2": "",
       "sector": "로봇",
       "score": 24.4,
-      "rank": 6
+      "rank": 8
     },
     {
       "code": "009900",
@@ -175,23 +205,8 @@
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 23.9,
-      "rank": 7
-    },
-    {
-      "code": "209640",
-      "name": "와이제이링크",
-      "market": "KOSDAQ",
-      "price": 9050,
-      "change_value": 0,
-      "change_pct": 20.35,
-      "volume": 25279545,
-      "trading_value_okrw": 2287.0,
-      "sector1": "자율주행",
-      "sector2": "",
-      "sector": "자율주행",
-      "score": 23.6,
-      "rank": 8
+      "score": 24.2,
+      "rank": 9
     },
     {
       "code": "440110",
@@ -205,22 +220,7 @@
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 21.8,
-      "rank": 9
-    },
-    {
-      "code": "006340",
-      "name": "대원전선",
-      "market": "KOSPI",
-      "price": 10170,
-      "change_value": 0,
-      "change_pct": 12.75,
-      "volume": 61900760,
-      "trading_value_okrw": 6295.0,
-      "sector1": "전력",
-      "sector2": "",
-      "sector": "전력",
-      "score": 21.6,
+      "score": 21.9,
       "rank": 10
     },
     {
@@ -235,7 +235,7 @@
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 20.2,
+      "score": 20.4,
       "rank": 11
     },
     {
@@ -250,23 +250,8 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 19.4,
+      "score": 19.9,
       "rank": 12
-    },
-    {
-      "code": "010120",
-      "name": "LS ELECTRIC",
-      "market": "KOSPI",
-      "price": 255500,
-      "change_value": 0,
-      "change_pct": 12.8,
-      "volume": 1591106,
-      "trading_value_okrw": 4065.0,
-      "sector1": "전력",
-      "sector2": "",
-      "sector": "전력",
-      "score": 17.5,
-      "rank": 13
     },
     {
       "code": "452190",
@@ -280,7 +265,22 @@
       "sector1": "의료기기",
       "sector2": "",
       "sector": "의료기기",
-      "score": 16.9,
+      "score": 17.7,
+      "rank": 13
+    },
+    {
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "market": "KOSPI",
+      "price": 255500,
+      "change_value": 0,
+      "change_pct": 12.8,
+      "volume": 1591106,
+      "trading_value_okrw": 4065.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 17.6,
       "rank": 14
     },
     {
@@ -295,7 +295,7 @@
       "sector1": "보안",
       "sector2": "",
       "sector": "보안",
-      "score": 16.2,
+      "score": 17.1,
       "rank": 15
     },
     {
@@ -325,7 +325,7 @@
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 13.4,
+      "score": 13.7,
       "rank": 17
     },
     {
@@ -340,7 +340,7 @@
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 13.3,
+      "score": 13.4,
       "rank": 18
     },
     {

@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-04-28",
-    "generated_at_kst": "2026-04-28 20:01:36",
+    "trade_date": "2026-04-29",
+    "generated_at_kst": "2026-04-29 08:01:36",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
     "sector_count": 8,
-    "market_bias": "원전 중심 강세 / 상위섹터 점수 79.4",
+    "market_bias": "원전 중심 강세 / 상위섹터 점수 80.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,25 +25,25 @@
   "top_sectors": [
     {
       "sector": "원전",
-      "score": 79.4,
+      "score": 80.2,
       "leaders": 1,
       "avg_change_pct": 11.9
     },
     {
       "sector": "철강",
-      "score": 55.4,
+      "score": 55.6,
       "leaders": 3,
       "avg_change_pct": 29.92
     },
     {
       "sector": "2차전지",
-      "score": 51.5,
+      "score": 51.6,
       "leaders": 3,
       "avg_change_pct": 8.36
     },
     {
       "sector": "증권",
-      "score": 47.8,
+      "score": 48.6,
       "leaders": 2,
       "avg_change_pct": 13.34
     },
@@ -55,19 +55,19 @@
     },
     {
       "sector": "전력",
-      "score": 41.5,
+      "score": 41.6,
       "leaders": 2,
       "avg_change_pct": 3.88
     },
     {
       "sector": "화학",
-      "score": 37.5,
+      "score": 37.6,
       "leaders": 2,
       "avg_change_pct": 20.55
     },
     {
       "sector": "전자",
-      "score": 37.3,
+      "score": 37.4,
       "leaders": 2,
       "avg_change_pct": 7.67
     }
@@ -85,7 +85,7 @@
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 61.4,
+      "score": 62.2,
       "rank": 1
     },
     {
@@ -100,7 +100,7 @@
       "sector1": "철강",
       "sector2": "",
       "sector": "철강",
-      "score": 34.0,
+      "score": 34.4,
       "rank": 2
     },
     {
@@ -115,7 +115,7 @@
       "sector1": "철강",
       "sector2": "",
       "sector": "철강",
-      "score": 32.6,
+      "score": 32.8,
       "rank": 3
     },
     {
@@ -134,21 +134,6 @@
       "rank": 4
     },
     {
-      "code": "004430",
-      "name": "송원산업",
-      "market": "KOSPI",
-      "price": 14560,
-      "change_value": 0,
-      "change_pct": 30.0,
-      "volume": 7023996,
-      "trading_value_okrw": 1022.0,
-      "sector1": "화학",
-      "sector2": "",
-      "sector": "화학",
-      "score": 31.8,
-      "rank": 5
-    },
-    {
       "code": "001510",
       "name": "SK증권",
       "market": "KOSPI",
@@ -160,7 +145,22 @@
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 31.1,
+      "score": 32.5,
+      "rank": 5
+    },
+    {
+      "code": "004430",
+      "name": "송원산업",
+      "market": "KOSPI",
+      "price": 14560,
+      "change_value": 0,
+      "change_pct": 30.0,
+      "volume": 7023996,
+      "trading_value_okrw": 1022.0,
+      "sector1": "화학",
+      "sector2": "",
+      "sector": "화학",
+      "score": 31.9,
       "rank": 6
     },
     {
@@ -220,7 +220,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 20.1,
+      "score": 20.2,
       "rank": 10
     },
     {
@@ -235,7 +235,7 @@
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 18.1,
+      "score": 18.2,
       "rank": 11
     },
     {
@@ -250,7 +250,7 @@
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 16.5,
+      "score": 16.7,
       "rank": 12
     },
     {
@@ -280,7 +280,7 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 15.1,
+      "score": 15.4,
       "rank": 14
     },
     {
@@ -295,7 +295,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 14.9,
+      "score": 15.0,
       "rank": 15
     },
     {

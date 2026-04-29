@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-04-29",
-    "generated_at_kst": "2026-04-29 09:11:38",
+    "generated_at_kst": "2026-04-29 09:16:38",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 41.0",
+    "leader_count": 8,
+    "sector_count": 6,
+    "market_bias": "전력 중심 강세 / 상위섹터 점수 52.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,162 @@
   },
   "top_sectors": [
     {
+      "sector": "전력",
+      "score": 52.6,
+      "leaders": 2,
+      "avg_change_pct": 14.18
+    },
+    {
       "sector": "2차전지",
-      "score": 41.0,
+      "score": 39.4,
+      "leaders": 2,
+      "avg_change_pct": 2.62
+    },
+    {
+      "sector": "방산",
+      "score": 32.9,
       "leaders": 1,
-      "avg_change_pct": 2.5
+      "avg_change_pct": 9.61
+    },
+    {
+      "sector": "통신",
+      "score": 31.4,
+      "leaders": 1,
+      "avg_change_pct": 9.84
+    },
+    {
+      "sector": "로봇",
+      "score": 27.5,
+      "leaders": 1,
+      "avg_change_pct": 6.76
+    },
+    {
+      "sector": "지주사",
+      "score": 22.7,
+      "leaders": 1,
+      "avg_change_pct": 1.48
     }
   ],
   "leaders": [
     {
+      "code": "006340",
+      "name": "대원전선",
+      "market": "KOSPI",
+      "price": 12180,
+      "change_value": 0,
+      "change_pct": 20.95,
+      "volume": 14884283,
+      "trading_value_okrw": 1812.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 44.5,
+      "rank": 1
+    },
+    {
+      "code": "001440",
+      "name": "대한전선",
+      "market": "KOSPI",
+      "price": 49300,
+      "change_value": 0,
+      "change_pct": 7.41,
+      "volume": 3616898,
+      "trading_value_okrw": 1783.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 27.7,
+      "rank": 2
+    },
+    {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 697000,
+      "price": 688000,
       "change_value": 0,
-      "change_pct": 2.5,
-      "volume": 294143,
-      "trading_value_okrw": 2050.0,
+      "change_pct": 1.18,
+      "volume": 342709,
+      "trading_value_okrw": 2357.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 29.9,
-      "rank": 1
+      "score": 26.9,
+      "rank": 3
+    },
+    {
+      "code": "064350",
+      "name": "현대로템",
+      "market": "KOSPI",
+      "price": 268000,
+      "change_value": 0,
+      "change_pct": 9.61,
+      "volume": 478594,
+      "trading_value_okrw": 1282.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 23.7,
+      "rank": 4
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "market": "KOSDAQ",
+      "price": 56350,
+      "change_value": 0,
+      "change_pct": 9.84,
+      "volume": 2001722,
+      "trading_value_okrw": 1127.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 22.6,
+      "rank": 5
+    },
+    {
+      "code": "098460",
+      "name": "고영",
+      "market": "KOSDAQ",
+      "price": 42650,
+      "change_value": 0,
+      "change_pct": 6.76,
+      "volume": 2473474,
+      "trading_value_okrw": 1054.0,
+      "sector1": "로봇",
+      "sector2": "",
+      "sector": "로봇",
+      "score": 18.9,
+      "rank": 6
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "price": 138400,
+      "change_value": 0,
+      "change_pct": 4.06,
+      "volume": 793794,
+      "trading_value_okrw": 1098.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 16.2,
+      "rank": 7
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 823000,
+      "change_value": 0,
+      "change_pct": 1.48,
+      "volume": 137777,
+      "trading_value_okrw": 1133.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 13.8,
+      "rank": 8
     }
   ]
 }

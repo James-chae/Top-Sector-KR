@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-04-30",
-    "generated_at_kst": "2026-04-30 09:01:37",
+    "generated_at_kst": "2026-04-30 09:06:39",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.6",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 90.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,62 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 82.6,
+      "score": 90.3,
+      "leaders": 2,
+      "avg_change_pct": 1.71
+    },
+    {
+      "sector": "전력",
+      "score": 39.8,
       "leaders": 1,
-      "avg_change_pct": 1.78
+      "avg_change_pct": 8.94
     }
   ],
   "leaders": [
     {
-      "code": "000660",
-      "name": "SK하이닉스",
+      "code": "005930",
+      "name": "삼성전자",
       "market": "KOSPI",
-      "price": 1316000,
+      "price": 229000,
       "change_value": 0,
-      "change_pct": 1.78,
-      "volume": 215232,
-      "trading_value_okrw": 2832.0,
+      "change_pct": 1.33,
+      "volume": 2444570,
+      "trading_value_okrw": 5598.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 69.5,
+      "score": 67.6,
       "rank": 1
+    },
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 1320000,
+      "change_value": 0,
+      "change_pct": 2.09,
+      "volume": 408779,
+      "trading_value_okrw": 5395.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 64.9,
+      "rank": 2
+    },
+    {
+      "code": "006340",
+      "name": "대원전선",
+      "market": "KOSPI",
+      "price": 14260,
+      "change_value": 0,
+      "change_pct": 8.94,
+      "volume": 9875772,
+      "trading_value_okrw": 1408.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 30.3,
+      "rank": 3
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-07",
-    "generated_at_kst": "2026-05-07 09:11:35",
+    "generated_at_kst": "2026-05-07 09:16:36",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 70.8",
+    "leader_count": 8,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 70.8,
+      "score": 82.8,
+      "leaders": 2,
+      "avg_change_pct": 1.59
+    },
+    {
+      "sector": "통신",
+      "score": 48.3,
+      "leaders": 1,
+      "avg_change_pct": 19.87
+    },
+    {
+      "sector": "원전",
+      "score": 41.1,
       "leaders": 3,
-      "avg_change_pct": 1.97
+      "avg_change_pct": 7.49
+    },
+    {
+      "sector": "건설",
+      "score": 37.7,
+      "leaders": 1,
+      "avg_change_pct": 21.7
+    },
+    {
+      "sector": "자동차",
+      "score": 28.9,
+      "leaders": 1,
+      "avg_change_pct": 5.45
     }
   ],
   "leaders": [
@@ -38,43 +62,118 @@
       "price": 271500,
       "change_value": 0,
       "change_pct": 2.07,
-      "volume": 4829047,
-      "trading_value_okrw": 13110.0,
+      "volume": 8898289,
+      "trading_value_okrw": 24158.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 70.8,
+      "score": 70.0,
       "rank": 1
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1643000,
+      "price": 1619000,
       "change_value": 0,
-      "change_pct": 2.62,
-      "volume": 447286,
-      "trading_value_okrw": 7348.0,
+      "change_pct": 1.12,
+      "volume": 1058716,
+      "trading_value_okrw": 17140.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 40.5,
+      "score": 47.6,
       "rank": 2
     },
     {
-      "code": "005935",
-      "name": "삼성전자우",
-      "market": "KOSPI",
-      "price": 191600,
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 21900,
       "change_value": 0,
-      "change_pct": 1.22,
-      "volume": 933104,
-      "trading_value_okrw": 1787.0,
-      "sector1": "반도체",
+      "change_pct": 19.87,
+      "volume": 15347359,
+      "trading_value_okrw": 3361.0,
+      "sector1": "통신",
       "sector2": "",
-      "sector": "반도체",
-      "score": 11.2,
+      "sector": "통신",
+      "score": 33.9,
       "rank": 3
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "market": "KOSPI",
+      "price": 64500,
+      "change_value": 0,
+      "change_pct": 21.7,
+      "volume": 2721900,
+      "trading_value_okrw": 1755.0,
+      "sector1": "건설",
+      "sector2": "",
+      "sector": "건설",
+      "score": 27.3,
+      "rank": 4
+    },
+    {
+      "code": "034020",
+      "name": "두산에너빌리티",
+      "market": "KOSPI",
+      "price": 135700,
+      "change_value": 0,
+      "change_pct": 6.85,
+      "volume": 2352812,
+      "trading_value_okrw": 3192.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 16.2,
+      "rank": 5
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 34400,
+      "change_value": 0,
+      "change_pct": 6.83,
+      "volume": 7005574,
+      "trading_value_okrw": 2409.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 15.6,
+      "rank": 6
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 580000,
+      "change_value": 0,
+      "change_pct": 5.45,
+      "volume": 573653,
+      "trading_value_okrw": 3327.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 14.6,
+      "rank": 7
+    },
+    {
+      "code": "006910",
+      "name": "보성파워텍",
+      "market": "KOSDAQ",
+      "price": 17220,
+      "change_value": 0,
+      "change_pct": 8.78,
+      "volume": 6037833,
+      "trading_value_okrw": 1039.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 13.5,
+      "rank": 8
     }
   ]
 }

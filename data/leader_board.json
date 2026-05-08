@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-08",
-    "generated_at_kst": "2026-05-08 09:11:34",
+    "generated_at_kst": "2026-05-08 09:16:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 4,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 44.7",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 56.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "통신",
-      "score": 44.7,
+      "score": 56.5,
       "leaders": 1,
-      "avg_change_pct": 4.59
-    },
-    {
-      "sector": "자동차",
-      "score": 31.5,
-      "leaders": 1,
-      "avg_change_pct": 3.85
+      "avg_change_pct": 9.17
     },
     {
       "sector": "전력",
-      "score": 29.5,
+      "score": 39.2,
       "leaders": 1,
-      "avg_change_pct": 7.64
+      "avg_change_pct": 10.3
+    },
+    {
+      "sector": "자동차",
+      "score": 32.3,
+      "leaders": 1,
+      "avg_change_pct": 1.75
     },
     {
       "sector": "로봇",
-      "score": 25.1,
+      "score": 30.7,
       "leaders": 1,
-      "avg_change_pct": 9.97
+      "avg_change_pct": 12.77
     }
   ],
   "leaders": [
@@ -53,60 +53,60 @@
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 22800,
+      "price": 23800,
       "change_value": 0,
-      "change_pct": 4.59,
-      "volume": 14425160,
-      "trading_value_okrw": 3288.0,
+      "change_pct": 9.17,
+      "volume": 18934853,
+      "trading_value_okrw": 4506.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 30.5,
+      "score": 39.3,
       "rank": 1
-    },
-    {
-      "code": "005380",
-      "name": "현대차",
-      "market": "KOSPI",
-      "price": 594000,
-      "change_value": 0,
-      "change_pct": 3.85,
-      "volume": 409841,
-      "trading_value_okrw": 2434.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 19.4,
-      "rank": 2
     },
     {
       "code": "001440",
       "name": "대한전선",
       "market": "KOSPI",
-      "price": 69000,
+      "price": 70700,
       "change_value": 0,
-      "change_pct": 7.64,
-      "volume": 2466484,
-      "trading_value_okrw": 1701.0,
+      "change_pct": 10.3,
+      "volume": 3830394,
+      "trading_value_okrw": 2708.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 19.3,
-      "rank": 3
+      "score": 26.4,
+      "rank": 2
     },
     {
       "code": "277810",
       "name": "레인보우로보틱스",
       "market": "KOSDAQ",
-      "price": 766500,
+      "price": 786000,
       "change_value": 0,
-      "change_pct": 9.97,
-      "volume": 134265,
-      "trading_value_okrw": 1029.0,
+      "change_pct": 12.77,
+      "volume": 186891,
+      "trading_value_okrw": 1468.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 16.6,
+      "score": 21.0,
+      "rank": 3
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 582000,
+      "change_value": 0,
+      "change_pct": 1.75,
+      "volume": 520877,
+      "trading_value_okrw": 3031.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 18.8,
       "rank": 4
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-13",
-    "generated_at_kst": "2026-05-13 09:16:31",
+    "generated_at_kst": "2026-05-13 09:21:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 38.4",
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 44.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "자동차",
-      "score": 38.4,
-      "leaders": 1,
-      "avg_change_pct": 22.38
-    },
-    {
-      "sector": "전자",
-      "score": 18.6,
-      "leaders": 1,
-      "avg_change_pct": 1.03
-    },
-    {
-      "sector": "로봇",
-      "score": 17.1,
-      "leaders": 1,
-      "avg_change_pct": 3.65
+      "score": 44.1,
+      "leaders": 3,
+      "avg_change_pct": 10.38
     },
     {
       "sector": "반도체",
-      "score": 15.9,
+      "score": 20.6,
       "leaders": 1,
-      "avg_change_pct": 1.36
+      "avg_change_pct": 3.13
+    },
+    {
+      "sector": "전자",
+      "score": 20.0,
+      "leaders": 1,
+      "avg_change_pct": 1.46
+    },
+    {
+      "sector": "로봇",
+      "score": 16.5,
+      "leaders": 1,
+      "avg_change_pct": 3.06
     }
   ],
   "leaders": [
@@ -53,61 +53,91 @@
       "code": "012200",
       "name": "계양전기",
       "market": "KOSPI",
-      "price": 13450,
+      "price": 13150,
       "change_value": 0,
-      "change_pct": 22.38,
-      "volume": 8892393,
-      "trading_value_okrw": 1196.0,
+      "change_pct": 19.65,
+      "volume": 10716674,
+      "trading_value_okrw": 1409.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 29.4,
+      "score": 26.5,
       "rank": 1
     },
     {
-      "code": "319400",
-      "name": "현대무벡스",
+      "code": "012860",
+      "name": "모베이스전자",
       "market": "KOSDAQ",
-      "price": 44050,
+      "price": 6630,
       "change_value": 0,
-      "change_pct": 3.65,
-      "volume": 2380166,
-      "trading_value_okrw": 1048.0,
-      "sector1": "로봇",
+      "change_pct": 9.95,
+      "volume": 15147267,
+      "trading_value_okrw": 1004.0,
+      "sector1": "자동차",
       "sector2": "",
-      "sector": "로봇",
-      "score": 8.5,
+      "sector": "자동차",
+      "score": 16.3,
       "rank": 2
     },
     {
-      "code": "066570",
-      "name": "LG전자",
+      "code": "005380",
+      "name": "현대차",
       "market": "KOSPI",
-      "price": 186800,
+      "price": 656000,
       "change_value": 0,
-      "change_pct": 1.03,
-      "volume": 931863,
-      "trading_value_okrw": 1740.0,
-      "sector1": "전자",
+      "change_pct": 1.55,
+      "volume": 471568,
+      "trading_value_okrw": 3093.0,
+      "sector1": "자동차",
       "sector2": "",
-      "sector": "전자",
-      "score": 8.3,
+      "sector": "자동차",
+      "score": 12.3,
       "rank": 3
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 971000,
+      "price": 988000,
       "change_value": 0,
-      "change_pct": 1.36,
-      "volume": 134339,
-      "trading_value_okrw": 1304.0,
+      "change_pct": 3.13,
+      "volume": 195462,
+      "trading_value_okrw": 1931.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.7,
+      "score": 9.8,
       "rank": 4
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 187600,
+      "change_value": 0,
+      "change_pct": 1.46,
+      "volume": 1105061,
+      "trading_value_okrw": 2073.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 8.8,
+      "rank": 5
+    },
+    {
+      "code": "319400",
+      "name": "현대무벡스",
+      "market": "KOSDAQ",
+      "price": 43800,
+      "change_value": 0,
+      "change_pct": 3.06,
+      "volume": 2659936,
+      "trading_value_okrw": 1165.0,
+      "sector1": "로봇",
+      "sector2": "",
+      "sector": "로봇",
+      "score": 7.6,
+      "rank": 6
     }
   ]
 }

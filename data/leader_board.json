@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-14",
-    "generated_at_kst": "2026-05-14 15:31:30",
+    "generated_at_kst": "2026-05-14 15:36:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 67.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 70.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 67.9,
+      "score": 70.0,
       "leaders": 3,
-      "avg_change_pct": 15.27
+      "avg_change_pct": 15.45
     },
     {
       "sector": "전자",
-      "score": 45.9,
+      "score": 46.1,
       "leaders": 3,
-      "avg_change_pct": 12.31
+      "avg_change_pct": 12.47
     },
     {
       "sector": "에너지",
-      "score": 43.4,
+      "score": 43.7,
       "leaders": 3,
-      "avg_change_pct": 11.37
+      "avg_change_pct": 11.72
     },
     {
       "sector": "통신",
@@ -49,25 +49,25 @@
     },
     {
       "sector": "IT서비스",
-      "score": 40.0,
+      "score": 40.3,
       "leaders": 1,
-      "avg_change_pct": 16.73
+      "avg_change_pct": 17.14
     },
     {
       "sector": "원전",
-      "score": 30.3,
+      "score": 34.3,
       "leaders": 1,
-      "avg_change_pct": 9.84
+      "avg_change_pct": 12.61
     },
     {
       "sector": "보험",
-      "score": 29.0,
+      "score": 29.5,
       "leaders": 2,
-      "avg_change_pct": 8.73
+      "avg_change_pct": 9.13
     },
     {
       "sector": "바이오",
-      "score": 28.1,
+      "score": 28.0,
       "leaders": 1,
       "avg_change_pct": 8.76
     }
@@ -77,15 +77,15 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 294500,
+      "price": 296000,
       "change_value": 0,
-      "change_pct": 3.7,
-      "volume": 34124912,
-      "trading_value_okrw": 100497.0,
+      "change_pct": 4.23,
+      "volume": 39278962,
+      "trading_value_okrw": 116265.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 64.9,
+      "score": 71.5,
       "rank": 1
     },
     {
@@ -95,12 +95,12 @@
       "price": 75600,
       "change_value": 0,
       "change_pct": 28.35,
-      "volume": 10519720,
-      "trading_value_okrw": 7952.0,
+      "volume": 10709788,
+      "trading_value_okrw": 8096.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 33.6,
+      "score": 33.5,
       "rank": 2
     },
     {
@@ -122,30 +122,30 @@
       "code": "064400",
       "name": "LG씨엔에스",
       "market": "KOSPI",
-      "price": 85800,
+      "price": 86100,
       "change_value": 0,
-      "change_pct": 16.73,
-      "volume": 9454184,
-      "trading_value_okrw": 8111.0,
+      "change_pct": 17.14,
+      "volume": 9608014,
+      "trading_value_okrw": 8272.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 22.1,
+      "score": 22.3,
       "rank": 4
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 216500,
+      "price": 217000,
       "change_value": 0,
-      "change_pct": 13.11,
-      "volume": 4126393,
-      "trading_value_okrw": 8933.0,
+      "change_pct": 13.38,
+      "volume": 4315480,
+      "trading_value_okrw": 9364.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 18.6,
+      "score": 18.9,
       "rank": 5
     },
     {
@@ -155,12 +155,12 @@
       "price": 244000,
       "change_value": 0,
       "change_pct": 15.09,
-      "volume": 2202224,
-      "trading_value_okrw": 5373.0,
+      "volume": 2217693,
+      "trading_value_okrw": 5411.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 18.4,
+      "score": 18.2,
       "rank": 6
     },
     {
@@ -175,8 +175,23 @@
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 16.9,
+      "score": 16.8,
       "rank": 7
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 32600,
+      "change_value": 0,
+      "change_pct": 12.61,
+      "volume": 15372448,
+      "trading_value_okrw": 5011.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 16.3,
+      "rank": 8
     },
     {
       "code": "254490",
@@ -190,38 +205,38 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.1,
-      "rank": 8
+      "score": 15.0,
+      "rank": 9
     },
     {
       "code": "088350",
       "name": "한화생명",
       "market": "KOSPI",
-      "price": 5500,
+      "price": 5490,
       "change_value": 0,
-      "change_pct": 10.44,
-      "volume": 43607178,
-      "trading_value_okrw": 2398.0,
+      "change_pct": 10.24,
+      "volume": 44216148,
+      "trading_value_okrw": 2427.0,
       "sector1": "보험",
       "sector2": "",
       "sector": "보험",
-      "score": 14.4,
-      "rank": 9
+      "score": 14.1,
+      "rank": 10
     },
     {
-      "code": "047040",
-      "name": "대우건설",
+      "code": "009830",
+      "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 31800,
+      "price": 47800,
       "change_value": 0,
-      "change_pct": 9.84,
-      "volume": 13940300,
-      "trading_value_okrw": 4433.0,
-      "sector1": "원전",
+      "change_pct": 10.78,
+      "volume": 5682034,
+      "trading_value_okrw": 2716.0,
+      "sector1": "에너지",
       "sector2": "",
-      "sector": "원전",
-      "score": 13.3,
-      "rank": 10
+      "sector": "에너지",
+      "score": 12.6,
+      "rank": 11
     },
     {
       "code": "003230",
@@ -235,37 +250,22 @@
       "sector1": "식품/음료",
       "sector2": "",
       "sector": "식품/음료",
-      "score": 12.7,
-      "rank": 11
-    },
-    {
-      "code": "009830",
-      "name": "한화솔루션",
-      "market": "KOSPI",
-      "price": 47800,
-      "change_value": 0,
-      "change_pct": 10.78,
-      "volume": 5190428,
-      "trading_value_okrw": 2481.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 12.5,
+      "score": 12.6,
       "rank": 12
     },
     {
       "code": "034220",
       "name": "LG디스플레이",
       "market": "KOSPI",
-      "price": 15310,
+      "price": 15340,
       "change_value": 0,
-      "change_pct": 8.05,
-      "volume": 28965007,
-      "trading_value_okrw": 4434.0,
+      "change_pct": 8.26,
+      "volume": 29494910,
+      "trading_value_okrw": 4524.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 12.3,
+      "score": 12.5,
       "rank": 13
     },
     {
@@ -280,8 +280,23 @@
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 11.4,
+      "score": 11.2,
       "rank": 14
+    },
+    {
+      "code": "010060",
+      "name": "OCI홀딩스",
+      "market": "KOSPI",
+      "price": 364500,
+      "change_value": 0,
+      "change_pct": 9.3,
+      "volume": 454016,
+      "trading_value_okrw": 1654.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 10.2,
+      "rank": 15
     },
     {
       "code": "008350",
@@ -296,22 +311,37 @@
       "sector2": "",
       "sector": "철강",
       "score": 9.2,
-      "rank": 15
+      "rank": 16
     },
     {
-      "code": "010060",
-      "name": "OCI홀딩스",
+      "code": "032830",
+      "name": "삼성생명",
       "market": "KOSPI",
-      "price": 361000,
+      "price": 330000,
       "change_value": 0,
-      "change_pct": 8.25,
-      "volume": 425907,
-      "trading_value_okrw": 1537.0,
-      "sector1": "에너지",
+      "change_pct": 7.84,
+      "volume": 573524,
+      "trading_value_okrw": 1892.0,
+      "sector1": "금융",
       "sector2": "",
-      "sector": "에너지",
-      "score": 9.2,
-      "rank": 16
+      "sector": "금융",
+      "score": 8.9,
+      "rank": 17
+    },
+    {
+      "code": "000810",
+      "name": "삼성화재",
+      "market": "KOSPI",
+      "price": 538000,
+      "change_value": 0,
+      "change_pct": 8.03,
+      "volume": 247566,
+      "trading_value_okrw": 1331.0,
+      "sector1": "보험",
+      "sector2": "",
+      "sector": "보험",
+      "score": 8.8,
+      "rank": 18
     },
     {
       "code": "006340",
@@ -326,51 +356,21 @@
       "sector2": "",
       "sector": "전력",
       "score": 8.4,
-      "rank": 17
+      "rank": 19
     },
     {
       "code": "035720",
       "name": "카카오",
       "market": "KOSPI",
-      "price": 45850,
+      "price": 45950,
       "change_value": 0,
-      "change_pct": 6.75,
-      "volume": 3237546,
-      "trading_value_okrw": 1484.0,
+      "change_pct": 6.98,
+      "volume": 3639595,
+      "trading_value_okrw": 1672.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 7.8,
-      "rank": 18
-    },
-    {
-      "code": "032830",
-      "name": "삼성생명",
-      "market": "KOSPI",
-      "price": 327000,
-      "change_value": 0,
-      "change_pct": 6.86,
-      "volume": 456315,
-      "trading_value_okrw": 1492.0,
-      "sector1": "금융",
-      "sector2": "",
-      "sector": "금융",
-      "score": 7.8,
-      "rank": 19
-    },
-    {
-      "code": "000810",
-      "name": "삼성화재",
-      "market": "KOSPI",
-      "price": 533000,
-      "change_value": 0,
-      "change_pct": 7.03,
-      "volume": 191873,
-      "trading_value_okrw": 1022.0,
-      "sector1": "보험",
-      "sector2": "",
-      "sector": "보험",
-      "score": 7.6,
+      "score": 8.1,
       "rank": 20
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-14",
-    "generated_at_kst": "2026-05-14 09:06:29",
+    "generated_at_kst": "2026-05-14 09:11:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 20.6",
+    "leader_count": 4,
+    "sector_count": 4,
+    "market_bias": "우주 중심 강세 / 상위섹터 점수 35.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,90 @@
   },
   "top_sectors": [
     {
-      "sector": "자동차",
-      "score": 20.6,
+      "sector": "우주",
+      "score": 35.4,
       "leaders": 1,
-      "avg_change_pct": 3.24
+      "avg_change_pct": 17.88
+    },
+    {
+      "sector": "자동차",
+      "score": 20.9,
+      "leaders": 1,
+      "avg_change_pct": 2.47
+    },
+    {
+      "sector": "전자",
+      "score": 20.4,
+      "leaders": 1,
+      "avg_change_pct": 5.8
+    },
+    {
+      "sector": "전력",
+      "score": 20.3,
+      "leaders": 1,
+      "avg_change_pct": 4.43
     }
   ],
   "leaders": [
     {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "market": "KOSDAQ",
+      "price": 67900,
+      "change_value": 0,
+      "change_pct": 17.88,
+      "volume": 2020943,
+      "trading_value_okrw": 1372.0,
+      "sector1": "금융",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 25.9,
+      "rank": 1
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 202500,
+      "change_value": 0,
+      "change_pct": 5.8,
+      "volume": 532253,
+      "trading_value_okrw": 1077.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 11.7,
+      "rank": 2
+    },
+    {
+      "code": "001440",
+      "name": "대한전선",
+      "market": "KOSPI",
+      "price": 68300,
+      "change_value": 0,
+      "change_pct": 4.43,
+      "volume": 1721803,
+      "trading_value_okrw": 1175.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 11.3,
+      "rank": 3
+    },
+    {
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 670000,
+      "price": 665000,
       "change_value": 0,
-      "change_pct": 3.24,
-      "volume": 176971,
-      "trading_value_okrw": 1185.0,
+      "change_pct": 2.47,
+      "volume": 237072,
+      "trading_value_okrw": 1576.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 11.6,
-      "rank": 1
+      "score": 10.9,
+      "rank": 4
     }
   ]
 }

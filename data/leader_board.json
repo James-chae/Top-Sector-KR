@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-14",
-    "generated_at_kst": "2026-05-14 09:01:30",
+    "generated_at_kst": "2026-05-14 09:06:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.7",
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 20.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,26 +24,26 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 82.7,
+      "sector": "자동차",
+      "score": 20.6,
       "leaders": 1,
-      "avg_change_pct": 0.61
+      "avg_change_pct": 3.24
     }
   ],
   "leaders": [
     {
-      "code": "000660",
-      "name": "SK하이닉스",
+      "code": "012330",
+      "name": "현대모비스",
       "market": "KOSPI",
-      "price": 1988000,
+      "price": 670000,
       "change_value": 0,
-      "change_pct": 0.61,
-      "volume": 203984,
-      "trading_value_okrw": 4055.0,
-      "sector1": "반도체",
+      "change_pct": 3.24,
+      "volume": 176971,
+      "trading_value_okrw": 1185.0,
+      "sector1": "자동차",
       "sector2": "",
-      "sector": "반도체",
-      "score": 66.6,
+      "sector": "자동차",
+      "score": 11.6,
       "rank": 1
     }
   ]

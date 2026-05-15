@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-15",
-    "generated_at_kst": "2026-05-15 09:06:27",
+    "generated_at_kst": "2026-05-15 09:11:27",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 33.7",
+    "leader_count": 6,
+    "sector_count": 4,
+    "market_bias": "전자 중심 강세 / 상위섹터 점수 42.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,120 @@
   },
   "top_sectors": [
     {
+      "sector": "전자",
+      "score": 42.3,
+      "leaders": 2,
+      "avg_change_pct": 10.9
+    },
+    {
       "sector": "IT서비스",
-      "score": 33.7,
+      "score": 36.0,
       "leaders": 1,
-      "avg_change_pct": 12.89
+      "avg_change_pct": 12.43
     },
     {
       "sector": "반도체",
-      "score": 20.4,
+      "score": 34.1,
+      "leaders": 2,
+      "avg_change_pct": 6.88
+    },
+    {
+      "sector": "자동차",
+      "score": 21.1,
       "leaders": 1,
-      "avg_change_pct": 2.38
+      "avg_change_pct": 2.67
     }
   ],
   "leaders": [
     {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 252000,
+      "change_value": 0,
+      "change_pct": 16.13,
+      "volume": 853294,
+      "trading_value_okrw": 2150.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 31.5,
+      "rank": 1
+    },
+    {
       "code": "064400",
       "name": "LG씨엔에스",
       "market": "KOSPI",
-      "price": 97200,
+      "price": 96800,
       "change_value": 0,
-      "change_pct": 12.89,
-      "volume": 1289465,
-      "trading_value_okrw": 1253.0,
+      "change_pct": 12.43,
+      "volume": 1810862,
+      "trading_value_okrw": 1752.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 24.5,
-      "rank": 1
+      "score": 25.6,
+      "rank": 2
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 77400,
+      "price": 80900,
       "change_value": 0,
-      "change_pct": 2.38,
-      "volume": 1295241,
-      "trading_value_okrw": 1002.0,
+      "change_pct": 7.01,
+      "volume": 2073404,
+      "trading_value_okrw": 1677.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.9,
-      "rank": 2
+      "score": 19.8,
+      "rank": 3
+    },
+    {
+      "code": "034220",
+      "name": "LG디스플레이",
+      "market": "KOSPI",
+      "price": 16210,
+      "change_value": 0,
+      "change_pct": 5.67,
+      "volume": 7428491,
+      "trading_value_okrw": 1204.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 18.3,
+      "rank": 4
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 1093000,
+      "change_value": 0,
+      "change_pct": 6.74,
+      "volume": 122123,
+      "trading_value_okrw": 1334.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 16.0,
+      "rank": 5
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 731000,
+      "change_value": 0,
+      "change_pct": 2.67,
+      "volume": 178864,
+      "trading_value_okrw": 1307.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 11.8,
+      "rank": 6
     }
   ]
 }

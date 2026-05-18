@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-18",
-    "generated_at_kst": "2026-05-18 09:31:32",
+    "generated_at_kst": "2026-05-18 09:36:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.5",
+    "leader_count": 8,
+    "sector_count": 4,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 43.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 42.5,
+      "score": 43.2,
       "leaders": 2,
-      "avg_change_pct": 13.57
+      "avg_change_pct": 13.24
     },
     {
       "sector": "우주",
-      "score": 37.8,
+      "score": 40.0,
       "leaders": 2,
-      "avg_change_pct": 15.6
+      "avg_change_pct": 16.07
     },
     {
       "sector": "통신",
-      "score": 18.6,
+      "score": 34.3,
+      "leaders": 3,
+      "avg_change_pct": 9.63
+    },
+    {
+      "sector": "물류",
+      "score": 17.9,
       "leaders": 1,
-      "avg_change_pct": 6.42
+      "avg_change_pct": 6.84
     }
   ],
   "leaders": [
@@ -47,76 +53,121 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 172800,
+      "price": 172900,
       "change_value": 0,
-      "change_pct": 23.25,
-      "volume": 2384872,
-      "trading_value_okrw": 4121.0,
+      "change_pct": 23.32,
+      "volume": 2594716,
+      "trading_value_okrw": 4486.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 33.1,
+      "score": 33.4,
       "rank": 1
     },
     {
       "code": "027360",
       "name": "아주IB투자",
       "market": "KOSDAQ",
-      "price": 17130,
+      "price": 17190,
       "change_value": 0,
-      "change_pct": 19.71,
-      "volume": 11098721,
-      "trading_value_okrw": 1901.0,
+      "change_pct": 20.13,
+      "volume": 13410069,
+      "trading_value_okrw": 2305.0,
       "sector1": "증권",
       "sector2": "우주",
       "sector": "우주",
-      "score": 26.8,
+      "score": 28.2,
       "rank": 2
+    },
+    {
+      "code": "037460",
+      "name": "삼지전자",
+      "market": "KOSDAQ",
+      "price": 59700,
+      "change_value": 0,
+      "change_pct": 20.24,
+      "volume": 1727191,
+      "trading_value_okrw": 1031.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 22.8,
+      "rank": 3
     },
     {
       "code": "100790",
       "name": "미래에셋벤처투자",
       "market": "KOSDAQ",
-      "price": 61200,
+      "price": 61500,
       "change_value": 0,
-      "change_pct": 11.48,
-      "volume": 2390368,
-      "trading_value_okrw": 1462.0,
+      "change_pct": 12.02,
+      "volume": 2833310,
+      "trading_value_okrw": 1742.0,
       "sector1": "금융",
       "sector2": "우주",
       "sector": "우주",
-      "score": 15.4,
-      "rank": 3
+      "score": 16.4,
+      "rank": 4
     },
     {
-      "code": "178320",
-      "name": "서진시스템",
-      "market": "KOSDAQ",
-      "price": 71300,
+      "code": "001740",
+      "name": "SK네트웍스",
+      "market": "KOSPI",
+      "price": 9240,
       "change_value": 0,
-      "change_pct": 6.42,
-      "volume": 1705899,
-      "trading_value_okrw": 1216.0,
+      "change_pct": 5.96,
+      "volume": 11453122,
+      "trading_value_okrw": 1058.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 9.6,
-      "rank": 4
+      "score": 10.9,
+      "rank": 5
+    },
+    {
+      "code": "084670",
+      "name": "동양고속",
+      "market": "KOSPI",
+      "price": 70300,
+      "change_value": 0,
+      "change_pct": 6.84,
+      "volume": 1449305,
+      "trading_value_okrw": 1018.0,
+      "sector1": "물류",
+      "sector2": "",
+      "sector": "물류",
+      "score": 9.3,
+      "rank": 6
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 85500,
+      "price": 84900,
       "change_value": 0,
-      "change_pct": 3.89,
-      "volume": 1594216,
-      "trading_value_okrw": 1363.0,
+      "change_pct": 3.16,
+      "volume": 1678658,
+      "trading_value_okrw": 1425.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.3,
-      "rank": 5
+      "score": 6.6,
+      "rank": 7
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "market": "KOSDAQ",
+      "price": 68800,
+      "change_value": 0,
+      "change_pct": 2.69,
+      "volume": 1812102,
+      "trading_value_okrw": 1246.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 5.8,
+      "rank": 8
     }
   ]
 }

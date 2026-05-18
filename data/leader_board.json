@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-18",
-    "generated_at_kst": "2026-05-18 09:11:28",
+    "generated_at_kst": "2026-05-18 09:16:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 31.2",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 33.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,47 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 31.2,
+      "score": 33.1,
       "leaders": 1,
-      "avg_change_pct": 13.12
+      "avg_change_pct": 13.62
+    },
+    {
+      "sector": "우주",
+      "score": 32.3,
+      "leaders": 1,
+      "avg_change_pct": 16.98
     }
   ],
   "leaders": [
     {
+      "code": "027360",
+      "name": "아주IB투자",
+      "market": "KOSDAQ",
+      "price": 16740,
+      "change_value": 0,
+      "change_pct": 16.98,
+      "volume": 6024285,
+      "trading_value_okrw": 1008.0,
+      "sector1": "증권",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 23.7,
+      "rank": 1
+    },
+    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 158600,
+      "price": 159300,
       "change_value": 0,
-      "change_pct": 13.12,
-      "volume": 1044249,
-      "trading_value_okrw": 1656.0,
+      "change_pct": 13.62,
+      "volume": 1319244,
+      "trading_value_okrw": 2101.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.1,
-      "rank": 1
+      "score": 21.8,
+      "rank": 2
     }
   ]
 }

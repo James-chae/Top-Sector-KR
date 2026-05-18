@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-18",
-    "generated_at_kst": "2026-05-18 09:16:32",
+    "generated_at_kst": "2026-05-18 09:21:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 33.1",
+    "leader_count": 4,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 38.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,47 +25,83 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 33.1,
+      "score": 38.3,
       "leaders": 1,
-      "avg_change_pct": 13.62
+      "avg_change_pct": 17.55
     },
     {
       "sector": "우주",
-      "score": 32.3,
+      "score": 30.7,
+      "leaders": 2,
+      "avg_change_pct": 10.05
+    },
+    {
+      "sector": "통신",
+      "score": 16.8,
       "leaders": 1,
-      "avg_change_pct": 16.98
+      "avg_change_pct": 4.63
     }
   ],
   "leaders": [
     {
-      "code": "027360",
-      "name": "아주IB투자",
-      "market": "KOSDAQ",
-      "price": 16740,
-      "change_value": 0,
-      "change_pct": 16.98,
-      "volume": 6024285,
-      "trading_value_okrw": 1008.0,
-      "sector1": "증권",
-      "sector2": "우주",
-      "sector": "우주",
-      "score": 23.7,
-      "rank": 1
-    },
-    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 159300,
+      "price": 164800,
       "change_value": 0,
-      "change_pct": 13.62,
-      "volume": 1319244,
-      "trading_value_okrw": 2101.0,
+      "change_pct": 17.55,
+      "volume": 1571604,
+      "trading_value_okrw": 2590.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.8,
+      "score": 25.8,
+      "rank": 1
+    },
+    {
+      "code": "027360",
+      "name": "아주IB투자",
+      "market": "KOSDAQ",
+      "price": 16170,
+      "change_value": 0,
+      "change_pct": 13.0,
+      "volume": 8108902,
+      "trading_value_okrw": 1311.0,
+      "sector1": "증권",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 19.7,
       "rank": 2
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "market": "KOSDAQ",
+      "price": 58800,
+      "change_value": 0,
+      "change_pct": 7.1,
+      "volume": 1909050,
+      "trading_value_okrw": 1122.0,
+      "sector1": "금융",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 11.1,
+      "rank": 3
+    },
+    {
+      "code": "178320",
+      "name": "서진시스템",
+      "market": "KOSDAQ",
+      "price": 70100,
+      "change_value": 0,
+      "change_pct": 4.63,
+      "volume": 1478597,
+      "trading_value_okrw": 1036.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 8.2,
+      "rank": 4
     }
   ]
 }

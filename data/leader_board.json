@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 09:21:32",
+    "generated_at_kst": "2026-05-19 09:26:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
-    "sector_count": 2,
-    "market_bias": "우주 중심 강세 / 상위섹터 점수 46.6",
+    "leader_count": 5,
+    "sector_count": 3,
+    "market_bias": "우주 중심 강세 / 상위섹터 점수 51.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "우주",
-      "score": 46.6,
-      "leaders": 2,
-      "avg_change_pct": 14.41
+      "score": 51.0,
+      "leaders": 3,
+      "avg_change_pct": 10.18
     },
     {
       "sector": "반도체",
-      "score": 40.8,
-      "leaders": 2,
-      "avg_change_pct": 3.61
+      "score": 21.1,
+      "leaders": 1,
+      "avg_change_pct": 5.94
+    },
+    {
+      "sector": "방산",
+      "score": 21.0,
+      "leaders": 1,
+      "avg_change_pct": 7.17
     }
   ],
   "leaders": [
@@ -41,61 +47,76 @@
       "code": "027360",
       "name": "아주IB투자",
       "market": "KOSDAQ",
-      "price": 19190,
+      "price": 19790,
       "change_value": 0,
-      "change_pct": 12.82,
-      "volume": 13018662,
-      "trading_value_okrw": 2498.0,
+      "change_pct": 16.34,
+      "volume": 17033831,
+      "trading_value_okrw": 3370.0,
       "sector1": "증권",
       "sector2": "우주",
       "sector": "우주",
-      "score": 29.5,
+      "score": 36.8,
       "rank": 1
     },
     {
       "code": "274090",
       "name": "켄코아에어로스페이스",
       "market": "KOSDAQ",
-      "price": 30100,
+      "price": 28750,
       "change_value": 0,
-      "change_pct": 15.99,
-      "volume": 5912201,
-      "trading_value_okrw": 1779.0,
+      "change_pct": 10.79,
+      "volume": 6587053,
+      "trading_value_okrw": 1893.0,
       "sector1": "우주",
       "sector2": "",
       "sector": "우주",
-      "score": 27.2,
+      "score": 21.8,
       "rank": 2
     },
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
+      "code": "100790",
+      "name": "미래에셋벤처투자",
       "market": "KOSDAQ",
-      "price": 187300,
+      "price": 69700,
       "change_value": 0,
-      "change_pct": 2.8,
-      "volume": 2213177,
-      "trading_value_okrw": 4145.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 26.6,
+      "change_pct": 3.41,
+      "volume": 3089160,
+      "trading_value_okrw": 2153.0,
+      "sector1": "금융",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 15.1,
       "rank": 3
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "market": "KOSPI",
+      "price": 1315000,
+      "change_value": 0,
+      "change_pct": 7.17,
+      "volume": 76792,
+      "trading_value_okrw": 1009.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 12.4,
+      "rank": 4
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 96700,
+      "price": 98100,
       "change_value": 0,
-      "change_pct": 4.43,
-      "volume": 1038730,
-      "trading_value_okrw": 1004.0,
+      "change_pct": 5.94,
+      "volume": 1187300,
+      "trading_value_okrw": 1164.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.3,
-      "rank": 4
+      "score": 12.2,
+      "rank": 5
     }
   ]
 }

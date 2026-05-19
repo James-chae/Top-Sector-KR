@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 09:01:30",
+    "generated_at_kst": "2026-05-19 09:06:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 40.1",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 40.1,
+      "score": 42.4,
       "leaders": 1,
-      "avg_change_pct": 7.57
+      "avg_change_pct": 4.5
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 196000,
+      "price": 190400,
       "change_value": 0,
-      "change_pct": 7.57,
-      "volume": 357954,
-      "trading_value_okrw": 701.0,
+      "change_pct": 4.5,
+      "volume": 1257376,
+      "trading_value_okrw": 2394.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 32.4,
+      "score": 30.5,
       "rank": 1
     }
   ]

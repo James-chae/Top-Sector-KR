@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 09:11:34",
+    "generated_at_kst": "2026-05-19 09:16:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
+    "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 45.8",
+    "market_bias": "우주 중심 강세 / 상위섹터 점수 45.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,16 +24,16 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
+      "sector": "우주",
       "score": 45.8,
-      "leaders": 1,
-      "avg_change_pct": 6.53
+      "leaders": 3,
+      "avg_change_pct": 13.28
     },
     {
-      "sector": "우주",
-      "score": 42.7,
+      "sector": "반도체",
+      "score": 43.1,
       "leaders": 1,
-      "avg_change_pct": 22.74
+      "avg_change_pct": 2.41
     }
   ],
   "leaders": [
@@ -41,31 +41,61 @@
       "code": "274090",
       "name": "켄코아에어로스페이스",
       "market": "KOSDAQ",
-      "price": 31850,
+      "price": 32650,
       "change_value": 0,
-      "change_pct": 22.74,
-      "volume": 4028014,
-      "trading_value_okrw": 1282.0,
+      "change_pct": 25.82,
+      "volume": 4930177,
+      "trading_value_okrw": 1609.0,
       "sector1": "우주",
       "sector2": "",
       "sector": "우주",
-      "score": 33.5,
+      "score": 37.8,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 194100,
+      "price": 186600,
       "change_value": 0,
-      "change_pct": 6.53,
-      "volume": 1701079,
-      "trading_value_okrw": 3301.0,
+      "change_pct": 2.41,
+      "volume": 1999297,
+      "trading_value_okrw": 3730.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 31.6,
+      "score": 27.7,
       "rank": 2
+    },
+    {
+      "code": "027360",
+      "name": "아주IB투자",
+      "market": "KOSDAQ",
+      "price": 19190,
+      "change_value": 0,
+      "change_pct": 12.82,
+      "volume": 7104746,
+      "trading_value_okrw": 1363.0,
+      "sector1": "증권",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 23.7,
+      "rank": 3
+    },
+    {
+      "code": "100790",
+      "name": "미래에셋벤처투자",
+      "market": "KOSDAQ",
+      "price": 68200,
+      "change_value": 0,
+      "change_pct": 1.19,
+      "volume": 1787722,
+      "trading_value_okrw": 1219.0,
+      "sector1": "금융",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 9.8,
+      "rank": 4
     }
   ]
 }

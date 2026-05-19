@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 10:26:27",
+    "generated_at_kst": "2026-05-19 10:31:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 5,
-    "market_bias": "로봇 중심 강세 / 상위섹터 점수 28.9",
+    "leader_count": 8,
+    "sector_count": 6,
+    "market_bias": "우주 중심 강세 / 상위섹터 점수 39.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,126 +24,162 @@
   },
   "top_sectors": [
     {
+      "sector": "우주",
+      "score": 39.3,
+      "leaders": 2,
+      "avg_change_pct": 3.13
+    },
+    {
       "sector": "로봇",
-      "score": 28.9,
+      "score": 29.0,
       "leaders": 1,
-      "avg_change_pct": 12.38
+      "avg_change_pct": 12.63
     },
     {
       "sector": "방산",
-      "score": 28.1,
+      "score": 27.8,
       "leaders": 2,
-      "avg_change_pct": 5.9
+      "avg_change_pct": 5.64
     },
     {
       "sector": "반도체",
-      "score": 23.3,
+      "score": 22.6,
       "leaders": 1,
-      "avg_change_pct": 3.67
-    },
-    {
-      "sector": "우주",
-      "score": 22.2,
-      "leaders": 1,
-      "avg_change_pct": 2.7
+      "avg_change_pct": 3.13
     },
     {
       "sector": "전자",
-      "score": 20.2,
+      "score": 20.0,
       "leaders": 1,
-      "avg_change_pct": 5.13
+      "avg_change_pct": 4.87
+    },
+    {
+      "sector": "기타",
+      "score": 14.4,
+      "leaders": 1,
+      "avg_change_pct": 3.24
     }
   ],
   "leaders": [
     {
+      "code": "027360",
+      "name": "아주IB투자",
+      "market": "KOSDAQ",
+      "price": 17420,
+      "change_value": 0,
+      "change_pct": 2.41,
+      "volume": 32144096,
+      "trading_value_okrw": 5599.0,
+      "sector1": "증권",
+      "sector2": "우주",
+      "sector": "우주",
+      "score": 19.7,
+      "rank": 1
+    },
+    {
       "code": "066430",
       "name": "아이로보틱스",
       "market": "KOSDAQ",
-      "price": 4495,
+      "price": 4505,
       "change_value": 0,
-      "change_pct": 12.38,
-      "volume": 31598817,
-      "trading_value_okrw": 1420.0,
+      "change_pct": 12.63,
+      "volume": 31992786,
+      "trading_value_okrw": 1441.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 19.3,
-      "rank": 1
+      "score": 19.4,
+      "rank": 2
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1309000,
+      "price": 1307000,
       "change_value": 0,
-      "change_pct": 6.68,
-      "volume": 157910,
-      "trading_value_okrw": 2067.0,
+      "change_pct": 6.52,
+      "volume": 162515,
+      "trading_value_okrw": 2124.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 12.2,
-      "rank": 2
-    },
-    {
-      "code": "080220",
-      "name": "제주반도체",
-      "market": "KOSDAQ",
-      "price": 96000,
-      "change_value": 0,
-      "change_pct": 3.67,
-      "volume": 2697642,
-      "trading_value_okrw": 2589.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 10.8,
+      "score": 11.9,
       "rank": 3
     },
     {
       "code": "274090",
       "name": "켄코아에어로스페이스",
       "market": "KOSDAQ",
-      "price": 26650,
+      "price": 26950,
       "change_value": 0,
-      "change_pct": 2.7,
-      "volume": 9127599,
-      "trading_value_okrw": 2432.0,
+      "change_pct": 3.85,
+      "volume": 9224165,
+      "trading_value_okrw": 2485.0,
       "sector1": "우주",
       "sector2": "",
       "sector": "우주",
-      "score": 10.1,
+      "score": 11.0,
       "rank": 4
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "price": 95500,
+      "change_value": 0,
+      "change_pct": 3.13,
+      "volume": 2742124,
+      "trading_value_okrw": 2618.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 10.0,
+      "rank": 5
     },
     {
       "code": "011070",
       "name": "LG이노텍",
       "market": "KOSPI",
-      "price": 799000,
+      "price": 797000,
       "change_value": 0,
-      "change_pct": 5.13,
-      "volume": 218056,
-      "trading_value_okrw": 1742.0,
+      "change_pct": 4.87,
+      "volume": 227423,
+      "trading_value_okrw": 1812.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 9.8,
-      "rank": 5
+      "score": 9.5,
+      "rank": 6
     },
     {
       "code": "079550",
       "name": "LIG디펜스앤에어로스페이스",
       "market": "KOSPI",
-      "price": 882000,
+      "price": 879000,
       "change_value": 0,
-      "change_pct": 5.13,
-      "volume": 191678,
-      "trading_value_okrw": 1690.0,
+      "change_pct": 4.77,
+      "volume": 195725,
+      "trading_value_okrw": 1720.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 9.7,
-      "rank": 6
+      "score": 9.2,
+      "rank": 7
+    },
+    {
+      "code": "440110",
+      "name": "파두",
+      "market": "KOSDAQ",
+      "price": 102100,
+      "change_value": 0,
+      "change_pct": 3.24,
+      "volume": 979601,
+      "trading_value_okrw": 1000.0,
+      "sector1": "기타",
+      "sector2": "",
+      "sector": "기타",
+      "score": 5.9,
+      "rank": 8
     }
   ]
 }

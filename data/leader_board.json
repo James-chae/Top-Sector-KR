@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 09:06:30",
+    "generated_at_kst": "2026-05-19 09:11:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.4",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 45.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,47 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 42.4,
+      "score": 45.8,
       "leaders": 1,
-      "avg_change_pct": 4.5
+      "avg_change_pct": 6.53
+    },
+    {
+      "sector": "우주",
+      "score": 42.7,
+      "leaders": 1,
+      "avg_change_pct": 22.74
     }
   ],
   "leaders": [
     {
+      "code": "274090",
+      "name": "켄코아에어로스페이스",
+      "market": "KOSDAQ",
+      "price": 31850,
+      "change_value": 0,
+      "change_pct": 22.74,
+      "volume": 4028014,
+      "trading_value_okrw": 1282.0,
+      "sector1": "우주",
+      "sector2": "",
+      "sector": "우주",
+      "score": 33.5,
+      "rank": 1
+    },
+    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 190400,
+      "price": 194100,
       "change_value": 0,
-      "change_pct": 4.5,
-      "volume": 1257376,
-      "trading_value_okrw": 2394.0,
+      "change_pct": 6.53,
+      "volume": 1701079,
+      "trading_value_okrw": 3301.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 30.5,
-      "rank": 1
+      "score": 31.6,
+      "rank": 2
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-19",
-    "generated_at_kst": "2026-05-19 09:36:31",
+    "generated_at_kst": "2026-05-19 09:41:27",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
+    "leader_count": 7,
     "sector_count": 4,
-    "market_bias": "우주 중심 강세 / 상위섹터 점수 46.1",
+    "market_bias": "우주 중심 강세 / 상위섹터 점수 44.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "우주",
-      "score": 46.1,
+      "score": 44.4,
       "leaders": 2,
-      "avg_change_pct": 7.9
+      "avg_change_pct": 6.07
     },
     {
       "sector": "반도체",
-      "score": 26.1,
-      "leaders": 1,
-      "avg_change_pct": 7.34
+      "score": 42.2,
+      "leaders": 2,
+      "avg_change_pct": 3.04
     },
     {
       "sector": "방산",
-      "score": 21.8,
-      "leaders": 1,
-      "avg_change_pct": 7.74
+      "score": 26.9,
+      "leaders": 2,
+      "avg_change_pct": 7.0
     },
     {
       "sector": "바이오",
-      "score": 18.6,
+      "score": 18.3,
       "leaders": 1,
-      "avg_change_pct": 5.31
+      "avg_change_pct": 4.9
     }
   ],
   "leaders": [
@@ -53,76 +53,106 @@
       "code": "027360",
       "name": "아주IB투자",
       "market": "KOSDAQ",
-      "price": 18225,
+      "price": 17700,
       "change_value": 0,
-      "change_pct": 7.14,
-      "volume": 22437672,
-      "trading_value_okrw": 4089.0,
+      "change_pct": 4.06,
+      "volume": 24192914,
+      "trading_value_okrw": 4282.0,
       "sector1": "증권",
       "sector2": "우주",
       "sector": "우주",
-      "score": 28.6,
+      "score": 25.2,
       "rank": 1
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 185000,
+      "change_value": 0,
+      "change_pct": 1.54,
+      "volume": 2760849,
+      "trading_value_okrw": 5107.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 23.3,
+      "rank": 2
     },
     {
       "code": "274090",
       "name": "켄코아에어로스페이스",
       "market": "KOSDAQ",
-      "price": 28200,
+      "price": 28050,
       "change_value": 0,
-      "change_pct": 8.67,
-      "volume": 7516743,
-      "trading_value_okrw": 2119.0,
+      "change_pct": 8.09,
+      "volume": 7768499,
+      "trading_value_okrw": 2179.0,
       "sector1": "우주",
       "sector2": "",
       "sector": "우주",
-      "score": 19.2,
-      "rank": 2
+      "score": 18.3,
+      "rank": 3
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 99400,
+      "price": 96800,
       "change_value": 0,
-      "change_pct": 7.34,
-      "volume": 1814534,
-      "trading_value_okrw": 1803.0,
+      "change_pct": 4.54,
+      "volume": 2068086,
+      "trading_value_okrw": 2001.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.6,
-      "rank": 3
+      "score": 13.2,
+      "rank": 4
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1322000,
+      "price": 1324000,
       "change_value": 0,
-      "change_pct": 7.74,
-      "volume": 88043,
-      "trading_value_okrw": 1163.0,
+      "change_pct": 7.91,
+      "volume": 93235,
+      "trading_value_okrw": 1234.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 12.9,
-      "rank": 4
+      "score": 13.1,
+      "rank": 5
+    },
+    {
+      "code": "079550",
+      "name": "LIG디펜스앤에어로스페이스",
+      "market": "KOSPI",
+      "price": 890000,
+      "change_value": 0,
+      "change_pct": 6.08,
+      "volume": 118218,
+      "trading_value_okrw": 1052.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 10.5,
+      "rank": 6
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 376500,
+      "price": 375000,
       "change_value": 0,
-      "change_pct": 5.31,
-      "volume": 278598,
-      "trading_value_okrw": 1048.0,
+      "change_pct": 4.9,
+      "volume": 294734,
+      "trading_value_okrw": 1105.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.0,
-      "rank": 5
+      "score": 9.6,
+      "rank": 7
     }
   ]
 }

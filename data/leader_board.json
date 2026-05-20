@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-20",
-    "generated_at_kst": "2026-05-20 09:36:30",
+    "generated_at_kst": "2026-05-20 09:41:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.1",
+    "leader_count": 4,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 60.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 61.1,
+      "score": 60.5,
       "leaders": 2,
-      "avg_change_pct": 9.62
+      "avg_change_pct": 8.49
+    },
+    {
+      "sector": "조선",
+      "score": 14.8,
+      "leaders": 1,
+      "avg_change_pct": 3.68
     },
     {
       "sector": "자동차",
-      "score": 15.1,
+      "score": 14.6,
       "leaders": 1,
-      "avg_change_pct": 3.62
+      "avg_change_pct": 2.67
     }
   ],
   "leaders": [
@@ -44,43 +50,58 @@
       "price": 278500,
       "change_value": 0,
       "change_pct": 1.09,
-      "volume": 5773905,
-      "trading_value_okrw": 16080.0,
+      "volume": 6234848,
+      "trading_value_okrw": 17364.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 43.6,
+      "score": 44.5,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 209000,
+      "price": 205000,
       "change_value": 0,
-      "change_pct": 18.15,
-      "volume": 2258279,
-      "trading_value_okrw": 4719.0,
+      "change_pct": 15.88,
+      "volume": 2461210,
+      "trading_value_okrw": 5045.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 30.7,
+      "score": 28.6,
       "rank": 2
+    },
+    {
+      "code": "329180",
+      "name": "HD현대중공업",
+      "market": "KOSPI",
+      "price": 620000,
+      "change_value": 0,
+      "change_pct": 3.68,
+      "volume": 167233,
+      "trading_value_okrw": 1036.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 6.2,
+      "rank": 3
     },
     {
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 544000,
+      "price": 539000,
       "change_value": 0,
-      "change_pct": 3.62,
-      "volume": 198246,
-      "trading_value_okrw": 1078.0,
+      "change_pct": 2.67,
+      "volume": 222441,
+      "trading_value_okrw": 1198.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 6.5,
-      "rank": 3
+      "score": 5.6,
+      "rank": 4
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-20",
-    "generated_at_kst": "2026-05-20 10:31:29",
+    "generated_at_kst": "2026-05-20 10:36:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 52.5",
+    "leader_count": 7,
+    "sector_count": 6,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 50.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 52.5,
+      "score": 50.8,
       "leaders": 2,
-      "avg_change_pct": 20.61
+      "avg_change_pct": 19.0
     },
     {
       "sector": "바이오",
@@ -37,21 +37,27 @@
     },
     {
       "sector": "통신",
-      "score": 30.8,
+      "score": 33.9,
       "leaders": 1,
       "avg_change_pct": 11.83
     },
     {
       "sector": "자동차",
-      "score": 19.3,
+      "score": 18.5,
       "leaders": 1,
-      "avg_change_pct": 3.05
+      "avg_change_pct": 2.1
     },
     {
       "sector": "조선",
-      "score": 16.8,
+      "score": 16.0,
       "leaders": 1,
-      "avg_change_pct": 4.01
+      "avg_change_pct": 3.18
+    },
+    {
+      "sector": "기타",
+      "score": 12.9,
+      "leaders": 1,
+      "avg_change_pct": 2.59
     }
   ],
   "leaders": [
@@ -62,12 +68,12 @@
       "price": 6310,
       "change_value": 0,
       "change_pct": 29.84,
-      "volume": 16580319,
-      "trading_value_okrw": 1046.0,
+      "volume": 16611345,
+      "trading_value_okrw": 1048.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 33.0,
+      "score": 32.9,
       "rank": 1
     },
     {
@@ -77,8 +83,8 @@
       "price": 12450,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 9151539,
-      "trading_value_okrw": 1139.0,
+      "volume": 9400639,
+      "trading_value_okrw": 1170.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -89,15 +95,15 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 196800,
+      "price": 191100,
       "change_value": 0,
-      "change_pct": 11.25,
-      "volume": 3752306,
-      "trading_value_okrw": 7384.0,
+      "change_pct": 8.03,
+      "volume": 3888175,
+      "trading_value_okrw": 7430.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 24.3,
+      "score": 20.8,
       "rank": 3
     },
     {
@@ -107,43 +113,58 @@
       "price": 24100,
       "change_value": 0,
       "change_pct": 11.83,
-      "volume": 11760608,
-      "trading_value_okrw": 2834.0,
+      "volume": 14813119,
+      "trading_value_okrw": 3569.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 17.7,
+      "score": 19.0,
       "rank": 4
     },
     {
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 541000,
+      "price": 536000,
       "change_value": 0,
-      "change_pct": 3.05,
-      "volume": 448385,
-      "trading_value_okrw": 2425.0,
+      "change_pct": 2.1,
+      "volume": 461795,
+      "trading_value_okrw": 2475.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 7.3,
+      "score": 6.3,
       "rank": 5
     },
     {
       "code": "329180",
       "name": "HD현대중공업",
       "market": "KOSPI",
-      "price": 622000,
+      "price": 617000,
       "change_value": 0,
-      "change_pct": 4.01,
-      "volume": 258237,
-      "trading_value_okrw": 1606.0,
+      "change_pct": 3.18,
+      "volume": 264042,
+      "trading_value_okrw": 1629.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 6.8,
+      "score": 5.9,
       "rank": 6
+    },
+    {
+      "code": "440110",
+      "name": "파두",
+      "market": "KOSDAQ",
+      "price": 110700,
+      "change_value": 0,
+      "change_pct": 2.59,
+      "volume": 905466,
+      "trading_value_okrw": 1002.0,
+      "sector1": "기타",
+      "sector2": "",
+      "sector": "기타",
+      "score": 4.3,
+      "rank": 7
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-20",
-    "generated_at_kst": "2026-05-20 10:21:30",
+    "generated_at_kst": "2026-05-20 10:26:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 6,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 45.8",
+    "leader_count": 5,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 44.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 45.8,
+      "score": 44.0,
       "leaders": 1,
-      "avg_change_pct": 14.47
+      "avg_change_pct": 12.72
     },
     {
       "sector": "바이오",
@@ -36,28 +36,22 @@
       "avg_change_pct": 29.84
     },
     {
-      "sector": "자동차",
-      "score": 21.5,
+      "sector": "통신",
+      "score": 23.1,
       "leaders": 1,
-      "avg_change_pct": 5.52
+      "avg_change_pct": 6.5
     },
     {
-      "sector": "통신",
-      "score": 20.7,
+      "sector": "자동차",
+      "score": 20.5,
       "leaders": 1,
-      "avg_change_pct": 4.64
+      "avg_change_pct": 4.38
     },
     {
       "sector": "조선",
-      "score": 17.8,
+      "score": 17.2,
       "leaders": 1,
-      "avg_change_pct": 5.18
-    },
-    {
-      "sector": "전력",
-      "score": 11.6,
-      "leaders": 1,
-      "avg_change_pct": 1.2
+      "avg_change_pct": 4.52
     }
   ],
   "leaders": [
@@ -68,7 +62,7 @@
       "price": 6310,
       "change_value": 0,
       "change_pct": 29.84,
-      "volume": 16545929,
+      "volume": 16553225,
       "trading_value_okrw": 1044.0,
       "sector1": "바이오",
       "sector2": "",
@@ -80,76 +74,61 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 202500,
+      "price": 199400,
       "change_value": 0,
-      "change_pct": 14.47,
-      "volume": 3579648,
-      "trading_value_okrw": 7248.0,
+      "change_pct": 12.72,
+      "volume": 3684050,
+      "trading_value_okrw": 7345.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 27.8,
+      "score": 26.0,
       "rank": 2
-    },
-    {
-      "code": "012330",
-      "name": "현대모비스",
-      "market": "KOSPI",
-      "price": 554000,
-      "change_value": 0,
-      "change_pct": 5.52,
-      "volume": 416550,
-      "trading_value_okrw": 2307.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 9.7,
-      "rank": 3
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 22550,
+      "price": 22950,
       "change_value": 0,
-      "change_pct": 4.64,
-      "volume": 9601808,
-      "trading_value_okrw": 2165.0,
+      "change_pct": 6.5,
+      "volume": 9968880,
+      "trading_value_okrw": 2287.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 9.3,
+      "score": 11.4,
+      "rank": 3
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "price": 548000,
+      "change_value": 0,
+      "change_pct": 4.38,
+      "volume": 430172,
+      "trading_value_okrw": 2357.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 8.6,
       "rank": 4
     },
     {
       "code": "329180",
       "name": "HD현대중공업",
       "market": "KOSPI",
-      "price": 629000,
+      "price": 625000,
       "change_value": 0,
-      "change_pct": 5.18,
-      "volume": 244800,
-      "trading_value_okrw": 1539.0,
+      "change_pct": 4.52,
+      "volume": 250767,
+      "trading_value_okrw": 1567.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 8.0,
+      "score": 7.3,
       "rank": 5
-    },
-    {
-      "code": "298040",
-      "name": "효성중공업",
-      "market": "KOSPI",
-      "price": 3623000,
-      "change_value": 0,
-      "change_pct": 1.2,
-      "volume": 28002,
-      "trading_value_okrw": 1014.0,
-      "sector1": "전력",
-      "sector2": "",
-      "sector": "전력",
-      "score": 3.0,
-      "rank": 6
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-20",
-    "generated_at_kst": "2026-05-20 09:56:29",
+    "generated_at_kst": "2026-05-20 10:01:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
+    "leader_count": 5,
     "sector_count": 5,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 42.2",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 42.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 42.2,
+      "score": 42.1,
       "leaders": 1,
       "avg_change_pct": 29.84
     },
     {
       "sector": "반도체",
-      "score": 39.6,
-      "leaders": 2,
-      "avg_change_pct": 7.79
+      "score": 41.7,
+      "leaders": 1,
+      "avg_change_pct": 10.51
     },
     {
       "sector": "통신",
-      "score": 19.9,
+      "score": 21.6,
       "leaders": 1,
-      "avg_change_pct": 4.87
+      "avg_change_pct": 6.03
     },
     {
       "sector": "조선",
-      "score": 15.3,
+      "score": 15.5,
       "leaders": 1,
-      "avg_change_pct": 3.68
+      "avg_change_pct": 3.85
     },
     {
       "sector": "자동차",
-      "score": 15.0,
+      "score": 15.4,
       "leaders": 1,
-      "avg_change_pct": 2.29
+      "avg_change_pct": 2.1
     }
   ],
   "leaders": [
@@ -62,88 +62,73 @@
       "price": 6310,
       "change_value": 0,
       "change_pct": 29.84,
-      "volume": 16406157,
-      "trading_value_okrw": 1035.0,
+      "volume": 16451345,
+      "trading_value_okrw": 1038.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 33.6,
+      "score": 33.5,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 202000,
+      "price": 195500,
       "change_value": 0,
-      "change_pct": 14.19,
-      "volume": 2914045,
-      "trading_value_okrw": 5886.0,
+      "change_pct": 10.51,
+      "volume": 3173410,
+      "trading_value_okrw": 6204.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 27.3,
+      "score": 23.7,
       "rank": 2
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 22600,
+      "price": 22850,
       "change_value": 0,
-      "change_pct": 4.87,
-      "volume": 7878250,
-      "trading_value_okrw": 1780.0,
+      "change_pct": 6.03,
+      "volume": 8441642,
+      "trading_value_okrw": 1928.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 9.5,
+      "score": 10.8,
       "rank": 3
     },
     {
       "code": "329180",
       "name": "HD현대중공업",
       "market": "KOSPI",
-      "price": 620000,
+      "price": 621000,
       "change_value": 0,
-      "change_pct": 3.68,
-      "volume": 193204,
-      "trading_value_okrw": 1197.0,
+      "change_pct": 3.85,
+      "volume": 199515,
+      "trading_value_okrw": 1238.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 6.3,
+      "score": 6.5,
       "rank": 4
     },
     {
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 537000,
+      "price": 536000,
       "change_value": 0,
-      "change_pct": 2.29,
-      "volume": 264097,
-      "trading_value_okrw": 1418.0,
+      "change_pct": 2.1,
+      "volume": 297350,
+      "trading_value_okrw": 1593.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 5.4,
+      "score": 5.5,
       "rank": 5
-    },
-    {
-      "code": "042700",
-      "name": "한미반도체",
-      "market": "KOSPI",
-      "price": 292000,
-      "change_value": 0,
-      "change_pct": 1.39,
-      "volume": 401881,
-      "trading_value_okrw": 1173.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 4.0,
-      "rank": 6
     }
   ]
 }

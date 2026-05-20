@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-20",
-    "generated_at_kst": "2026-05-20 09:31:32",
+    "generated_at_kst": "2026-05-20 09:36:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 44.7",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,62 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 44.7,
+      "score": 61.1,
+      "leaders": 2,
+      "avg_change_pct": 9.62
+    },
+    {
+      "sector": "자동차",
+      "score": 15.1,
       "leaders": 1,
-      "avg_change_pct": 18.99
+      "avg_change_pct": 3.62
     }
   ],
   "leaders": [
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "market": "KOSDAQ",
-      "price": 210500,
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 278500,
       "change_value": 0,
-      "change_pct": 18.99,
-      "volume": 1747626,
-      "trading_value_okrw": 3678.0,
+      "change_pct": 1.09,
+      "volume": 5773905,
+      "trading_value_okrw": 16080.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 29.5,
+      "score": 43.6,
       "rank": 1
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 209000,
+      "change_value": 0,
+      "change_pct": 18.15,
+      "volume": 2258279,
+      "trading_value_okrw": 4719.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 30.7,
+      "rank": 2
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "price": 544000,
+      "change_value": 0,
+      "change_pct": 3.62,
+      "volume": 198246,
+      "trading_value_okrw": 1078.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 6.5,
+      "rank": 3
     }
   ]
 }

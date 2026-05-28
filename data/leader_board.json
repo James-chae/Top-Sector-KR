@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-28",
-    "generated_at_kst": "2026-05-28 09:06:31",
+    "generated_at_kst": "2026-05-28 09:11:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 28.9",
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 29.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "자동차",
-      "score": 28.9,
+      "score": 29.7,
       "leaders": 2,
-      "avg_change_pct": 5.97
+      "avg_change_pct": 4.3
     }
   ],
   "leaders": [
@@ -35,30 +35,30 @@
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 743000,
+      "price": 729000,
       "change_value": 0,
-      "change_pct": 7.99,
-      "volume": 154273,
-      "trading_value_okrw": 1146.0,
+      "change_pct": 5.96,
+      "volume": 215051,
+      "trading_value_okrw": 1567.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 13.9,
+      "score": 12.5,
       "rank": 1
     },
     {
       "code": "005380",
       "name": "현대차",
       "market": "KOSPI",
-      "price": 708000,
+      "price": 699000,
       "change_value": 0,
-      "change_pct": 3.96,
-      "volume": 219535,
-      "trading_value_okrw": 1554.0,
+      "change_pct": 2.64,
+      "volume": 316290,
+      "trading_value_okrw": 2210.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 12.1,
+      "score": 11.9,
       "rank": 2
     }
   ]

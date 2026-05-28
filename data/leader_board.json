@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-05-28",
-    "generated_at_kst": "2026-05-28 09:11:30",
+    "generated_at_kst": "2026-05-28 09:16:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 1,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 29.7",
+    "leader_count": 8,
+    "sector_count": 5,
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 30.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,41 +25,155 @@
   "top_sectors": [
     {
       "sector": "자동차",
-      "score": 29.7,
+      "score": 30.3,
       "leaders": 2,
-      "avg_change_pct": 4.3
+      "avg_change_pct": 3.58
+    },
+    {
+      "sector": "반도체",
+      "score": 29.2,
+      "leaders": 1,
+      "avg_change_pct": 2.27
+    },
+    {
+      "sector": "전자",
+      "score": 27.6,
+      "leaders": 2,
+      "avg_change_pct": 8.4
+    },
+    {
+      "sector": "2차전지",
+      "score": 27.0,
+      "leaders": 2,
+      "avg_change_pct": 8.43
+    },
+    {
+      "sector": "바이오",
+      "score": 20.9,
+      "leaders": 1,
+      "avg_change_pct": 7.79
     }
   ],
   "leaders": [
     {
-      "code": "012330",
-      "name": "현대모비스",
+      "code": "034220",
+      "name": "LG디스플레이",
       "market": "KOSPI",
-      "price": 729000,
+      "price": 15720,
       "change_value": 0,
-      "change_pct": 5.96,
-      "volume": 215051,
-      "trading_value_okrw": 1567.0,
-      "sector1": "자동차",
+      "change_pct": 11.25,
+      "volume": 6487273,
+      "trading_value_okrw": 1019.0,
+      "sector1": "전자",
       "sector2": "",
-      "sector": "자동차",
-      "score": 12.5,
+      "sector": "전자",
+      "score": 16.9,
       "rank": 1
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "market": "KOSPI",
+      "price": 430500,
+      "change_value": 0,
+      "change_pct": 12.26,
+      "volume": 261959,
+      "trading_value_okrw": 1127.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 16.0,
+      "rank": 2
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 1667000,
+      "change_value": 0,
+      "change_pct": 2.27,
+      "volume": 218414,
+      "trading_value_okrw": 3640.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 14.1,
+      "rank": 3
+    },
+    {
+      "code": "347850",
+      "name": "디앤디파마텍",
+      "market": "KOSDAQ",
+      "price": 106500,
+      "change_value": 0,
+      "change_pct": 7.79,
+      "volume": 1101347,
+      "trading_value_okrw": 1172.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 12.0,
+      "rank": 4
     },
     {
       "code": "005380",
       "name": "현대차",
       "market": "KOSPI",
-      "price": 699000,
+      "price": 700000,
       "change_value": 0,
-      "change_pct": 2.64,
-      "volume": 316290,
-      "trading_value_okrw": 2210.0,
+      "change_pct": 2.79,
+      "volume": 392635,
+      "trading_value_okrw": 2748.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 11.9,
-      "rank": 2
+      "score": 11.8,
+      "rank": 5
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "price": 718000,
+      "change_value": 0,
+      "change_pct": 4.36,
+      "volume": 282186,
+      "trading_value_okrw": 2026.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 11.0,
+      "rank": 6
+    },
+    {
+      "code": "011070",
+      "name": "LG이노텍",
+      "market": "KOSPI",
+      "price": 1102000,
+      "change_value": 0,
+      "change_pct": 5.56,
+      "volume": 96578,
+      "trading_value_okrw": 1064.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 9.0,
+      "rank": 7
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "price": 659000,
+      "change_value": 0,
+      "change_pct": 4.6,
+      "volume": 171370,
+      "trading_value_okrw": 1129.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 8.3,
+      "rank": 8
     }
   ]
 }

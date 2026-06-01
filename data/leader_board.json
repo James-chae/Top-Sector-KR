@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-01",
-    "generated_at_kst": "2026-06-01 09:01:27",
+    "generated_at_kst": "2026-06-01 09:06:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.2",
+    "leader_count": 6,
+    "sector_count": 4,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 68.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 74.2,
+      "score": 68.7,
+      "leaders": 2,
+      "avg_change_pct": 5.24
+    },
+    {
+      "sector": "전자",
+      "score": 48.7,
+      "leaders": 2,
+      "avg_change_pct": 21.45
+    },
+    {
+      "sector": "인터넷",
+      "score": 26.4,
       "leaders": 1,
-      "avg_change_pct": 1.58
+      "avg_change_pct": 5.13
+    },
+    {
+      "sector": "자동차",
+      "score": 19.0,
+      "leaders": 1,
+      "avg_change_pct": 2.49
     }
   ],
   "leaders": [
@@ -35,16 +53,91 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 322000,
+      "price": 327500,
       "change_value": 0,
-      "change_pct": 1.58,
-      "volume": 904493,
-      "trading_value_okrw": 2912.0,
+      "change_pct": 3.31,
+      "volume": 2800815,
+      "trading_value_okrw": 9172.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 60.9,
+      "score": 70.8,
       "rank": 1
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 375500,
+      "change_value": 0,
+      "change_pct": 28.16,
+      "volume": 450187,
+      "trading_value_okrw": 1690.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 40.5,
+      "rank": 2
+    },
+    {
+      "code": "011070",
+      "name": "LG이노텍",
+      "market": "KOSPI",
+      "price": 1673000,
+      "change_value": 0,
+      "change_pct": 14.75,
+      "volume": 81486,
+      "trading_value_okrw": 1363.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 24.5,
+      "rank": 3
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "price": 217000,
+      "change_value": 0,
+      "change_pct": 7.16,
+      "volume": 701610,
+      "trading_value_okrw": 1522.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 18.6,
+      "rank": 4
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "market": "KOSPI",
+      "price": 246000,
+      "change_value": 0,
+      "change_pct": 5.13,
+      "volume": 623665,
+      "trading_value_okrw": 1534.0,
+      "sector1": "인터넷",
+      "sector2": "",
+      "sector": "인터넷",
+      "score": 16.6,
+      "rank": 5
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 741000,
+      "change_value": 0,
+      "change_pct": 2.49,
+      "volume": 146033,
+      "trading_value_okrw": 1082.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 10.3,
+      "rank": 6
     }
   ]
 }

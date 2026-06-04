@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-04",
-    "generated_at_kst": "2026-06-04 09:21:31",
+    "generated_at_kst": "2026-06-04 09:26:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 36.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 45.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 36.3,
+      "score": 45.4,
       "leaders": 1,
-      "avg_change_pct": 16.56
+      "avg_change_pct": 21.13
     },
     {
       "sector": "통신",
-      "score": 31.9,
+      "score": 30.1,
       "leaders": 1,
-      "avg_change_pct": 11.14
+      "avg_change_pct": 9.07
     },
     {
       "sector": "전자",
-      "score": 26.9,
+      "score": 29.0,
       "leaders": 1,
-      "avg_change_pct": 11.58
+      "avg_change_pct": 12.21
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 229500,
+      "price": 238500,
       "change_value": 0,
-      "change_pct": 16.56,
-      "volume": 1172385,
-      "trading_value_okrw": 2690.0,
+      "change_pct": 21.13,
+      "volume": 1550820,
+      "trading_value_okrw": 3698.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 23.6,
+      "score": 30.2,
       "rank": 1
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 21450,
+      "price": 21050,
       "change_value": 0,
-      "change_pct": 11.14,
-      "volume": 9318211,
-      "trading_value_okrw": 1998.0,
+      "change_pct": 9.07,
+      "volume": 10031558,
+      "trading_value_okrw": 2111.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 20.9,
+      "score": 18.8,
       "rank": 2
     },
     {
       "code": "043260",
       "name": "성호전자",
       "market": "KOSDAQ",
-      "price": 53000,
+      "price": 53300,
       "change_value": 0,
-      "change_pct": 11.58,
-      "volume": 2971356,
-      "trading_value_okrw": 1574.0,
+      "change_pct": 12.21,
+      "volume": 3576888,
+      "trading_value_okrw": 1906.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 16.9,
+      "score": 18.2,
       "rank": 3
     }
   ]

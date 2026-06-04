@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-04",
-    "generated_at_kst": "2026-06-04 09:16:35",
+    "generated_at_kst": "2026-06-04 09:21:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 29.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 36.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,68 +24,68 @@
   },
   "top_sectors": [
     {
-      "sector": "통신",
-      "score": 29.4,
+      "sector": "반도체",
+      "score": 36.3,
       "leaders": 1,
-      "avg_change_pct": 9.33
+      "avg_change_pct": 16.56
     },
     {
-      "sector": "반도체",
-      "score": 28.9,
+      "sector": "통신",
+      "score": 31.9,
       "leaders": 1,
-      "avg_change_pct": 13.26
+      "avg_change_pct": 11.14
     },
     {
       "sector": "전자",
-      "score": 19.5,
+      "score": 26.9,
       "leaders": 1,
-      "avg_change_pct": 6.53
+      "avg_change_pct": 11.58
     }
   ],
   "leaders": [
     {
-      "code": "010170",
-      "name": "대한광통신",
-      "market": "KOSDAQ",
-      "price": 21100,
-      "change_value": 0,
-      "change_pct": 9.33,
-      "volume": 8320358,
-      "trading_value_okrw": 1755.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 19.0,
-      "rank": 1
-    },
-    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 223000,
+      "price": 229500,
       "change_value": 0,
-      "change_pct": 13.26,
-      "volume": 799791,
-      "trading_value_okrw": 1783.0,
+      "change_pct": 16.56,
+      "volume": 1172385,
+      "trading_value_okrw": 2690.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 18.5,
+      "score": 23.6,
+      "rank": 1
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 21450,
+      "change_value": 0,
+      "change_pct": 11.14,
+      "volume": 9318211,
+      "trading_value_okrw": 1998.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 20.9,
       "rank": 2
     },
     {
       "code": "043260",
       "name": "성호전자",
       "market": "KOSDAQ",
-      "price": 50600,
+      "price": 53000,
       "change_value": 0,
-      "change_pct": 6.53,
-      "volume": 2164926,
-      "trading_value_okrw": 1095.0,
+      "change_pct": 11.58,
+      "volume": 2971356,
+      "trading_value_okrw": 1574.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 10.7,
+      "score": 16.9,
       "rank": 3
     }
   ]

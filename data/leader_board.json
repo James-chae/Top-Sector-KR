@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-04",
-    "generated_at_kst": "2026-06-04 09:51:33",
+    "generated_at_kst": "2026-06-04 09:56:34",
     "mode": "closing",
     "session_state": "",
     "leader_count": 8,
     "sector_count": 6,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 57.0",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 58.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,39 +25,39 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 57.0,
+      "score": 58.2,
       "leaders": 3,
-      "avg_change_pct": 21.47
+      "avg_change_pct": 22.43
     },
     {
       "sector": "전자",
-      "score": 38.6,
+      "score": 43.0,
       "leaders": 1,
-      "avg_change_pct": 16.63
+      "avg_change_pct": 19.37
     },
     {
       "sector": "통신",
-      "score": 25.6,
+      "score": 27.9,
       "leaders": 1,
-      "avg_change_pct": 3.89
+      "avg_change_pct": 5.96
     },
     {
       "sector": "보험",
-      "score": 22.4,
+      "score": 22.6,
       "leaders": 1,
-      "avg_change_pct": 11.54
-    },
-    {
-      "sector": "지주사",
-      "score": 21.2,
-      "leaders": 1,
-      "avg_change_pct": 1.11
+      "avg_change_pct": 11.7
     },
     {
       "sector": "조선",
-      "score": 15.7,
+      "score": 15.8,
       "leaders": 1,
       "avg_change_pct": 3.07
+    },
+    {
+      "sector": "원전",
+      "score": 13.4,
+      "leaders": 1,
+      "avg_change_pct": 1.54
     }
   ],
   "leaders": [
@@ -65,15 +65,15 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 243000,
+      "price": 246500,
       "change_value": 0,
-      "change_pct": 23.41,
-      "volume": 2892413,
-      "trading_value_okrw": 7028.0,
+      "change_pct": 25.19,
+      "volume": 3134037,
+      "trading_value_okrw": 7725.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 35.2,
+      "score": 37.6,
       "rank": 1
     },
     {
@@ -83,72 +83,72 @@
       "price": 127200,
       "change_value": 0,
       "change_pct": 29.93,
-      "volume": 1044642,
-      "trading_value_okrw": 1328.0,
+      "volume": 1051135,
+      "trading_value_okrw": 1337.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 32.4,
+      "score": 32.3,
       "rank": 2
     },
     {
       "code": "043260",
       "name": "성호전자",
       "market": "KOSDAQ",
-      "price": 55400,
+      "price": 56700,
       "change_value": 0,
-      "change_pct": 16.63,
-      "volume": 6124115,
-      "trading_value_okrw": 3392.0,
+      "change_pct": 19.37,
+      "volume": 6726538,
+      "trading_value_okrw": 3813.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 24.1,
+      "score": 27.4,
       "rank": 3
     },
     {
-      "code": "000810",
-      "name": "삼성화재",
-      "market": "KOSPI",
-      "price": 715000,
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 20450,
       "change_value": 0,
-      "change_pct": 11.54,
-      "volume": 165311,
-      "trading_value_okrw": 1181.0,
-      "sector1": "보험",
+      "change_pct": 5.96,
+      "volume": 13550265,
+      "trading_value_okrw": 2771.0,
+      "sector1": "통신",
       "sector2": "",
-      "sector": "보험",
-      "score": 13.4,
+      "sector": "통신",
+      "score": 15.0,
       "rank": 4
     },
     {
       "code": "042700",
       "name": "한미반도체",
       "market": "KOSPI",
-      "price": 306000,
+      "price": 309000,
       "change_value": 0,
-      "change_pct": 11.07,
-      "volume": 455991,
-      "trading_value_okrw": 1395.0,
+      "change_pct": 12.16,
+      "volume": 515589,
+      "trading_value_okrw": 1593.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 13.4,
+      "score": 14.7,
       "rank": 5
     },
     {
-      "code": "010170",
-      "name": "대한광통신",
-      "market": "KOSDAQ",
-      "price": 20050,
+      "code": "000810",
+      "name": "삼성화재",
+      "market": "KOSPI",
+      "price": 716000,
       "change_value": 0,
-      "change_pct": 3.89,
-      "volume": 13227443,
-      "trading_value_okrw": 2652.0,
-      "sector1": "통신",
+      "change_pct": 11.7,
+      "volume": 171014,
+      "trading_value_okrw": 1224.0,
+      "sector1": "보험",
       "sector2": "",
-      "sector": "통신",
-      "score": 12.9,
+      "sector": "보험",
+      "score": 13.6,
       "rank": 6
     },
     {
@@ -158,8 +158,8 @@
       "price": 28550,
       "change_value": 0,
       "change_pct": 3.07,
-      "volume": 4351326,
-      "trading_value_okrw": 1242.0,
+      "volume": 4514065,
+      "trading_value_okrw": 1288.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
@@ -167,18 +167,18 @@
       "rank": 7
     },
     {
-      "code": "402340",
-      "name": "SK스퀘어",
+      "code": "028260",
+      "name": "삼성물산",
       "market": "KOSPI",
-      "price": 1361000,
+      "price": 493000,
       "change_value": 0,
-      "change_pct": 1.11,
-      "volume": 256008,
-      "trading_value_okrw": 3484.0,
-      "sector1": "지주사",
+      "change_pct": 1.54,
+      "volume": 292869,
+      "trading_value_okrw": 1443.0,
+      "sector1": "원전",
       "sector2": "",
-      "sector": "지주사",
-      "score": 6.5,
+      "sector": "원전",
+      "score": 3.8,
       "rank": 8
     }
   ]

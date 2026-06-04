@@ -1,10 +1,10 @@
 {
   "meta": {
-    "trade_date": "2026-06-04",
-    "generated_at_kst": "2026-06-04 20:01:30",
+    "trade_date": "2026-06-05",
+    "generated_at_kst": "2026-06-05 08:03:12",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 19,
+    "leader_count": 18,
     "sector_count": 8,
     "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.8",
     "filtered_etf": "ETF 제외 적용",
@@ -48,12 +48,6 @@
       "avg_change_pct": 3.92
     },
     {
-      "sector": "통신",
-      "score": 31.1,
-      "leaders": 2,
-      "avg_change_pct": 3.25
-    },
-    {
       "sector": "보험",
       "score": 29.8,
       "leaders": 1,
@@ -70,6 +64,12 @@
       "score": 25.1,
       "leaders": 1,
       "avg_change_pct": 15.82
+    },
+    {
+      "sector": "바이오",
+      "score": 23.6,
+      "leaders": 1,
+      "avg_change_pct": 11.77
     }
   ],
   "leaders": [
@@ -194,21 +194,6 @@
       "rank": 8
     },
     {
-      "code": "010170",
-      "name": "대한광통신",
-      "market": "KOSDAQ",
-      "price": 20300,
-      "change_value": 0,
-      "change_pct": 5.18,
-      "volume": 20341567,
-      "trading_value_okrw": 4129.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 10.4,
-      "rank": 9
-    },
-    {
       "code": "440110",
       "name": "파두",
       "market": "KOSDAQ",
@@ -221,7 +206,7 @@
       "sector2": "",
       "sector": "기타",
       "score": 9.3,
-      "rank": 10
+      "rank": 9
     },
     {
       "code": "402340",
@@ -236,7 +221,7 @@
       "sector2": "",
       "sector": "지주사",
       "score": 7.5,
-      "rank": 11
+      "rank": 10
     },
     {
       "code": "001740",
@@ -251,7 +236,7 @@
       "sector2": "",
       "sector": "통신",
       "score": 7.2,
-      "rank": 12
+      "rank": 11
     },
     {
       "code": "105560",
@@ -266,7 +251,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 7.0,
-      "rank": 13
+      "rank": 12
     },
     {
       "code": "010140",
@@ -281,7 +266,7 @@
       "sector2": "",
       "sector": "조선",
       "score": 5.4,
-      "rank": 14
+      "rank": 13
     },
     {
       "code": "055550",
@@ -296,7 +281,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 5.2,
-      "rank": 15
+      "rank": 14
     },
     {
       "code": "086790",
@@ -311,7 +296,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 3.9,
-      "rank": 16
+      "rank": 15
     },
     {
       "code": "001820",
@@ -326,7 +311,7 @@
       "sector2": "",
       "sector": "전자",
       "score": 3.2,
-      "rank": 17
+      "rank": 16
     },
     {
       "code": "006260",
@@ -341,7 +326,7 @@
       "sector2": "",
       "sector": "전력",
       "score": 2.9,
-      "rank": 18
+      "rank": 17
     },
     {
       "code": "278470",
@@ -356,7 +341,7 @@
       "sector2": "",
       "sector": "화장품",
       "score": 1.6,
-      "rank": 19
+      "rank": 18
     }
   ]
 }

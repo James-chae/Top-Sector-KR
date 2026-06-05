@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-05",
-    "generated_at_kst": "2026-06-05 09:31:27",
+    "generated_at_kst": "2026-06-05 09:36:27",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 20.4",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 19.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,69 @@
   },
   "top_sectors": [
     {
-      "sector": "바이오",
-      "score": 20.4,
+      "sector": "금융",
+      "score": 19.4,
       "leaders": 1,
-      "avg_change_pct": 6.82
+      "avg_change_pct": 4.93
     },
     {
-      "sector": "금융",
-      "score": 17.9,
+      "sector": "바이오",
+      "score": 17.7,
       "leaders": 1,
-      "avg_change_pct": 3.71
+      "avg_change_pct": 4.37
+    },
+    {
+      "sector": "반도체",
+      "score": 15.4,
+      "leaders": 1,
+      "avg_change_pct": 3.68
     }
   ],
   "leaders": [
     {
-      "code": "128940",
-      "name": "한미약품",
-      "market": "KOSPI",
-      "price": 525000,
-      "change_value": 0,
-      "change_pct": 6.82,
-      "volume": 278214,
-      "trading_value_okrw": 1460.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 10.7,
-      "rank": 1
-    },
-    {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 170300,
+      "price": 172300,
       "change_value": 0,
-      "change_pct": 3.71,
-      "volume": 907532,
-      "trading_value_okrw": 1545.0,
+      "change_pct": 4.93,
+      "volume": 971191,
+      "trading_value_okrw": 1673.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
+      "score": 9.2,
+      "rank": 1
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "market": "KOSPI",
+      "price": 513000,
+      "change_value": 0,
+      "change_pct": 4.37,
+      "volume": 289589,
+      "trading_value_okrw": 1485.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
       "score": 8.0,
       "rank": 2
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 49250,
+      "change_value": 0,
+      "change_pct": 3.68,
+      "volume": 2141837,
+      "trading_value_okrw": 1054.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.8,
+      "rank": 3
     }
   ]
 }

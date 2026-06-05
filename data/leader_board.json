@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-05",
-    "generated_at_kst": "2026-06-05 10:06:30",
+    "generated_at_kst": "2026-06-05 10:11:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 25.3",
+    "leader_count": 4,
+    "sector_count": 3,
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 25.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,62 +25,83 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 25.3,
+      "score": 25.0,
       "leaders": 2,
-      "avg_change_pct": 4.92
+      "avg_change_pct": 4.42
+    },
+    {
+      "sector": "증권",
+      "score": 22.6,
+      "leaders": 1,
+      "avg_change_pct": 7.34
     },
     {
       "sector": "반도체",
-      "score": 16.0,
+      "score": 16.3,
       "leaders": 1,
-      "avg_change_pct": 3.79
+      "avg_change_pct": 3.89
     }
   ],
   "leaders": [
     {
+      "code": "001510",
+      "name": "SK증권",
+      "market": "KOSPI",
+      "price": 3435,
+      "change_value": 0,
+      "change_pct": 7.34,
+      "volume": 29410484,
+      "trading_value_okrw": 1010.0,
+      "sector1": "증권",
+      "sector2": "",
+      "sector": "증권",
+      "score": 14.1,
+      "rank": 1
+    },
+    {
       "code": "055550",
       "name": "신한지주",
       "market": "KOSPI",
-      "price": 106300,
+      "price": 105700,
       "change_value": 0,
-      "change_pct": 6.19,
-      "volume": 1110542,
-      "trading_value_okrw": 1180.0,
+      "change_pct": 5.59,
+      "volume": 1174601,
+      "trading_value_okrw": 1241.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 8.5,
-      "rank": 1
+      "score": 7.9,
+      "rank": 2
     },
     {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 170200,
+      "price": 169550,
       "change_value": 0,
-      "change_pct": 3.65,
-      "volume": 1247576,
-      "trading_value_okrw": 2123.0,
+      "change_pct": 3.26,
+      "volume": 1282816,
+      "trading_value_okrw": 2175.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 7.6,
-      "rank": 2
+      "score": 7.2,
+      "rank": 3
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 49300,
+      "price": 49350,
       "change_value": 0,
-      "change_pct": 3.79,
-      "volume": 2746526,
-      "trading_value_okrw": 1354.0,
+      "change_pct": 3.89,
+      "volume": 2836581,
+      "trading_value_okrw": 1399.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.7,
-      "rank": 3
+      "score": 6.8,
+      "rank": 4
     }
   ]
 }

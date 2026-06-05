@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-05",
-    "generated_at_kst": "2026-06-05 10:11:31",
+    "generated_at_kst": "2026-06-05 10:16:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 25.0",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 24.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 25.0,
+      "score": 24.9,
       "leaders": 2,
-      "avg_change_pct": 4.42
+      "avg_change_pct": 4.24
     },
     {
       "sector": "증권",
-      "score": 22.6,
+      "score": 23.7,
       "leaders": 1,
-      "avg_change_pct": 7.34
+      "avg_change_pct": 8.28
     },
     {
       "sector": "반도체",
@@ -47,45 +47,45 @@
       "code": "001510",
       "name": "SK증권",
       "market": "KOSPI",
-      "price": 3435,
+      "price": 3465,
       "change_value": 0,
-      "change_pct": 7.34,
-      "volume": 29410484,
-      "trading_value_okrw": 1010.0,
+      "change_pct": 8.28,
+      "volume": 30753038,
+      "trading_value_okrw": 1065.0,
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 14.1,
+      "score": 15.1,
       "rank": 1
     },
     {
       "code": "055550",
       "name": "신한지주",
       "market": "KOSPI",
-      "price": 105700,
+      "price": 105600,
       "change_value": 0,
-      "change_pct": 5.59,
-      "volume": 1174601,
-      "trading_value_okrw": 1241.0,
+      "change_pct": 5.49,
+      "volume": 1217383,
+      "trading_value_okrw": 1285.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 7.9,
+      "score": 7.8,
       "rank": 2
     },
     {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 169550,
+      "price": 169100,
       "change_value": 0,
-      "change_pct": 3.26,
-      "volume": 1282816,
-      "trading_value_okrw": 2175.0,
+      "change_pct": 2.98,
+      "volume": 1309765,
+      "trading_value_okrw": 2214.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 7.2,
+      "score": 6.9,
       "rank": 3
     },
     {
@@ -95,12 +95,12 @@
       "price": 49350,
       "change_value": 0,
       "change_pct": 3.89,
-      "volume": 2836581,
-      "trading_value_okrw": 1399.0,
+      "volume": 2885764,
+      "trading_value_okrw": 1424.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.8,
+      "score": 6.7,
       "rank": 4
     }
   ]

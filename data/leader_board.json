@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-05",
-    "generated_at_kst": "2026-06-05 10:01:28",
+    "generated_at_kst": "2026-06-05 10:06:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 24.9",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 25.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 24.9,
+      "score": 25.3,
       "leaders": 2,
-      "avg_change_pct": 4.67
+      "avg_change_pct": 4.92
     },
     {
       "sector": "반도체",
-      "score": 16.5,
+      "score": 16.0,
       "leaders": 1,
-      "avg_change_pct": 4.21
+      "avg_change_pct": 3.79
     }
   ],
   "leaders": [
@@ -44,8 +44,8 @@
       "price": 106300,
       "change_value": 0,
       "change_pct": 6.19,
-      "volume": 1048874,
-      "trading_value_okrw": 1114.0,
+      "volume": 1110542,
+      "trading_value_okrw": 1180.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
@@ -53,33 +53,33 @@
       "rank": 1
     },
     {
-      "code": "403870",
-      "name": "HPSP",
-      "market": "KOSDAQ",
-      "price": 49500,
-      "change_value": 0,
-      "change_pct": 4.21,
-      "volume": 2680609,
-      "trading_value_okrw": 1326.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 7.2,
-      "rank": 2
-    },
-    {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 169350,
+      "price": 170200,
       "change_value": 0,
-      "change_pct": 3.14,
-      "volume": 1204602,
-      "trading_value_okrw": 2039.0,
+      "change_pct": 3.65,
+      "volume": 1247576,
+      "trading_value_okrw": 2123.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 7.1,
+      "score": 7.6,
+      "rank": 2
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 49300,
+      "change_value": 0,
+      "change_pct": 3.79,
+      "volume": 2746526,
+      "trading_value_okrw": 1354.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.7,
       "rank": 3
     }
   ]

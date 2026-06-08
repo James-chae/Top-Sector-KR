@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 14:56:32",
+    "generated_at_kst": "2026-06-08 15:01:35",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 5,
     "sector_count": 3,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 56.9",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 53.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "통신",
-      "score": 56.9,
-      "leaders": 2,
-      "avg_change_pct": 27.02
+      "score": 53.4,
+      "leaders": 3,
+      "avg_change_pct": 18.45
     },
     {
       "sector": "인터넷",
-      "score": 46.2,
+      "score": 46.0,
       "leaders": 1,
-      "avg_change_pct": 10.67
+      "avg_change_pct": 10.76
     },
     {
       "sector": "반도체",
@@ -50,27 +50,27 @@
       "price": 14170,
       "change_value": 0,
       "change_pct": 30.0,
-      "volume": 56234100,
-      "trading_value_okrw": 7968.0,
+      "volume": 56261091,
+      "trading_value_okrw": 7972.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 39.9,
+      "score": 39.8,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 282750,
+      "price": 283000,
       "change_value": 0,
-      "change_pct": 10.67,
-      "volume": 9521057,
-      "trading_value_okrw": 26920.0,
+      "change_pct": 10.76,
+      "volume": 9575783,
+      "trading_value_okrw": 27099.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 28.2,
+      "score": 28.0,
       "rank": 2
     },
     {
@@ -100,8 +100,23 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.1,
+      "score": 7.0,
       "rank": 4
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "market": "KOSPI",
+      "price": 107800,
+      "change_value": 0,
+      "change_pct": 1.32,
+      "volume": 4213247,
+      "trading_value_okrw": 4541.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 4.4,
+      "rank": 5
     }
   ]
 }

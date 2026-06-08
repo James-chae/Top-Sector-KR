@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 09:41:28",
+    "generated_at_kst": "2026-06-08 09:47:24",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "로봇 중심 강세 / 상위섹터 점수 26.1",
+    "leader_count": 2,
+    "sector_count": 1,
+    "market_bias": "로봇 중심 강세 / 상위섹터 점수 23.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,9 @@
   "top_sectors": [
     {
       "sector": "로봇",
-      "score": 26.1,
+      "score": 23.5,
       "leaders": 2,
-      "avg_change_pct": 6.34
-    },
-    {
-      "sector": "인터넷",
-      "score": 16.1,
-      "leaders": 1,
-      "avg_change_pct": 1.76
+      "avg_change_pct": 2.84
     }
   ],
   "leaders": [
@@ -41,46 +35,31 @@
       "code": "454910",
       "name": "두산로보틱스",
       "market": "KOSPI",
-      "price": 152700,
+      "price": 144300,
       "change_value": 0,
-      "change_pct": 8.84,
-      "volume": 940013,
-      "trading_value_okrw": 1435.0,
+      "change_pct": 2.85,
+      "volume": 1243112,
+      "trading_value_okrw": 1793.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 13.5,
+      "score": 7.8,
       "rank": 1
     },
     {
       "code": "090360",
       "name": "로보스타",
       "market": "KOSDAQ",
-      "price": 153800,
+      "price": 152300,
       "change_value": 0,
-      "change_pct": 3.85,
-      "volume": 757821,
-      "trading_value_okrw": 1165.0,
+      "change_pct": 2.84,
+      "volume": 801611,
+      "trading_value_okrw": 1220.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 7.6,
+      "score": 6.2,
       "rank": 2
-    },
-    {
-      "code": "035420",
-      "name": "NAVER",
-      "market": "KOSPI",
-      "price": 260000,
-      "change_value": 0,
-      "change_pct": 1.76,
-      "volume": 574206,
-      "trading_value_okrw": 1492.0,
-      "sector1": "인터넷",
-      "sector2": "",
-      "sector": "인터넷",
-      "score": 6.4,
-      "rank": 3
     }
   ]
 }

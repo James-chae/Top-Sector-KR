@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 11:46:57",
+    "generated_at_kst": "2026-06-08 11:52:12",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 7,
-    "sector_count": 6,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 44.5",
+    "leader_count": 6,
+    "sector_count": 5,
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 45.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,40 +24,34 @@
   },
   "top_sectors": [
     {
-      "sector": "통신",
-      "score": 44.5,
-      "leaders": 2,
-      "avg_change_pct": 14.51
-    },
-    {
       "sector": "인터넷",
-      "score": 44.4,
+      "score": 45.2,
       "leaders": 1,
       "avg_change_pct": 13.31
     },
     {
+      "sector": "통신",
+      "score": 42.7,
+      "leaders": 2,
+      "avg_change_pct": 12.72
+    },
+    {
       "sector": "반도체",
-      "score": 22.7,
+      "score": 22.2,
       "leaders": 1,
-      "avg_change_pct": 5.45
-    },
-    {
-      "sector": "전자",
-      "score": 19.4,
-      "leaders": 1,
-      "avg_change_pct": 1.9
-    },
-    {
-      "sector": "기타",
-      "score": 15.5,
-      "leaders": 1,
-      "avg_change_pct": 1.64
+      "avg_change_pct": 4.92
     },
     {
       "sector": "로봇",
-      "score": 15.0,
+      "score": 17.2,
       "leaders": 1,
-      "avg_change_pct": 1.28
+      "avg_change_pct": 3.11
+    },
+    {
+      "sector": "기타",
+      "score": 15.9,
+      "leaders": 1,
+      "avg_change_pct": 2.04
     }
   ],
   "leaders": [
@@ -65,15 +59,15 @@
       "code": "001740",
       "name": "SK네트웍스",
       "market": "KOSPI",
-      "price": 13490,
+      "price": 13100,
       "change_value": 0,
-      "change_pct": 23.76,
-      "volume": 36483710,
-      "trading_value_okrw": 4921.0,
+      "change_pct": 20.18,
+      "volume": 37113879,
+      "trading_value_okrw": 4861.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 32.9,
+      "score": 29.2,
       "rank": 1
     },
     {
@@ -83,28 +77,13 @@
       "price": 289500,
       "change_value": 0,
       "change_pct": 13.31,
-      "volume": 5056816,
-      "trading_value_okrw": 14639.0,
+      "volume": 5433265,
+      "trading_value_okrw": 15729.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 26.4,
+      "score": 27.2,
       "rank": 2
-    },
-    {
-      "code": "080220",
-      "name": "제주반도체",
-      "market": "KOSDAQ",
-      "price": 98600,
-      "change_value": 0,
-      "change_pct": 5.45,
-      "volume": 3285713,
-      "trading_value_okrw": 3239.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 8.7,
-      "rank": 3
     },
     {
       "code": "017670",
@@ -113,58 +92,58 @@
       "price": 112000,
       "change_value": 0,
       "change_pct": 5.26,
-      "volume": 2641846,
-      "trading_value_okrw": 2958.0,
+      "volume": 2684254,
+      "trading_value_okrw": 3006.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
       "score": 8.1,
-      "rank": 4
+      "rank": 3
     },
     {
-      "code": "457370",
-      "name": "한켐",
+      "code": "080220",
+      "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 14910,
+      "price": 98100,
       "change_value": 0,
-      "change_pct": 1.64,
-      "volume": 12383394,
-      "trading_value_okrw": 1846.0,
-      "sector1": "기타",
+      "change_pct": 4.92,
+      "volume": 3314090,
+      "trading_value_okrw": 3251.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "기타",
-      "score": 4.9,
-      "rank": 5
-    },
-    {
-      "code": "011070",
-      "name": "LG이노텍",
-      "market": "KOSPI",
-      "price": 1182000,
-      "change_value": 0,
-      "change_pct": 1.9,
-      "volume": 290714,
-      "trading_value_okrw": 3436.0,
-      "sector1": "전자",
-      "sector2": "",
-      "sector": "전자",
-      "score": 4.8,
-      "rank": 6
+      "sector": "반도체",
+      "score": 8.1,
+      "rank": 4
     },
     {
       "code": "090360",
       "name": "로보스타",
       "market": "KOSDAQ",
-      "price": 150000,
+      "price": 152700,
       "change_value": 0,
-      "change_pct": 1.28,
-      "volume": 1502241,
-      "trading_value_okrw": 2253.0,
+      "change_pct": 3.11,
+      "volume": 1548927,
+      "trading_value_okrw": 2365.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 3.4,
-      "rank": 7
+      "score": 5.3,
+      "rank": 5
+    },
+    {
+      "code": "457370",
+      "name": "한켐",
+      "market": "KOSDAQ",
+      "price": 14970,
+      "change_value": 0,
+      "change_pct": 2.04,
+      "volume": 12450254,
+      "trading_value_okrw": 1863.0,
+      "sector1": "기타",
+      "sector2": "",
+      "sector": "기타",
+      "score": 5.3,
+      "rank": 6
     }
   ]
 }

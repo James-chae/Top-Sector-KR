@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 10:46:28",
+    "generated_at_kst": "2026-06-08 10:51:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 38.9",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 40.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "통신",
-      "score": 38.9,
+      "score": 40.4,
       "leaders": 2,
-      "avg_change_pct": 13.02
-    },
-    {
-      "sector": "반도체",
-      "score": 23.3,
-      "leaders": 1,
-      "avg_change_pct": 6.2
+      "avg_change_pct": 13.75
     },
     {
       "sector": "기타",
-      "score": 20.9,
+      "score": 25.6,
       "leaders": 1,
-      "avg_change_pct": 7.36
+      "avg_change_pct": 11.59
+    },
+    {
+      "sector": "반도체",
+      "score": 21.2,
+      "leaders": 1,
+      "avg_change_pct": 4.17
     }
   ],
   "leaders": [
@@ -47,60 +47,60 @@
       "code": "001740",
       "name": "SK네트웍스",
       "market": "KOSPI",
-      "price": 13370,
+      "price": 13640,
       "change_value": 0,
-      "change_pct": 22.66,
-      "volume": 24460402,
-      "trading_value_okrw": 3270.0,
+      "change_pct": 25.14,
+      "volume": 26025817,
+      "trading_value_okrw": 3549.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 31.7,
+      "score": 34.4,
       "rank": 1
     },
     {
       "code": "457370",
       "name": "한켐",
       "market": "KOSDAQ",
-      "price": 15750,
+      "price": 16370,
       "change_value": 0,
-      "change_pct": 7.36,
-      "volume": 9516295,
-      "trading_value_okrw": 1498.0,
+      "change_pct": 11.59,
+      "volume": 9985423,
+      "trading_value_okrw": 1634.0,
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 11.2,
+      "score": 15.5,
       "rank": 2
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 99300,
+      "price": 97400,
       "change_value": 0,
-      "change_pct": 6.2,
-      "volume": 2850432,
-      "trading_value_okrw": 2830.0,
+      "change_pct": 4.17,
+      "volume": 2892589,
+      "trading_value_okrw": 2817.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.3,
+      "score": 8.1,
       "rank": 3
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 110000,
+      "price": 108900,
       "change_value": 0,
-      "change_pct": 3.38,
-      "volume": 1469069,
-      "trading_value_okrw": 1615.0,
+      "change_pct": 2.35,
+      "volume": 1500622,
+      "trading_value_okrw": 1634.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 5.7,
+      "score": 4.6,
       "rank": 4
     }
   ]

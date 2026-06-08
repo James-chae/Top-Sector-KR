@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 11:27:04",
+    "generated_at_kst": "2026-06-08 11:31:54",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 5,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 45.2",
+    "leader_count": 5,
+    "sector_count": 4,
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 45.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,27 @@
   "top_sectors": [
     {
       "sector": "통신",
-      "score": 45.2,
+      "score": 45.1,
       "leaders": 2,
-      "avg_change_pct": 15.26
+      "avg_change_pct": 15.12
     },
     {
       "sector": "인터넷",
-      "score": 43.4,
+      "score": 42.2,
       "leaders": 1,
-      "avg_change_pct": 13.7
+      "avg_change_pct": 11.94
     },
     {
       "sector": "반도체",
-      "score": 19.8,
+      "score": 21.7,
       "leaders": 1,
-      "avg_change_pct": 2.89
+      "avg_change_pct": 4.6
     },
     {
       "sector": "기타",
-      "score": 17.3,
+      "score": 17.2,
       "leaders": 1,
-      "avg_change_pct": 3.27
-    },
-    {
-      "sector": "로봇",
-      "score": 14.0,
-      "leaders": 1,
-      "avg_change_pct": 1.15
+      "avg_change_pct": 3.2
     }
   ],
   "leaders": [
@@ -59,41 +53,41 @@
       "code": "001740",
       "name": "SK네트웍스",
       "market": "KOSPI",
-      "price": 13520,
+      "price": 13500,
       "change_value": 0,
-      "change_pct": 24.04,
-      "volume": 34556953,
-      "trading_value_okrw": 4672.0,
+      "change_pct": 23.85,
+      "volume": 34905916,
+      "trading_value_okrw": 4712.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 33.5,
+      "score": 33.2,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 290500,
+      "price": 286000,
       "change_value": 0,
-      "change_pct": 13.7,
-      "volume": 3999567,
-      "trading_value_okrw": 11618.0,
+      "change_pct": 11.94,
+      "volume": 4412281,
+      "trading_value_okrw": 12619.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 25.4,
+      "score": 24.2,
       "rank": 2
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 113300,
+      "price": 113200,
       "change_value": 0,
-      "change_pct": 6.48,
-      "volume": 2397412,
-      "trading_value_okrw": 2716.0,
+      "change_pct": 6.39,
+      "volume": 2494292,
+      "trading_value_okrw": 2823.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
@@ -101,49 +95,34 @@
       "rank": 3
     },
     {
-      "code": "457370",
-      "name": "한켐",
-      "market": "KOSDAQ",
-      "price": 15150,
-      "change_value": 0,
-      "change_pct": 3.27,
-      "volume": 12006899,
-      "trading_value_okrw": 1819.0,
-      "sector1": "기타",
-      "sector2": "",
-      "sector": "기타",
-      "score": 6.8,
-      "rank": 4
-    },
-    {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 96200,
+      "price": 97800,
       "change_value": 0,
-      "change_pct": 2.89,
-      "volume": 3139819,
-      "trading_value_okrw": 3020.0,
+      "change_pct": 4.6,
+      "volume": 3172273,
+      "trading_value_okrw": 3102.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.2,
-      "rank": 5
+      "score": 7.9,
+      "rank": 4
     },
     {
-      "code": "090360",
-      "name": "로보스타",
+      "code": "457370",
+      "name": "한켐",
       "market": "KOSDAQ",
-      "price": 149800,
+      "price": 15140,
       "change_value": 0,
-      "change_pct": 1.15,
-      "volume": 1287055,
-      "trading_value_okrw": 1928.0,
-      "sector1": "로봇",
+      "change_pct": 3.2,
+      "volume": 12102637,
+      "trading_value_okrw": 1832.0,
+      "sector1": "기타",
       "sector2": "",
-      "sector": "로봇",
-      "score": 3.2,
-      "rank": 6
+      "sector": "기타",
+      "score": 6.6,
+      "rank": 5
     }
   ]
 }

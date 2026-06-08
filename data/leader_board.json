@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 20:01:47",
+    "trade_date": "2026-06-09",
+    "generated_at_kst": "2026-06-09 08:03:05",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 4,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 51.6",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 55.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,46 +24,19 @@
   },
   "top_sectors": [
     {
-      "sector": "통신",
-      "score": 51.6,
-      "leaders": 2,
-      "avg_change_pct": 22.11
-    },
-    {
       "sector": "인터넷",
-      "score": 42.9,
+      "score": 55.4,
       "leaders": 1,
       "avg_change_pct": 9.2
     },
     {
       "sector": "보험",
-      "score": 22.5,
+      "score": 39.7,
       "leaders": 1,
       "avg_change_pct": 12.96
-    },
-    {
-      "sector": "반도체",
-      "score": 22.0,
-      "leaders": 1,
-      "avg_change_pct": 2.14
     }
   ],
   "leaders": [
-    {
-      "code": "001740",
-      "name": "SK네트웍스",
-      "market": "KOSPI",
-      "price": 14170,
-      "change_value": 0,
-      "change_pct": 30.0,
-      "volume": 56474937,
-      "trading_value_okrw": 8002.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 39.2,
-      "rank": 1
-    },
     {
       "code": "035420",
       "name": "NAVER",
@@ -76,23 +49,8 @@
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 24.9,
-      "rank": 2
-    },
-    {
-      "code": "388790",
-      "name": "라이콤",
-      "market": "KOSDAQ",
-      "price": 6750,
-      "change_value": 0,
-      "change_pct": 14.21,
-      "volume": 14963135,
-      "trading_value_okrw": 1010.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 16.1,
-      "rank": 3
+      "score": 37.4,
+      "rank": 1
     },
     {
       "code": "085620",
@@ -106,23 +64,8 @@
       "sector1": "보험",
       "sector2": "",
       "sector": "보험",
-      "score": 13.9,
-      "rank": 4
-    },
-    {
-      "code": "080220",
-      "name": "제주반도체",
-      "market": "KOSDAQ",
-      "price": 95500,
-      "change_value": 0,
-      "change_pct": 2.14,
-      "volume": 4649253,
-      "trading_value_okrw": 4440.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 4.9,
-      "rank": 5
+      "score": 31.2,
+      "rank": 2
     }
   ]
 }

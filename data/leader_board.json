@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 12:06:33",
+    "generated_at_kst": "2026-06-08 12:12:20",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 5,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 44.3",
+    "leader_count": 5,
+    "sector_count": 4,
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 45.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,27 @@
   "top_sectors": [
     {
       "sector": "인터넷",
-      "score": 44.3,
+      "score": 45.6,
       "leaders": 1,
-      "avg_change_pct": 11.55
+      "avg_change_pct": 12.72
     },
     {
       "sector": "통신",
-      "score": 42.7,
+      "score": 42.4,
       "leaders": 2,
-      "avg_change_pct": 12.77
+      "avg_change_pct": 12.45
     },
     {
       "sector": "반도체",
-      "score": 22.0,
+      "score": 22.5,
       "leaders": 1,
-      "avg_change_pct": 4.71
-    },
-    {
-      "sector": "기타",
-      "score": 15.8,
-      "leaders": 1,
-      "avg_change_pct": 1.98
+      "avg_change_pct": 5.13
     },
     {
       "sector": "로봇",
-      "score": 15.6,
+      "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 1.42
+      "avg_change_pct": 2.03
     }
   ],
   "leaders": [
@@ -59,31 +53,46 @@
       "code": "001740",
       "name": "SK네트웍스",
       "market": "KOSPI",
-      "price": 13130,
+      "price": 13060,
       "change_value": 0,
-      "change_pct": 20.46,
-      "volume": 38457089,
-      "trading_value_okrw": 5049.0,
+      "change_pct": 19.82,
+      "volume": 38722935,
+      "trading_value_okrw": 5057.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 29.5,
+      "score": 28.8,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 285000,
+      "price": 288000,
       "change_value": 0,
-      "change_pct": 11.55,
-      "volume": 6121684,
-      "trading_value_okrw": 17446.0,
+      "change_pct": 12.72,
+      "volume": 6239216,
+      "trading_value_okrw": 17968.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 26.3,
+      "score": 27.6,
       "rank": 2
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "price": 98300,
+      "change_value": 0,
+      "change_pct": 5.13,
+      "volume": 3371105,
+      "trading_value_okrw": 3313.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 8.2,
+      "rank": 3
     },
     {
       "code": "017670",
@@ -92,58 +101,28 @@
       "price": 111800,
       "change_value": 0,
       "change_pct": 5.08,
-      "volume": 2789548,
-      "trading_value_okrw": 3118.0,
+      "volume": 2811280,
+      "trading_value_okrw": 3143.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
       "score": 7.9,
-      "rank": 3
-    },
-    {
-      "code": "080220",
-      "name": "제주반도체",
-      "market": "KOSDAQ",
-      "price": 97900,
-      "change_value": 0,
-      "change_pct": 4.71,
-      "volume": 3361299,
-      "trading_value_okrw": 3290.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 7.8,
       "rank": 4
-    },
-    {
-      "code": "457370",
-      "name": "한켐",
-      "market": "KOSDAQ",
-      "price": 14960,
-      "change_value": 0,
-      "change_pct": 1.98,
-      "volume": 12621531,
-      "trading_value_okrw": 1888.0,
-      "sector1": "기타",
-      "sector2": "",
-      "sector": "기타",
-      "score": 5.1,
-      "rank": 5
     },
     {
       "code": "090360",
       "name": "로보스타",
       "market": "KOSDAQ",
-      "price": 150200,
+      "price": 151100,
       "change_value": 0,
-      "change_pct": 1.42,
-      "volume": 1605839,
-      "trading_value_okrw": 2411.0,
+      "change_pct": 2.03,
+      "volume": 1645758,
+      "trading_value_okrw": 2486.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 3.5,
-      "rank": 6
+      "score": 4.2,
+      "rank": 5
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 09:47:24",
+    "generated_at_kst": "2026-06-08 09:51:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 1,
-    "market_bias": "로봇 중심 강세 / 상위섹터 점수 23.5",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "로봇 중심 강세 / 상위섹터 점수 24.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "로봇",
-      "score": 23.5,
+      "score": 24.8,
       "leaders": 2,
-      "avg_change_pct": 2.84
+      "avg_change_pct": 3.84
+    },
+    {
+      "sector": "반도체",
+      "score": 14.7,
+      "leaders": 1,
+      "avg_change_pct": 1.93
     }
   ],
   "leaders": [
@@ -35,31 +41,46 @@
       "code": "454910",
       "name": "두산로보틱스",
       "market": "KOSPI",
-      "price": 144300,
+      "price": 147000,
       "change_value": 0,
-      "change_pct": 2.85,
-      "volume": 1243112,
-      "trading_value_okrw": 1793.0,
+      "change_pct": 4.78,
+      "volume": 1359264,
+      "trading_value_okrw": 1998.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 7.8,
+      "score": 9.6,
       "rank": 1
     },
     {
       "code": "090360",
       "name": "로보스타",
       "market": "KOSDAQ",
-      "price": 152300,
+      "price": 152400,
       "change_value": 0,
-      "change_pct": 2.84,
-      "volume": 801611,
-      "trading_value_okrw": 1220.0,
+      "change_pct": 2.9,
+      "volume": 825785,
+      "trading_value_okrw": 1258.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 6.2,
+      "score": 6.0,
       "rank": 2
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "price": 95300,
+      "change_value": 0,
+      "change_pct": 1.93,
+      "volume": 1418299,
+      "trading_value_okrw": 1351.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 5.4,
+      "rank": 3
     }
   ]
 }

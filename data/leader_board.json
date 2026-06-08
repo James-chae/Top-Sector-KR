@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-08",
-    "generated_at_kst": "2026-06-08 15:06:53",
+    "generated_at_kst": "2026-06-08 15:12:42",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 56.8",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 53.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "통신",
-      "score": 56.8,
+      "score": 53.3,
       "leaders": 2,
-      "avg_change_pct": 27.02
+      "avg_change_pct": 23.55
     },
     {
       "sector": "인터넷",
-      "score": 46.1,
+      "score": 45.0,
       "leaders": 1,
-      "avg_change_pct": 10.96
+      "avg_change_pct": 9.98
     },
     {
       "sector": "반도체",
-      "score": 23.3,
+      "score": 21.6,
       "leaders": 1,
-      "avg_change_pct": 4.17
+      "avg_change_pct": 2.25
     }
   ],
   "leaders": [
@@ -50,57 +50,57 @@
       "price": 14170,
       "change_value": 0,
       "change_pct": 30.0,
-      "volume": 56298764,
-      "trading_value_okrw": 7977.0,
+      "volume": 56334865,
+      "trading_value_okrw": 7982.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 39.8,
+      "score": 39.7,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 283500,
+      "price": 281000,
       "change_value": 0,
-      "change_pct": 10.96,
-      "volume": 9641344,
-      "trading_value_okrw": 27333.0,
+      "change_pct": 9.98,
+      "volume": 9717206,
+      "trading_value_okrw": 27305.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 28.1,
+      "score": 27.0,
       "rank": 2
     },
     {
       "code": "388790",
       "name": "라이콤",
       "market": "KOSDAQ",
-      "price": 7330,
+      "price": 6920,
       "change_value": 0,
-      "change_pct": 24.03,
-      "volume": 14080454,
-      "trading_value_okrw": 1032.0,
+      "change_pct": 17.09,
+      "volume": 14480280,
+      "trading_value_okrw": 1002.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 25.9,
+      "score": 19.0,
       "rank": 3
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 97400,
+      "price": 95600,
       "change_value": 0,
-      "change_pct": 4.17,
-      "volume": 4234498,
-      "trading_value_okrw": 4124.0,
+      "change_pct": 2.25,
+      "volume": 4396412,
+      "trading_value_okrw": 4202.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.0,
+      "score": 5.1,
       "rank": 4
     }
   ]

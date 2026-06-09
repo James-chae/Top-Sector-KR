@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-09",
-    "generated_at_kst": "2026-06-09 08:03:05",
+    "generated_at_kst": "2026-06-09 09:01:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 55.4",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 92.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "인터넷",
-      "score": 55.4,
+      "sector": "반도체",
+      "score": 92.5,
       "leaders": 1,
-      "avg_change_pct": 9.2
-    },
-    {
-      "sector": "보험",
-      "score": 39.7,
-      "leaders": 1,
-      "avg_change_pct": 12.96
+      "avg_change_pct": 7.8
     }
   ],
   "leaders": [
     {
-      "code": "035420",
-      "name": "NAVER",
+      "code": "000660",
+      "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 279000,
+      "price": 2060000,
       "change_value": 0,
-      "change_pct": 9.2,
-      "volume": 10148390,
-      "trading_value_okrw": 28314.0,
-      "sector1": "인터넷",
+      "change_pct": 7.8,
+      "volume": 193696,
+      "trading_value_okrw": 3990.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "인터넷",
-      "score": 37.4,
+      "sector": "반도체",
+      "score": 76.6,
       "rank": 1
-    },
-    {
-      "code": "085620",
-      "name": "미래에셋생명",
-      "market": "KOSPI",
-      "price": 21000,
-      "change_value": 0,
-      "change_pct": 12.96,
-      "volume": 4839465,
-      "trading_value_okrw": 1016.0,
-      "sector1": "보험",
-      "sector2": "",
-      "sector": "보험",
-      "score": 31.2,
-      "rank": 2
     }
   ]
 }

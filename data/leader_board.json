@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-10",
-    "generated_at_kst": "2026-06-10 10:07:05",
+    "generated_at_kst": "2026-06-10 10:11:53",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 46.0",
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 45.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "자동차",
-      "score": 46.0,
+      "score": 45.9,
       "leaders": 1,
       "avg_change_pct": 29.91
     },
     {
       "sector": "반도체",
-      "score": 44.5,
+      "score": 43.2,
       "leaders": 3,
-      "avg_change_pct": 7.05
+      "avg_change_pct": 5.84
     },
     {
       "sector": "화학",
-      "score": 29.1,
+      "score": 32.0,
       "leaders": 1,
-      "avg_change_pct": 14.79
+      "avg_change_pct": 16.86
     },
     {
       "sector": "전력",
-      "score": 19.1,
+      "score": 22.1,
       "leaders": 1,
-      "avg_change_pct": 7.06
+      "avg_change_pct": 9.57
     }
   ],
   "leaders": [
@@ -56,87 +56,87 @@
       "price": 4430,
       "change_value": 0,
       "change_pct": 29.91,
-      "volume": 23535511,
-      "trading_value_okrw": 1042.0,
+      "volume": 23548568,
+      "trading_value_okrw": 1043.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 37.4,
+      "score": 37.3,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 214500,
+      "price": 210500,
       "change_value": 0,
-      "change_pct": 11.89,
-      "volume": 2613676,
-      "trading_value_okrw": 5606.0,
+      "change_pct": 9.81,
+      "volume": 2689096,
+      "trading_value_okrw": 5660.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 25.6,
+      "score": 23.2,
       "rank": 2
     },
     {
       "code": "093370",
       "name": "후성",
       "market": "KOSPI",
-      "price": 15520,
+      "price": 15800,
       "change_value": 0,
-      "change_pct": 14.79,
-      "volume": 8655674,
-      "trading_value_okrw": 1343.0,
+      "change_pct": 16.86,
+      "volume": 9478657,
+      "trading_value_okrw": 1497.0,
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
-      "score": 19.8,
+      "score": 22.3,
       "rank": 3
-    },
-    {
-      "code": "089030",
-      "name": "테크윙",
-      "market": "KOSDAQ",
-      "price": 63400,
-      "change_value": 0,
-      "change_pct": 6.2,
-      "volume": 3486047,
-      "trading_value_okrw": 2210.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 12.1,
-      "rank": 4
     },
     {
       "code": "010120",
       "name": "LS ELECTRIC",
       "market": "KOSPI",
-      "price": 235000,
+      "price": 240500,
       "change_value": 0,
-      "change_pct": 7.06,
-      "volume": 522642,
-      "trading_value_okrw": 1228.0,
+      "change_pct": 9.57,
+      "volume": 560014,
+      "trading_value_okrw": 1346.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 10.0,
+      "score": 12.8,
+      "rank": 4
+    },
+    {
+      "code": "089030",
+      "name": "테크윙",
+      "market": "KOSDAQ",
+      "price": 62900,
+      "change_value": 0,
+      "change_pct": 5.36,
+      "volume": 3603610,
+      "trading_value_okrw": 2266.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 11.3,
       "rank": 5
     },
     {
       "code": "042700",
       "name": "한미반도체",
       "market": "KOSPI",
-      "price": 285000,
+      "price": 283000,
       "change_value": 0,
-      "change_pct": 3.07,
-      "volume": 400730,
-      "trading_value_okrw": 1142.0,
+      "change_pct": 2.35,
+      "volume": 416173,
+      "trading_value_okrw": 1177.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.8,
+      "score": 5.1,
       "rank": 6
     }
   ]

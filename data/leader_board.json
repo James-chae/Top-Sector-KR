@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-10",
-    "generated_at_kst": "2026-06-10 09:36:39",
+    "generated_at_kst": "2026-06-10 09:41:42",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
+    "leader_count": 3,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.7",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 37.7,
-      "leaders": 2,
-      "avg_change_pct": 7.65
+      "score": 42.3,
+      "leaders": 3,
+      "avg_change_pct": 7.0
     }
   ],
   "leaders": [
@@ -35,31 +35,46 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 216000,
+      "price": 214000,
       "change_value": 0,
-      "change_pct": 12.68,
-      "volume": 1788197,
-      "trading_value_okrw": 3862.0,
+      "change_pct": 11.63,
+      "volume": 1933731,
+      "trading_value_okrw": 4138.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 25.4,
+      "score": 24.2,
       "rank": 1
+    },
+    {
+      "code": "089030",
+      "name": "테크윙",
+      "market": "KOSDAQ",
+      "price": 63400,
+      "change_value": 0,
+      "change_pct": 6.2,
+      "volume": 1964356,
+      "trading_value_okrw": 1245.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 10.3,
+      "rank": 2
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 58500,
+      "price": 58800,
       "change_value": 0,
-      "change_pct": 2.63,
-      "volume": 1903992,
-      "trading_value_okrw": 1113.0,
+      "change_pct": 3.16,
+      "volume": 2089759,
+      "trading_value_okrw": 1228.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.7,
-      "rank": 2
+      "score": 7.2,
+      "rank": 3
     }
   ]
 }

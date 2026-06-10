@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-10",
-    "generated_at_kst": "2026-06-10 09:41:42",
+    "generated_at_kst": "2026-06-10 09:46:57",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.3",
+    "leader_count": 4,
+    "sector_count": 2,
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 46.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,57 +24,78 @@
   },
   "top_sectors": [
     {
+      "sector": "자동차",
+      "score": 46.4,
+      "leaders": 1,
+      "avg_change_pct": 29.91
+    },
+    {
       "sector": "반도체",
-      "score": 42.3,
+      "score": 41.2,
       "leaders": 3,
-      "avg_change_pct": 7.0
+      "avg_change_pct": 4.96
     }
   ],
   "leaders": [
     {
+      "code": "126640",
+      "name": "화신정공",
+      "market": "KOSDAQ",
+      "price": 4430,
+      "change_value": 0,
+      "change_pct": 29.91,
+      "volume": 23315939,
+      "trading_value_okrw": 1032.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 37.8,
+      "rank": 1
+    },
+    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 214000,
+      "price": 208500,
       "change_value": 0,
-      "change_pct": 11.63,
-      "volume": 1933731,
-      "trading_value_okrw": 4138.0,
+      "change_pct": 8.76,
+      "volume": 2123307,
+      "trading_value_okrw": 4427.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 24.2,
-      "rank": 1
+      "score": 21.5,
+      "rank": 2
     },
     {
       "code": "089030",
       "name": "테크윙",
       "market": "KOSDAQ",
-      "price": 63400,
+      "price": 62000,
       "change_value": 0,
-      "change_pct": 6.2,
-      "volume": 1964356,
-      "trading_value_okrw": 1245.0,
+      "change_pct": 3.85,
+      "volume": 2294662,
+      "trading_value_okrw": 1422.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.3,
-      "rank": 2
+      "score": 8.3,
+      "rank": 3
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 58800,
+      "price": 58300,
       "change_value": 0,
-      "change_pct": 3.16,
-      "volume": 2089759,
-      "trading_value_okrw": 1228.0,
+      "change_pct": 2.28,
+      "volume": 2321559,
+      "trading_value_okrw": 1353.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.2,
-      "rank": 3
+      "score": 6.5,
+      "rank": 4
     }
   ]
 }

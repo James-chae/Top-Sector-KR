@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-10",
-    "generated_at_kst": "2026-06-10 09:32:14",
+    "generated_at_kst": "2026-06-10 09:36:39",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
+    "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 45.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 45.4,
-      "leaders": 1,
-      "avg_change_pct": 17.11
+      "score": 37.7,
+      "leaders": 2,
+      "avg_change_pct": 7.65
     }
   ],
   "leaders": [
@@ -35,16 +35,31 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 224500,
+      "price": 216000,
       "change_value": 0,
-      "change_pct": 17.11,
-      "volume": 1596350,
-      "trading_value_okrw": 3583.0,
+      "change_pct": 12.68,
+      "volume": 1788197,
+      "trading_value_okrw": 3862.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 30.4,
+      "score": 25.4,
       "rank": 1
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 58500,
+      "change_value": 0,
+      "change_pct": 2.63,
+      "volume": 1903992,
+      "trading_value_okrw": 1113.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.7,
+      "rank": 2
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 09:36:30",
+    "generated_at_kst": "2026-06-11 09:41:34",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "통신 중심 강세 / 상위섹터 점수 17.1",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 19.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,68 +24,68 @@
   },
   "top_sectors": [
     {
-      "sector": "통신",
-      "score": 17.1,
-      "leaders": 1,
-      "avg_change_pct": 4.48
-    },
-    {
       "sector": "반도체",
-      "score": 16.2,
+      "score": 19.2,
       "leaders": 1,
-      "avg_change_pct": 2.51
+      "avg_change_pct": 4.02
     },
     {
       "sector": "에너지",
-      "score": 16.1,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 2.82
+      "avg_change_pct": 3.61
+    },
+    {
+      "sector": "통신",
+      "score": 16.4,
+      "leaders": 1,
+      "avg_change_pct": 3.44
     }
   ],
   "leaders": [
     {
-      "code": "010170",
-      "name": "대한광통신",
+      "code": "036930",
+      "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 17030,
+      "price": 207000,
       "change_value": 0,
-      "change_pct": 4.48,
-      "volume": 6211234,
-      "trading_value_okrw": 1057.0,
-      "sector1": "통신",
+      "change_pct": 4.02,
+      "volume": 871525,
+      "trading_value_okrw": 1804.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "통신",
-      "score": 8.5,
+      "sector": "반도체",
+      "score": 8.7,
       "rank": 1
     },
     {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 45600,
+      "price": 45950,
       "change_value": 0,
-      "change_pct": 2.82,
-      "volume": 2858102,
-      "trading_value_okrw": 1303.0,
+      "change_pct": 3.61,
+      "volume": 2960009,
+      "trading_value_okrw": 1360.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 6.8,
+      "score": 7.6,
       "rank": 2
     },
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
+      "code": "010170",
+      "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 204000,
+      "price": 16860,
       "change_value": 0,
-      "change_pct": 2.51,
-      "volume": 718431,
-      "trading_value_okrw": 1465.0,
-      "sector1": "반도체",
+      "change_pct": 3.44,
+      "volume": 6776204,
+      "trading_value_okrw": 1142.0,
+      "sector1": "통신",
       "sector2": "",
-      "sector": "반도체",
-      "score": 6.6,
+      "sector": "통신",
+      "score": 7.6,
       "rank": 3
     }
   ]

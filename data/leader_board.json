@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 11:57:08",
+    "generated_at_kst": "2026-06-11 12:01:40",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 66.7",
+    "leader_count": 7,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 67.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 66.7,
+      "score": 67.0,
       "leaders": 3,
-      "avg_change_pct": 11.96
+      "avg_change_pct": 12.16
     },
     {
       "sector": "보험",
@@ -37,15 +37,21 @@
     },
     {
       "sector": "자동차",
-      "score": 36.2,
+      "score": 36.3,
       "leaders": 1,
       "avg_change_pct": 23.25
     },
     {
       "sector": "바이오",
-      "score": 20.5,
+      "score": 20.7,
       "leaders": 1,
-      "avg_change_pct": 9.37
+      "avg_change_pct": 9.52
+    },
+    {
+      "sector": "통신",
+      "score": 15.2,
+      "leaders": 1,
+      "avg_change_pct": 1.47
     }
   ],
   "leaders": [
@@ -53,15 +59,15 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2070000,
+      "price": 2074000,
       "change_value": 0,
-      "change_pct": 1.07,
-      "volume": 3559298,
-      "trading_value_okrw": 73677.0,
+      "change_pct": 1.27,
+      "volume": 3593443,
+      "trading_value_okrw": 74528.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 66.6,
+      "score": 66.8,
       "rank": 1
     },
     {
@@ -71,8 +77,8 @@
       "price": 29350,
       "change_value": 0,
       "change_pct": 29.87,
-      "volume": 6080418,
-      "trading_value_okrw": 1784.0,
+      "volume": 6085142,
+      "trading_value_okrw": 1785.0,
       "sector1": "보험",
       "sector2": "",
       "sector": "보험",
@@ -86,58 +92,73 @@
       "price": 5460,
       "change_value": 0,
       "change_pct": 23.25,
-      "volume": 21312809,
-      "trading_value_okrw": 1163.0,
+      "volume": 21687893,
+      "trading_value_okrw": 1184.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 27.3,
+      "score": 27.4,
       "rank": 3
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 131100,
+      "price": 132100,
       "change_value": 0,
-      "change_pct": 19.73,
-      "volume": 1650275,
-      "trading_value_okrw": 2163.0,
+      "change_pct": 20.64,
+      "volume": 1671223,
+      "trading_value_okrw": 2207.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.9,
+      "score": 22.8,
       "rank": 4
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 229000,
+      "price": 228000,
       "change_value": 0,
-      "change_pct": 15.08,
-      "volume": 3017899,
-      "trading_value_okrw": 6910.0,
+      "change_pct": 14.57,
+      "volume": 3213759,
+      "trading_value_okrw": 7327.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.6,
+      "score": 21.4,
       "rank": 5
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 344500,
+      "price": 345000,
       "change_value": 0,
-      "change_pct": 9.37,
-      "volume": 437263,
-      "trading_value_okrw": 1506.0,
+      "change_pct": 9.52,
+      "volume": 442744,
+      "trading_value_okrw": 1527.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.8,
+      "score": 10.9,
       "rank": 6
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 16540,
+      "change_value": 0,
+      "change_pct": 1.47,
+      "volume": 10980147,
+      "trading_value_okrw": 1816.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 4.6,
+      "rank": 7
     }
   ]
 }

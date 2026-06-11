@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 11:41:39",
+    "generated_at_kst": "2026-06-11 11:46:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 64.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 47.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,89 +25,74 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 64.9,
+      "score": 47.8,
       "leaders": 3,
-      "avg_change_pct": 10.4
-    },
-    {
-      "sector": "자동차",
-      "score": 37.6,
-      "leaders": 1,
-      "avg_change_pct": 25.06
+      "avg_change_pct": 14.2
     },
     {
       "sector": "보험",
-      "score": 29.0,
+      "score": 36.1,
       "leaders": 1,
-      "avg_change_pct": 17.92
+      "avg_change_pct": 24.34
+    },
+    {
+      "sector": "자동차",
+      "score": 34.6,
+      "leaders": 1,
+      "avg_change_pct": 21.9
     },
     {
       "sector": "바이오",
-      "score": 20.3,
+      "score": 20.1,
       "leaders": 1,
-      "avg_change_pct": 9.37
+      "avg_change_pct": 9.05
     }
   ],
   "leaders": [
     {
-      "code": "000660",
-      "name": "SK하이닉스",
+      "code": "085620",
+      "name": "미래에셋생명",
       "market": "KOSPI",
-      "price": 2072000,
+      "price": 28100,
       "change_value": 0,
-      "change_pct": 1.17,
-      "volume": 3449160,
-      "trading_value_okrw": 71466.0,
-      "sector1": "반도체",
+      "change_pct": 24.34,
+      "volume": 5243435,
+      "trading_value_okrw": 1473.0,
+      "sector1": "보험",
       "sector2": "",
-      "sector": "반도체",
-      "score": 66.7,
+      "sector": "보험",
+      "score": 26.4,
       "rank": 1
     },
     {
       "code": "126640",
       "name": "화신정공",
       "market": "KOSDAQ",
-      "price": 5540,
+      "price": 5400,
       "change_value": 0,
-      "change_pct": 25.06,
-      "volume": 19650916,
-      "trading_value_okrw": 1088.0,
+      "change_pct": 21.9,
+      "volume": 20568806,
+      "trading_value_okrw": 1110.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 28.9,
+      "score": 25.8,
       "rank": 2
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 130000,
+      "price": 129700,
       "change_value": 0,
-      "change_pct": 18.72,
-      "volume": 1583843,
-      "trading_value_okrw": 2058.0,
+      "change_pct": 18.45,
+      "volume": 1613431,
+      "trading_value_okrw": 2092.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 20.8,
+      "score": 20.6,
       "rank": 3
-    },
-    {
-      "code": "085620",
-      "name": "미래에셋생명",
-      "market": "KOSPI",
-      "price": 26650,
-      "change_value": 0,
-      "change_pct": 17.92,
-      "volume": 4826236,
-      "trading_value_okrw": 1286.0,
-      "sector1": "보험",
-      "sector2": "",
-      "sector": "보험",
-      "score": 19.8,
-      "rank": 4
     },
     {
       "code": "036930",
@@ -116,27 +101,42 @@
       "price": 221500,
       "change_value": 0,
       "change_pct": 11.31,
-      "volume": 2786005,
-      "trading_value_okrw": 6171.0,
+      "volume": 2813102,
+      "trading_value_okrw": 6231.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
       "score": 17.3,
+      "rank": 4
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "price": 131700,
+      "change_value": 0,
+      "change_pct": 12.85,
+      "volume": 2033791,
+      "trading_value_okrw": 2678.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 15.6,
       "rank": 5
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 344500,
+      "price": 343500,
       "change_value": 0,
-      "change_pct": 9.37,
-      "volume": 417074,
-      "trading_value_okrw": 1436.0,
+      "change_pct": 9.05,
+      "volume": 422751,
+      "trading_value_okrw": 1452.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.7,
+      "score": 10.4,
       "rank": 6
     }
   ]

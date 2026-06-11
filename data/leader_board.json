@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 09:51:30",
+    "generated_at_kst": "2026-06-11 09:56:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
+    "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 24.7",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,18 +25,48 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 24.7,
-      "leaders": 1,
-      "avg_change_pct": 6.78
+      "score": 61.6,
+      "leaders": 3,
+      "avg_change_pct": 7.19
     },
     {
       "sector": "통신",
-      "score": 18.6,
+      "score": 18.2,
       "leaders": 1,
-      "avg_change_pct": 5.21
+      "avg_change_pct": 4.97
     }
   ],
   "leaders": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 2077000,
+      "change_value": 0,
+      "change_pct": 1.42,
+      "volume": 1538713,
+      "trading_value_okrw": 31959.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 66.7,
+      "rank": 1
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "price": 132300,
+      "change_value": 0,
+      "change_pct": 13.37,
+      "volume": 821678,
+      "trading_value_okrw": 1087.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 15.7,
+      "rank": 2
+    },
     {
       "code": "036930",
       "name": "주성엔지니어링",
@@ -44,28 +74,28 @@
       "price": 212500,
       "change_value": 0,
       "change_pct": 6.78,
-      "volume": 1164177,
-      "trading_value_okrw": 2473.0,
+      "volume": 1265301,
+      "trading_value_okrw": 2688.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 12.6,
-      "rank": 1
+      "score": 12.5,
+      "rank": 3
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 17150,
+      "price": 17110,
       "change_value": 0,
-      "change_pct": 5.21,
-      "volume": 7427273,
-      "trading_value_okrw": 1273.0,
+      "change_pct": 4.97,
+      "volume": 7678026,
+      "trading_value_okrw": 1313.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 9.4,
-      "rank": 2
+      "score": 9.0,
+      "rank": 4
     }
   ]
 }

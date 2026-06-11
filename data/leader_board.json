@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 09:31:28",
+    "generated_at_kst": "2026-06-11 09:36:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 16.7",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 17.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,69 @@
   },
   "top_sectors": [
     {
-      "sector": "에너지",
-      "score": 16.7,
+      "sector": "통신",
+      "score": 17.1,
       "leaders": 1,
-      "avg_change_pct": 3.49
+      "avg_change_pct": 4.48
+    },
+    {
+      "sector": "반도체",
+      "score": 16.2,
+      "leaders": 1,
+      "avg_change_pct": 2.51
+    },
+    {
+      "sector": "에너지",
+      "score": 16.1,
+      "leaders": 1,
+      "avg_change_pct": 2.82
     }
   ],
   "leaders": [
     {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 17030,
+      "change_value": 0,
+      "change_pct": 4.48,
+      "volume": 6211234,
+      "trading_value_okrw": 1057.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 8.5,
+      "rank": 1
+    },
+    {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 45900,
+      "price": 45600,
       "change_value": 0,
-      "change_pct": 3.49,
-      "volume": 2713894,
-      "trading_value_okrw": 1245.0,
+      "change_pct": 2.82,
+      "volume": 2858102,
+      "trading_value_okrw": 1303.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 7.6,
-      "rank": 1
+      "score": 6.8,
+      "rank": 2
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 204000,
+      "change_value": 0,
+      "change_pct": 2.51,
+      "volume": 718431,
+      "trading_value_okrw": 1465.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.6,
+      "rank": 3
     }
   ]
 }

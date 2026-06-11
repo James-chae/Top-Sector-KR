@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 09:41:34",
+    "generated_at_kst": "2026-06-11 09:46:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 19.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 23.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 19.2,
+      "score": 23.0,
       "leaders": 1,
-      "avg_change_pct": 4.02
-    },
-    {
-      "sector": "에너지",
-      "score": 17.0,
-      "leaders": 1,
-      "avg_change_pct": 3.61
+      "avg_change_pct": 6.28
     },
     {
       "sector": "통신",
       "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 3.44
+      "avg_change_pct": 3.31
+    },
+    {
+      "sector": "에너지",
+      "score": 15.2,
+      "leaders": 1,
+      "avg_change_pct": 1.69
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 207000,
+      "price": 211500,
       "change_value": 0,
-      "change_pct": 4.02,
-      "volume": 871525,
-      "trading_value_okrw": 1804.0,
+      "change_pct": 6.28,
+      "volume": 1027730,
+      "trading_value_okrw": 2173.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.7,
+      "score": 11.6,
       "rank": 1
-    },
-    {
-      "code": "475150",
-      "name": "SK이터닉스",
-      "market": "KOSPI",
-      "price": 45950,
-      "change_value": 0,
-      "change_pct": 3.61,
-      "volume": 2960009,
-      "trading_value_okrw": 1360.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 7.6,
-      "rank": 2
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 16860,
+      "price": 16840,
       "change_value": 0,
-      "change_pct": 3.44,
-      "volume": 6776204,
-      "trading_value_okrw": 1142.0,
+      "change_pct": 3.31,
+      "volume": 7059287,
+      "trading_value_okrw": 1188.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 7.6,
+      "score": 7.4,
+      "rank": 2
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 45100,
+      "change_value": 0,
+      "change_pct": 1.69,
+      "volume": 3147130,
+      "trading_value_okrw": 1419.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 5.6,
       "rank": 3
     }
   ]

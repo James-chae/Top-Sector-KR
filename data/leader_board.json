@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-11",
-    "generated_at_kst": "2026-06-11 12:22:01",
+    "generated_at_kst": "2026-06-11 12:26:42",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 8,
-    "sector_count": 6,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 49.9",
+    "leader_count": 10,
+    "sector_count": 8,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 50.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 49.9,
+      "score": 50.6,
       "leaders": 3,
-      "avg_change_pct": 15.85
+      "avg_change_pct": 16.48
     },
     {
       "sector": "보험",
@@ -37,27 +37,39 @@
     },
     {
       "sector": "자동차",
-      "score": 33.3,
+      "score": 31.3,
       "leaders": 1,
-      "avg_change_pct": 20.09
+      "avg_change_pct": 18.06
+    },
+    {
+      "sector": "지주사",
+      "score": 25.2,
+      "leaders": 1,
+      "avg_change_pct": 1.1
     },
     {
       "sector": "바이오",
-      "score": 19.0,
+      "score": 18.2,
       "leaders": 1,
-      "avg_change_pct": 7.62
+      "avg_change_pct": 6.83
+    },
+    {
+      "sector": "통신",
+      "score": 15.2,
+      "leaders": 1,
+      "avg_change_pct": 1.41
     },
     {
       "sector": "전자",
-      "score": 15.6,
+      "score": 15.1,
       "leaders": 1,
-      "avg_change_pct": 5.42
+      "avg_change_pct": 4.86
     },
     {
       "sector": "로봇",
-      "score": 14.1,
+      "score": 14.2,
       "leaders": 1,
-      "avg_change_pct": 4.2
+      "avg_change_pct": 4.36
     }
   ],
   "leaders": [
@@ -68,8 +80,8 @@
       "price": 29350,
       "change_value": 0,
       "change_pct": 29.87,
-      "volume": 6100378,
-      "trading_value_okrw": 1790.0,
+      "volume": 6104269,
+      "trading_value_okrw": 1791.0,
       "sector1": "보험",
       "sector2": "",
       "sector": "보험",
@@ -77,109 +89,139 @@
       "rank": 1
     },
     {
-      "code": "126640",
-      "name": "화신정공",
-      "market": "KOSDAQ",
-      "price": 5320,
-      "change_value": 0,
-      "change_pct": 20.09,
-      "volume": 22693635,
-      "trading_value_okrw": 1207.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 24.3,
-      "rank": 2
-    },
-    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 229500,
+      "price": 231000,
       "change_value": 0,
-      "change_pct": 15.33,
-      "volume": 3520321,
-      "trading_value_okrw": 8079.0,
+      "change_pct": 16.08,
+      "volume": 3586919,
+      "trading_value_okrw": 8285.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 22.7,
+      "score": 23.5,
+      "rank": 2
+    },
+    {
+      "code": "126640",
+      "name": "화신정공",
+      "market": "KOSDAQ",
+      "price": 5230,
+      "change_value": 0,
+      "change_pct": 18.06,
+      "volume": 23007294,
+      "trading_value_okrw": 1203.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 22.3,
       "rank": 3
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 130600,
+      "price": 131400,
       "change_value": 0,
-      "change_pct": 19.27,
-      "volume": 1719733,
-      "trading_value_okrw": 2245.0,
+      "change_pct": 20.0,
+      "volume": 1729249,
+      "trading_value_okrw": 2272.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.4,
+      "score": 22.1,
       "rank": 4
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 131800,
+      "price": 132300,
       "change_value": 0,
-      "change_pct": 12.94,
-      "volume": 2163593,
-      "trading_value_okrw": 2851.0,
+      "change_pct": 13.37,
+      "volume": 2181967,
+      "trading_value_okrw": 2886.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.7,
+      "score": 16.1,
       "rank": 5
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 339000,
+      "price": 336500,
       "change_value": 0,
-      "change_pct": 7.62,
-      "volume": 464864,
-      "trading_value_okrw": 1575.0,
+      "change_pct": 6.83,
+      "volume": 469414,
+      "trading_value_okrw": 1579.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 9.0,
+      "score": 8.2,
       "rank": 6
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 1196000,
+      "change_value": 0,
+      "change_pct": 1.1,
+      "volume": 604929,
+      "trading_value_okrw": 7234.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 7.2,
+      "rank": 7
     },
     {
       "code": "043260",
       "name": "성호전자",
       "market": "KOSDAQ",
-      "price": 42800,
+      "price": 42575,
       "change_value": 0,
-      "change_pct": 5.42,
-      "volume": 2638107,
-      "trading_value_okrw": 1129.0,
+      "change_pct": 4.86,
+      "volume": 2697187,
+      "trading_value_okrw": 1148.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 6.8,
-      "rank": 7
+      "score": 6.2,
+      "rank": 8
     },
     {
       "code": "098460",
       "name": "고영",
       "market": "KOSDAQ",
-      "price": 32250,
+      "price": 32300,
       "change_value": 0,
-      "change_pct": 4.2,
-      "volume": 3166706,
-      "trading_value_okrw": 1021.0,
+      "change_pct": 4.36,
+      "volume": 3181691,
+      "trading_value_okrw": 1027.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 5.5,
-      "rank": 8
+      "score": 5.7,
+      "rank": 9
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 16530,
+      "change_value": 0,
+      "change_pct": 1.41,
+      "volume": 11219002,
+      "trading_value_okrw": 1854.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 4.5,
+      "rank": 10
     }
   ]
 }

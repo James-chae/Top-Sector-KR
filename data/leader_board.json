@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-17",
-    "generated_at_kst": "2026-06-17 09:06:30",
+    "generated_at_kst": "2026-06-17 09:11:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 28.1",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 30.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 28.1,
+      "sector": "지주사",
+      "score": 30.4,
       "leaders": 1,
-      "avg_change_pct": 4.83
+      "avg_change_pct": 5.46
+    },
+    {
+      "sector": "반도체",
+      "score": 28.7,
+      "leaders": 1,
+      "avg_change_pct": 4.68
     }
   ],
   "leaders": [
     {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 1583000,
+      "change_value": 0,
+      "change_pct": 5.46,
+      "volume": 113836,
+      "trading_value_okrw": 1802.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 19.9,
+      "rank": 1
+    },
+    {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 69500,
+      "price": 69400,
       "change_value": 0,
-      "change_pct": 4.83,
-      "volume": 1529556,
-      "trading_value_okrw": 1063.0,
+      "change_pct": 4.68,
+      "volume": 2203379,
+      "trading_value_okrw": 1529.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 19.5,
-      "rank": 1
+      "score": 18.8,
+      "rank": 2
     }
   ]
 }

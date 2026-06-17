@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-17",
-    "generated_at_kst": "2026-06-17 09:31:28",
+    "generated_at_kst": "2026-06-17 09:36:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 41.4",
+    "leader_count": 7,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 44.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 41.4,
+      "score": 44.7,
       "leaders": 3,
-      "avg_change_pct": 7.64
+      "avg_change_pct": 7.46
     },
     {
       "sector": "지주사",
-      "score": 29.4,
+      "score": 30.3,
       "leaders": 1,
-      "avg_change_pct": 4.53
+      "avg_change_pct": 4.8
     },
     {
       "sector": "조선",
-      "score": 18.6,
+      "score": 18.7,
       "leaders": 1,
       "avg_change_pct": 3.64
     },
     {
       "sector": "전자",
-      "score": 17.2,
+      "score": 17.6,
       "leaders": 1,
-      "avg_change_pct": 2.75
+      "avg_change_pct": 2.83
+    },
+    {
+      "sector": "방산",
+      "score": 14.3,
+      "leaders": 1,
+      "avg_change_pct": 2.2
     }
   ],
   "leaders": [
@@ -53,60 +59,60 @@
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 112300,
+      "price": 113500,
       "change_value": 0,
-      "change_pct": 10.97,
-      "volume": 2429659,
-      "trading_value_okrw": 2728.0,
+      "change_pct": 12.15,
+      "volume": 3262449,
+      "trading_value_okrw": 3702.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 22.0,
+      "score": 26.4,
       "rank": 1
-    },
-    {
-      "code": "240810",
-      "name": "원익IPS",
-      "market": "KOSDAQ",
-      "price": 169600,
-      "change_value": 0,
-      "change_pct": 8.65,
-      "volume": 1114354,
-      "trading_value_okrw": 1889.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 16.1,
-      "rank": 2
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1569000,
+      "price": 1573000,
       "change_value": 0,
-      "change_pct": 4.53,
-      "volume": 192894,
-      "trading_value_okrw": 3026.0,
+      "change_pct": 4.8,
+      "volume": 204916,
+      "trading_value_okrw": 3223.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 15.8,
+      "score": 16.3,
+      "rank": 2
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "price": 168600,
+      "change_value": 0,
+      "change_pct": 8.01,
+      "volume": 1180861,
+      "trading_value_okrw": 1990.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 15.4,
       "rank": 3
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 234000,
+      "price": 231500,
       "change_value": 0,
-      "change_pct": 3.31,
-      "volume": 933232,
-      "trading_value_okrw": 2183.0,
+      "change_pct": 2.21,
+      "volume": 992568,
+      "trading_value_okrw": 2297.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.8,
+      "score": 10.7,
       "rank": 4
     },
     {
@@ -116,8 +122,8 @@
       "price": 133900,
       "change_value": 0,
       "change_pct": 3.64,
-      "volume": 1030587,
-      "trading_value_okrw": 1379.0,
+      "volume": 1077357,
+      "trading_value_okrw": 1442.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
@@ -128,16 +134,31 @@
       "code": "011070",
       "name": "LG이노텍",
       "market": "KOSPI",
-      "price": 1270000,
+      "price": 1271000,
       "change_value": 0,
-      "change_pct": 2.75,
-      "volume": 106690,
-      "trading_value_okrw": 1354.0,
+      "change_pct": 2.83,
+      "volume": 114217,
+      "trading_value_okrw": 1451.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 7.8,
+      "score": 8.0,
       "rank": 6
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "market": "KOSPI",
+      "price": 1209000,
+      "change_value": 0,
+      "change_pct": 2.2,
+      "volume": 83194,
+      "trading_value_okrw": 1005.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 5.8,
+      "rank": 7
     }
   ]
 }

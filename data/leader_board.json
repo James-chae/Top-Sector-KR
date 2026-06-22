@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-22",
-    "generated_at_kst": "2026-06-22 15:26:28",
+    "generated_at_kst": "2026-06-22 15:31:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 14,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.7",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,49 +25,49 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 72.7,
+      "score": 72.5,
       "leaders": 3,
-      "avg_change_pct": 17.46
+      "avg_change_pct": 17.59
     },
     {
       "sector": "지주사",
-      "score": 41.5,
+      "score": 40.1,
       "leaders": 1,
       "avg_change_pct": 10.67
     },
     {
       "sector": "바이오",
-      "score": 31.6,
+      "score": 32.0,
       "leaders": 2,
-      "avg_change_pct": 11.29
+      "avg_change_pct": 11.73
     },
     {
       "sector": "통신",
-      "score": 30.8,
+      "score": 31.0,
       "leaders": 1,
-      "avg_change_pct": 17.97
+      "avg_change_pct": 18.2
     },
     {
       "sector": "전자",
-      "score": 29.6,
+      "score": 29.2,
       "leaders": 1,
       "avg_change_pct": 7.57
     },
     {
       "sector": "원전",
-      "score": 28.6,
+      "score": 28.4,
       "leaders": 2,
       "avg_change_pct": 4.82
     },
     {
       "sector": "기타",
-      "score": 26.1,
+      "score": 26.6,
       "leaders": 1,
-      "avg_change_pct": 13.81
+      "avg_change_pct": 14.3
     },
     {
       "sector": "화학",
-      "score": 21.9,
+      "score": 21.8,
       "leaders": 1,
       "avg_change_pct": 9.98
     }
@@ -77,15 +77,15 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2918000,
+      "price": 2919000,
       "change_value": 0,
-      "change_pct": 5.57,
-      "volume": 4505746,
-      "trading_value_okrw": 131477.0,
+      "change_pct": 5.61,
+      "volume": 5057721,
+      "trading_value_okrw": 147634.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 71.0,
+      "score": 71.1,
       "rank": 1
     },
     {
@@ -95,28 +95,43 @@
       "price": 23150,
       "change_value": 0,
       "change_pct": 29.91,
-      "volume": 9375594,
+      "volume": 9376257,
       "trading_value_okrw": 2170.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 31.9,
+      "score": 31.8,
       "rank": 2
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 133600,
+      "price": 134000,
       "change_value": 0,
-      "change_pct": 16.89,
-      "volume": 10842526,
-      "trading_value_okrw": 14485.0,
+      "change_pct": 17.24,
+      "volume": 10935272,
+      "trading_value_okrw": 14653.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 25.1,
+      "score": 24.7,
       "rank": 3
+    },
+    {
+      "code": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "price": 2730,
+      "change_value": 0,
+      "change_pct": 16.92,
+      "volume": 52270696,
+      "trading_value_okrw": 1426.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 22.6,
+      "rank": 4
     },
     {
       "code": "402340",
@@ -130,52 +145,37 @@
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 23.4,
-      "rank": 4
-    },
-    {
-      "code": "067290",
-      "name": "JW신약",
-      "market": "KOSDAQ",
-      "price": 2715,
-      "change_value": 0,
-      "change_pct": 16.27,
-      "volume": 52060037,
-      "trading_value_okrw": 1413.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 22.0,
+      "score": 22.1,
       "rank": 5
     },
     {
       "code": "004710",
       "name": "한솔테크닉스",
       "market": "KOSPI",
-      "price": 15430,
+      "price": 15460,
       "change_value": 0,
-      "change_pct": 17.97,
-      "volume": 12288654,
-      "trading_value_okrw": 1896.0,
+      "change_pct": 18.2,
+      "volume": 12363362,
+      "trading_value_okrw": 1911.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 20.1,
+      "score": 20.2,
       "rank": 6
     },
     {
       "code": "440110",
       "name": "파두",
       "market": "KOSDAQ",
-      "price": 115400,
+      "price": 115900,
       "change_value": 0,
-      "change_pct": 13.81,
-      "volume": 1762555,
-      "trading_value_okrw": 2033.0,
+      "change_pct": 14.3,
+      "volume": 1785863,
+      "trading_value_okrw": 2069.0,
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 15.0,
+      "score": 15.4,
       "rank": 7
     },
     {
@@ -190,7 +190,7 @@
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
-      "score": 11.7,
+      "score": 11.6,
       "rank": 8
     },
     {
@@ -205,22 +205,22 @@
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 11.6,
+      "score": 11.2,
       "rank": 9
     },
     {
       "code": "014950",
       "name": "삼익제약",
       "market": "KOSDAQ",
-      "price": 8940,
+      "price": 8960,
       "change_value": 0,
-      "change_pct": 6.3,
-      "volume": 18512633,
-      "trading_value_okrw": 1655.0,
+      "change_pct": 6.54,
+      "volume": 18562799,
+      "trading_value_okrw": 1663.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 8.9,
+      "score": 9.1,
       "rank": 10
     },
     {
@@ -235,7 +235,7 @@
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 8.8,
+      "score": 8.6,
       "rank": 11
     },
     {
@@ -250,7 +250,7 @@
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 5.7,
+      "score": 5.6,
       "rank": 12
     },
     {
@@ -265,7 +265,7 @@
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 4.7,
+      "score": 4.6,
       "rank": 13
     },
     {
@@ -280,7 +280,7 @@
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 3.3,
+      "score": 3.2,
       "rank": 14
     }
   ]

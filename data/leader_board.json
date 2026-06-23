@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-23",
-    "generated_at_kst": "2026-06-23 14:46:39",
+    "generated_at_kst": "2026-06-23 14:51:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 5,
     "sector_count": 4,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 18.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 20.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,10 +24,16 @@
   },
   "top_sectors": [
     {
+      "sector": "반도체",
+      "score": 20.9,
+      "leaders": 2,
+      "avg_change_pct": 1.27
+    },
+    {
       "sector": "바이오",
-      "score": 18.9,
+      "score": 19.7,
       "leaders": 1,
-      "avg_change_pct": 12.64
+      "avg_change_pct": 15.75
     },
     {
       "sector": "전력",
@@ -36,16 +42,10 @@
       "avg_change_pct": 5.31
     },
     {
-      "sector": "반도체",
-      "score": 15.8,
-      "leaders": 1,
-      "avg_change_pct": 2.38
-    },
-    {
       "sector": "양자암호",
-      "score": 14.4,
+      "score": 14.1,
       "leaders": 1,
-      "avg_change_pct": 25.31
+      "avg_change_pct": 23.27
     }
   ],
   "leaders": [
@@ -53,30 +53,30 @@
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3075,
+      "price": 3160,
       "change_value": 0,
-      "change_pct": 12.64,
-      "volume": 63251772,
-      "trading_value_okrw": 1944.0,
+      "change_pct": 15.75,
+      "volume": 64207484,
+      "trading_value_okrw": 2028.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 8.1,
+      "score": 8.7,
       "rank": 1
     },
     {
       "code": "356680",
       "name": "엑스게이트",
       "market": "KOSDAQ",
-      "price": 20300,
+      "price": 19970,
       "change_value": 0,
-      "change_pct": 25.31,
-      "volume": 5784533,
-      "trading_value_okrw": 1174.0,
+      "change_pct": 23.27,
+      "volume": 5870454,
+      "trading_value_okrw": 1172.0,
       "sector1": "보안",
       "sector2": "양자암호",
       "sector": "양자암호",
-      "score": 5.5,
+      "score": 5.1,
       "rank": 2
     },
     {
@@ -98,16 +98,31 @@
       "code": "320000",
       "name": "한울반도체",
       "market": "KOSDAQ",
-      "price": 23700,
+      "price": 23500,
       "change_value": 0,
-      "change_pct": 2.38,
-      "volume": 12255193,
-      "trading_value_okrw": 2904.0,
+      "change_pct": 1.51,
+      "volume": 12311534,
+      "trading_value_okrw": 2893.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 2.6,
+      "score": 2.4,
       "rank": 4
+    },
+    {
+      "code": "122640",
+      "name": "예스티",
+      "market": "KOSDAQ",
+      "price": 38900,
+      "change_value": 0,
+      "change_pct": 1.04,
+      "volume": 3027515,
+      "trading_value_okrw": 1177.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 0.9,
+      "rank": 5
     }
   ]
 }

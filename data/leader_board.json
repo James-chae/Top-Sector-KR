@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-23",
-    "generated_at_kst": "2026-06-23 10:51:34",
+    "generated_at_kst": "2026-06-23 10:56:40",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 19.5",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 19.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 19.5,
+      "score": 19.7,
       "leaders": 1,
-      "avg_change_pct": 21.43
+      "avg_change_pct": 21.98
     },
     {
       "sector": "지주사",
-      "score": 17.6,
+      "score": 17.7,
       "leaders": 1,
-      "avg_change_pct": 2.05
+      "avg_change_pct": 1.51
     },
     {
       "sector": "전력",
-      "score": 16.9,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 6.76
+      "avg_change_pct": 7.53
     },
     {
       "sector": "금융",
-      "score": 16.9,
+      "score": 16.8,
       "leaders": 2,
-      "avg_change_pct": 2.12
+      "avg_change_pct": 1.6
     },
     {
       "sector": "반도체",
@@ -59,30 +59,30 @@
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3315,
+      "price": 3330,
       "change_value": 0,
-      "change_pct": 21.43,
-      "volume": 37542132,
-      "trading_value_okrw": 1244.0,
+      "change_pct": 21.98,
+      "volume": 38341085,
+      "trading_value_okrw": 1276.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.4,
+      "score": 10.5,
       "rank": 1
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 11060,
+      "price": 11140,
       "change_value": 0,
-      "change_pct": 6.76,
-      "volume": 18643205,
-      "trading_value_okrw": 2061.0,
+      "change_pct": 7.53,
+      "volume": 18731510,
+      "trading_value_okrw": 2086.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 5.7,
+      "score": 5.8,
       "rank": 2
     },
     {
@@ -92,8 +92,8 @@
       "price": 25650,
       "change_value": 0,
       "change_pct": 10.8,
-      "volume": 6386558,
-      "trading_value_okrw": 1638.0,
+      "volume": 6424133,
+      "trading_value_okrw": 1647.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -104,30 +104,30 @@
       "code": "034730",
       "name": "SK",
       "market": "KOSPI",
-      "price": 745000,
+      "price": 741000,
       "change_value": 0,
-      "change_pct": 2.05,
-      "volume": 438815,
-      "trading_value_okrw": 3269.0,
+      "change_pct": 1.51,
+      "volume": 451883,
+      "trading_value_okrw": 3348.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 3.5,
+      "score": 3.3,
       "rank": 4
     },
     {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 161200,
+      "price": 159600,
       "change_value": 0,
-      "change_pct": 2.68,
-      "volume": 738868,
-      "trading_value_okrw": 1191.0,
+      "change_pct": 1.66,
+      "volume": 774608,
+      "trading_value_okrw": 1236.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 1.7,
+      "score": 1.5,
       "rank": 5
     },
     {
@@ -137,8 +137,8 @@
       "price": 457500,
       "change_value": 0,
       "change_pct": 1.55,
-      "volume": 281993,
-      "trading_value_okrw": 1290.0,
+      "volume": 288353,
+      "trading_value_okrw": 1319.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",

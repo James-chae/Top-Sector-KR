@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-23",
-    "generated_at_kst": "2026-06-23 09:06:33",
+    "generated_at_kst": "2026-06-23 09:11:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 44.9",
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 54.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 44.9,
+      "score": 54.9,
       "leaders": 1,
-      "avg_change_pct": 4.31
+      "avg_change_pct": 8.93
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 2055000,
+      "price": 2146000,
       "change_value": 0,
-      "change_pct": 4.31,
-      "volume": 254990,
-      "trading_value_okrw": 5240.0,
+      "change_pct": 8.93,
+      "volume": 368391,
+      "trading_value_okrw": 7905.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 26.9,
+      "score": 36.9,
       "rank": 1
     }
   ]

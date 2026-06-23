@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-23",
-    "generated_at_kst": "2026-06-23 09:11:33",
+    "generated_at_kst": "2026-06-23 09:16:36",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 54.9",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 52.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 54.9,
+      "score": 52.6,
       "leaders": 1,
-      "avg_change_pct": 8.93
+      "avg_change_pct": 7.16
+    },
+    {
+      "sector": "전력",
+      "score": 16.8,
+      "leaders": 1,
+      "avg_change_pct": 5.31
     }
   ],
   "leaders": [
@@ -35,16 +41,31 @@
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 2146000,
+      "price": 2111000,
       "change_value": 0,
-      "change_pct": 8.93,
-      "volume": 368391,
-      "trading_value_okrw": 7905.0,
+      "change_pct": 7.16,
+      "volume": 452670,
+      "trading_value_okrw": 9555.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 36.9,
+      "score": 34.6,
       "rank": 1
+    },
+    {
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "market": "KOSPI",
+      "price": 258000,
+      "change_value": 0,
+      "change_pct": 5.31,
+      "volume": 388055,
+      "trading_value_okrw": 1001.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 8.3,
+      "rank": 2
     }
   ]
 }

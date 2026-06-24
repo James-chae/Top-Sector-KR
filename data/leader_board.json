@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-24",
-    "generated_at_kst": "2026-06-24 12:16:34",
+    "generated_at_kst": "2026-06-24 12:21:45",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
-    "sector_count": 6,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 52.3",
+    "leader_count": 7,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 51.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,39 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 52.3,
+      "score": 51.8,
       "leaders": 3,
-      "avg_change_pct": 2.85
-    },
-    {
-      "sector": "원전",
-      "score": 24.9,
-      "leaders": 2,
-      "avg_change_pct": 3.68
+      "avg_change_pct": 2.33
     },
     {
       "sector": "철강",
-      "score": 23.0,
+      "score": 22.6,
       "leaders": 1,
-      "avg_change_pct": 11.72
+      "avg_change_pct": 11.32
+    },
+    {
+      "sector": "원전",
+      "score": 20.3,
+      "leaders": 1,
+      "avg_change_pct": 5.27
     },
     {
       "sector": "양자암호",
-      "score": 20.4,
+      "score": 20.1,
       "leaders": 1,
-      "avg_change_pct": 13.51
+      "avg_change_pct": 13.0
     },
     {
       "sector": "바이오",
       "score": 18.5,
       "leaders": 1,
       "avg_change_pct": 7.66
-    },
-    {
-      "sector": "2차전지",
-      "score": 12.5,
-      "leaders": 1,
-      "avg_change_pct": 1.81
     }
   ],
   "leaders": [
@@ -65,45 +59,45 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 321000,
+      "price": 320000,
       "change_value": 0,
-      "change_pct": 3.55,
-      "volume": 25685905,
-      "trading_value_okrw": 82451.0,
+      "change_pct": 3.23,
+      "volume": 25972970,
+      "trading_value_okrw": 83113.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 58.6,
+      "score": 58.0,
       "rank": 1
     },
     {
       "code": "026940",
       "name": "부국철강",
       "market": "KOSPI",
-      "price": 4195,
+      "price": 4180,
       "change_value": 0,
-      "change_pct": 11.72,
-      "volume": 25168059,
-      "trading_value_okrw": 1055.0,
+      "change_pct": 11.32,
+      "volume": 25264943,
+      "trading_value_okrw": 1056.0,
       "sector1": "철강",
       "sector2": "",
       "sector": "철강",
-      "score": 14.3,
+      "score": 14.0,
       "rank": 2
     },
     {
       "code": "356680",
       "name": "엑스게이트",
       "market": "KOSDAQ",
-      "price": 22350,
+      "price": 22250,
       "change_value": 0,
-      "change_pct": 13.51,
-      "volume": 4838432,
-      "trading_value_okrw": 1081.0,
+      "change_pct": 13.0,
+      "volume": 4921383,
+      "trading_value_okrw": 1095.0,
       "sector1": "보안",
       "sector2": "양자암호",
       "sector": "양자암호",
-      "score": 11.7,
+      "score": 11.4,
       "rank": 3
     },
     {
@@ -113,8 +107,8 @@
       "price": 358500,
       "change_value": 0,
       "change_pct": 7.66,
-      "volume": 591858,
-      "trading_value_okrw": 2121.0,
+      "volume": 596769,
+      "trading_value_okrw": 2139.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
@@ -125,76 +119,46 @@
       "code": "028260",
       "name": "삼성물산",
       "market": "KOSPI",
-      "price": 482000,
+      "price": 479000,
       "change_value": 0,
-      "change_pct": 5.93,
-      "volume": 678878,
-      "trading_value_okrw": 3272.0,
+      "change_pct": 5.27,
+      "volume": 688743,
+      "trading_value_okrw": 3299.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 6.6,
+      "score": 6.1,
       "rank": 5
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 207500,
+      "price": 207000,
       "change_value": 0,
-      "change_pct": 2.47,
-      "volume": 2384337,
-      "trading_value_okrw": 4947.0,
+      "change_pct": 2.22,
+      "volume": 2410496,
+      "trading_value_okrw": 4989.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.4,
+      "score": 5.2,
       "rank": 6
     },
     {
       "code": "042700",
       "name": "한미반도체",
       "market": "KOSPI",
-      "price": 264500,
+      "price": 262000,
       "change_value": 0,
-      "change_pct": 2.52,
-      "volume": 614141,
-      "trading_value_okrw": 1624.0,
+      "change_pct": 1.55,
+      "volume": 623827,
+      "trading_value_okrw": 1634.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 3.0,
+      "score": 2.3,
       "rank": 7
-    },
-    {
-      "code": "047040",
-      "name": "대우건설",
-      "market": "KOSPI",
-      "price": 19660,
-      "change_value": 0,
-      "change_pct": 1.44,
-      "volume": 5721851,
-      "trading_value_okrw": 1124.0,
-      "sector1": "원전",
-      "sector2": "",
-      "sector": "원전",
-      "score": 2.9,
-      "rank": 8
-    },
-    {
-      "code": "006400",
-      "name": "삼성SDI",
-      "market": "KOSPI",
-      "price": 477500,
-      "change_value": 0,
-      "change_pct": 1.81,
-      "volume": 342783,
-      "trading_value_okrw": 1636.0,
-      "sector1": "2차전지",
-      "sector2": "",
-      "sector": "2차전지",
-      "score": 2.4,
-      "rank": 9
     }
   ]
 }

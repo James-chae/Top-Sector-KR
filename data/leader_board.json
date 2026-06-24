@@ -1,7 +1,7 @@
 {
   "meta": {
-    "trade_date": "2026-06-24",
-    "generated_at_kst": "2026-06-24 20:03:38",
+    "trade_date": "2026-06-25",
+    "generated_at_kst": "2026-06-25 08:02:11",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
@@ -36,12 +36,6 @@
       "avg_change_pct": 9.32
     },
     {
-      "sector": "2차전지",
-      "score": 29.7,
-      "leaders": 3,
-      "avg_change_pct": 3.92
-    },
-    {
       "sector": "원전",
       "score": 29.4,
       "leaders": 2,
@@ -58,6 +52,12 @@
       "score": 25.2,
       "leaders": 1,
       "avg_change_pct": 13.51
+    },
+    {
+      "sector": "2차전지",
+      "score": 23.5,
+      "leaders": 2,
+      "avg_change_pct": 3.6
     },
     {
       "sector": "방산",
@@ -254,21 +254,6 @@
       "rank": 12
     },
     {
-      "code": "086520",
-      "name": "에코프로",
-      "market": "KOSDAQ",
-      "price": 107700,
-      "change_value": 0,
-      "change_pct": 4.56,
-      "volume": 1067405,
-      "trading_value_okrw": 1149.0,
-      "sector1": "2차전지",
-      "sector2": "",
-      "sector": "2차전지",
-      "score": 5.1,
-      "rank": 13
-    },
-    {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
@@ -281,7 +266,7 @@
       "sector2": "",
       "sector": "화장품",
       "score": 4.8,
-      "rank": 14
+      "rank": 13
     },
     {
       "code": "005490",
@@ -296,7 +281,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 3.5,
-      "rank": 15
+      "rank": 14
     },
     {
       "code": "032830",
@@ -311,7 +296,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 3.0,
-      "rank": 16
+      "rank": 15
     },
     {
       "code": "034020",
@@ -326,7 +311,7 @@
       "sector2": "",
       "sector": "원전",
       "score": 2.9,
-      "rank": 17
+      "rank": 16
     },
     {
       "code": "012450",
@@ -341,7 +326,7 @@
       "sector2": "",
       "sector": "방산",
       "score": 2.7,
-      "rank": 18
+      "rank": 17
     },
     {
       "code": "066570",
@@ -356,7 +341,7 @@
       "sector2": "",
       "sector": "전자",
       "score": 2.5,
-      "rank": 19
+      "rank": 18
     },
     {
       "code": "079550",
@@ -371,6 +356,21 @@
       "sector2": "",
       "sector": "방산",
       "score": 2.3,
+      "rank": 19
+    },
+    {
+      "code": "042660",
+      "name": "한화오션",
+      "market": "KOSPI",
+      "price": 106000,
+      "change_value": 0,
+      "change_pct": 1.44,
+      "volume": 1315530,
+      "trading_value_okrw": 1394.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 2.1,
       "rank": 20
     }
   ]

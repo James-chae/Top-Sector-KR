@@ -1,11 +1,11 @@
 {
   "meta": {
     "trade_date": "2026-06-24",
-    "generated_at_kst": "2026-06-24 09:21:34",
+    "generated_at_kst": "2026-06-24 09:26:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 1,
+    "leader_count": 4,
+    "sector_count": 2,
     "market_bias": "반도체 중심 강세 / 상위섹터 점수 75.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
@@ -27,7 +27,13 @@
       "sector": "반도체",
       "score": 75.4,
       "leaders": 3,
-      "avg_change_pct": 4.44
+      "avg_change_pct": 3.94
+    },
+    {
+      "sector": "원전",
+      "score": 15.6,
+      "leaders": 1,
+      "avg_change_pct": 8.9
     }
   ],
   "leaders": [
@@ -35,46 +41,61 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2647000,
+      "price": 2640000,
       "change_value": 0,
-      "change_pct": 3.6,
-      "volume": 1254362,
-      "trading_value_okrw": 33202.0,
+      "change_pct": 3.33,
+      "volume": 1403474,
+      "trading_value_okrw": 37051.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.8,
+      "score": 67.6,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 331000,
+      "price": 331500,
       "change_value": 0,
-      "change_pct": 6.77,
-      "volume": 7669138,
-      "trading_value_okrw": 25384.0,
+      "change_pct": 6.94,
+      "volume": 8692842,
+      "trading_value_okrw": 28816.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 58.3,
+      "score": 59.3,
       "rank": 2
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 2049000,
+      "price": 2021000,
       "change_value": 0,
-      "change_pct": 2.96,
-      "volume": 213266,
-      "trading_value_okrw": 4369.0,
+      "change_pct": 1.56,
+      "volume": 236966,
+      "trading_value_okrw": 4789.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.3,
+      "score": 9.4,
       "rank": 3
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "price": 495500,
+      "change_value": 0,
+      "change_pct": 8.9,
+      "volume": 224902,
+      "trading_value_okrw": 1114.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 6.8,
+      "rank": 4
     }
   ]
 }

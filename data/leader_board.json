@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-24",
-    "generated_at_kst": "2026-06-24 08:01:31",
+    "generated_at_kst": "2026-06-24 09:01:36",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 19.3",
+    "leader_count": 2,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,42 @@
   },
   "top_sectors": [
     {
-      "sector": "바이오",
-      "score": 19.3,
-      "leaders": 1,
-      "avg_change_pct": 13.74
-    },
-    {
-      "sector": "전력",
-      "score": 15.5,
-      "leaders": 1,
-      "avg_change_pct": 3.28
-    },
-    {
-      "sector": "양자암호",
-      "score": 14.0,
-      "leaders": 1,
-      "avg_change_pct": 21.54
+      "sector": "반도체",
+      "score": 76.1,
+      "leaders": 2,
+      "avg_change_pct": 3.54
     }
   ],
   "leaders": [
     {
-      "code": "067290",
-      "name": "JW신약",
-      "market": "KOSDAQ",
-      "price": 3105,
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 2637000,
       "change_value": 0,
-      "change_pct": 13.74,
-      "volume": 68150699,
-      "trading_value_okrw": 2116.0,
-      "sector1": "바이오",
+      "change_pct": 3.21,
+      "volume": 360166,
+      "trading_value_okrw": 9497.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "바이오",
-      "score": 8.0,
+      "sector": "반도체",
+      "score": 67.9,
       "rank": 1
     },
     {
-      "code": "356680",
-      "name": "엑스게이트",
-      "market": "KOSDAQ",
-      "price": 19690,
-      "change_value": 0,
-      "change_pct": 21.54,
-      "volume": 6945009,
-      "trading_value_okrw": 1367.0,
-      "sector1": "보안",
-      "sector2": "양자암호",
-      "sector": "양자암호",
-      "score": 4.6,
-      "rank": 2
-    },
-    {
-      "code": "006340",
-      "name": "대원전선",
+      "code": "005930",
+      "name": "삼성전자",
       "market": "KOSPI",
-      "price": 10700,
+      "price": 322000,
       "change_value": 0,
-      "change_pct": 3.28,
-      "volume": 23917431,
-      "trading_value_okrw": 2559.0,
-      "sector1": "전력",
+      "change_pct": 3.87,
+      "volume": 1353604,
+      "trading_value_okrw": 4358.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "전력",
-      "score": 3.1,
-      "rank": 3
+      "sector": "반도체",
+      "score": 36.2,
+      "rank": 2
     }
   ]
 }

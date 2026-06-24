@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-24",
-    "generated_at_kst": "2026-06-24 09:56:35",
+    "generated_at_kst": "2026-06-24 10:01:35",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 77.9",
+    "leader_count": 6,
+    "sector_count": 4,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 78.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 77.9,
+      "score": 78.0,
       "leaders": 3,
-      "avg_change_pct": 4.8
+      "avg_change_pct": 4.21
     },
     {
       "sector": "원전",
-      "score": 20.2,
+      "score": 21.7,
       "leaders": 1,
-      "avg_change_pct": 9.89
+      "avg_change_pct": 10.77
+    },
+    {
+      "sector": "2차전지",
+      "score": 12.4,
+      "leaders": 1,
+      "avg_change_pct": 3.41
     },
     {
       "sector": "전자",
-      "score": 11.9,
+      "score": 11.6,
       "leaders": 1,
-      "avg_change_pct": 2.23
+      "avg_change_pct": 1.49
     }
   ],
   "leaders": [
@@ -47,76 +53,91 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2666000,
+      "price": 2646000,
       "change_value": 0,
-      "change_pct": 4.34,
-      "volume": 2011633,
-      "trading_value_okrw": 53630.0,
+      "change_pct": 3.56,
+      "volume": 2096972,
+      "trading_value_okrw": 55485.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 68.7,
+      "score": 68.4,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 334500,
+      "price": 333000,
       "change_value": 0,
-      "change_pct": 7.9,
-      "volume": 13457287,
-      "trading_value_okrw": 45014.0,
+      "change_pct": 7.42,
+      "volume": 14139325,
+      "trading_value_okrw": 47083.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 64.9,
+      "score": 65.7,
       "rank": 2
-    },
-    {
-      "code": "009150",
-      "name": "삼성전기",
-      "market": "KOSPI",
-      "price": 2033000,
-      "change_value": 0,
-      "change_pct": 2.16,
-      "volume": 346990,
-      "trading_value_okrw": 7054.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 10.2,
-      "rank": 3
     },
     {
       "code": "028260",
       "name": "삼성물산",
       "market": "KOSPI",
-      "price": 500000,
+      "price": 504000,
       "change_value": 0,
-      "change_pct": 9.89,
-      "volume": 391673,
-      "trading_value_okrw": 1958.0,
+      "change_pct": 10.77,
+      "volume": 404057,
+      "trading_value_okrw": 2036.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 9.3,
+      "score": 10.6,
+      "rank": 3
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 2023000,
+      "change_value": 0,
+      "change_pct": 1.66,
+      "volume": 362074,
+      "trading_value_okrw": 7324.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 9.9,
       "rank": 4
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "price": 485000,
+      "change_value": 0,
+      "change_pct": 3.41,
+      "volume": 211686,
+      "trading_value_okrw": 1026.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 3.8,
+      "rank": 5
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 206500,
+      "price": 205000,
       "change_value": 0,
-      "change_pct": 2.23,
-      "volume": 547679,
-      "trading_value_okrw": 1130.0,
+      "change_pct": 1.49,
+      "volume": 569091,
+      "trading_value_okrw": 1166.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 3.1,
-      "rank": 5
+      "score": 2.7,
+      "rank": 6
     }
   ]
 }

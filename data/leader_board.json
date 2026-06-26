@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-26",
-    "generated_at_kst": "2026-06-26 11:31:30",
+    "generated_at_kst": "2026-06-26 11:36:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 40.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 38.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,118 +25,118 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 40.2,
+      "score": 38.7,
       "leaders": 3,
-      "avg_change_pct": 12.88
-    },
-    {
-      "sector": "기타",
-      "score": 24.2,
-      "leaders": 1,
-      "avg_change_pct": 11.62
-    },
-    {
-      "sector": "에너지",
-      "score": 22.3,
-      "leaders": 1,
-      "avg_change_pct": 7.06
+      "avg_change_pct": 11.28
     },
     {
       "sector": "건자재",
-      "score": 22.1,
+      "score": 24.4,
       "leaders": 1,
-      "avg_change_pct": 8.08
+      "avg_change_pct": 10.19
+    },
+    {
+      "sector": "기타",
+      "score": 22.4,
+      "leaders": 1,
+      "avg_change_pct": 9.87
+    },
+    {
+      "sector": "에너지",
+      "score": 20.7,
+      "leaders": 1,
+      "avg_change_pct": 5.48
     }
   ],
   "leaders": [
     {
+      "code": "079650",
+      "name": "서산",
+      "market": "KOSDAQ",
+      "price": 6270,
+      "change_value": 0,
+      "change_pct": 10.19,
+      "volume": 21421008,
+      "trading_value_okrw": 1343.0,
+      "sector1": "건자재",
+      "sector2": "",
+      "sector": "건자재",
+      "score": 15.1,
+      "rank": 1
+    },
+    {
       "code": "095610",
       "name": "테스",
       "market": "KOSDAQ",
-      "price": 191900,
+      "price": 188100,
       "change_value": 0,
-      "change_pct": 15.53,
-      "volume": 522280,
-      "trading_value_okrw": 1002.0,
+      "change_pct": 13.25,
+      "volume": 537016,
+      "trading_value_okrw": 1010.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 16.5,
-      "rank": 1
+      "score": 14.2,
+      "rank": 2
     },
     {
       "code": "475430",
       "name": "키스트론",
       "market": "KOSDAQ",
-      "price": 7010,
+      "price": 6900,
       "change_value": 0,
-      "change_pct": 11.62,
-      "volume": 15984614,
-      "trading_value_okrw": 1120.0,
+      "change_pct": 9.87,
+      "volume": 16212655,
+      "trading_value_okrw": 1118.0,
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 15.4,
-      "rank": 2
+      "score": 13.6,
+      "rank": 3
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 171700,
+      "price": 169500,
       "change_value": 0,
-      "change_pct": 10.99,
-      "volume": 1782991,
-      "trading_value_okrw": 3061.0,
+      "change_pct": 9.57,
+      "volume": 1820205,
+      "trading_value_okrw": 3085.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 14.0,
-      "rank": 3
+      "score": 12.6,
+      "rank": 4
     },
     {
       "code": "319660",
       "name": "피에스케이",
       "market": "KOSDAQ",
-      "price": 191300,
+      "price": 189400,
       "change_value": 0,
-      "change_pct": 12.13,
-      "volume": 598107,
-      "trading_value_okrw": 1144.0,
+      "change_pct": 11.02,
+      "volume": 609233,
+      "trading_value_okrw": 1153.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 13.2,
-      "rank": 4
+      "score": 12.1,
+      "rank": 5
     },
     {
       "code": "058730",
       "name": "다스코",
       "market": "KOSPI",
-      "price": 4395,
+      "price": 4330,
       "change_value": 0,
-      "change_pct": 7.06,
-      "volume": 28647095,
-      "trading_value_okrw": 1259.0,
+      "change_pct": 5.48,
+      "volume": 28880879,
+      "trading_value_okrw": 1250.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 13.2,
-      "rank": 5
-    },
-    {
-      "code": "079650",
-      "name": "서산",
-      "market": "KOSDAQ",
-      "price": 6150,
-      "change_value": 0,
-      "change_pct": 8.08,
-      "volume": 21011923,
-      "trading_value_okrw": 1292.0,
-      "sector1": "건자재",
-      "sector2": "",
-      "sector": "건자재",
-      "score": 12.9,
+      "score": 11.6,
       "rank": 6
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-26",
-    "generated_at_kst": "2026-06-26 12:31:34",
+    "generated_at_kst": "2026-06-26 12:36:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 36.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 37.3,
+      "score": 36.7,
       "leaders": 3,
-      "avg_change_pct": 9.01
+      "avg_change_pct": 8.44
     },
     {
       "sector": "건자재",
-      "score": 34.9,
+      "score": 31.0,
       "leaders": 1,
-      "avg_change_pct": 18.01
+      "avg_change_pct": 14.24
     },
     {
       "sector": "기타",
-      "score": 20.1,
+      "score": 18.7,
       "leaders": 1,
-      "avg_change_pct": 7.64
+      "avg_change_pct": 6.21
     },
     {
       "sector": "에너지",
-      "score": 17.8,
+      "score": 17.7,
       "leaders": 1,
       "avg_change_pct": 3.05
     },
     {
       "sector": "기계",
-      "score": 15.6,
+      "score": 15.3,
       "leaders": 1,
-      "avg_change_pct": 6.1
+      "avg_change_pct": 5.7
     }
   ],
   "leaders": [
@@ -59,75 +59,75 @@
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 6715,
+      "price": 6500,
       "change_value": 0,
-      "change_pct": 18.01,
-      "volume": 29028545,
-      "trading_value_okrw": 1949.0,
+      "change_pct": 14.24,
+      "volume": 29817100,
+      "trading_value_okrw": 1938.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 24.0,
+      "score": 20.2,
       "rank": 1
     },
     {
       "code": "095610",
       "name": "테스",
       "market": "KOSDAQ",
-      "price": 183900,
+      "price": 184100,
       "change_value": 0,
-      "change_pct": 10.72,
-      "volume": 653992,
-      "trading_value_okrw": 1202.0,
+      "change_pct": 10.84,
+      "volume": 659135,
+      "trading_value_okrw": 1213.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.7,
+      "score": 11.8,
       "rank": 2
     },
     {
       "code": "475430",
       "name": "키스트론",
       "market": "KOSDAQ",
-      "price": 6760,
+      "price": 6670,
       "change_value": 0,
-      "change_pct": 7.64,
-      "volume": 17345786,
+      "change_pct": 6.21,
+      "volume": 17574940,
       "trading_value_okrw": 1172.0,
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 11.2,
+      "score": 9.8,
       "rank": 3
     },
     {
       "code": "319660",
       "name": "피에스케이",
       "market": "KOSDAQ",
-      "price": 186400,
+      "price": 184600,
       "change_value": 0,
-      "change_pct": 9.26,
-      "volume": 701155,
+      "change_pct": 8.21,
+      "volume": 707771,
       "trading_value_okrw": 1306.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.3,
+      "score": 9.3,
       "rank": 4
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 165600,
+      "price": 164400,
       "change_value": 0,
-      "change_pct": 7.05,
-      "volume": 2087103,
-      "trading_value_okrw": 3456.0,
+      "change_pct": 6.27,
+      "volume": 2099475,
+      "trading_value_okrw": 3451.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 9.9,
+      "score": 9.1,
       "rank": 5
     },
     {
@@ -142,22 +142,22 @@
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 8.7,
+      "score": 8.5,
       "rank": 6
     },
     {
       "code": "089970",
       "name": "브이엠",
       "market": "KOSDAQ",
-      "price": 106100,
+      "price": 105700,
       "change_value": 0,
-      "change_pct": 6.1,
-      "volume": 988315,
-      "trading_value_okrw": 1048.0,
+      "change_pct": 5.7,
+      "volume": 1004193,
+      "trading_value_okrw": 1061.0,
       "sector1": "기계",
       "sector2": "",
       "sector": "기계",
-      "score": 7.0,
+      "score": 6.6,
       "rank": 7
     }
   ]

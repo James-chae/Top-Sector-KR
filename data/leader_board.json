@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-26",
-    "generated_at_kst": "2026-06-26 13:16:58",
+    "generated_at_kst": "2026-06-26 13:22:01",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 38.1",
+    "leader_count": 5,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,54 +25,48 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 38.1,
+      "score": 37.7,
       "leaders": 3,
-      "avg_change_pct": 9.29
+      "avg_change_pct": 8.82
     },
     {
       "sector": "기타",
-      "score": 18.5,
+      "score": 21.1,
       "leaders": 1,
-      "avg_change_pct": 6.05
-    },
-    {
-      "sector": "건자재",
-      "score": 17.5,
-      "leaders": 1,
-      "avg_change_pct": 1.05
+      "avg_change_pct": 8.6
     },
     {
       "sector": "기계",
-      "score": 16.4,
+      "score": 15.8,
       "leaders": 1,
-      "avg_change_pct": 6.3
+      "avg_change_pct": 5.7
     }
   ],
   "leaders": [
     {
-      "code": "095610",
-      "name": "테스",
+      "code": "475430",
+      "name": "키스트론",
       "market": "KOSDAQ",
-      "price": 183800,
+      "price": 6820,
       "change_value": 0,
-      "change_pct": 10.66,
-      "volume": 745100,
-      "trading_value_okrw": 1369.0,
-      "sector1": "반도체",
+      "change_pct": 8.6,
+      "volume": 19476156,
+      "trading_value_okrw": 1328.0,
+      "sector1": "기타",
       "sector2": "",
-      "sector": "반도체",
-      "score": 11.5,
+      "sector": "기타",
+      "score": 11.8,
       "rank": 1
     },
     {
       "code": "319660",
       "name": "피에스케이",
       "market": "KOSDAQ",
-      "price": 187400,
+      "price": 187500,
       "change_value": 0,
-      "change_pct": 9.85,
-      "volume": 772193,
-      "trading_value_okrw": 1447.0,
+      "change_pct": 9.91,
+      "volume": 780422,
+      "trading_value_okrw": 1463.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -80,64 +74,49 @@
       "rank": 2
     },
     {
-      "code": "240810",
-      "name": "원익IPS",
+      "code": "095610",
+      "name": "테스",
       "market": "KOSDAQ",
-      "price": 166100,
+      "price": 182000,
       "change_value": 0,
-      "change_pct": 7.37,
-      "volume": 2261601,
-      "trading_value_okrw": 3756.0,
+      "change_pct": 9.57,
+      "volume": 751719,
+      "trading_value_okrw": 1368.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 9.8,
+      "score": 10.4,
       "rank": 3
     },
     {
-      "code": "475430",
-      "name": "키스트론",
+      "code": "240810",
+      "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 6660,
+      "price": 165500,
       "change_value": 0,
-      "change_pct": 6.05,
-      "volume": 19323381,
-      "trading_value_okrw": 1286.0,
-      "sector1": "기타",
+      "change_pct": 6.98,
+      "volume": 2285421,
+      "trading_value_okrw": 3782.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "기타",
-      "score": 9.2,
+      "sector": "반도체",
+      "score": 9.4,
       "rank": 4
     },
     {
       "code": "089970",
       "name": "브이엠",
       "market": "KOSDAQ",
-      "price": 106300,
+      "price": 105700,
       "change_value": 0,
-      "change_pct": 6.3,
-      "volume": 1193626,
-      "trading_value_okrw": 1268.0,
+      "change_pct": 5.7,
+      "volume": 1210917,
+      "trading_value_okrw": 1279.0,
       "sector1": "기계",
       "sector2": "",
       "sector": "기계",
-      "score": 7.2,
-      "rank": 5
-    },
-    {
-      "code": "079650",
-      "name": "서산",
-      "market": "KOSDAQ",
-      "price": 5750,
-      "change_value": 0,
-      "change_pct": 1.05,
-      "volume": 34416456,
-      "trading_value_okrw": 1978.0,
-      "sector1": "건자재",
-      "sector2": "",
-      "sector": "건자재",
       "score": 6.6,
-      "rank": 6
+      "rank": 5
     }
   ]
 }

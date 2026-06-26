@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-26",
-    "generated_at_kst": "2026-06-26 09:31:38",
+    "generated_at_kst": "2026-06-26 09:36:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
+    "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.5",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 34.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 37.5,
-      "leaders": 1,
-      "avg_change_pct": 2.95
+      "score": 34.2,
+      "leaders": 2,
+      "avg_change_pct": 1.66
     }
   ],
   "leaders": [
@@ -35,16 +35,31 @@
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 2056000,
+      "price": 2013000,
       "change_value": 0,
-      "change_pct": 2.95,
-      "volume": 362886,
-      "trading_value_okrw": 7460.0,
+      "change_pct": 0.8,
+      "volume": 394143,
+      "trading_value_okrw": 7934.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 19.4,
+      "score": 16.1,
       "rank": 1
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "price": 158600,
+      "change_value": 0,
+      "change_pct": 2.52,
+      "volume": 519267,
+      "trading_value_okrw": 823.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 4.3,
+      "rank": 2
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-26",
-    "generated_at_kst": "2026-06-26 14:36:47",
+    "generated_at_kst": "2026-06-26 14:41:43",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 38.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 38.6,
+      "score": 37.9,
       "leaders": 3,
-      "avg_change_pct": 8.73
+      "avg_change_pct": 7.97
     },
     {
       "sector": "유통",
-      "score": 28.4,
+      "score": 32.6,
       "leaders": 1,
-      "avg_change_pct": 18.67
+      "avg_change_pct": 22.6
     },
     {
       "sector": "기타",
-      "score": 19.8,
+      "score": 17.4,
       "leaders": 1,
-      "avg_change_pct": 7.01
+      "avg_change_pct": 4.62
     },
     {
       "sector": "기계",
-      "score": 17.3,
+      "score": 16.3,
       "leaders": 1,
-      "avg_change_pct": 6.8
+      "avg_change_pct": 5.8
     }
   ],
   "leaders": [
@@ -53,90 +53,90 @@
       "code": "037710",
       "name": "광주신세계",
       "market": "KOSPI",
-      "price": 48300,
+      "price": 49900,
       "change_value": 0,
-      "change_pct": 18.67,
-      "volume": 2483485,
-      "trading_value_okrw": 1199.0,
+      "change_pct": 22.6,
+      "volume": 2536175,
+      "trading_value_okrw": 1265.0,
       "sector1": "유통",
       "sector2": "",
       "sector": "유통",
-      "score": 19.4,
+      "score": 23.4,
       "rank": 1
-    },
-    {
-      "code": "095610",
-      "name": "테스",
-      "market": "KOSDAQ",
-      "price": 183500,
-      "change_value": 0,
-      "change_pct": 10.48,
-      "volume": 839841,
-      "trading_value_okrw": 1541.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 11.2,
-      "rank": 2
     },
     {
       "code": "319660",
       "name": "피에스케이",
       "market": "KOSDAQ",
-      "price": 187700,
+      "price": 187000,
       "change_value": 0,
-      "change_pct": 10.02,
-      "volume": 872104,
-      "trading_value_okrw": 1636.0,
+      "change_pct": 9.61,
+      "volume": 881368,
+      "trading_value_okrw": 1648.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.8,
+      "score": 10.4,
+      "rank": 2
+    },
+    {
+      "code": "095610",
+      "name": "테스",
+      "market": "KOSDAQ",
+      "price": 182000,
+      "change_value": 0,
+      "change_pct": 9.57,
+      "volume": 846777,
+      "trading_value_okrw": 1541.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 10.3,
       "rank": 3
     },
     {
       "code": "475430",
       "name": "키스트론",
       "market": "KOSDAQ",
-      "price": 6720,
+      "price": 6570,
       "change_value": 0,
-      "change_pct": 7.01,
-      "volume": 22249148,
-      "trading_value_okrw": 1495.0,
+      "change_pct": 4.62,
+      "volume": 22398071,
+      "trading_value_okrw": 1471.0,
       "sector1": "기타",
       "sector2": "",
       "sector": "기타",
-      "score": 10.1,
+      "score": 7.7,
       "rank": 4
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 163500,
+      "price": 162000,
       "change_value": 0,
-      "change_pct": 5.69,
-      "volume": 2615203,
-      "trading_value_okrw": 4275.0,
+      "change_pct": 4.72,
+      "volume": 2641018,
+      "trading_value_okrw": 4278.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.8,
+      "score": 6.8,
       "rank": 5
     },
     {
       "code": "089970",
       "name": "브이엠",
       "market": "KOSDAQ",
-      "price": 106800,
+      "price": 105800,
       "change_value": 0,
-      "change_pct": 6.8,
-      "volume": 1394231,
-      "trading_value_okrw": 1489.0,
+      "change_pct": 5.8,
+      "volume": 1406113,
+      "trading_value_okrw": 1487.0,
       "sector1": "기계",
       "sector2": "",
       "sector": "기계",
-      "score": 7.6,
+      "score": 6.6,
       "rank": 6
     }
   ]

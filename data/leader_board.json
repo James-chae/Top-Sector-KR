@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-29",
-    "generated_at_kst": "2026-06-29 08:04:32",
+    "generated_at_kst": "2026-06-29 09:06:52",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "유통 중심 강세 / 상위섹터 점수 40.7",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 19.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "유통",
-      "score": 40.7,
+      "sector": "반도체",
+      "score": 19.0,
       "leaders": 1,
-      "avg_change_pct": 29.98
-    },
-    {
-      "sector": "자동차",
-      "score": 23.6,
-      "leaders": 1,
-      "avg_change_pct": 11.38
+      "avg_change_pct": 2.96
     }
   ],
   "leaders": [
     {
-      "code": "037710",
-      "name": "광주신세계",
+      "code": "009150",
+      "name": "삼성전기",
       "market": "KOSPI",
-      "price": 52900,
+      "price": 2052000,
       "change_value": 0,
-      "change_pct": 29.98,
-      "volume": 2856213,
-      "trading_value_okrw": 1510.0,
-      "sector1": "유통",
+      "change_pct": 2.96,
+      "volume": 65343,
+      "trading_value_okrw": 1340.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "유통",
-      "score": 30.9,
+      "sector": "반도체",
+      "score": 9.6,
       "rank": 1
-    },
-    {
-      "code": "073240",
-      "name": "금호타이어",
-      "market": "KOSPI",
-      "price": 4990,
-      "change_value": 0,
-      "change_pct": 11.38,
-      "volume": 21973136,
-      "trading_value_okrw": 1096.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 14.9,
-      "rank": 2
     }
   ]
 }

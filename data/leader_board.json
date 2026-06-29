@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-29",
-    "generated_at_kst": "2026-06-29 09:12:13",
+    "generated_at_kst": "2026-06-29 09:16:53",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 28.5",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 36.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,62 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 28.5,
+      "score": 36.3,
+      "leaders": 2,
+      "avg_change_pct": 8.73
+    },
+    {
+      "sector": "에너지",
+      "score": 25.2,
       "leaders": 1,
-      "avg_change_pct": 5.92
+      "avg_change_pct": 12.5
     }
   ],
   "leaders": [
     {
-      "code": "009150",
-      "name": "삼성전기",
-      "market": "KOSPI",
-      "price": 2111000,
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 187800,
       "change_value": 0,
-      "change_pct": 5.92,
-      "volume": 125086,
-      "trading_value_okrw": 2640.0,
+      "change_pct": 13.41,
+      "volume": 551338,
+      "trading_value_okrw": 1035.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.8,
+      "score": 16.9,
       "rank": 1
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 48600,
+      "change_value": 0,
+      "change_pct": 12.5,
+      "volume": 2183591,
+      "trading_value_okrw": 1061.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 16.6,
+      "rank": 2
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 2074000,
+      "change_value": 0,
+      "change_pct": 4.06,
+      "volume": 163594,
+      "trading_value_okrw": 3392.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 14.7,
+      "rank": 3
     }
   ]
 }

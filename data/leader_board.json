@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-29",
-    "generated_at_kst": "2026-06-29 15:32:46",
+    "generated_at_kst": "2026-06-29 15:37:41",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
     "sector_count": 8,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 47.7",
+    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 48.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "2차전지",
-      "score": 47.7,
+      "score": 48.0,
       "leaders": 3,
-      "avg_change_pct": 19.72
+      "avg_change_pct": 20.02
     },
     {
       "sector": "바이오",
@@ -37,13 +37,13 @@
     },
     {
       "sector": "원전",
-      "score": 38.4,
+      "score": 38.8,
       "leaders": 3,
-      "avg_change_pct": 10.0
+      "avg_change_pct": 9.94
     },
     {
       "sector": "에너지",
-      "score": 37.5,
+      "score": 37.6,
       "leaders": 1,
       "avg_change_pct": 15.74
     },
@@ -55,9 +55,9 @@
     },
     {
       "sector": "전력",
-      "score": 26.8,
+      "score": 26.7,
       "leaders": 2,
-      "avg_change_pct": 8.29
+      "avg_change_pct": 8.23
     },
     {
       "sector": "건설",
@@ -107,15 +107,15 @@
       "code": "373220",
       "name": "LG에너지솔루션",
       "market": "KOSPI",
-      "price": 397500,
+      "price": 400500,
       "change_value": 0,
-      "change_pct": 19.91,
-      "volume": 778212,
-      "trading_value_okrw": 3093.0,
+      "change_pct": 20.81,
+      "volume": 833089,
+      "trading_value_okrw": 3336.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 21.5,
+      "score": 22.5,
       "rank": 3
     },
     {
@@ -155,12 +155,12 @@
       "price": 50000,
       "change_value": 0,
       "change_pct": 15.74,
-      "volume": 10376569,
-      "trading_value_okrw": 5188.0,
+      "volume": 10444599,
+      "trading_value_okrw": 5222.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 19.5,
+      "score": 19.6,
       "rank": 6
     },
     {
@@ -242,26 +242,26 @@
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 88200,
+      "price": 88000,
       "change_value": 0,
-      "change_pct": 8.75,
-      "volume": 4008672,
-      "trading_value_okrw": 3535.0,
+      "change_pct": 8.51,
+      "volume": 4231364,
+      "trading_value_okrw": 3723.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 10.9,
+      "score": 10.8,
       "rank": 12
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 19800,
+      "price": 19810,
       "change_value": 0,
-      "change_pct": 8.85,
-      "volume": 8059696,
-      "trading_value_okrw": 1595.0,
+      "change_pct": 8.91,
+      "volume": 8170946,
+      "trading_value_okrw": 1618.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
@@ -332,15 +332,15 @@
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 105200,
+      "price": 105500,
       "change_value": 0,
-      "change_pct": 7.35,
-      "volume": 962087,
-      "trading_value_okrw": 1012.0,
+      "change_pct": 7.65,
+      "volume": 1043304,
+      "trading_value_okrw": 1100.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 8.0,
+      "score": 8.3,
       "rank": 18
     },
     {
@@ -362,15 +362,15 @@
       "code": "267260",
       "name": "HD현대일렉트릭",
       "market": "KOSPI",
-      "price": 938000,
+      "price": 937000,
       "change_value": 0,
-      "change_pct": 6.23,
-      "volume": 140017,
-      "trading_value_okrw": 1313.0,
+      "change_pct": 6.12,
+      "volume": 152440,
+      "trading_value_okrw": 1428.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 6.9,
+      "score": 6.8,
       "rank": 20
     }
   ]

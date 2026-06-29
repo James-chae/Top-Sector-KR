@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-29",
-    "generated_at_kst": "2026-06-29 09:36:37",
+    "generated_at_kst": "2026-06-29 09:41:45",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 35.0",
+    "leader_count": 4,
+    "sector_count": 3,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 37.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 35.0,
+      "score": 37.1,
       "leaders": 1,
-      "avg_change_pct": 18.06
+      "avg_change_pct": 19.68
     },
     {
       "sector": "반도체",
-      "score": 21.2,
+      "score": 25.8,
+      "leaders": 2,
+      "avg_change_pct": 6.2
+    },
+    {
+      "sector": "2차전지",
+      "score": 18.0,
       "leaders": 1,
-      "avg_change_pct": 7.07
+      "avg_change_pct": 7.47
     }
   ],
   "leaders": [
@@ -41,31 +47,61 @@
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 51000,
+      "price": 51700,
       "change_value": 0,
-      "change_pct": 18.06,
-      "volume": 4282208,
-      "trading_value_okrw": 2183.0,
+      "change_pct": 19.68,
+      "volume": 4581735,
+      "trading_value_okrw": 2368.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 23.5,
+      "score": 25.1,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 177300,
+      "price": 176400,
       "change_value": 0,
-      "change_pct": 7.07,
-      "volume": 1008955,
-      "trading_value_okrw": 1788.0,
+      "change_pct": 6.52,
+      "volume": 1063070,
+      "trading_value_okrw": 1875.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.7,
+      "score": 10.1,
       "rank": 2
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "price": 489000,
+      "change_value": 0,
+      "change_pct": 7.47,
+      "volume": 218970,
+      "trading_value_okrw": 1070.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 9.4,
+      "rank": 3
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 55800,
+      "change_value": 0,
+      "change_pct": 5.88,
+      "volume": 1845828,
+      "trading_value_okrw": 1029.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 8.2,
+      "rank": 4
     }
   ]
 }

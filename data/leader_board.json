@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-29",
-    "generated_at_kst": "2026-06-29 09:31:35",
+    "generated_at_kst": "2026-06-29 09:36:37",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 38.8",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 35.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 38.8,
+      "score": 35.0,
       "leaders": 1,
-      "avg_change_pct": 22.22
+      "avg_change_pct": 18.06
     },
     {
       "sector": "반도체",
-      "score": 20.3,
+      "score": 21.2,
       "leaders": 1,
-      "avg_change_pct": 6.52
+      "avg_change_pct": 7.07
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 52800,
+      "price": 51000,
       "change_value": 0,
-      "change_pct": 22.22,
-      "volume": 3860433,
-      "trading_value_okrw": 2038.0,
+      "change_pct": 18.06,
+      "volume": 4282208,
+      "trading_value_okrw": 2183.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 27.7,
+      "score": 23.5,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 176400,
+      "price": 177300,
       "change_value": 0,
-      "change_pct": 6.52,
-      "volume": 935920,
-      "trading_value_okrw": 1650.0,
+      "change_pct": 7.07,
+      "volume": 1008955,
+      "trading_value_okrw": 1788.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.2,
+      "score": 10.7,
       "rank": 2
     }
   ]

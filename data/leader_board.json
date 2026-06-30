@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-30",
-    "generated_at_kst": "2026-06-30 09:31:45",
+    "generated_at_kst": "2026-06-30 09:36:56",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 43.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,56 +25,41 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 61.6,
-      "leaders": 3,
-      "avg_change_pct": 5.75
+      "score": 43.1,
+      "leaders": 2,
+      "avg_change_pct": 7.31
     }
   ],
   "leaders": [
     {
-      "code": "005930",
-      "name": "삼성전자",
-      "market": "KOSPI",
-      "price": 327000,
-      "change_value": 0,
-      "change_pct": 1.24,
-      "volume": 5616295,
-      "trading_value_okrw": 18365.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 54.7,
-      "rank": 1
-    },
-    {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 2158000,
+      "price": 2113000,
       "change_value": 0,
-      "change_pct": 5.89,
-      "volume": 315923,
-      "trading_value_okrw": 6817.0,
+      "change_pct": 3.68,
+      "volume": 339807,
+      "trading_value_okrw": 7180.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 25.0,
-      "rank": 2
+      "score": 22.3,
+      "rank": 1
     },
     {
       "code": "240810",
       "name": "원익IPS",
       "market": "KOSDAQ",
-      "price": 175100,
+      "price": 176400,
       "change_value": 0,
-      "change_pct": 10.13,
-      "volume": 943956,
-      "trading_value_okrw": 1652.0,
+      "change_pct": 10.94,
+      "volume": 1008008,
+      "trading_value_okrw": 1778.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.1,
-      "rank": 3
+      "score": 15.9,
+      "rank": 2
     }
   ]
 }

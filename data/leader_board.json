@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-06-30",
-    "generated_at_kst": "2026-06-30 09:06:52",
+    "generated_at_kst": "2026-06-30 09:11:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 80.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 63.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 80.6,
-      "leaders": 3,
-      "avg_change_pct": 3.15
+      "score": 63.2,
+      "leaders": 2,
+      "avg_change_pct": 2.01
     }
   ],
   "leaders": [
@@ -35,46 +35,31 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 333500,
+      "price": 329000,
       "change_value": 0,
-      "change_pct": 3.25,
-      "volume": 2970268,
-      "trading_value_okrw": 9905.0,
+      "change_pct": 1.86,
+      "volume": 3745760,
+      "trading_value_okrw": 12323.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 68.6,
+      "score": 63.4,
       "rank": 1
-    },
-    {
-      "code": "000660",
-      "name": "SK하이닉스",
-      "market": "KOSPI",
-      "price": 2666000,
-      "change_value": 0,
-      "change_pct": 1.45,
-      "volume": 393537,
-      "trading_value_okrw": 10491.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 67.0,
-      "rank": 2
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 2135000,
+      "price": 2082000,
       "change_value": 0,
-      "change_pct": 4.76,
-      "volume": 85059,
-      "trading_value_okrw": 1816.0,
+      "change_pct": 2.16,
+      "volume": 127520,
+      "trading_value_okrw": 2654.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 16.1,
-      "rank": 3
+      "score": 14.9,
+      "rank": 2
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-01",
-    "generated_at_kst": "2026-07-01 09:11:32",
+    "generated_at_kst": "2026-07-01 09:16:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 31.1",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 35.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 31.1,
+      "score": 35.1,
       "leaders": 1,
-      "avg_change_pct": 3.8
+      "avg_change_pct": 3.98
+    },
+    {
+      "sector": "전력",
+      "score": 24.8,
+      "leaders": 1,
+      "avg_change_pct": 9.24
+    },
+    {
+      "sector": "에너지",
+      "score": 21.2,
+      "leaders": 1,
+      "avg_change_pct": 7.16
     }
   ],
   "leaders": [
@@ -35,16 +47,46 @@
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 2267000,
+      "price": 2271000,
       "change_value": 0,
-      "change_pct": 3.8,
-      "volume": 108302,
-      "trading_value_okrw": 2455.0,
+      "change_pct": 3.98,
+      "volume": 151797,
+      "trading_value_okrw": 3447.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 19.0,
+      "score": 20.5,
       "rank": 1
+    },
+    {
+      "code": "010120",
+      "name": "LS ELECTRIC",
+      "market": "KOSPI",
+      "price": 260000,
+      "change_value": 0,
+      "change_pct": 9.24,
+      "volume": 496702,
+      "trading_value_okrw": 1291.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 15.6,
+      "rank": 2
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 55400,
+      "change_value": 0,
+      "change_pct": 7.16,
+      "volume": 1855081,
+      "trading_value_okrw": 1027.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 12.7,
+      "rank": 3
     }
   ]
 }

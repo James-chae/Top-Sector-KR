@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-02",
-    "generated_at_kst": "2026-07-02 09:11:33",
+    "generated_at_kst": "2026-07-02 09:16:35",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "전력 중심 강세 / 상위섹터 점수 27.0",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 35.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "전력",
-      "score": 27.0,
+      "sector": "부동산",
+      "score": 35.3,
       "leaders": 1,
-      "avg_change_pct": 8.06
+      "avg_change_pct": 20.15
+    },
+    {
+      "sector": "전력",
+      "score": 25.9,
+      "leaders": 1,
+      "avg_change_pct": 4.48
     }
   ],
   "leaders": [
     {
+      "code": "002990",
+      "name": "금호건설",
+      "market": "KOSPI",
+      "price": 17470,
+      "change_value": 0,
+      "change_pct": 20.15,
+      "volume": 6562696,
+      "trading_value_okrw": 1146.0,
+      "sector1": "부동산",
+      "sector2": "",
+      "sector": "부동산",
+      "score": 26.5,
+      "rank": 1
+    },
+    {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 14480,
+      "price": 14000,
       "change_value": 0,
-      "change_pct": 8.06,
-      "volume": 8497378,
-      "trading_value_okrw": 1230.0,
+      "change_pct": 4.48,
+      "volume": 12850344,
+      "trading_value_okrw": 1799.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 17.9,
-      "rank": 1
+      "score": 15.4,
+      "rank": 2
     }
   ]
 }

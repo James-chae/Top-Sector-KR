@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-02",
-    "generated_at_kst": "2026-07-02 12:26:31",
+    "generated_at_kst": "2026-07-02 12:31:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 12,
+    "leader_count": 11,
     "sector_count": 8,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 27.3",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 27.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,51 +25,51 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 27.3,
+      "score": 27.1,
       "leaders": 2,
-      "avg_change_pct": 7.52
-    },
-    {
-      "sector": "반도체",
-      "score": 24.2,
-      "leaders": 1,
-      "avg_change_pct": 1.03
+      "avg_change_pct": 7.21
     },
     {
       "sector": "화장품",
-      "score": 23.9,
+      "score": 23.8,
       "leaders": 2,
-      "avg_change_pct": 7.26
+      "avg_change_pct": 7.17
     },
     {
       "sector": "방산",
-      "score": 21.1,
+      "score": 21.6,
       "leaders": 1,
-      "avg_change_pct": 6.87
+      "avg_change_pct": 7.24
     },
     {
       "sector": "IT서비스",
-      "score": 21.1,
+      "score": 21.3,
       "leaders": 2,
-      "avg_change_pct": 3.83
+      "avg_change_pct": 3.96
     },
     {
       "sector": "자동차",
-      "score": 19.7,
+      "score": 20.3,
       "leaders": 1,
-      "avg_change_pct": 1.13
+      "avg_change_pct": 1.54
     },
     {
       "sector": "조선",
-      "score": 19.4,
+      "score": 19.1,
       "leaders": 1,
-      "avg_change_pct": 3.97
+      "avg_change_pct": 3.68
     },
     {
       "sector": "항공/여행",
-      "score": 15.6,
+      "score": 16.0,
       "leaders": 1,
-      "avg_change_pct": 4.86
+      "avg_change_pct": 5.22
+    },
+    {
+      "sector": "인터넷",
+      "score": 12.1,
+      "leaders": 1,
+      "avg_change_pct": 1.57
     }
   ],
   "leaders": [
@@ -77,106 +77,91 @@
       "code": "161890",
       "name": "한국콜마",
       "market": "KOSPI",
-      "price": 118500,
+      "price": 118200,
       "change_value": 0,
-      "change_pct": 10.96,
-      "volume": 864529,
-      "trading_value_okrw": 1024.0,
+      "change_pct": 10.67,
+      "volume": 874524,
+      "trading_value_okrw": 1033.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 11.9,
+      "score": 11.6,
       "rank": 1
     },
     {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 171800,
+      "price": 171000,
       "change_value": 0,
-      "change_pct": 8.39,
-      "volume": 1424241,
-      "trading_value_okrw": 2446.0,
+      "change_pct": 7.89,
+      "volume": 1448039,
+      "trading_value_okrw": 2476.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 10.6,
+      "score": 10.1,
       "rank": 2
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1166000,
+      "price": 1170000,
       "change_value": 0,
-      "change_pct": 6.87,
-      "volume": 211056,
-      "trading_value_okrw": 2460.0,
+      "change_pct": 7.24,
+      "volume": 214726,
+      "trading_value_okrw": 2512.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 8.9,
+      "score": 9.3,
       "rank": 3
     },
     {
       "code": "055550",
       "name": "신한지주",
       "market": "KOSPI",
-      "price": 102800,
+      "price": 102700,
       "change_value": 0,
-      "change_pct": 6.64,
-      "volume": 1114249,
-      "trading_value_okrw": 1145.0,
+      "change_pct": 6.54,
+      "volume": 1120955,
+      "trading_value_okrw": 1151.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 7.7,
+      "score": 7.6,
       "rank": 4
-    },
-    {
-      "code": "042660",
-      "name": "한화오션",
-      "market": "KOSPI",
-      "price": 107400,
-      "change_value": 0,
-      "change_pct": 3.97,
-      "volume": 2547455,
-      "trading_value_okrw": 2735.0,
-      "sector1": "조선",
-      "sector2": "",
-      "sector": "조선",
-      "score": 6.6,
-      "rank": 5
     },
     {
       "code": "003490",
       "name": "대한항공",
       "market": "KOSPI",
-      "price": 29150,
+      "price": 29250,
       "change_value": 0,
-      "change_pct": 4.86,
-      "volume": 4353495,
-      "trading_value_okrw": 1269.0,
+      "change_pct": 5.22,
+      "volume": 4376540,
+      "trading_value_okrw": 1280.0,
       "sector1": "항공/여행",
       "sector2": "",
       "sector": "항공/여행",
-      "score": 6.5,
-      "rank": 6
+      "score": 6.8,
+      "rank": 5
     },
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "market": "KOSDAQ",
-      "price": 244500,
+      "code": "042660",
+      "name": "한화오션",
+      "market": "KOSPI",
+      "price": 107100,
       "change_value": 0,
-      "change_pct": 1.03,
-      "volume": 2411274,
-      "trading_value_okrw": 5895.0,
-      "sector1": "반도체",
+      "change_pct": 3.68,
+      "volume": 2558575,
+      "trading_value_okrw": 2740.0,
+      "sector1": "조선",
       "sector2": "",
-      "sector": "반도체",
+      "sector": "조선",
       "score": 6.2,
-      "rank": 7
+      "rank": 6
     },
     {
       "code": "064400",
@@ -185,73 +170,73 @@
       "price": 79500,
       "change_value": 0,
       "change_pct": 4.33,
-      "volume": 2023896,
-      "trading_value_okrw": 1608.0,
+      "volume": 2033825,
+      "trading_value_okrw": 1616.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
       "score": 5.9,
-      "rank": 8
+      "rank": 7
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 422500,
+      "price": 423000,
       "change_value": 0,
-      "change_pct": 3.55,
-      "volume": 332733,
-      "trading_value_okrw": 1405.0,
+      "change_pct": 3.68,
+      "volume": 334951,
+      "trading_value_okrw": 1416.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 4.8,
-      "rank": 9
+      "score": 4.9,
+      "rank": 8
     },
     {
       "code": "005380",
       "name": "현대차",
       "market": "KOSPI",
-      "price": 493000,
+      "price": 495000,
       "change_value": 0,
-      "change_pct": 1.13,
-      "volume": 760077,
-      "trading_value_okrw": 3747.0,
+      "change_pct": 1.54,
+      "volume": 768761,
+      "trading_value_okrw": 3805.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 4.3,
-      "rank": 10
+      "score": 4.8,
+      "rank": 9
     },
     {
       "code": "018260",
       "name": "삼성에스디에스",
       "market": "KOSPI",
-      "price": 204000,
+      "price": 204500,
       "change_value": 0,
-      "change_pct": 3.34,
-      "volume": 514328,
-      "trading_value_okrw": 1049.0,
+      "change_pct": 3.6,
+      "volume": 516248,
+      "trading_value_okrw": 1055.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 4.3,
-      "rank": 11
+      "score": 4.5,
+      "rank": 10
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 200000,
+      "price": 200500,
       "change_value": 0,
-      "change_pct": 1.32,
-      "volume": 658490,
-      "trading_value_okrw": 1316.0,
+      "change_pct": 1.57,
+      "volume": 664296,
+      "trading_value_okrw": 1331.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 2.5,
-      "rank": 12
+      "score": 2.8,
+      "rank": 11
     }
   ]
 }

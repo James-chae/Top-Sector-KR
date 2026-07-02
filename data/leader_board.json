@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-02",
-    "generated_at_kst": "2026-07-02 09:56:32",
+    "generated_at_kst": "2026-07-02 10:01:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 33.0",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 28.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 33.0,
+      "score": 28.9,
       "leaders": 1,
-      "avg_change_pct": 17.61
+      "avg_change_pct": 13.41
     },
     {
       "sector": "조선",
-      "score": 19.0,
+      "score": 17.5,
       "leaders": 1,
-      "avg_change_pct": 4.36
+      "avg_change_pct": 2.9
     },
     {
       "sector": "방산",
-      "score": 14.1,
+      "score": 14.7,
       "leaders": 1,
-      "avg_change_pct": 3.57
+      "avg_change_pct": 4.03
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17100,
+      "price": 16490,
       "change_value": 0,
-      "change_pct": 17.61,
-      "volume": 9982814,
-      "trading_value_okrw": 1707.0,
+      "change_pct": 13.41,
+      "volume": 10601293,
+      "trading_value_okrw": 1748.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 22.8,
+      "score": 18.6,
       "rank": 1
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 107800,
+      "price": 106300,
       "change_value": 0,
-      "change_pct": 4.36,
-      "volume": 1833114,
-      "trading_value_okrw": 1976.0,
+      "change_pct": 2.9,
+      "volume": 1887256,
+      "trading_value_okrw": 2006.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 8.1,
+      "score": 6.5,
       "rank": 2
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1130000,
+      "price": 1135000,
       "change_value": 0,
-      "change_pct": 3.57,
-      "volume": 95289,
-      "trading_value_okrw": 1076.0,
+      "change_pct": 4.03,
+      "volume": 99787,
+      "trading_value_okrw": 1132.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 5.4,
+      "score": 5.8,
       "rank": 3
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-02",
-    "generated_at_kst": "2026-07-02 09:31:33",
+    "generated_at_kst": "2026-07-02 09:36:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 34.8",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 34.8,
+      "score": 36.1,
       "leaders": 1,
-      "avg_change_pct": 19.33
+      "avg_change_pct": 20.5
     },
     {
       "sector": "조선",
-      "score": 18.5,
+      "score": 17.6,
       "leaders": 1,
-      "avg_change_pct": 4.65
+      "avg_change_pct": 3.73
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17350,
+      "price": 17520,
       "change_value": 0,
-      "change_pct": 19.33,
-      "volume": 8488175,
-      "trading_value_okrw": 1472.0,
+      "change_pct": 20.5,
+      "volume": 8860837,
+      "trading_value_okrw": 1552.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 25.1,
+      "score": 26.2,
       "rank": 1
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 108100,
+      "price": 107150,
       "change_value": 0,
-      "change_pct": 4.65,
-      "volume": 1420377,
-      "trading_value_okrw": 1535.0,
+      "change_pct": 3.73,
+      "volume": 1501024,
+      "trading_value_okrw": 1608.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 8.6,
+      "score": 7.6,
       "rank": 2
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-03",
-    "generated_at_kst": "2026-07-03 09:57:18",
+    "generated_at_kst": "2026-07-03 10:01:38",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "전력 중심 강세 / 상위섹터 점수 17.9",
+    "market_bias": "전력 중심 강세 / 상위섹터 점수 20.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "전력",
-      "score": 17.9,
+      "score": 20.8,
       "leaders": 1,
-      "avg_change_pct": 6.34
+      "avg_change_pct": 8.51
     },
     {
       "sector": "반도체",
-      "score": 14.4,
+      "score": 13.9,
       "leaders": 1,
-      "avg_change_pct": 3.55
+      "avg_change_pct": 2.97
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 12750,
+      "price": 13010,
       "change_value": 0,
-      "change_pct": 6.34,
-      "volume": 9081574,
-      "trading_value_okrw": 1157.0,
+      "change_pct": 8.51,
+      "volume": 10641929,
+      "trading_value_okrw": 1384.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 9.0,
+      "score": 11.4,
       "rank": 1
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 45250,
+      "price": 45000,
       "change_value": 0,
-      "change_pct": 3.55,
-      "volume": 2592848,
-      "trading_value_okrw": 1173.0,
+      "change_pct": 2.97,
+      "volume": 2746953,
+      "trading_value_okrw": 1236.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.5,
+      "score": 4.8,
       "rank": 2
     }
   ]

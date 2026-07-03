@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-03",
-    "generated_at_kst": "2026-07-03 09:12:47",
+    "generated_at_kst": "2026-07-03 09:16:50",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
+    "leader_count": 3,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 65.8",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 70.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,56 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 65.8,
-      "leaders": 1,
-      "avg_change_pct": 2.27
+      "score": 70.6,
+      "leaders": 3,
+      "avg_change_pct": 2.71
     }
   ],
   "leaders": [
     {
-      "code": "005930",
-      "name": "삼성전자",
+      "code": "000660",
+      "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 292500,
+      "price": 2212000,
       "change_value": 0,
-      "change_pct": 2.27,
-      "volume": 3777283,
-      "trading_value_okrw": 11048.0,
+      "change_pct": 1.14,
+      "volume": 897260,
+      "trading_value_okrw": 19847.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 47.8,
+      "score": 66.3,
       "rank": 1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 295500,
+      "change_value": 0,
+      "change_pct": 3.32,
+      "volume": 4536183,
+      "trading_value_okrw": 13404.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 48.1,
+      "rank": 2
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "price": 195600,
+      "change_value": 0,
+      "change_pct": 3.66,
+      "volume": 551124,
+      "trading_value_okrw": 1077.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 7.3,
+      "rank": 3
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-03",
-    "generated_at_kst": "2026-07-03 09:26:38",
+    "generated_at_kst": "2026-07-03 09:31:47",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 48.1",
+    "leader_count": 4,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 47.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 48.1,
-      "leaders": 2,
-      "avg_change_pct": 1.34
+      "score": 47.6,
+      "leaders": 3,
+      "avg_change_pct": 1.72
+    },
+    {
+      "sector": "전력",
+      "score": 12.0,
+      "leaders": 1,
+      "avg_change_pct": 1.58
     }
   ],
   "leaders": [
@@ -35,31 +41,61 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 290500,
+      "price": 287500,
       "change_value": 0,
-      "change_pct": 1.57,
-      "volume": 5539740,
-      "trading_value_okrw": 16092.0,
+      "change_pct": 0.52,
+      "volume": 6463889,
+      "trading_value_okrw": 18583.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 43.4,
+      "score": 42.6,
       "rank": 1
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 45450,
+      "change_value": 0,
+      "change_pct": 4.0,
+      "volume": 1776225,
+      "trading_value_okrw": 807.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.0,
+      "rank": 2
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 190800,
+      "price": 189900,
       "change_value": 0,
-      "change_pct": 1.11,
-      "volume": 718559,
-      "trading_value_okrw": 1371.0,
+      "change_pct": 0.64,
+      "volume": 833940,
+      "trading_value_okrw": 1583.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 4.7,
-      "rank": 2
+      "score": 4.3,
+      "rank": 3
+    },
+    {
+      "code": "006340",
+      "name": "대원전선",
+      "market": "KOSPI",
+      "price": 12180,
+      "change_value": 0,
+      "change_pct": 1.58,
+      "volume": 6244956,
+      "trading_value_okrw": 760.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 4.1,
+      "rank": 4
     }
   ]
 }

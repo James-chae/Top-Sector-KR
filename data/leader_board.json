@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-03",
-    "generated_at_kst": "2026-07-03 09:41:36",
+    "generated_at_kst": "2026-07-03 09:47:18",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 48.8",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 14.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,56 +25,26 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 48.8,
-      "leaders": 3,
-      "avg_change_pct": 2.96
+      "score": 14.6,
+      "leaders": 1,
+      "avg_change_pct": 3.78
     }
   ],
   "leaders": [
     {
-      "code": "005930",
-      "name": "삼성전자",
-      "market": "KOSPI",
-      "price": 290750,
-      "change_value": 0,
-      "change_pct": 1.66,
-      "volume": 8135402,
-      "trading_value_okrw": 23653.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 43.2,
-      "rank": 1
-    },
-    {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 45950,
+      "price": 45350,
       "change_value": 0,
-      "change_pct": 5.15,
-      "volume": 2298275,
-      "trading_value_okrw": 1056.0,
+      "change_pct": 3.78,
+      "volume": 2421132,
+      "trading_value_okrw": 1097.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.2,
-      "rank": 2
-    },
-    {
-      "code": "005935",
-      "name": "삼성전자우",
-      "market": "KOSPI",
-      "price": 192600,
-      "change_value": 0,
-      "change_pct": 2.07,
-      "volume": 1109647,
-      "trading_value_okrw": 2137.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 5.9,
-      "rank": 3
+      "score": 5.8,
+      "rank": 1
     }
   ]
 }

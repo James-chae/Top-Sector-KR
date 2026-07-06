@@ -1,10 +1,10 @@
 {
   "meta": {
     "trade_date": "2026-07-06",
-    "generated_at_kst": "2026-07-06 15:31:32",
+    "generated_at_kst": "2026-07-06 15:36:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 13,
+    "leader_count": 14,
     "sector_count": 8,
     "market_bias": "반도체 중심 강세 / 상위섹터 점수 56.1",
     "filtered_etf": "ETF 제외 적용",
@@ -37,15 +37,21 @@
     },
     {
       "sector": "자동차",
-      "score": 33.7,
+      "score": 34.0,
       "leaders": 3,
-      "avg_change_pct": 3.73
+      "avg_change_pct": 4.0
     },
     {
       "sector": "조선",
-      "score": 31.3,
+      "score": 31.5,
       "leaders": 2,
-      "avg_change_pct": 4.69
+      "avg_change_pct": 4.82
+    },
+    {
+      "sector": "원전",
+      "score": 17.7,
+      "leaders": 1,
+      "avg_change_pct": 3.69
     },
     {
       "sector": "건설",
@@ -54,22 +60,16 @@
       "avg_change_pct": 7.18
     },
     {
-      "sector": "원전",
-      "score": 16.9,
-      "leaders": 1,
-      "avg_change_pct": 3.34
-    },
-    {
       "sector": "우주",
       "score": 16.2,
       "leaders": 1,
       "avg_change_pct": 4.68
     },
     {
-      "sector": "방산",
-      "score": 11.9,
+      "sector": "금융",
+      "score": 12.2,
       "leaders": 1,
-      "avg_change_pct": 1.75
+      "avg_change_pct": 2.74
     }
   ],
   "leaders": [
@@ -107,15 +107,15 @@
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 115800,
+      "price": 116100,
       "change_value": 0,
-      "change_pct": 8.33,
-      "volume": 4922958,
-      "trading_value_okrw": 5700.0,
+      "change_pct": 8.61,
+      "volume": 4995236,
+      "trading_value_okrw": 5799.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 12.7,
+      "score": 13.1,
       "rank": 3
     },
     {
@@ -179,19 +179,34 @@
       "rank": 7
     },
     {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "price": 515000,
+      "change_value": 0,
+      "change_pct": 4.25,
+      "volume": 392641,
+      "trading_value_okrw": 2022.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 5.7,
+      "rank": 8
+    },
+    {
       "code": "028260",
       "name": "삼성물산",
       "market": "KOSPI",
-      "price": 448000,
+      "price": 449500,
       "change_value": 0,
-      "change_pct": 3.34,
-      "volume": 531199,
-      "trading_value_okrw": 2379.0,
+      "change_pct": 3.69,
+      "volume": 556032,
+      "trading_value_okrw": 2499.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 5.0,
-      "rank": 8
+      "score": 5.4,
+      "rank": 9
     },
     {
       "code": "005380",
@@ -206,22 +221,37 @@
       "sector2": "",
       "sector": "자동차",
       "score": 4.8,
-      "rank": 9
+      "rank": 10
     },
     {
-      "code": "012330",
-      "name": "현대모비스",
+      "code": "032830",
+      "name": "삼성생명",
       "market": "KOSPI",
-      "price": 511000,
+      "price": 393500,
       "change_value": 0,
-      "change_pct": 3.44,
-      "volume": 378465,
-      "trading_value_okrw": 1933.0,
-      "sector1": "자동차",
+      "change_pct": 2.74,
+      "volume": 271667,
+      "trading_value_okrw": 1069.0,
+      "sector1": "금융",
       "sector2": "",
-      "sector": "자동차",
-      "score": 4.8,
-      "rank": 10
+      "sector": "금융",
+      "score": 3.5,
+      "rank": 11
+    },
+    {
+      "code": "079550",
+      "name": "LIG디펜스앤에어로스페이스",
+      "market": "KOSPI",
+      "price": 815000,
+      "change_value": 0,
+      "change_pct": 1.88,
+      "volume": 165504,
+      "trading_value_okrw": 1348.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 2.8,
+      "rank": 12
     },
     {
       "code": "016360",
@@ -230,28 +260,13 @@
       "price": 121300,
       "change_value": 0,
       "change_pct": 1.85,
-      "volume": 869012,
-      "trading_value_okrw": 1054.0,
+      "volume": 883075,
+      "trading_value_okrw": 1071.0,
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
       "score": 2.7,
-      "rank": 11
-    },
-    {
-      "code": "079550",
-      "name": "LIG디펜스앤에어로스페이스",
-      "market": "KOSPI",
-      "price": 814000,
-      "change_value": 0,
-      "change_pct": 1.75,
-      "volume": 161752,
-      "trading_value_okrw": 1316.0,
-      "sector1": "방산",
-      "sector2": "",
-      "sector": "방산",
-      "score": 2.6,
-      "rank": 12
+      "rank": 13
     },
     {
       "code": "329180",
@@ -260,13 +275,13 @@
       "price": 583000,
       "change_value": 0,
       "change_pct": 1.04,
-      "volume": 203743,
-      "trading_value_okrw": 1187.0,
+      "volume": 217062,
+      "trading_value_okrw": 1265.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
       "score": 1.9,
-      "rank": 13
+      "rank": 14
     }
   ]
 }

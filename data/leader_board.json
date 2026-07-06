@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-06",
-    "generated_at_kst": "2026-07-06 09:56:33",
+    "generated_at_kst": "2026-07-06 10:01:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 74.2,
+      "score": 74.1,
       "leaders": 3,
-      "avg_change_pct": 2.72
+      "avg_change_pct": 2.5
     },
     {
       "sector": "조선",
-      "score": 27.6,
+      "score": 27.5,
       "leaders": 1,
-      "avg_change_pct": 11.13
+      "avg_change_pct": 10.2
     },
     {
       "sector": "지주사",
-      "score": 23.9,
+      "score": 24.6,
       "leaders": 1,
-      "avg_change_pct": 3.65
+      "avg_change_pct": 3.52
     },
     {
       "sector": "전력",
-      "score": 15.2,
+      "score": 14.3,
       "leaders": 1,
-      "avg_change_pct": 3.22
+      "avg_change_pct": 1.76
     },
     {
       "sector": "자동차",
-      "score": 13.9,
+      "score": 13.5,
       "leaders": 1,
-      "avg_change_pct": 2.85
+      "avg_change_pct": 2.03
     }
   ],
   "leaders": [
@@ -59,11 +59,11 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2455000,
+      "price": 2451000,
       "change_value": 0,
-      "change_pct": 1.24,
-      "volume": 1131694,
-      "trading_value_okrw": 27783.0,
+      "change_pct": 1.07,
+      "volume": 1172575,
+      "trading_value_okrw": 28739.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -77,8 +77,8 @@
       "price": 319750,
       "change_value": 0,
       "change_pct": 3.31,
-      "volume": 6808517,
-      "trading_value_okrw": 21770.0,
+      "volume": 7012112,
+      "trading_value_okrw": 22421.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -89,75 +89,75 @@
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 118800,
+      "price": 117800,
       "change_value": 0,
-      "change_pct": 11.13,
-      "volume": 2304897,
-      "trading_value_okrw": 2738.0,
+      "change_pct": 10.2,
+      "volume": 2367357,
+      "trading_value_okrw": 2788.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 14.8,
+      "score": 14.5,
       "rank": 3
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 215500,
+      "price": 214500,
       "change_value": 0,
-      "change_pct": 3.61,
-      "volume": 1709310,
-      "trading_value_okrw": 3683.0,
+      "change_pct": 3.13,
+      "volume": 1776713,
+      "trading_value_okrw": 3811.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.6,
+      "score": 11.4,
       "rank": 4
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1647000,
+      "price": 1645000,
       "change_value": 0,
-      "change_pct": 3.65,
-      "volume": 191381,
-      "trading_value_okrw": 3152.0,
+      "change_pct": 3.52,
+      "volume": 202962,
+      "trading_value_okrw": 3338.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 10.0,
+      "score": 10.2,
       "rank": 5
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 13470,
+      "price": 13280,
       "change_value": 0,
-      "change_pct": 3.22,
-      "volume": 7779178,
-      "trading_value_okrw": 1047.0,
+      "change_pct": 1.76,
+      "volume": 8076645,
+      "trading_value_okrw": 1072.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 6.6,
+      "score": 5.7,
       "rank": 6
     },
     {
       "code": "005380",
       "name": "현대차",
       "market": "KOSPI",
-      "price": 506000,
+      "price": 502000,
       "change_value": 0,
-      "change_pct": 2.85,
-      "volume": 240334,
-      "trading_value_okrw": 1216.0,
+      "change_pct": 2.03,
+      "volume": 248772,
+      "trading_value_okrw": 1248.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 4.9,
+      "score": 4.4,
       "rank": 7
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-06",
-    "generated_at_kst": "2026-07-06 11:41:28",
+    "generated_at_kst": "2026-07-06 11:46:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 5,
-    "market_bias": "조선 중심 강세 / 상위섹터 점수 25.2",
+    "leader_count": 5,
+    "sector_count": 4,
+    "market_bias": "조선 중심 강세 / 상위섹터 점수 24.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,27 @@
   "top_sectors": [
     {
       "sector": "조선",
-      "score": 25.2,
+      "score": 24.3,
       "leaders": 1,
-      "avg_change_pct": 4.3
+      "avg_change_pct": 3.27
     },
     {
       "sector": "자동차",
-      "score": 20.2,
+      "score": 19.6,
       "leaders": 2,
-      "avg_change_pct": 2.83
+      "avg_change_pct": 2.23
     },
     {
       "sector": "부동산",
-      "score": 16.1,
+      "score": 15.2,
       "leaders": 1,
-      "avg_change_pct": 3.58
-    },
-    {
-      "sector": "원전",
-      "score": 13.8,
-      "leaders": 1,
-      "avg_change_pct": 1.96
+      "avg_change_pct": 2.84
     },
     {
       "sector": "우주",
-      "score": 12.1,
+      "score": 11.9,
       "leaders": 1,
-      "avg_change_pct": 1.52
+      "avg_change_pct": 1.4
     }
   ],
   "leaders": [
@@ -59,91 +53,76 @@
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 111500,
+      "price": 110400,
       "change_value": 0,
-      "change_pct": 4.3,
-      "volume": 3417450,
-      "trading_value_okrw": 3810.0,
+      "change_pct": 3.27,
+      "volume": 3508608,
+      "trading_value_okrw": 3873.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 9.7,
+      "score": 8.6,
       "rank": 1
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 9840,
+      "price": 9770,
       "change_value": 0,
-      "change_pct": 3.58,
-      "volume": 11182434,
-      "trading_value_okrw": 1100.0,
+      "change_pct": 2.84,
+      "volume": 11231814,
+      "trading_value_okrw": 1097.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 7.3,
+      "score": 6.5,
       "rank": 2
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 156600,
+      "price": 156300,
       "change_value": 0,
-      "change_pct": 3.03,
-      "volume": 924193,
-      "trading_value_okrw": 1447.0,
+      "change_pct": 2.83,
+      "volume": 941143,
+      "trading_value_okrw": 1471.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 5.0,
+      "score": 4.8,
       "rank": 3
-    },
-    {
-      "code": "012330",
-      "name": "현대모비스",
-      "market": "KOSPI",
-      "price": 507000,
-      "change_value": 0,
-      "change_pct": 2.63,
-      "volume": 240322,
-      "trading_value_okrw": 1218.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 4.2,
-      "rank": 4
-    },
-    {
-      "code": "028260",
-      "name": "삼성물산",
-      "market": "KOSPI",
-      "price": 442000,
-      "change_value": 0,
-      "change_pct": 1.96,
-      "volume": 351080,
-      "trading_value_okrw": 1551.0,
-      "sector1": "원전",
-      "sector2": "",
-      "sector": "원전",
-      "score": 3.9,
-      "rank": 5
     },
     {
       "code": "006800",
       "name": "미래에셋증권",
       "market": "KOSPI",
-      "price": 43400,
+      "price": 43350,
       "change_value": 0,
-      "change_pct": 1.52,
-      "volume": 2483541,
-      "trading_value_okrw": 1077.0,
+      "change_pct": 1.4,
+      "volume": 2502032,
+      "trading_value_okrw": 1084.0,
       "sector1": "증권",
       "sector2": "우주",
       "sector": "우주",
-      "score": 3.4,
-      "rank": 6
+      "score": 3.2,
+      "rank": 4
+    },
+    {
+      "code": "012330",
+      "name": "현대모비스",
+      "market": "KOSPI",
+      "price": 502000,
+      "change_value": 0,
+      "change_pct": 1.62,
+      "volume": 245036,
+      "trading_value_okrw": 1230.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 3.1,
+      "rank": 5
     }
   ]
 }

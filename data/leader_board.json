@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-06",
-    "generated_at_kst": "2026-07-06 12:36:27",
+    "generated_at_kst": "2026-07-06 12:41:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 5,
     "sector_count": 4,
-    "market_bias": "조선 중심 강세 / 상위섹터 점수 26.4",
+    "market_bias": "조선 중심 강세 / 상위섹터 점수 26.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "조선",
-      "score": 26.4,
+      "score": 26.6,
       "leaders": 1,
-      "avg_change_pct": 4.77
+      "avg_change_pct": 4.96
     },
     {
       "sector": "자동차",
-      "score": 21.1,
+      "score": 21.0,
       "leaders": 2,
-      "avg_change_pct": 3.29
+      "avg_change_pct": 3.16
     },
     {
       "sector": "원전",
-      "score": 14.8,
+      "score": 14.4,
       "leaders": 1,
-      "avg_change_pct": 2.54
+      "avg_change_pct": 2.19
     },
     {
       "sector": "우주",
@@ -53,61 +53,46 @@
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 112000,
+      "price": 112200,
       "change_value": 0,
-      "change_pct": 4.77,
-      "volume": 3783168,
-      "trading_value_okrw": 4237.0,
+      "change_pct": 4.96,
+      "volume": 3809673,
+      "trading_value_okrw": 4274.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 9.8,
+      "score": 9.9,
       "rank": 1
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 157700,
+      "price": 157600,
       "change_value": 0,
-      "change_pct": 3.75,
-      "volume": 1046455,
-      "trading_value_okrw": 1650.0,
+      "change_pct": 3.68,
+      "volume": 1055592,
+      "trading_value_okrw": 1663.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 5.6,
+      "score": 5.5,
       "rank": 2
-    },
-    {
-      "code": "028260",
-      "name": "삼성물산",
-      "market": "KOSPI",
-      "price": 444500,
-      "change_value": 0,
-      "change_pct": 2.54,
-      "volume": 393209,
-      "trading_value_okrw": 1747.0,
-      "sector1": "원전",
-      "sector2": "",
-      "sector": "원전",
-      "score": 4.4,
-      "rank": 3
     },
     {
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 508000,
+      "price": 507000,
       "change_value": 0,
-      "change_pct": 2.83,
-      "volume": 277252,
-      "trading_value_okrw": 1408.0,
+      "change_pct": 2.63,
+      "volume": 279523,
+      "trading_value_okrw": 1417.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 4.3,
-      "rank": 4
+      "score": 4.1,
+      "rank": 3
     },
     {
       "code": "006800",
@@ -116,12 +101,27 @@
       "price": 43750,
       "change_value": 0,
       "change_pct": 2.34,
-      "volume": 2775079,
-      "trading_value_okrw": 1214.0,
+      "volume": 2802893,
+      "trading_value_okrw": 1226.0,
       "sector1": "증권",
       "sector2": "우주",
       "sector": "우주",
       "score": 4.1,
+      "rank": 4
+    },
+    {
+      "code": "028260",
+      "name": "삼성물산",
+      "market": "KOSPI",
+      "price": 443000,
+      "change_value": 0,
+      "change_pct": 2.19,
+      "volume": 396681,
+      "trading_value_okrw": 1757.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 4.0,
       "rank": 5
     }
   ]

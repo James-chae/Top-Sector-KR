@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 10:21:33",
+    "generated_at_kst": "2026-07-07 10:26:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
-    "sector_count": 4,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.6",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 35.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 36.6,
+      "score": 35.6,
       "leaders": 1,
-      "avg_change_pct": 16.36
+      "avg_change_pct": 15.55
     },
     {
       "sector": "바이오",
-      "score": 32.4,
+      "score": 31.1,
       "leaders": 1,
-      "avg_change_pct": 16.47
-    },
-    {
-      "sector": "반도체",
-      "score": 16.4,
-      "leaders": 1,
-      "avg_change_pct": 1.21
+      "avg_change_pct": 15.02
     },
     {
       "sector": "자동차",
-      "score": 15.7,
+      "score": 17.4,
       "leaders": 1,
-      "avg_change_pct": 1.46
+      "avg_change_pct": 3.08
     }
   ],
   "leaders": [
@@ -53,61 +47,46 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14370,
+      "price": 14270,
       "change_value": 0,
-      "change_pct": 16.36,
-      "volume": 17666571,
+      "change_pct": 15.55,
+      "volume": 17789806,
       "trading_value_okrw": 2538.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 24.3,
+      "score": 23.2,
       "rank": 1
     },
     {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 88400,
+      "price": 87300,
       "change_value": 0,
-      "change_pct": 16.47,
-      "volume": 2395560,
-      "trading_value_okrw": 2117.0,
+      "change_pct": 15.02,
+      "volume": 2495299,
+      "trading_value_okrw": 2178.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 21.1,
+      "score": 19.6,
       "rank": 2
     },
     {
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 6250,
+      "price": 6350,
       "change_value": 0,
-      "change_pct": 1.46,
-      "volume": 18675135,
-      "trading_value_okrw": 1167.0,
+      "change_pct": 3.08,
+      "volume": 19058865,
+      "trading_value_okrw": 1210.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 6.7,
+      "score": 8.4,
       "rank": 3
-    },
-    {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "market": "KOSDAQ",
-      "price": 183900,
-      "change_value": 0,
-      "change_pct": 1.21,
-      "volume": 1093645,
-      "trading_value_okrw": 2011.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 5.4,
-      "rank": 4
     }
   ]
 }

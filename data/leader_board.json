@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 09:21:31",
+    "generated_at_kst": "2026-07-07 09:26:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 32.5",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 28.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 32.5,
+      "score": 28.4,
       "leaders": 1,
-      "avg_change_pct": 14.98
+      "avg_change_pct": 10.45
     },
     {
       "sector": "반도체",
-      "score": 22.0,
+      "score": 19.9,
       "leaders": 1,
-      "avg_change_pct": 6.38
+      "avg_change_pct": 4.35
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14200,
+      "price": 13640,
       "change_value": 0,
-      "change_pct": 14.98,
-      "volume": 8779935,
-      "trading_value_okrw": 1246.0,
+      "change_pct": 10.45,
+      "volume": 10132754,
+      "trading_value_okrw": 1382.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 23.4,
+      "score": 19.0,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 193300,
+      "price": 189600,
       "change_value": 0,
-      "change_pct": 6.38,
-      "volume": 688980,
-      "trading_value_okrw": 1331.0,
+      "change_pct": 4.35,
+      "volume": 750054,
+      "trading_value_okrw": 1422.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 12.6,
+      "score": 10.3,
       "rank": 2
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 11:56:26",
+    "generated_at_kst": "2026-07-07 12:01:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 33.1",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 33.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 33.1,
+      "score": 33.0,
       "leaders": 1,
-      "avg_change_pct": 13.36
+      "avg_change_pct": 13.2
     },
     {
       "sector": "바이오",
@@ -37,9 +37,9 @@
     },
     {
       "sector": "엔터",
-      "score": 17.3,
+      "score": 16.8,
       "leaders": 1,
-      "avg_change_pct": 6.98
+      "avg_change_pct": 6.51
     }
   ],
   "leaders": [
@@ -47,15 +47,15 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14000,
+      "price": 13980,
       "change_value": 0,
-      "change_pct": 13.36,
-      "volume": 21653185,
-      "trading_value_okrw": 3031.0,
+      "change_pct": 13.2,
+      "volume": 21833170,
+      "trading_value_okrw": 3052.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 19.6,
+      "score": 19.3,
       "rank": 1
     },
     {
@@ -65,27 +65,27 @@
       "price": 84800,
       "change_value": 0,
       "change_pct": 11.73,
-      "volume": 3104307,
-      "trading_value_okrw": 2632.0,
+      "volume": 3127790,
+      "trading_value_okrw": 2652.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 15.1,
+      "score": 15.0,
       "rank": 2
     },
     {
       "code": "352820",
       "name": "하이브",
       "market": "KOSPI",
-      "price": 230000,
+      "price": 229000,
       "change_value": 0,
-      "change_pct": 6.98,
-      "volume": 507929,
-      "trading_value_okrw": 1168.0,
+      "change_pct": 6.51,
+      "volume": 514010,
+      "trading_value_okrw": 1177.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 8.4,
+      "score": 7.9,
       "rank": 3
     }
   ]

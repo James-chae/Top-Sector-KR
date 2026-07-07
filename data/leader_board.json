@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 13:21:29",
+    "generated_at_kst": "2026-07-07 13:26:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 5,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 41.0",
+    "leader_count": 4,
+    "sector_count": 4,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 39.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 41.0,
+      "score": 39.5,
       "leaders": 1,
-      "avg_change_pct": 19.19
+      "avg_change_pct": 17.73
     },
     {
       "sector": "바이오",
-      "score": 29.3,
+      "score": 29.9,
       "leaders": 1,
-      "avg_change_pct": 13.04
+      "avg_change_pct": 13.57
     },
     {
       "sector": "엔터",
@@ -42,16 +42,10 @@
       "avg_change_pct": 6.51
     },
     {
-      "sector": "자동차",
-      "score": 15.7,
-      "leaders": 1,
-      "avg_change_pct": 1.3
-    },
-    {
       "sector": "화장품",
-      "score": 15.0,
+      "score": 14.8,
       "leaders": 1,
-      "avg_change_pct": 5.42
+      "avg_change_pct": 5.15
     }
   ],
   "leaders": [
@@ -59,30 +53,30 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14720,
+      "price": 14540,
       "change_value": 0,
-      "change_pct": 19.19,
-      "volume": 26095368,
-      "trading_value_okrw": 3841.0,
+      "change_pct": 17.73,
+      "volume": 26400989,
+      "trading_value_okrw": 3838.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 25.4,
+      "score": 23.9,
       "rank": 1
     },
     {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 85800,
+      "price": 86200,
       "change_value": 0,
-      "change_pct": 13.04,
-      "volume": 3433834,
-      "trading_value_okrw": 2946.0,
+      "change_pct": 13.57,
+      "volume": 3454564,
+      "trading_value_okrw": 2977.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 16.0,
+      "score": 16.5,
       "rank": 2
     },
     {
@@ -92,8 +86,8 @@
       "price": 229000,
       "change_value": 0,
       "change_pct": 6.51,
-      "volume": 609874,
-      "trading_value_okrw": 1396.0,
+      "volume": 619328,
+      "trading_value_okrw": 1418.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
@@ -104,31 +98,16 @@
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 399000,
+      "price": 398000,
       "change_value": 0,
-      "change_pct": 5.42,
-      "volume": 266236,
-      "trading_value_okrw": 1062.0,
+      "change_pct": 5.15,
+      "volume": 270148,
+      "trading_value_okrw": 1075.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 6.4,
+      "score": 6.1,
       "rank": 4
-    },
-    {
-      "code": "073240",
-      "name": "금호타이어",
-      "market": "KOSPI",
-      "price": 6240,
-      "change_value": 0,
-      "change_pct": 1.3,
-      "volume": 26056612,
-      "trading_value_okrw": 1625.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 5.6,
-      "rank": 5
     }
   ]
 }

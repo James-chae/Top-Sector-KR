@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 14:46:27",
+    "generated_at_kst": "2026-07-07 14:51:27",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
-    "sector_count": 8,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 38.7",
+    "leader_count": 6,
+    "sector_count": 6,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 43.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,51 +25,39 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 38.7,
+      "score": 43.6,
       "leaders": 1,
-      "avg_change_pct": 15.95
+      "avg_change_pct": 20.16
     },
     {
       "sector": "바이오",
       "score": 28.0,
-      "leaders": 2,
-      "avg_change_pct": 6.46
+      "leaders": 1,
+      "avg_change_pct": 11.59
     },
     {
       "sector": "식품/음료",
-      "score": 20.9,
+      "score": 20.5,
       "leaders": 1,
-      "avg_change_pct": 11.11
+      "avg_change_pct": 10.56
     },
     {
       "sector": "엔터",
-      "score": 20.1,
+      "score": 19.5,
       "leaders": 1,
-      "avg_change_pct": 8.6
+      "avg_change_pct": 7.91
     },
     {
       "sector": "화장품",
-      "score": 18.1,
+      "score": 18.2,
       "leaders": 1,
       "avg_change_pct": 7.66
     },
     {
       "sector": "에너지",
-      "score": 17.7,
+      "score": 18.0,
       "leaders": 1,
-      "avg_change_pct": 7.96
-    },
-    {
-      "sector": "건설",
-      "score": 12.0,
-      "leaders": 1,
-      "avg_change_pct": 2.45
-    },
-    {
-      "sector": "금융",
-      "score": 11.4,
-      "leaders": 1,
-      "avg_change_pct": 1.11
+      "avg_change_pct": 8.21
     }
   ],
   "leaders": [
@@ -77,75 +65,75 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14320,
+      "price": 14840,
       "change_value": 0,
-      "change_pct": 15.95,
-      "volume": 31328115,
-      "trading_value_okrw": 4486.0,
+      "change_pct": 20.16,
+      "volume": 31846068,
+      "trading_value_okrw": 4725.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 21.5,
+      "score": 25.8,
       "rank": 1
     },
     {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 84900,
+      "price": 84700,
       "change_value": 0,
-      "change_pct": 11.86,
-      "volume": 3800294,
-      "trading_value_okrw": 3226.0,
+      "change_pct": 11.59,
+      "volume": 3813680,
+      "trading_value_okrw": 3230.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 14.2,
+      "score": 13.9,
       "rank": 2
     },
     {
       "code": "003230",
       "name": "삼양식품",
       "market": "KOSPI",
-      "price": 1220000,
+      "price": 1214000,
       "change_value": 0,
-      "change_pct": 11.11,
-      "volume": 99723,
-      "trading_value_okrw": 1216.0,
+      "change_pct": 10.56,
+      "volume": 102667,
+      "trading_value_okrw": 1246.0,
       "sector1": "식품/음료",
       "sector2": "",
       "sector": "식품/음료",
-      "score": 11.9,
+      "score": 11.3,
       "rank": 3
     },
     {
       "code": "352820",
       "name": "하이브",
       "market": "KOSPI",
-      "price": 233500,
+      "price": 232000,
       "change_value": 0,
-      "change_pct": 8.6,
-      "volume": 748840,
-      "trading_value_okrw": 1748.0,
+      "change_pct": 7.91,
+      "volume": 766361,
+      "trading_value_okrw": 1777.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 9.8,
+      "score": 9.1,
       "rank": 4
     },
     {
       "code": "010950",
       "name": "S-Oil",
       "market": "KOSPI",
-      "price": 126200,
+      "price": 126500,
       "change_value": 0,
-      "change_pct": 7.96,
-      "volume": 924245,
-      "trading_value_okrw": 1166.0,
+      "change_pct": 8.21,
+      "volume": 940613,
+      "trading_value_okrw": 1189.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 8.8,
+      "score": 9.0,
       "rank": 5
     },
     {
@@ -155,58 +143,13 @@
       "price": 407500,
       "change_value": 0,
       "change_pct": 7.66,
-      "volume": 345993,
-      "trading_value_okrw": 1409.0,
+      "volume": 356942,
+      "trading_value_okrw": 1454.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
       "score": 8.6,
       "rank": 6
-    },
-    {
-      "code": "006360",
-      "name": "GS건설",
-      "market": "KOSPI",
-      "price": 31350,
-      "change_value": 0,
-      "change_pct": 2.45,
-      "volume": 3328698,
-      "trading_value_okrw": 1043.0,
-      "sector1": "건설",
-      "sector2": "",
-      "sector": "건설",
-      "score": 3.4,
-      "rank": 7
-    },
-    {
-      "code": "055550",
-      "name": "신한지주",
-      "market": "KOSPI",
-      "price": 108900,
-      "change_value": 0,
-      "change_pct": 1.11,
-      "volume": 1225696,
-      "trading_value_okrw": 1334.0,
-      "sector1": "금융",
-      "sector2": "",
-      "sector": "금융",
-      "score": 2.0,
-      "rank": 8
-    },
-    {
-      "code": "196170",
-      "name": "알테오젠",
-      "market": "KOSDAQ",
-      "price": 334500,
-      "change_value": 0,
-      "change_pct": 1.06,
-      "volume": 319678,
-      "trading_value_okrw": 1069.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 1.8,
-      "rank": 9
     }
   ]
 }

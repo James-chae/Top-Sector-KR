@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 10:26:34",
+    "generated_at_kst": "2026-07-07 10:31:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 35.6",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 38.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 35.6,
+      "score": 38.8,
       "leaders": 1,
-      "avg_change_pct": 15.55
+      "avg_change_pct": 18.62
     },
     {
       "sector": "바이오",
-      "score": 31.1,
+      "score": 30.1,
       "leaders": 1,
-      "avg_change_pct": 15.02
+      "avg_change_pct": 14.1
     },
     {
       "sector": "자동차",
-      "score": 17.4,
+      "score": 16.5,
       "leaders": 1,
-      "avg_change_pct": 3.08
+      "avg_change_pct": 2.27
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14270,
+      "price": 14650,
       "change_value": 0,
-      "change_pct": 15.55,
-      "volume": 17789806,
-      "trading_value_okrw": 2538.0,
+      "change_pct": 18.62,
+      "volume": 18100414,
+      "trading_value_okrw": 2651.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 23.2,
+      "score": 26.2,
       "rank": 1
     },
     {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 87300,
+      "price": 86600,
       "change_value": 0,
-      "change_pct": 15.02,
-      "volume": 2495299,
-      "trading_value_okrw": 2178.0,
+      "change_pct": 14.1,
+      "volume": 2567077,
+      "trading_value_okrw": 2223.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 19.6,
+      "score": 18.5,
       "rank": 2
     },
     {
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 6350,
+      "price": 6300,
       "change_value": 0,
-      "change_pct": 3.08,
-      "volume": 19058865,
-      "trading_value_okrw": 1210.0,
+      "change_pct": 2.27,
+      "volume": 19368743,
+      "trading_value_okrw": 1220.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 8.4,
+      "score": 7.4,
       "rank": 3
     }
   ]

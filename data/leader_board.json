@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 12:46:34",
+    "generated_at_kst": "2026-07-07 12:51:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 28.6",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 28.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,22 +24,22 @@
   },
   "top_sectors": [
     {
-      "sector": "부동산",
-      "score": 28.6,
+      "sector": "바이오",
+      "score": 28.0,
       "leaders": 1,
-      "avg_change_pct": 8.74
+      "avg_change_pct": 11.99
     },
     {
-      "sector": "바이오",
-      "score": 28.2,
+      "sector": "부동산",
+      "score": 27.4,
       "leaders": 1,
-      "avg_change_pct": 12.25
+      "avg_change_pct": 7.61
     },
     {
       "sector": "엔터",
-      "score": 17.3,
+      "score": 16.6,
       "leaders": 1,
-      "avg_change_pct": 6.74
+      "avg_change_pct": 6.05
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 85200,
+      "price": 85000,
       "change_value": 0,
-      "change_pct": 12.25,
-      "volume": 3255952,
-      "trading_value_okrw": 2774.0,
+      "change_pct": 11.99,
+      "volume": 3271095,
+      "trading_value_okrw": 2780.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 15.3,
+      "score": 15.0,
       "rank": 1
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 13430,
+      "price": 13290,
       "change_value": 0,
-      "change_pct": 8.74,
-      "volume": 23720912,
-      "trading_value_okrw": 3185.0,
+      "change_pct": 7.61,
+      "volume": 23848384,
+      "trading_value_okrw": 3169.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 14.7,
+      "score": 13.5,
       "rank": 2
     },
     {
       "code": "352820",
       "name": "하이브",
       "market": "KOSPI",
-      "price": 229500,
+      "price": 228000,
       "change_value": 0,
-      "change_pct": 6.74,
-      "volume": 562294,
-      "trading_value_okrw": 1290.0,
+      "change_pct": 6.05,
+      "volume": 571223,
+      "trading_value_okrw": 1302.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 8.1,
+      "score": 7.3,
       "rank": 3
     }
   ]

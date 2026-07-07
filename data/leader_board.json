@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 11:21:34",
+    "generated_at_kst": "2026-07-07 11:26:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.6",
+    "leader_count": 4,
+    "sector_count": 4,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,27 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 36.6,
+      "score": 36.1,
       "leaders": 1,
-      "avg_change_pct": 16.72
+      "avg_change_pct": 16.36
     },
     {
       "sector": "바이오",
-      "score": 29.5,
+      "score": 29.6,
       "leaders": 1,
       "avg_change_pct": 13.57
     },
     {
       "sector": "엔터",
-      "score": 17.8,
+      "score": 17.6,
       "leaders": 1,
-      "avg_change_pct": 7.67
+      "avg_change_pct": 7.44
+    },
+    {
+      "sector": "자동차",
+      "score": 16.5,
+      "leaders": 1,
+      "avg_change_pct": 2.44
     }
   ],
   "leaders": [
@@ -47,15 +53,15 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14415,
+      "price": 14370,
       "change_value": 0,
-      "change_pct": 16.72,
-      "volume": 20336761,
-      "trading_value_okrw": 2931.0,
+      "change_pct": 16.36,
+      "volume": 20410450,
+      "trading_value_okrw": 2932.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 23.2,
+      "score": 22.8,
       "rank": 1
     },
     {
@@ -65,8 +71,8 @@
       "price": 86200,
       "change_value": 0,
       "change_pct": 13.57,
-      "volume": 2918689,
-      "trading_value_okrw": 2515.0,
+      "volume": 2951258,
+      "trading_value_okrw": 2543.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
@@ -77,16 +83,31 @@
       "code": "352820",
       "name": "하이브",
       "market": "KOSPI",
-      "price": 231500,
+      "price": 231000,
       "change_value": 0,
-      "change_pct": 7.67,
-      "volume": 463659,
-      "trading_value_okrw": 1073.0,
+      "change_pct": 7.44,
+      "volume": 468990,
+      "trading_value_okrw": 1083.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 9.1,
+      "score": 8.9,
       "rank": 3
+    },
+    {
+      "code": "073240",
+      "name": "금호타이어",
+      "market": "KOSPI",
+      "price": 6310,
+      "change_value": 0,
+      "change_pct": 2.44,
+      "volume": 21818090,
+      "trading_value_okrw": 1376.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 7.1,
+      "rank": 4
     }
   ]
 }

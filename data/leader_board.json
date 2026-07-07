@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-07",
-    "generated_at_kst": "2026-07-07 10:06:32",
+    "generated_at_kst": "2026-07-07 10:11:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.4",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 36.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 36.4,
+      "score": 36.0,
       "leaders": 1,
-      "avg_change_pct": 16.19
+      "avg_change_pct": 15.79
     },
     {
       "sector": "바이오",
       "score": 35.5,
       "leaders": 1,
-      "avg_change_pct": 19.89
+      "avg_change_pct": 19.76
     },
     {
       "sector": "반도체",
       "score": 16.9,
       "leaders": 1,
-      "avg_change_pct": 1.54
+      "avg_change_pct": 1.6
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 91000,
+      "price": 90900,
       "change_value": 0,
-      "change_pct": 19.89,
-      "volume": 2105891,
-      "trading_value_okrw": 1916.0,
+      "change_pct": 19.76,
+      "volume": 2198630,
+      "trading_value_okrw": 1998.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 24.7,
+      "score": 24.5,
       "rank": 1
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14350,
+      "price": 14300,
       "change_value": 0,
-      "change_pct": 16.19,
-      "volume": 16665561,
-      "trading_value_okrw": 2391.0,
+      "change_pct": 15.79,
+      "volume": 17061857,
+      "trading_value_okrw": 2439.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 24.5,
+      "score": 23.9,
       "rank": 2
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 184500,
+      "price": 184600,
       "change_value": 0,
-      "change_pct": 1.54,
-      "volume": 1037494,
-      "trading_value_okrw": 1914.0,
+      "change_pct": 1.6,
+      "volume": 1058926,
+      "trading_value_okrw": 1954.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.1,
+      "score": 6.0,
       "rank": 3
     }
   ]

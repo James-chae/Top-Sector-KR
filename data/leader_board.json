@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 12:06:31",
+    "generated_at_kst": "2026-07-08 12:11:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.7",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 86.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 85.7,
+      "score": 86.4,
       "leaders": 1,
-      "avg_change_pct": 2.27
+      "avg_change_pct": 2.95
     },
     {
       "sector": "전자",
-      "score": 25.8,
+      "score": 26.2,
       "leaders": 1,
-      "avg_change_pct": 4.92
+      "avg_change_pct": 5.24
     },
     {
       "sector": "자동차",
-      "score": 13.1,
+      "score": 13.4,
       "leaders": 1,
-      "avg_change_pct": 2.6
+      "avg_change_pct": 2.86
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2251000,
+      "price": 2266000,
       "change_value": 0,
-      "change_pct": 2.27,
-      "volume": 3498981,
-      "trading_value_okrw": 78762.0,
+      "change_pct": 2.95,
+      "volume": 3547158,
+      "trading_value_okrw": 80378.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.7,
+      "score": 68.4,
       "rank": 1
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 198400,
+      "price": 199000,
       "change_value": 0,
-      "change_pct": 4.92,
-      "volume": 2206568,
-      "trading_value_okrw": 4377.0,
+      "change_pct": 5.24,
+      "volume": 2225930,
+      "trading_value_okrw": 4429.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 8.8,
+      "score": 9.1,
       "rank": 2
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 157700,
+      "price": 158100,
       "change_value": 0,
-      "change_pct": 2.6,
-      "volume": 835971,
-      "trading_value_okrw": 1318.0,
+      "change_pct": 2.86,
+      "volume": 843962,
+      "trading_value_okrw": 1334.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 3.8,
+      "score": 4.0,
       "rank": 3
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 14:11:28",
+    "generated_at_kst": "2026-07-08 14:16:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "건자재 중심 강세 / 상위섹터 점수 33.5",
+    "market_bias": "건자재 중심 강세 / 상위섹터 점수 31.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "건자재",
-      "score": 33.5,
+      "score": 31.2,
       "leaders": 1,
-      "avg_change_pct": 21.47
+      "avg_change_pct": 19.16
     },
     {
       "sector": "전자",
-      "score": 24.5,
+      "score": 23.9,
       "leaders": 1,
-      "avg_change_pct": 2.86
+      "avg_change_pct": 2.33
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 5800,
+      "price": 5690,
       "change_value": 0,
-      "change_pct": 21.47,
-      "volume": 20992763,
-      "trading_value_okrw": 1217.0,
+      "change_pct": 19.16,
+      "volume": 21258702,
+      "trading_value_okrw": 1209.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 24.5,
+      "score": 22.2,
       "rank": 1
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 194500,
+      "price": 193500,
       "change_value": 0,
-      "change_pct": 2.86,
-      "volume": 2807608,
-      "trading_value_okrw": 5460.0,
+      "change_pct": 2.33,
+      "volume": 2833061,
+      "trading_value_okrw": 5481.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 6.5,
+      "score": 5.9,
       "rank": 2
     }
   ]

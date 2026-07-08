@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 14:21:29",
+    "generated_at_kst": "2026-07-08 14:26:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "건자재 중심 강세 / 상위섹터 점수 31.9",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 33.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,84 @@
   },
   "top_sectors": [
     {
-      "sector": "건자재",
-      "score": 31.9,
-      "leaders": 1,
-      "avg_change_pct": 19.79
+      "sector": "에너지",
+      "score": 33.6,
+      "leaders": 2,
+      "avg_change_pct": 16.7
     },
     {
-      "sector": "에너지",
-      "score": 29.3,
+      "sector": "건자재",
+      "score": 28.9,
       "leaders": 1,
-      "avg_change_pct": 17.63
+      "avg_change_pct": 16.86
     },
     {
       "sector": "전자",
-      "score": 23.9,
+      "score": 23.5,
       "leaders": 1,
-      "avg_change_pct": 2.27
+      "avg_change_pct": 1.9
     }
   ],
   "leaders": [
     {
+      "code": "024060",
+      "name": "흥구석유",
+      "market": "KOSDAQ",
+      "price": 10990,
+      "change_value": 0,
+      "change_pct": 20.77,
+      "volume": 9224537,
+      "trading_value_okrw": 1013.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 22.4,
+      "rank": 1
+    },
+    {
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 5720,
+      "price": 5580,
       "change_value": 0,
-      "change_pct": 19.79,
-      "volume": 21455700,
-      "trading_value_okrw": 1227.0,
+      "change_pct": 16.86,
+      "volume": 21598128,
+      "trading_value_okrw": 1205.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 22.8,
-      "rank": 1
+      "score": 19.9,
+      "rank": 2
     },
     {
       "code": "058730",
       "name": "다스코",
       "market": "KOSPI",
-      "price": 4705,
+      "price": 4505,
       "change_value": 0,
-      "change_pct": 17.63,
-      "volume": 22262566,
-      "trading_value_okrw": 1047.0,
+      "change_pct": 12.63,
+      "volume": 22732224,
+      "trading_value_okrw": 1024.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 20.6,
-      "rank": 2
+      "score": 15.7,
+      "rank": 3
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 193400,
+      "price": 192700,
       "change_value": 0,
-      "change_pct": 2.27,
-      "volume": 2854197,
-      "trading_value_okrw": 5520.0,
+      "change_pct": 1.9,
+      "volume": 2882712,
+      "trading_value_okrw": 5554.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 5.9,
-      "rank": 3
+      "score": 5.5,
+      "rank": 4
     }
   ]
 }

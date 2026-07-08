@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 13:06:28",
+    "generated_at_kst": "2026-07-08 13:11:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "건자재 중심 강세 / 상위섹터 점수 28.9",
+    "market_bias": "건자재 중심 강세 / 상위섹터 점수 30.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "건자재",
-      "score": 28.9,
+      "score": 30.7,
       "leaders": 1,
-      "avg_change_pct": 17.7
+      "avg_change_pct": 19.37
     },
     {
       "sector": "전자",
-      "score": 25.3,
+      "score": 25.6,
       "leaders": 1,
-      "avg_change_pct": 3.7
+      "avg_change_pct": 3.81
     },
     {
       "sector": "자동차",
-      "score": 12.8,
+      "score": 12.6,
       "leaders": 1,
-      "avg_change_pct": 1.95
+      "avg_change_pct": 1.69
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 5620,
+      "price": 5700,
       "change_value": 0,
-      "change_pct": 17.7,
-      "volume": 17873191,
-      "trading_value_okrw": 1004.0,
+      "change_pct": 19.37,
+      "volume": 18137486,
+      "trading_value_okrw": 1033.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 20.4,
+      "score": 22.1,
       "rank": 1
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 196100,
+      "price": 196300,
       "change_value": 0,
-      "change_pct": 3.7,
-      "volume": 2403315,
-      "trading_value_okrw": 4712.0,
+      "change_pct": 3.81,
+      "volume": 2436736,
+      "trading_value_okrw": 4783.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 7.5,
+      "score": 7.6,
       "rank": 2
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 156700,
+      "price": 156300,
       "change_value": 0,
-      "change_pct": 1.95,
-      "volume": 937106,
-      "trading_value_okrw": 1468.0,
+      "change_pct": 1.69,
+      "volume": 950296,
+      "trading_value_okrw": 1485.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 3.1,
+      "score": 2.9,
       "rank": 3
     }
   ]

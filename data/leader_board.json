@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 14:16:30",
+    "generated_at_kst": "2026-07-08 14:21:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "건자재 중심 강세 / 상위섹터 점수 31.2",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "건자재 중심 강세 / 상위섹터 점수 31.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "건자재",
-      "score": 31.2,
+      "score": 31.9,
       "leaders": 1,
-      "avg_change_pct": 19.16
+      "avg_change_pct": 19.79
+    },
+    {
+      "sector": "에너지",
+      "score": 29.3,
+      "leaders": 1,
+      "avg_change_pct": 17.63
     },
     {
       "sector": "전자",
       "score": 23.9,
       "leaders": 1,
-      "avg_change_pct": 2.33
+      "avg_change_pct": 2.27
     }
   ],
   "leaders": [
@@ -41,31 +47,46 @@
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 5690,
+      "price": 5720,
       "change_value": 0,
-      "change_pct": 19.16,
-      "volume": 21258702,
-      "trading_value_okrw": 1209.0,
+      "change_pct": 19.79,
+      "volume": 21455700,
+      "trading_value_okrw": 1227.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 22.2,
+      "score": 22.8,
       "rank": 1
+    },
+    {
+      "code": "058730",
+      "name": "다스코",
+      "market": "KOSPI",
+      "price": 4705,
+      "change_value": 0,
+      "change_pct": 17.63,
+      "volume": 22262566,
+      "trading_value_okrw": 1047.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 20.6,
+      "rank": 2
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 193500,
+      "price": 193400,
       "change_value": 0,
-      "change_pct": 2.33,
-      "volume": 2833061,
-      "trading_value_okrw": 5481.0,
+      "change_pct": 2.27,
+      "volume": 2854197,
+      "trading_value_okrw": 5520.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
       "score": 5.9,
-      "rank": 2
+      "rank": 3
     }
   ]
 }

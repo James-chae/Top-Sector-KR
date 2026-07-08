@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 14:26:29",
+    "generated_at_kst": "2026-07-08 14:31:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 33.6",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 34.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 33.6,
+      "score": 34.9,
       "leaders": 2,
-      "avg_change_pct": 16.7
+      "avg_change_pct": 17.86
     },
     {
       "sector": "건자재",
-      "score": 28.9,
+      "score": 31.9,
       "leaders": 1,
-      "avg_change_pct": 16.86
+      "avg_change_pct": 19.79
     },
     {
       "sector": "전자",
@@ -44,48 +44,48 @@
   ],
   "leaders": [
     {
-      "code": "024060",
-      "name": "흥구석유",
-      "market": "KOSDAQ",
-      "price": 10990,
-      "change_value": 0,
-      "change_pct": 20.77,
-      "volume": 9224537,
-      "trading_value_okrw": 1013.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 22.4,
-      "rank": 1
-    },
-    {
       "code": "079650",
       "name": "서산",
       "market": "KOSDAQ",
-      "price": 5580,
+      "price": 5720,
       "change_value": 0,
-      "change_pct": 16.86,
-      "volume": 21598128,
-      "trading_value_okrw": 1205.0,
+      "change_pct": 19.79,
+      "volume": 21708212,
+      "trading_value_okrw": 1241.0,
       "sector1": "건자재",
       "sector2": "",
       "sector": "건자재",
-      "score": 19.9,
+      "score": 22.8,
+      "rank": 1
+    },
+    {
+      "code": "024060",
+      "name": "흥구석유",
+      "market": "KOSDAQ",
+      "price": 10940,
+      "change_value": 0,
+      "change_pct": 20.22,
+      "volume": 9448287,
+      "trading_value_okrw": 1033.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 21.9,
       "rank": 2
     },
     {
       "code": "058730",
       "name": "다스코",
       "market": "KOSPI",
-      "price": 4505,
+      "price": 4620,
       "change_value": 0,
-      "change_pct": 12.63,
-      "volume": 22732224,
-      "trading_value_okrw": 1024.0,
+      "change_pct": 15.5,
+      "volume": 22993991,
+      "trading_value_okrw": 1062.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 15.7,
+      "score": 18.6,
       "rank": 3
     },
     {
@@ -95,8 +95,8 @@
       "price": 192700,
       "change_value": 0,
       "change_pct": 1.9,
-      "volume": 2882712,
-      "trading_value_okrw": 5554.0,
+      "volume": 2906421,
+      "trading_value_okrw": 5600.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",

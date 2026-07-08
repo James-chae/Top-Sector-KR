@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 09:21:29",
+    "generated_at_kst": "2026-07-08 09:26:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "전자 중심 강세 / 상위섹터 점수 19.5",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "전자",
-      "score": 19.5,
+      "sector": "반도체",
+      "score": 85.0,
       "leaders": 1,
-      "avg_change_pct": 4.76
+      "avg_change_pct": 1.5
+    },
+    {
+      "sector": "전자",
+      "score": 23.5,
+      "leaders": 1,
+      "avg_change_pct": 7.35
     }
   ],
   "leaders": [
     {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 2234000,
+      "change_value": 0,
+      "change_pct": 1.5,
+      "volume": 955251,
+      "trading_value_okrw": 21340.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 67.0,
+      "rank": 1
+    },
+    {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 198100,
+      "price": 203000,
       "change_value": 0,
-      "change_pct": 4.76,
-      "volume": 679096,
-      "trading_value_okrw": 1345.0,
+      "change_pct": 7.35,
+      "volume": 860262,
+      "trading_value_okrw": 1746.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 10.1,
-      "rank": 1
+      "score": 13.2,
+      "rank": 2
     }
   ]
 }

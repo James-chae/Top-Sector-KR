@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 10:41:34",
+    "generated_at_kst": "2026-07-08 10:46:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.8",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 86.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 85.8,
+      "score": 86.0,
       "leaders": 1,
-      "avg_change_pct": 2.45
+      "avg_change_pct": 2.68
     },
     {
       "sector": "전자",
-      "score": 24.0,
+      "score": 24.5,
       "leaders": 1,
-      "avg_change_pct": 5.18
+      "avg_change_pct": 5.5
     },
     {
       "sector": "자동차",
-      "score": 13.4,
+      "score": 13.8,
       "leaders": 1,
-      "avg_change_pct": 3.58
+      "avg_change_pct": 3.9
     },
     {
       "sector": "금융",
-      "score": 12.3,
+      "score": 12.4,
       "leaders": 1,
-      "avg_change_pct": 1.27
+      "avg_change_pct": 1.33
     }
   ],
   "leaders": [
@@ -53,56 +53,56 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2255000,
+      "price": 2260000,
       "change_value": 0,
-      "change_pct": 2.45,
-      "volume": 2649272,
-      "trading_value_okrw": 59741.0,
+      "change_pct": 2.68,
+      "volume": 2716187,
+      "trading_value_okrw": 61385.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.8,
+      "score": 68.0,
       "rank": 1
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 198900,
+      "price": 199500,
       "change_value": 0,
-      "change_pct": 5.18,
-      "volume": 1765408,
-      "trading_value_okrw": 3511.0,
+      "change_pct": 5.5,
+      "volume": 1798285,
+      "trading_value_okrw": 3587.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 9.2,
+      "score": 9.5,
       "rank": 2
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 159200,
+      "price": 159700,
       "change_value": 0,
-      "change_pct": 3.58,
-      "volume": 653967,
-      "trading_value_okrw": 1041.0,
+      "change_pct": 3.9,
+      "volume": 665172,
+      "trading_value_okrw": 1062.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 4.8,
+      "score": 5.1,
       "rank": 3
     },
     {
       "code": "105560",
       "name": "KB금융",
       "market": "KOSPI",
-      "price": 175400,
+      "price": 175500,
       "change_value": 0,
-      "change_pct": 1.27,
-      "volume": 780845,
-      "trading_value_okrw": 1369.0,
+      "change_pct": 1.33,
+      "volume": 797644,
+      "trading_value_okrw": 1399.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",

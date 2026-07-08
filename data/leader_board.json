@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 12:11:31",
+    "generated_at_kst": "2026-07-08 12:16:37",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 86.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 86.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 86.4,
+      "score": 86.8,
       "leaders": 1,
-      "avg_change_pct": 2.95
+      "avg_change_pct": 3.36
     },
     {
       "sector": "전자",
-      "score": 26.2,
+      "score": 26.3,
       "leaders": 1,
-      "avg_change_pct": 5.24
+      "avg_change_pct": 5.29
     },
     {
       "sector": "자동차",
-      "score": 13.4,
+      "score": 13.3,
       "leaders": 1,
-      "avg_change_pct": 2.86
+      "avg_change_pct": 2.8
     }
   ],
   "leaders": [
@@ -47,26 +47,26 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2266000,
+      "price": 2275000,
       "change_value": 0,
-      "change_pct": 2.95,
-      "volume": 3547158,
-      "trading_value_okrw": 80378.0,
+      "change_pct": 3.36,
+      "volume": 3590364,
+      "trading_value_okrw": 81680.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 68.4,
+      "score": 68.8,
       "rank": 1
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 199000,
+      "price": 199100,
       "change_value": 0,
-      "change_pct": 5.24,
-      "volume": 2225930,
-      "trading_value_okrw": 4429.0,
+      "change_pct": 5.29,
+      "volume": 2240793,
+      "trading_value_okrw": 4461.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
@@ -77,11 +77,11 @@
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 158100,
+      "price": 158000,
       "change_value": 0,
-      "change_pct": 2.86,
-      "volume": 843962,
-      "trading_value_okrw": 1334.0,
+      "change_pct": 2.8,
+      "volume": 851817,
+      "trading_value_okrw": 1345.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 09:16:34",
+    "generated_at_kst": "2026-07-08 09:21:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "전자 중심 강세 / 상위섹터 점수 16.7",
+    "market_bias": "전자 중심 강세 / 상위섹터 점수 19.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "전자",
-      "score": 16.7,
+      "score": 19.5,
       "leaders": 1,
-      "avg_change_pct": 3.17
+      "avg_change_pct": 4.76
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 195100,
+      "price": 198100,
       "change_value": 0,
-      "change_pct": 3.17,
-      "volume": 529452,
-      "trading_value_okrw": 1032.0,
+      "change_pct": 4.76,
+      "volume": 679096,
+      "trading_value_okrw": 1345.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 8.1,
+      "score": 10.1,
       "rank": 1
     }
   ]

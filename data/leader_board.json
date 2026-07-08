@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-08",
-    "generated_at_kst": "2026-07-08 11:11:33",
+    "generated_at_kst": "2026-07-08 11:16:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "전자 중심 강세 / 상위섹터 점수 24.2",
+    "market_bias": "전자 중심 강세 / 상위섹터 점수 24.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "전자",
-      "score": 24.2,
+      "score": 24.0,
       "leaders": 1,
-      "avg_change_pct": 4.44
+      "avg_change_pct": 4.12
     },
     {
       "sector": "자동차",
       "score": 12.0,
       "leaders": 1,
-      "avg_change_pct": 1.95
+      "avg_change_pct": 1.89
     }
   ],
   "leaders": [
@@ -41,26 +41,26 @@
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 197500,
+      "price": 196900,
       "change_value": 0,
-      "change_pct": 4.44,
-      "volume": 1988161,
-      "trading_value_okrw": 3926.0,
+      "change_pct": 4.12,
+      "volume": 2017248,
+      "trading_value_okrw": 3971.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 8.4,
+      "score": 8.1,
       "rank": 1
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 156700,
+      "price": 156600,
       "change_value": 0,
-      "change_pct": 1.95,
-      "volume": 729405,
-      "trading_value_okrw": 1142.0,
+      "change_pct": 1.89,
+      "volume": 741848,
+      "trading_value_okrw": 1161.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",

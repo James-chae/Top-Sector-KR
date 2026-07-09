@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-09",
-    "generated_at_kst": "2026-07-09 15:31:45",
+    "generated_at_kst": "2026-07-09 15:36:46",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 14,
+    "leader_count": 16,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 60.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 62.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,39 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 60.6,
+      "score": 62.5,
       "leaders": 3,
-      "avg_change_pct": 8.17
+      "avg_change_pct": 9.84
     },
     {
       "sector": "부동산",
-      "score": 36.1,
+      "score": 43.7,
       "leaders": 1,
-      "avg_change_pct": 16.93
+      "avg_change_pct": 23.64
     },
     {
       "sector": "지주사",
-      "score": 30.8,
+      "score": 31.1,
       "leaders": 2,
-      "avg_change_pct": 3.58
+      "avg_change_pct": 3.42
     },
     {
       "sector": "전력",
       "score": 22.5,
       "leaders": 2,
-      "avg_change_pct": 3.13
+      "avg_change_pct": 3.12
     },
     {
       "sector": "에너지",
       "score": 22.0,
       "leaders": 2,
       "avg_change_pct": 3.22
+    },
+    {
+      "sector": "통신",
+      "score": 18.5,
+      "leaders": 2,
+      "avg_change_pct": 3.1
     },
     {
       "sector": "제조",
@@ -64,12 +70,6 @@
       "score": 15.8,
       "leaders": 1,
       "avg_change_pct": 5.35
-    },
-    {
-      "sector": "통신",
-      "score": 12.5,
-      "leaders": 1,
-      "avg_change_pct": 3.0
     }
   ],
   "leaders": [
@@ -92,60 +92,60 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 16370,
+      "price": 17310,
       "change_value": 0,
-      "change_pct": 16.93,
-      "volume": 24811131,
-      "trading_value_okrw": 4061.0,
+      "change_pct": 23.64,
+      "volume": 25062842,
+      "trading_value_okrw": 4338.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 20.0,
+      "score": 26.8,
       "rank": 2
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 178400,
+      "change_value": 0,
+      "change_pct": 11.5,
+      "volume": 2112647,
+      "trading_value_okrw": 3768.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 13.6,
+      "rank": 3
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 116400,
+      "price": 117900,
       "change_value": 0,
-      "change_pct": 11.28,
-      "volume": 956476,
-      "trading_value_okrw": 1113.0,
+      "change_pct": 12.72,
+      "volume": 1008964,
+      "trading_value_okrw": 1189.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.9,
-      "rank": 3
+      "score": 13.4,
+      "rank": 4
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1331000,
+      "price": 1327000,
       "change_value": 0,
-      "change_pct": 4.8,
-      "volume": 794400,
-      "trading_value_okrw": 10573.0,
+      "change_pct": 4.49,
+      "volume": 924208,
+      "trading_value_okrw": 12264.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 10.4,
-      "rank": 4
-    },
-    {
-      "code": "042700",
-      "name": "한미반도체",
-      "market": "KOSPI",
-      "price": 215000,
-      "change_value": 0,
-      "change_pct": 7.93,
-      "volume": 1134857,
-      "trading_value_okrw": 2439.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 9.3,
+      "score": 11.0,
       "rank": 5
     },
     {
@@ -164,6 +164,21 @@
       "rank": 6
     },
     {
+      "code": "047810",
+      "name": "한국항공우주",
+      "market": "KOSPI",
+      "price": 150000,
+      "change_value": 0,
+      "change_pct": 5.63,
+      "volume": 755858,
+      "trading_value_okrw": 1133.0,
+      "sector1": "우주",
+      "sector2": "",
+      "sector": "우주",
+      "score": 6.3,
+      "rank": 7
+    },
+    {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
@@ -176,7 +191,7 @@
       "sector2": "",
       "sector": "바이오",
       "score": 6.2,
-      "rank": 7
+      "rank": 8
     },
     {
       "code": "024060",
@@ -191,7 +206,7 @@
       "sector2": "",
       "sector": "에너지",
       "score": 5.1,
-      "rank": 8
+      "rank": 9
     },
     {
       "code": "010120",
@@ -206,22 +221,22 @@
       "sector2": "",
       "sector": "전력",
       "score": 4.6,
-      "rank": 9
+      "rank": 10
     },
     {
       "code": "298040",
       "name": "효성중공업",
       "market": "KOSPI",
-      "price": 2771000,
+      "price": 2770000,
       "change_value": 0,
-      "change_pct": 3.05,
-      "volume": 68246,
-      "trading_value_okrw": 1891.0,
+      "change_pct": 3.01,
+      "volume": 72705,
+      "trading_value_okrw": 2013.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 4.0,
-      "rank": 10
+      "score": 4.1,
+      "rank": 11
     },
     {
       "code": "009830",
@@ -236,7 +251,7 @@
       "sector2": "",
       "sector": "에너지",
       "score": 4.0,
-      "rank": 11
+      "rank": 12
     },
     {
       "code": "010170",
@@ -251,7 +266,22 @@
       "sector2": "",
       "sector": "통신",
       "score": 3.9,
-      "rank": 12
+      "rank": 13
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "market": "KOSPI",
+      "price": 86700,
+      "change_value": 0,
+      "change_pct": 3.21,
+      "volume": 1227940,
+      "trading_value_okrw": 1064.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 3.8,
+      "rank": 14
     },
     {
       "code": "034730",
@@ -260,13 +290,13 @@
       "price": 610000,
       "change_value": 0,
       "change_pct": 2.35,
-      "volume": 245959,
-      "trading_value_okrw": 1500.0,
+      "volume": 277468,
+      "trading_value_okrw": 1692.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 3.1,
-      "rank": 13
+      "score": 3.3,
+      "rank": 15
     },
     {
       "code": "086520",
@@ -281,7 +311,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 2.5,
-      "rank": 14
+      "rank": 16
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-09",
-    "generated_at_kst": "2026-07-09 10:41:47",
+    "generated_at_kst": "2026-07-09 10:46:46",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 7,
-    "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 71.3",
+    "leader_count": 8,
+    "sector_count": 6,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,39 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 71.3,
+      "score": 72.3,
       "leaders": 3,
-      "avg_change_pct": 5.7
+      "avg_change_pct": 6.58
     },
     {
       "sector": "지주사",
-      "score": 27.2,
+      "score": 28.2,
       "leaders": 1,
-      "avg_change_pct": 5.12
+      "avg_change_pct": 5.83
     },
     {
       "sector": "부동산",
-      "score": 24.0,
+      "score": 26.8,
       "leaders": 1,
-      "avg_change_pct": 11.29
+      "avg_change_pct": 13.86
     },
     {
       "sector": "전력",
-      "score": 14.4,
+      "score": 15.6,
       "leaders": 1,
-      "avg_change_pct": 3.92
+      "avg_change_pct": 5.07
     },
     {
       "sector": "에너지",
-      "score": 14.3,
+      "score": 14.6,
       "leaders": 1,
-      "avg_change_pct": 1.92
+      "avg_change_pct": 2.31
+    },
+    {
+      "sector": "조선",
+      "score": 13.7,
+      "leaders": 1,
+      "avg_change_pct": 1.59
     }
   ],
   "leaders": [
@@ -59,106 +65,121 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2220000,
+      "price": 2238000,
       "change_value": 0,
-      "change_pct": 6.94,
-      "volume": 1926455,
-      "trading_value_okrw": 42767.0,
+      "change_pct": 7.8,
+      "volume": 1962384,
+      "trading_value_okrw": 43918.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 72.2,
+      "score": 73.0,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 284000,
+      "price": 285000,
       "change_value": 0,
-      "change_pct": 2.34,
-      "volume": 8767559,
-      "trading_value_okrw": 24899.0,
+      "change_pct": 2.7,
+      "volume": 9031371,
+      "trading_value_okrw": 25739.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 41.2,
+      "score": 41.8,
       "rank": 2
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 15580,
+      "price": 15940,
       "change_value": 0,
-      "change_pct": 11.29,
-      "volume": 9055892,
-      "trading_value_okrw": 1410.0,
+      "change_pct": 13.86,
+      "volume": 9299509,
+      "trading_value_okrw": 1482.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 14.4,
+      "score": 17.1,
       "rank": 3
-    },
-    {
-      "code": "402340",
-      "name": "SK스퀘어",
-      "market": "KOSPI",
-      "price": 1335000,
-      "change_value": 0,
-      "change_pct": 5.12,
-      "volume": 299317,
-      "trading_value_okrw": 3995.0,
-      "sector1": "지주사",
-      "sector2": "",
-      "sector": "지주사",
-      "score": 11.2,
-      "rank": 4
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 172500,
+      "price": 174800,
       "change_value": 0,
-      "change_pct": 7.81,
-      "volume": 1062836,
-      "trading_value_okrw": 1833.0,
+      "change_pct": 9.25,
+      "volume": 1096538,
+      "trading_value_okrw": 1916.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.7,
-      "rank": 5
+      "score": 12.2,
+      "rank": 4
     },
     {
-      "code": "058730",
-      "name": "다스코",
+      "code": "402340",
+      "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 5300,
+      "price": 1344000,
       "change_value": 0,
-      "change_pct": 1.92,
-      "volume": 19614257,
-      "trading_value_okrw": 1039.0,
-      "sector1": "에너지",
+      "change_pct": 5.83,
+      "volume": 306101,
+      "trading_value_okrw": 4113.0,
+      "sector1": "지주사",
       "sector2": "",
-      "sector": "에너지",
-      "score": 5.7,
-      "rank": 6
+      "sector": "지주사",
+      "score": 12.0,
+      "rank": 5
     },
     {
       "code": "010120",
       "name": "LS ELECTRIC",
       "market": "KOSPI",
-      "price": 190700,
+      "price": 192800,
       "change_value": 0,
-      "change_pct": 3.92,
-      "volume": 569271,
-      "trading_value_okrw": 1085.0,
+      "change_pct": 5.07,
+      "volume": 578712,
+      "trading_value_okrw": 1115.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 5.6,
+      "score": 6.8,
+      "rank": 6
+    },
+    {
+      "code": "058730",
+      "name": "다스코",
+      "market": "KOSPI",
+      "price": 5320,
+      "change_value": 0,
+      "change_pct": 2.31,
+      "volume": 19788358,
+      "trading_value_okrw": 1052.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 6.0,
       "rank": 7
+    },
+    {
+      "code": "042660",
+      "name": "한화오션",
+      "market": "KOSPI",
+      "price": 83300,
+      "change_value": 0,
+      "change_pct": 1.59,
+      "volume": 1773988,
+      "trading_value_okrw": 1477.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 4.0,
+      "rank": 8
     }
   ]
 }

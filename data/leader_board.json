@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-09",
-    "generated_at_kst": "2026-07-09 10:06:43",
+    "generated_at_kst": "2026-07-09 10:11:45",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 71.0",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 71.0,
+      "score": 72.1,
       "leaders": 3,
-      "avg_change_pct": 4.7
-    },
-    {
-      "sector": "부동산",
-      "score": 26.7,
-      "leaders": 1,
-      "avg_change_pct": 14.36
+      "avg_change_pct": 5.73
     },
     {
       "sector": "지주사",
-      "score": 26.6,
+      "score": 27.9,
       "leaders": 1,
-      "avg_change_pct": 5.91
+      "avg_change_pct": 7.01
+    },
+    {
+      "sector": "부동산",
+      "score": 27.2,
+      "leaders": 1,
+      "avg_change_pct": 14.86
     },
     {
       "sector": "조선",
-      "score": 12.7,
+      "score": 13.6,
       "leaders": 1,
-      "avg_change_pct": 1.46
+      "avg_change_pct": 2.32
     }
   ],
   "leaders": [
@@ -53,90 +53,90 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2231000,
+      "price": 2253000,
       "change_value": 0,
-      "change_pct": 7.47,
-      "volume": 1552463,
-      "trading_value_okrw": 34635.0,
+      "change_pct": 8.53,
+      "volume": 1624719,
+      "trading_value_okrw": 36604.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 72.7,
+      "score": 73.7,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 286000,
+      "price": 288000,
       "change_value": 0,
-      "change_pct": 3.06,
-      "volume": 6472279,
-      "trading_value_okrw": 18510.0,
+      "change_pct": 3.78,
+      "volume": 6865823,
+      "trading_value_okrw": 19773.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 38.6,
+      "score": 39.7,
       "rank": 2
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 16010,
+      "price": 16080,
       "change_value": 0,
-      "change_pct": 14.36,
-      "volume": 7697828,
-      "trading_value_okrw": 1232.0,
+      "change_pct": 14.86,
+      "volume": 7793939,
+      "trading_value_okrw": 1253.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 17.6,
+      "score": 18.1,
       "rank": 3
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1345000,
+      "price": 1359000,
       "change_value": 0,
-      "change_pct": 5.91,
-      "volume": 248308,
-      "trading_value_okrw": 3339.0,
+      "change_pct": 7.01,
+      "volume": 256364,
+      "trading_value_okrw": 3483.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 12.2,
+      "score": 13.2,
       "rank": 4
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 1532000,
+      "price": 1551000,
       "change_value": 0,
-      "change_pct": 3.58,
-      "volume": 280257,
-      "trading_value_okrw": 4293.0,
+      "change_pct": 4.87,
+      "volume": 288853,
+      "trading_value_okrw": 4480.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.7,
+      "score": 12.9,
       "rank": 5
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 83200,
+      "price": 83900,
       "change_value": 0,
-      "change_pct": 1.46,
-      "volume": 1381667,
-      "trading_value_okrw": 1149.0,
+      "change_pct": 2.32,
+      "volume": 1434885,
+      "trading_value_okrw": 1203.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.8,
+      "score": 4.6,
       "rank": 6
     }
   ]

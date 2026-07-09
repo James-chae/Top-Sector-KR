@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-09",
-    "generated_at_kst": "2026-07-09 12:11:35",
+    "generated_at_kst": "2026-07-09 12:16:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 55.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 55.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 55.4,
+      "score": 55.6,
       "leaders": 3,
-      "avg_change_pct": 2.26
+      "avg_change_pct": 2.45
     },
     {
       "sector": "에너지",
-      "score": 35.6,
+      "score": 34.8,
       "leaders": 1,
-      "avg_change_pct": 22.41
+      "avg_change_pct": 21.55
     },
     {
       "sector": "부동산",
-      "score": 18.8,
+      "score": 19.4,
       "leaders": 1,
-      "avg_change_pct": 5.64
+      "avg_change_pct": 6.14
     },
     {
       "sector": "바이오",
-      "score": 12.1,
+      "score": 13.0,
       "leaders": 1,
-      "avg_change_pct": 2.19
+      "avg_change_pct": 3.04
     }
   ],
   "leaders": [
@@ -53,45 +53,45 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 2108000,
+      "price": 2115000,
       "change_value": 0,
-      "change_pct": 1.54,
-      "volume": 3045592,
-      "trading_value_okrw": 64201.0,
+      "change_pct": 1.88,
+      "volume": 3126328,
+      "trading_value_okrw": 66121.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 66.8,
+      "score": 67.2,
       "rank": 1
     },
     {
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 12780,
+      "price": 12690,
       "change_value": 0,
-      "change_pct": 22.41,
-      "volume": 13205980,
-      "trading_value_okrw": 1687.0,
+      "change_pct": 21.55,
+      "volume": 13504948,
+      "trading_value_okrw": 1713.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 25.4,
+      "score": 24.5,
       "rank": 2
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14790,
+      "price": 14860,
       "change_value": 0,
-      "change_pct": 5.64,
-      "volume": 11724586,
-      "trading_value_okrw": 1734.0,
+      "change_pct": 6.14,
+      "volume": 11881851,
+      "trading_value_okrw": 1765.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 8.5,
+      "score": 9.0,
       "rank": 3
     },
     {
@@ -101,8 +101,8 @@
       "price": 207500,
       "change_value": 0,
       "change_pct": 4.17,
-      "volume": 709410,
-      "trading_value_okrw": 1472.0,
+      "volume": 728608,
+      "trading_value_okrw": 1511.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -110,33 +110,33 @@
       "rank": 4
     },
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "market": "KOSDAQ",
-      "price": 161700,
-      "change_value": 0,
-      "change_pct": 1.06,
-      "volume": 1488327,
-      "trading_value_okrw": 2406.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 3.6,
-      "rank": 5
-    },
-    {
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 84000,
+      "price": 84700,
       "change_value": 0,
-      "change_pct": 2.19,
-      "volume": 1277697,
-      "trading_value_okrw": 1073.0,
+      "change_pct": 3.04,
+      "volume": 1292673,
+      "trading_value_okrw": 1094.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 3.4,
+      "score": 4.2,
+      "rank": 5
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 162100,
+      "change_value": 0,
+      "change_pct": 1.31,
+      "volume": 1506281,
+      "trading_value_okrw": 2441.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 3.9,
       "rank": 6
     }
   ]

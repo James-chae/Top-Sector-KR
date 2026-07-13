@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-13",
-    "generated_at_kst": "2026-07-13 13:31:27",
+    "generated_at_kst": "2026-07-13 13:36:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 36.5",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 37.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 36.5,
+      "score": 37.8,
       "leaders": 2,
-      "avg_change_pct": 13.24
+      "avg_change_pct": 14.48
     },
     {
       "sector": "2차전지",
@@ -43,9 +43,9 @@
     },
     {
       "sector": "반도체",
-      "score": 14.1,
+      "score": 13.5,
       "leaders": 1,
-      "avg_change_pct": 3.6
+      "avg_change_pct": 2.98
     },
     {
       "sector": "금융",
@@ -59,15 +59,15 @@
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 12420,
+      "price": 12690,
       "change_value": 0,
-      "change_pct": 14.58,
-      "volume": 10531598,
-      "trading_value_okrw": 1308.0,
+      "change_pct": 17.07,
+      "volume": 10983611,
+      "trading_value_okrw": 1393.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 16.8,
+      "score": 19.4,
       "rank": 1
     },
     {
@@ -116,21 +116,6 @@
       "rank": 4
     },
     {
-      "code": "095610",
-      "name": "테스",
-      "market": "KOSDAQ",
-      "price": 184100,
-      "change_value": 0,
-      "change_pct": 3.6,
-      "volume": 756293,
-      "trading_value_okrw": 1392.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 4.6,
-      "rank": 5
-    },
-    {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
@@ -142,6 +127,21 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
+      "score": 4.0,
+      "rank": 5
+    },
+    {
+      "code": "095610",
+      "name": "테스",
+      "market": "KOSDAQ",
+      "price": 183000,
+      "change_value": 0,
+      "change_pct": 2.98,
+      "volume": 762178,
+      "trading_value_okrw": 1394.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
       "score": 4.0,
       "rank": 6
     },

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-13",
-    "generated_at_kst": "2026-07-13 09:16:32",
+    "generated_at_kst": "2026-07-13 09:21:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 54.1",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 22.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,47 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 54.1,
+      "score": 22.7,
       "leaders": 1,
-      "avg_change_pct": 2.28
+      "avg_change_pct": 8.65
+    },
+    {
+      "sector": "전자",
+      "score": 21.8,
+      "leaders": 1,
+      "avg_change_pct": 8.5
     }
   ],
   "leaders": [
     {
-      "code": "005930",
-      "name": "삼성전자",
-      "market": "KOSPI",
-      "price": 291500,
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 208500,
       "change_value": 0,
-      "change_pct": 2.28,
-      "volume": 1959705,
-      "trading_value_okrw": 5712.0,
+      "change_pct": 8.65,
+      "volume": 547630,
+      "trading_value_okrw": 1141.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 36.1,
+      "score": 13.8,
       "rank": 1
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 197900,
+      "change_value": 0,
+      "change_pct": 8.5,
+      "volume": 523839,
+      "trading_value_okrw": 1036.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 13.2,
+      "rank": 2
     }
   ]
 }

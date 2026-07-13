@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-13",
-    "generated_at_kst": "2026-07-13 15:26:38",
+    "generated_at_kst": "2026-07-13 15:31:35",
     "mode": "closing",
     "session_state": "",
     "leader_count": 9,
     "sector_count": 6,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 44.8",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 45.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,19 +25,19 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 44.8,
+      "score": 45.0,
       "leaders": 3,
-      "avg_change_pct": 14.79
+      "avg_change_pct": 15.02
     },
     {
       "sector": "2차전지",
-      "score": 26.4,
+      "score": 26.3,
       "leaders": 2,
       "avg_change_pct": 4.18
     },
     {
       "sector": "전자",
-      "score": 21.9,
+      "score": 21.7,
       "leaders": 1,
       "avg_change_pct": 1.54
     },
@@ -49,13 +49,13 @@
     },
     {
       "sector": "반도체",
-      "score": 17.1,
+      "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 5.51
+      "avg_change_pct": 4.9
     },
     {
       "sector": "금융",
-      "score": 13.3,
+      "score": 13.2,
       "leaders": 1,
       "avg_change_pct": 2.57
     }
@@ -65,15 +65,15 @@
       "code": "037070",
       "name": "파세코",
       "market": "KOSDAQ",
-      "price": 8710,
+      "price": 8760,
       "change_value": 0,
-      "change_pct": 24.61,
-      "volume": 11618778,
-      "trading_value_okrw": 1011.0,
+      "change_pct": 25.32,
+      "volume": 11705593,
+      "trading_value_okrw": 1025.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 26.4,
+      "score": 27.1,
       "rank": 1
     },
     {
@@ -88,7 +88,7 @@
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 15.1,
+      "score": 15.0,
       "rank": 2
     },
     {
@@ -113,12 +113,12 @@
       "price": 11640,
       "change_value": 0,
       "change_pct": 7.38,
-      "volume": 13925433,
-      "trading_value_okrw": 1620.0,
+      "volume": 13976281,
+      "trading_value_okrw": 1626.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 9.7,
+      "score": 9.6,
       "rank": 4
     },
     {
@@ -140,15 +140,15 @@
       "code": "095610",
       "name": "테스",
       "market": "KOSDAQ",
-      "price": 187500,
+      "price": 186400,
       "change_value": 0,
-      "change_pct": 5.51,
-      "volume": 982065,
+      "change_pct": 4.9,
+      "volume": 987719,
       "trading_value_okrw": 1841.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.5,
+      "score": 5.8,
       "rank": 6
     },
     {
@@ -163,7 +163,7 @@
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 4.1,
+      "score": 3.9,
       "rank": 7
     },
     {
@@ -193,7 +193,7 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 3.0,
+      "score": 2.9,
       "rank": 9
     }
   ]

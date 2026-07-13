@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-13",
-    "generated_at_kst": "2026-07-13 13:51:29",
+    "generated_at_kst": "2026-07-13 13:56:39",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 7,
-    "sector_count": 5,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 36.4",
+    "leader_count": 8,
+    "sector_count": 6,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 37.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 36.4,
+      "score": 37.3,
       "leaders": 2,
-      "avg_change_pct": 13.1
+      "avg_change_pct": 13.93
     },
     {
       "sector": "2차전지",
@@ -42,10 +42,16 @@
       "avg_change_pct": 2.14
     },
     {
-      "sector": "반도체",
-      "score": 14.3,
+      "sector": "통신",
+      "score": 18.6,
       "leaders": 1,
-      "avg_change_pct": 3.66
+      "avg_change_pct": 4.39
+    },
+    {
+      "sector": "반도체",
+      "score": 13.6,
+      "leaders": 1,
+      "avg_change_pct": 2.98
     },
     {
       "sector": "금융",
@@ -59,15 +65,15 @@
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 12390,
+      "price": 12570,
       "change_value": 0,
-      "change_pct": 14.3,
-      "volume": 11549439,
-      "trading_value_okrw": 1430.0,
+      "change_pct": 15.96,
+      "volume": 11686842,
+      "trading_value_okrw": 1469.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 16.7,
+      "score": 18.4,
       "rank": 1
     },
     {
@@ -86,6 +92,21 @@
       "rank": 2
     },
     {
+      "code": "069540",
+      "name": "빛과전자",
+      "market": "KOSDAQ",
+      "price": 2427,
+      "change_value": 0,
+      "change_pct": 4.39,
+      "volume": 41207423,
+      "trading_value_okrw": 1000.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 10.1,
+      "rank": 3
+    },
+    {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
@@ -98,7 +119,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 7.0,
-      "rank": 3
+      "rank": 4
     },
     {
       "code": "066570",
@@ -113,22 +134,22 @@
       "sector2": "",
       "sector": "전자",
       "score": 5.0,
-      "rank": 4
+      "rank": 5
     },
     {
       "code": "095610",
       "name": "테스",
       "market": "KOSDAQ",
-      "price": 184200,
+      "price": 183000,
       "change_value": 0,
-      "change_pct": 3.66,
-      "volume": 776415,
-      "trading_value_okrw": 1430.0,
+      "change_pct": 2.98,
+      "volume": 780786,
+      "trading_value_okrw": 1428.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 4.7,
-      "rank": 5
+      "score": 4.0,
+      "rank": 6
     },
     {
       "code": "006400",
@@ -143,7 +164,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 4.0,
-      "rank": 6
+      "rank": 7
     },
     {
       "code": "086790",
@@ -158,7 +179,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 3.0,
-      "rank": 7
+      "rank": 8
     }
   ]
 }

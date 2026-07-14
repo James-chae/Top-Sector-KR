@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-14",
-    "generated_at_kst": "2026-07-14 09:46:30",
+    "generated_at_kst": "2026-07-14 09:51:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 49.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 55.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 49.9,
+      "score": 55.3,
       "leaders": 3,
-      "avg_change_pct": 2.12
+      "avg_change_pct": 8.03
     }
   ],
   "leaders": [
@@ -35,45 +35,45 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 259000,
+      "price": 263500,
       "change_value": 0,
-      "change_pct": 1.77,
-      "volume": 10855365,
-      "trading_value_okrw": 28115.0,
+      "change_pct": 3.54,
+      "volume": 11553043,
+      "trading_value_okrw": 30442.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 48.6,
+      "score": 51.0,
       "rank": 1
+    },
+    {
+      "code": "089030",
+      "name": "테크윙",
+      "market": "KOSDAQ",
+      "price": 50600,
+      "change_value": 0,
+      "change_pct": 15.39,
+      "volume": 2018649,
+      "trading_value_okrw": 1021.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 17.3,
+      "rank": 2
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 188200,
+      "price": 191900,
       "change_value": 0,
-      "change_pct": 3.12,
-      "volume": 761683,
-      "trading_value_okrw": 1433.0,
+      "change_pct": 5.15,
+      "volume": 810025,
+      "trading_value_okrw": 1554.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.6,
-      "rank": 2
-    },
-    {
-      "code": "005935",
-      "name": "삼성전자우",
-      "market": "KOSPI",
-      "price": 179500,
-      "change_value": 0,
-      "change_pct": 1.47,
-      "volume": 1279448,
-      "trading_value_okrw": 2296.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 5.4,
+      "score": 7.6,
       "rank": 3
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-14",
-    "generated_at_kst": "2026-07-14 09:36:29",
+    "generated_at_kst": "2026-07-14 09:41:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 50.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 51.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 50.9,
+      "score": 51.3,
       "leaders": 3,
-      "avg_change_pct": 3.79
+      "avg_change_pct": 3.47
     }
   ],
   "leaders": [
@@ -35,45 +35,45 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 263000,
+      "price": 263500,
       "change_value": 0,
-      "change_pct": 3.34,
-      "volume": 9363506,
-      "trading_value_okrw": 24626.0,
+      "change_pct": 3.54,
+      "volume": 10241832,
+      "trading_value_okrw": 26987.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 48.6,
+      "score": 50.6,
       "rank": 1
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 192500,
+      "price": 190300,
       "change_value": 0,
-      "change_pct": 5.48,
-      "volume": 652502,
-      "trading_value_okrw": 1256.0,
+      "change_pct": 4.27,
+      "volume": 704851,
+      "trading_value_okrw": 1341.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.8,
+      "score": 6.7,
       "rank": 2
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 181400,
+      "price": 181500,
       "change_value": 0,
-      "change_pct": 2.54,
-      "volume": 1108513,
-      "trading_value_okrw": 2010.0,
+      "change_pct": 2.6,
+      "volume": 1217120,
+      "trading_value_okrw": 2209.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.3,
+      "score": 6.5,
       "rank": 3
     }
   ]

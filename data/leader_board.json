@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-14",
-    "generated_at_kst": "2026-07-14 10:11:38",
+    "generated_at_kst": "2026-07-14 10:16:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 74.2,
+      "score": 74.0,
       "leaders": 3,
-      "avg_change_pct": 7.04
+      "avg_change_pct": 6.82
     },
     {
       "sector": "지주사",
-      "score": 21.3,
+      "score": 19.3,
       "leaders": 1,
-      "avg_change_pct": 3.19
+      "avg_change_pct": 1.03
     }
   ],
   "leaders": [
@@ -44,8 +44,8 @@
       "price": 1895000,
       "change_value": 0,
       "change_pct": 2.71,
-      "volume": 3053765,
-      "trading_value_okrw": 57868.0,
+      "volume": 3155760,
+      "trading_value_okrw": 59801.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -56,45 +56,45 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 268000,
+      "price": 266000,
       "change_value": 0,
-      "change_pct": 5.3,
-      "volume": 13818935,
-      "trading_value_okrw": 37034.0,
+      "change_pct": 4.52,
+      "volume": 14374204,
+      "trading_value_okrw": 38235.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 49.5,
+      "score": 48.7,
       "rank": 2
     },
     {
       "code": "089030",
       "name": "테크윙",
       "market": "KOSDAQ",
-      "price": 49600,
+      "price": 49650,
       "change_value": 0,
-      "change_pct": 13.11,
-      "volume": 2395713,
-      "trading_value_okrw": 1188.0,
+      "change_pct": 13.23,
+      "volume": 2467564,
+      "trading_value_okrw": 1225.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 14.9,
+      "score": 15.0,
       "rank": 3
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1198000,
+      "price": 1173000,
       "change_value": 0,
-      "change_pct": 3.19,
-      "volume": 277759,
-      "trading_value_okrw": 3327.0,
+      "change_pct": 1.03,
+      "volume": 290427,
+      "trading_value_okrw": 3406.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 7.0,
+      "score": 4.8,
       "rank": 4
     }
   ]

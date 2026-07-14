@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-14",
-    "generated_at_kst": "2026-07-14 11:26:33",
+    "generated_at_kst": "2026-07-14 11:31:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 26.1",
+    "market_bias": "전력 중심 강세 / 상위섹터 점수 26.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,68 +24,68 @@
   },
   "top_sectors": [
     {
-      "sector": "에너지",
-      "score": 26.1,
+      "sector": "전력",
+      "score": 26.2,
       "leaders": 1,
-      "avg_change_pct": 14.35
+      "avg_change_pct": 13.96
     },
     {
-      "sector": "전력",
-      "score": 23.0,
+      "sector": "에너지",
+      "score": 25.3,
       "leaders": 1,
-      "avg_change_pct": 11.18
+      "avg_change_pct": 13.57
     },
     {
       "sector": "반도체",
-      "score": 20.9,
+      "score": 21.7,
       "leaders": 1,
-      "avg_change_pct": 9.35
+      "avg_change_pct": 10.15
     }
   ],
   "leaders": [
     {
+      "code": "006340",
+      "name": "대원전선",
+      "market": "KOSPI",
+      "price": 12330,
+      "change_value": 0,
+      "change_pct": 13.96,
+      "volume": 10996791,
+      "trading_value_okrw": 1355.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 16.8,
+      "rank": 1
+    },
+    {
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 13310,
+      "price": 13220,
       "change_value": 0,
-      "change_pct": 14.35,
-      "volume": 9547594,
+      "change_pct": 13.57,
+      "volume": 9611584,
       "trading_value_okrw": 1270.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 16.9,
-      "rank": 1
-    },
-    {
-      "code": "006340",
-      "name": "대원전선",
-      "market": "KOSPI",
-      "price": 12030,
-      "change_value": 0,
-      "change_pct": 11.18,
-      "volume": 10442194,
-      "trading_value_okrw": 1256.0,
-      "sector1": "전력",
-      "sector2": "",
-      "sector": "전력",
-      "score": 13.9,
+      "score": 16.1,
       "rank": 2
     },
     {
       "code": "089030",
       "name": "테크윙",
       "market": "KOSDAQ",
-      "price": 47950,
+      "price": 48300,
       "change_value": 0,
-      "change_pct": 9.35,
-      "volume": 3131334,
-      "trading_value_okrw": 1501.0,
+      "change_pct": 10.15,
+      "volume": 3162598,
+      "trading_value_okrw": 1527.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.1,
+      "score": 11.9,
       "rank": 3
     }
   ]

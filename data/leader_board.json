@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 09:16:32",
+    "generated_at_kst": "2026-07-16 09:31:34",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 15.2",
+    "market_bias": "조선 중심 강세 / 상위섹터 점수 13.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,26 +24,26 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 15.2,
+      "sector": "조선",
+      "score": 13.1,
       "leaders": 1,
-      "avg_change_pct": 1.67
+      "avg_change_pct": 2.32
     }
   ],
   "leaders": [
     {
-      "code": "042700",
-      "name": "한미반도체",
+      "code": "042660",
+      "name": "한화오션",
       "market": "KOSPI",
-      "price": 274000,
+      "price": 83900,
       "change_value": 0,
-      "change_pct": 1.67,
-      "volume": 309547,
-      "trading_value_okrw": 848.0,
-      "sector1": "반도체",
+      "change_pct": 2.32,
+      "volume": 837353,
+      "trading_value_okrw": 702.0,
+      "sector1": "조선",
       "sector2": "",
-      "sector": "반도체",
-      "score": 7.0,
+      "sector": "조선",
+      "score": 5.3,
       "rank": 1
     }
   ]

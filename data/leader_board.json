@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 15:31:24",
+    "generated_at_kst": "2026-07-16 15:36:25",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 8,
-    "sector_count": 6,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 27.7",
+    "leader_count": 10,
+    "sector_count": 7,
+    "market_bias": "조선 중심 강세 / 상위섹터 점수 28.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,6 +24,12 @@
   },
   "top_sectors": [
     {
+      "sector": "조선",
+      "score": 28.7,
+      "leaders": 3,
+      "avg_change_pct": 3.41
+    },
+    {
       "sector": "바이오",
       "score": 27.7,
       "leaders": 1,
@@ -36,26 +42,26 @@
       "avg_change_pct": 10.16
     },
     {
-      "sector": "조선",
-      "score": 23.3,
-      "leaders": 2,
-      "avg_change_pct": 4.25
-    },
-    {
       "sector": "2차전지",
-      "score": 16.6,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 3.5
+      "avg_change_pct": 3.76
     },
     {
       "sector": "통신",
-      "score": 14.9,
+      "score": 15.5,
       "leaders": 1,
-      "avg_change_pct": 5.06
+      "avg_change_pct": 5.53
+    },
+    {
+      "sector": "보험",
+      "score": 15.3,
+      "leaders": 1,
+      "avg_change_pct": 6.05
     },
     {
       "sector": "방산",
-      "score": 11.3,
+      "score": 11.8,
       "leaders": 1,
       "avg_change_pct": 1.51
     }
@@ -98,43 +104,58 @@
       "price": 86700,
       "change_value": 0,
       "change_pct": 5.73,
-      "volume": 2624072,
-      "trading_value_okrw": 2275.0,
+      "volume": 2768770,
+      "trading_value_okrw": 2400.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 7.5,
+      "score": 7.6,
       "rank": 3
+    },
+    {
+      "code": "000810",
+      "name": "삼성화재",
+      "market": "KOSPI",
+      "price": 701000,
+      "change_value": 0,
+      "change_pct": 6.05,
+      "volume": 144962,
+      "trading_value_okrw": 1016.0,
+      "sector1": "보험",
+      "sector2": "",
+      "sector": "보험",
+      "score": 6.7,
+      "rank": 4
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 89300,
+      "price": 89700,
       "change_value": 0,
-      "change_pct": 5.06,
-      "volume": 1301884,
-      "trading_value_okrw": 1162.0,
+      "change_pct": 5.53,
+      "volume": 1366768,
+      "trading_value_okrw": 1225.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 6.0,
-      "rank": 4
+      "score": 6.5,
+      "rank": 5
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 121100,
+      "price": 121400,
       "change_value": 0,
-      "change_pct": 3.5,
-      "volume": 1807010,
-      "trading_value_okrw": 2188.0,
+      "change_pct": 3.76,
+      "volume": 1851676,
+      "trading_value_okrw": 2247.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 5.1,
-      "rank": 5
+      "score": 5.4,
+      "rank": 6
     },
     {
       "code": "000270",
@@ -149,7 +170,7 @@
       "sector2": "",
       "sector": "자동차",
       "score": 4.3,
-      "rank": 6
+      "rank": 7
     },
     {
       "code": "329180",
@@ -164,7 +185,22 @@
       "sector2": "",
       "sector": "조선",
       "score": 3.7,
-      "rank": 7
+      "rank": 8
+    },
+    {
+      "code": "028300",
+      "name": "HLB",
+      "market": "KOSDAQ",
+      "price": 35300,
+      "change_value": 0,
+      "change_pct": 1.73,
+      "volume": 3528120,
+      "trading_value_okrw": 1245.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 3.0,
+      "rank": 9
     },
     {
       "code": "012450",
@@ -173,13 +209,13 @@
       "price": 943000,
       "change_value": 0,
       "change_pct": 1.51,
-      "volume": 128022,
-      "trading_value_okrw": 1207.0,
+      "volume": 142856,
+      "trading_value_okrw": 1347.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 2.3,
-      "rank": 8
+      "score": 2.4,
+      "rank": 10
     }
   ]
 }

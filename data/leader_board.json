@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 13:41:27",
+    "generated_at_kst": "2026-07-16 13:46:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 33.6",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 33.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 33.6,
+      "score": 33.1,
       "leaders": 1,
-      "avg_change_pct": 18.93
+      "avg_change_pct": 18.48
     },
     {
       "sector": "조선",
-      "score": 22.3,
+      "score": 22.5,
       "leaders": 2,
-      "avg_change_pct": 4.55
+      "avg_change_pct": 4.67
     },
     {
       "sector": "2차전지",
-      "score": 17.8,
+      "score": 18.1,
       "leaders": 1,
-      "avg_change_pct": 5.38
+      "avg_change_pct": 5.56
     }
   ],
   "leaders": [
@@ -47,60 +47,60 @@
       "code": "004310",
       "name": "현대약품",
       "market": "KOSPI",
-      "price": 7980,
+      "price": 7950,
       "change_value": 0,
-      "change_pct": 18.93,
-      "volume": 20642522,
-      "trading_value_okrw": 1647.0,
+      "change_pct": 18.48,
+      "volume": 20739460,
+      "trading_value_okrw": 1648.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 23.5,
+      "score": 23.0,
       "rank": 1
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 123300,
+      "price": 123500,
       "change_value": 0,
-      "change_pct": 5.38,
-      "volume": 1438048,
-      "trading_value_okrw": 1773.0,
+      "change_pct": 5.56,
+      "volume": 1451408,
+      "trading_value_okrw": 1792.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 7.4,
+      "score": 7.6,
       "rank": 2
     },
     {
       "code": "028300",
       "name": "HLB",
       "market": "KOSDAQ",
-      "price": 36550,
+      "price": 36500,
       "change_value": 0,
-      "change_pct": 5.33,
-      "volume": 2878697,
-      "trading_value_okrw": 1052.0,
+      "change_pct": 5.19,
+      "volume": 2905847,
+      "trading_value_okrw": 1060.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 6.8,
+      "score": 6.7,
       "rank": 3
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 85100,
+      "price": 85400,
       "change_value": 0,
-      "change_pct": 3.78,
-      "volume": 1888275,
-      "trading_value_okrw": 1606.0,
+      "change_pct": 4.15,
+      "volume": 1932010,
+      "trading_value_okrw": 1649.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 5.7,
+      "score": 6.1,
       "rank": 4
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 09:41:32",
+    "generated_at_kst": "2026-07-16 09:46:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 17.2",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 13.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "2차전지",
-      "score": 17.2,
-      "leaders": 1,
-      "avg_change_pct": 6.67
-    },
-    {
       "sector": "에너지",
-      "score": 14.0,
+      "score": 13.8,
       "leaders": 1,
-      "avg_change_pct": 1.69
-    },
-    {
-      "sector": "조선",
-      "score": 13.0,
-      "leaders": 1,
-      "avg_change_pct": 2.32
+      "avg_change_pct": 1.31
     }
   ],
   "leaders": [
     {
-      "code": "096770",
-      "name": "SK이노베이션",
-      "market": "KOSPI",
-      "price": 124800,
-      "change_value": 0,
-      "change_pct": 6.67,
-      "volume": 607240,
-      "trading_value_okrw": 757.0,
-      "sector1": "2차전지",
-      "sector2": "",
-      "sector": "2차전지",
-      "score": 9.3,
-      "rank": 1
-    },
-    {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 54200,
+      "price": 54000,
       "change_value": 0,
-      "change_pct": 1.69,
-      "volume": 1819038,
-      "trading_value_okrw": 985.0,
+      "change_pct": 1.31,
+      "volume": 1970865,
+      "trading_value_okrw": 1064.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 5.5,
-      "rank": 2
-    },
-    {
-      "code": "042660",
-      "name": "한화오션",
-      "market": "KOSPI",
-      "price": 83900,
-      "change_value": 0,
-      "change_pct": 2.32,
-      "volume": 902249,
-      "trading_value_okrw": 756.0,
-      "sector1": "조선",
-      "sector2": "",
-      "sector": "조선",
       "score": 5.1,
-      "rank": 3
+      "rank": 1
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 10:36:30",
+    "generated_at_kst": "2026-07-16 10:41:33",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 35.2",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 35.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 35.2,
+      "score": 35.0,
       "leaders": 1,
       "avg_change_pct": 21.01
     },
     {
       "sector": "2차전지",
-      "score": 14.9,
+      "score": 14.7,
       "leaders": 1,
-      "avg_change_pct": 3.76
+      "avg_change_pct": 3.59
     },
     {
       "sector": "조선",
@@ -50,27 +50,27 @@
       "price": 8120,
       "change_value": 0,
       "change_pct": 21.01,
-      "volume": 13924945,
-      "trading_value_okrw": 1130.0,
+      "volume": 14085504,
+      "trading_value_okrw": 1143.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 26.4,
+      "score": 26.2,
       "rank": 1
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 121400,
+      "price": 121200,
       "change_value": 0,
-      "change_pct": 3.76,
-      "volume": 930675,
-      "trading_value_okrw": 1129.0,
+      "change_pct": 3.59,
+      "volume": 944917,
+      "trading_value_okrw": 1145.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 6.0,
+      "score": 5.8,
       "rank": 2
     },
     {
@@ -80,12 +80,12 @@
       "price": 83100,
       "change_value": 0,
       "change_pct": 1.34,
-      "volume": 1220612,
-      "trading_value_okrw": 1014.0,
+      "volume": 1242768,
+      "trading_value_okrw": 1032.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.5,
+      "score": 3.4,
       "rank": 3
     }
   ]

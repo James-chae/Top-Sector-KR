@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 14:56:24",
+    "generated_at_kst": "2026-07-16 15:01:24",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
-    "sector_count": 6,
-    "market_bias": "조선 중심 강세 / 상위섹터 점수 27.7",
+    "leader_count": 10,
+    "sector_count": 7,
+    "market_bias": "조선 중심 강세 / 상위섹터 점수 28.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,39 @@
   "top_sectors": [
     {
       "sector": "조선",
-      "score": 27.7,
+      "score": 28.2,
       "leaders": 3,
-      "avg_change_pct": 3.01
+      "avg_change_pct": 3.41
     },
     {
       "sector": "바이오",
-      "score": 27.6,
+      "score": 27.4,
       "leaders": 1,
-      "avg_change_pct": 13.11
+      "avg_change_pct": 12.97
     },
     {
       "sector": "자동차",
-      "score": 25.8,
+      "score": 26.1,
       "leaders": 2,
-      "avg_change_pct": 9.73
+      "avg_change_pct": 10.03
     },
     {
       "sector": "2차전지",
-      "score": 17.8,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 4.62
+      "avg_change_pct": 3.85
     },
     {
       "sector": "통신",
-      "score": 14.9,
+      "score": 15.1,
       "leaders": 1,
-      "avg_change_pct": 5.06
+      "avg_change_pct": 5.18
+    },
+    {
+      "sector": "반도체",
+      "score": 14.8,
+      "leaders": 1,
+      "avg_change_pct": 1.05
     },
     {
       "sector": "방산",
@@ -65,106 +71,121 @@
       "code": "006660",
       "name": "삼성공조",
       "market": "KOSPI",
-      "price": 13650,
+      "price": 13670,
       "change_value": 0,
-      "change_pct": 17.67,
-      "volume": 7487391,
-      "trading_value_okrw": 1022.0,
+      "change_pct": 17.84,
+      "volume": 7548917,
+      "trading_value_okrw": 1031.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 19.4,
+      "score": 19.6,
       "rank": 1
     },
     {
       "code": "004310",
       "name": "현대약품",
       "market": "KOSPI",
-      "price": 7590,
+      "price": 7580,
       "change_value": 0,
-      "change_pct": 13.11,
-      "volume": 22430903,
-      "trading_value_okrw": 1702.0,
+      "change_pct": 12.97,
+      "volume": 22491098,
+      "trading_value_okrw": 1704.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 17.3,
+      "score": 17.1,
       "rank": 2
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 86500,
+      "price": 86800,
       "change_value": 0,
-      "change_pct": 5.49,
-      "volume": 2427423,
-      "trading_value_okrw": 2099.0,
+      "change_pct": 5.85,
+      "volume": 2457545,
+      "trading_value_okrw": 2133.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 7.5,
+      "score": 7.9,
       "rank": 3
-    },
-    {
-      "code": "096770",
-      "name": "SK이노베이션",
-      "market": "KOSPI",
-      "price": 122400,
-      "change_value": 0,
-      "change_pct": 4.62,
-      "volume": 1720978,
-      "trading_value_okrw": 2106.0,
-      "sector1": "2차전지",
-      "sector2": "",
-      "sector": "2차전지",
-      "score": 6.5,
-      "rank": 4
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 89300,
+      "price": 89400,
       "change_value": 0,
-      "change_pct": 5.06,
-      "volume": 1255192,
-      "trading_value_okrw": 1120.0,
+      "change_pct": 5.18,
+      "volume": 1266605,
+      "trading_value_okrw": 1132.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 6.1,
+      "score": 6.2,
+      "rank": 4
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "price": 121500,
+      "change_value": 0,
+      "change_pct": 3.85,
+      "volume": 1739946,
+      "trading_value_okrw": 2114.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 5.8,
       "rank": 5
     },
     {
       "code": "028300",
       "name": "HLB",
       "market": "KOSDAQ",
-      "price": 35300,
+      "price": 35600,
       "change_value": 0,
-      "change_pct": 1.73,
-      "volume": 3249711,
-      "trading_value_okrw": 1147.0,
+      "change_pct": 2.59,
+      "volume": 3289134,
+      "trading_value_okrw": 1170.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.1,
+      "score": 3.9,
       "rank": 6
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 147600,
+      "price": 148200,
       "change_value": 0,
-      "change_pct": 1.79,
-      "volume": 727487,
-      "trading_value_okrw": 1073.0,
+      "change_pct": 2.21,
+      "volume": 739532,
+      "trading_value_okrw": 1095.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 2.8,
+      "score": 3.2,
       "rank": 7
+    },
+    {
+      "code": "240810",
+      "name": "원익IPS",
+      "market": "KOSDAQ",
+      "price": 144200,
+      "change_value": 0,
+      "change_pct": 1.05,
+      "volume": 1597096,
+      "trading_value_okrw": 2303.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 3.1,
+      "rank": 8
     },
     {
       "code": "329180",
@@ -173,13 +194,13 @@
       "price": 479500,
       "change_value": 0,
       "change_pct": 1.8,
-      "volume": 227066,
-      "trading_value_okrw": 1088.0,
+      "volume": 229554,
+      "trading_value_okrw": 1100.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
       "score": 2.7,
-      "rank": 8
+      "rank": 9
     },
     {
       "code": "012450",
@@ -188,13 +209,13 @@
       "price": 941000,
       "change_value": 0,
       "change_pct": 1.29,
-      "volume": 118843,
-      "trading_value_okrw": 1118.0,
+      "volume": 120395,
+      "trading_value_okrw": 1132.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
       "score": 2.2,
-      "rank": 9
+      "rank": 10
     }
   ]
 }

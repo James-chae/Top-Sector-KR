@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 15:26:24",
+    "generated_at_kst": "2026-07-16 15:31:24",
     "mode": "closing",
     "session_state": "",
     "leader_count": 8,
     "sector_count": 6,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 26.6",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 27.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,37 +25,37 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 26.6,
+      "score": 27.7,
       "leaders": 1,
-      "avg_change_pct": 12.07
+      "avg_change_pct": 13.26
     },
     {
       "sector": "자동차",
-      "score": 26.1,
+      "score": 27.1,
       "leaders": 2,
-      "avg_change_pct": 9.74
+      "avg_change_pct": 10.16
     },
     {
       "sector": "조선",
-      "score": 23.1,
+      "score": 23.3,
       "leaders": 2,
-      "avg_change_pct": 3.98
+      "avg_change_pct": 4.25
     },
     {
       "sector": "2차전지",
-      "score": 16.8,
+      "score": 16.6,
       "leaders": 1,
       "avg_change_pct": 3.5
     },
     {
       "sector": "통신",
-      "score": 15.0,
+      "score": 14.9,
       "leaders": 1,
       "avg_change_pct": 5.06
     },
     {
       "sector": "방산",
-      "score": 11.4,
+      "score": 11.3,
       "leaders": 1,
       "avg_change_pct": 1.51
     }
@@ -68,27 +68,27 @@
       "price": 13580,
       "change_value": 0,
       "change_pct": 17.07,
-      "volume": 7846185,
-      "trading_value_okrw": 1065.0,
+      "volume": 7891950,
+      "trading_value_okrw": 1071.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 18.8,
+      "score": 18.7,
       "rank": 1
     },
     {
       "code": "004310",
       "name": "현대약품",
       "market": "KOSPI",
-      "price": 7520,
+      "price": 7600,
       "change_value": 0,
-      "change_pct": 12.07,
-      "volume": 23350862,
-      "trading_value_okrw": 1755.0,
+      "change_pct": 13.26,
+      "volume": 23480022,
+      "trading_value_okrw": 1784.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 16.2,
+      "score": 17.2,
       "rank": 2
     },
     {
@@ -103,7 +103,7 @@
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 7.7,
+      "score": 7.5,
       "rank": 3
     },
     {
@@ -118,7 +118,7 @@
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 6.1,
+      "score": 6.0,
       "rank": 4
     },
     {
@@ -133,37 +133,37 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 5.3,
+      "score": 5.1,
       "rank": 5
     },
     {
       "code": "000270",
       "name": "기아",
       "market": "KOSPI",
-      "price": 148500,
+      "price": 149700,
       "change_value": 0,
-      "change_pct": 2.41,
-      "volume": 813468,
-      "trading_value_okrw": 1207.0,
+      "change_pct": 3.24,
+      "volume": 967213,
+      "trading_value_okrw": 1447.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 3.4,
+      "score": 4.3,
       "rank": 6
     },
     {
       "code": "329180",
       "name": "HD현대중공업",
       "market": "KOSPI",
-      "price": 481500,
+      "price": 484000,
       "change_value": 0,
-      "change_pct": 2.23,
-      "volume": 248289,
-      "trading_value_okrw": 1195.0,
+      "change_pct": 2.76,
+      "volume": 278638,
+      "trading_value_okrw": 1348.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.1,
+      "score": 3.7,
       "rank": 7
     },
     {
@@ -178,7 +178,7 @@
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 2.4,
+      "score": 2.3,
       "rank": 8
     }
   ]

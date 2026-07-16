@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 09:31:34",
+    "generated_at_kst": "2026-07-16 09:36:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "조선 중심 강세 / 상위섹터 점수 13.1",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 14.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "조선",
-      "score": 13.1,
+      "sector": "에너지",
+      "score": 14.2,
       "leaders": 1,
-      "avg_change_pct": 2.32
+      "avg_change_pct": 2.63
+    },
+    {
+      "sector": "조선",
+      "score": 13.6,
+      "leaders": 1,
+      "avg_change_pct": 2.8
     }
   ],
   "leaders": [
     {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 54700,
+      "change_value": 0,
+      "change_pct": 2.63,
+      "volume": 1526119,
+      "trading_value_okrw": 834.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 6.1,
+      "rank": 1
+    },
+    {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 83900,
+      "price": 84300,
       "change_value": 0,
-      "change_pct": 2.32,
-      "volume": 837353,
-      "trading_value_okrw": 702.0,
+      "change_pct": 2.8,
+      "volume": 872150,
+      "trading_value_okrw": 735.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 5.3,
-      "rank": 1
+      "score": 5.7,
+      "rank": 2
     }
   ]
 }

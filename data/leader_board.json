@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 11:16:28",
+    "generated_at_kst": "2026-07-16 11:21:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 38.6",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 36.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 38.6,
+      "score": 36.4,
       "leaders": 1,
-      "avg_change_pct": 24.14
+      "avg_change_pct": 22.06
     },
     {
       "sector": "2차전지",
       "score": 15.6,
       "leaders": 1,
-      "avg_change_pct": 4.44
+      "avg_change_pct": 4.36
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "004310",
       "name": "현대약품",
       "market": "KOSPI",
-      "price": 8330,
+      "price": 8190,
       "change_value": 0,
-      "change_pct": 24.14,
-      "volume": 16616243,
-      "trading_value_okrw": 1384.0,
+      "change_pct": 22.06,
+      "volume": 16786444,
+      "trading_value_okrw": 1374.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 29.1,
+      "score": 27.0,
       "rank": 1
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 122200,
+      "price": 122100,
       "change_value": 0,
-      "change_pct": 4.44,
-      "volume": 1031864,
-      "trading_value_okrw": 1260.0,
+      "change_pct": 4.36,
+      "volume": 1044690,
+      "trading_value_okrw": 1275.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 6.5,
+      "score": 6.4,
       "rank": 2
     }
   ]

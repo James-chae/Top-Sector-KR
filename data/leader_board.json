@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-16",
-    "generated_at_kst": "2026-07-16 12:21:29",
+    "generated_at_kst": "2026-07-16 12:26:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 33.9",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 33.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 33.9,
+      "score": 33.6,
       "leaders": 1,
-      "avg_change_pct": 19.52
+      "avg_change_pct": 19.23
     },
     {
       "sector": "2차전지",
-      "score": 17.4,
+      "score": 17.3,
       "leaders": 1,
-      "avg_change_pct": 5.56
+      "avg_change_pct": 5.47
     },
     {
       "sector": "조선",
-      "score": 12.9,
+      "score": 12.6,
       "leaders": 1,
-      "avg_change_pct": 1.83
+      "avg_change_pct": 1.46
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "004310",
       "name": "현대약품",
       "market": "KOSPI",
-      "price": 8020,
+      "price": 8000,
       "change_value": 0,
-      "change_pct": 19.52,
-      "volume": 18529043,
-      "trading_value_okrw": 1486.0,
+      "change_pct": 19.23,
+      "volume": 18597091,
+      "trading_value_okrw": 1487.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 24.2,
+      "score": 23.9,
       "rank": 1
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 123500,
+      "price": 123400,
       "change_value": 0,
-      "change_pct": 5.56,
-      "volume": 1219164,
-      "trading_value_okrw": 1505.0,
+      "change_pct": 5.47,
+      "volume": 1229281,
+      "trading_value_okrw": 1516.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 7.6,
+      "score": 7.5,
       "rank": 2
     },
     {
       "code": "042660",
       "name": "한화오션",
       "market": "KOSPI",
-      "price": 83500,
+      "price": 83200,
       "change_value": 0,
-      "change_pct": 1.83,
-      "volume": 1564206,
-      "trading_value_okrw": 1306.0,
+      "change_pct": 1.46,
+      "volume": 1572135,
+      "trading_value_okrw": 1308.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.7,
+      "score": 3.3,
       "rank": 3
     }
   ]

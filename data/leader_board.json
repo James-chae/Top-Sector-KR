@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-20",
-    "generated_at_kst": "2026-07-20 09:26:37",
+    "generated_at_kst": "2026-07-20 09:31:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 57.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 24.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,62 +25,47 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 57.3,
-      "leaders": 3,
-      "avg_change_pct": 2.26
+      "score": 24.3,
+      "leaders": 2,
+      "avg_change_pct": 2.58
     },
     {
       "sector": "에너지",
-      "score": 19.9,
+      "score": 20.8,
       "leaders": 1,
-      "avg_change_pct": 7.5
+      "avg_change_pct": 8.08
     }
   ],
   "leaders": [
     {
-      "code": "000660",
-      "name": "SK하이닉스",
-      "market": "KOSPI",
-      "price": 1879000,
-      "change_value": 0,
-      "change_pct": 2.01,
-      "volume": 1487337,
-      "trading_value_okrw": 27947.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 68.2,
-      "rank": 1
-    },
-    {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 55900,
+      "price": 56200,
       "change_value": 0,
-      "change_pct": 7.5,
-      "volume": 1832481,
-      "trading_value_okrw": 1024.0,
+      "change_pct": 8.08,
+      "volume": 2014577,
+      "trading_value_okrw": 1132.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 11.3,
-      "rank": 2
+      "score": 12.0,
+      "rank": 1
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 1323000,
+      "price": 1328000,
       "change_value": 0,
-      "change_pct": 3.6,
-      "volume": 143156,
-      "trading_value_okrw": 1893.0,
+      "change_pct": 3.99,
+      "volume": 156429,
+      "trading_value_okrw": 2077.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.1,
-      "rank": 3
+      "score": 8.7,
+      "rank": 2
     },
     {
       "code": "005935",
@@ -89,13 +74,13 @@
       "price": 174000,
       "change_value": 0,
       "change_pct": 1.16,
-      "volume": 909987,
-      "trading_value_okrw": 1583.0,
+      "volume": 944453,
+      "trading_value_okrw": 1643.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
       "score": 5.5,
-      "rank": 4
+      "rank": 3
     }
   ]
 }

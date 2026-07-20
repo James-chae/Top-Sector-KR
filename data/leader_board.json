@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-20",
-    "generated_at_kst": "2026-07-20 12:36:28",
+    "generated_at_kst": "2026-07-20 12:41:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 33.9",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 33.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 33.9,
+      "score": 33.3,
       "leaders": 2,
-      "avg_change_pct": 10.18
+      "avg_change_pct": 9.56
     }
   ],
   "leaders": [
@@ -35,30 +35,30 @@
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 13380,
+      "price": 13290,
       "change_value": 0,
-      "change_pct": 11.41,
-      "volume": 7636505,
-      "trading_value_okrw": 1021.0,
+      "change_pct": 10.66,
+      "volume": 7665938,
+      "trading_value_okrw": 1018.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 13.6,
+      "score": 12.8,
       "rank": 1
     },
     {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 56650,
+      "price": 56400,
       "change_value": 0,
-      "change_pct": 8.94,
-      "volume": 6070490,
-      "trading_value_okrw": 3438.0,
+      "change_pct": 8.46,
+      "volume": 6100208,
+      "trading_value_okrw": 3440.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 13.1,
+      "score": 12.6,
       "rank": 2
     }
   ]

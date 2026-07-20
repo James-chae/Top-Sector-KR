@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-20",
-    "generated_at_kst": "2026-07-20 15:01:30",
+    "generated_at_kst": "2026-07-20 15:06:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 34.0",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 34.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,61 +25,61 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 34.0,
+      "score": 34.1,
       "leaders": 2,
-      "avg_change_pct": 9.02
+      "avg_change_pct": 9.2
     },
     {
       "sector": "반도체",
-      "score": 13.0,
+      "score": 12.6,
       "leaders": 1,
-      "avg_change_pct": 3.36
+      "avg_change_pct": 2.94
     }
   ],
   "leaders": [
     {
-      "code": "475150",
-      "name": "SK이터닉스",
-      "market": "KOSPI",
-      "price": 56700,
-      "change_value": 0,
-      "change_pct": 9.04,
-      "volume": 7078667,
-      "trading_value_okrw": 4013.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 12.9,
-      "rank": 1
-    },
-    {
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 13090,
+      "price": 13250,
       "change_value": 0,
-      "change_pct": 8.99,
-      "volume": 8868935,
-      "trading_value_okrw": 1160.0,
+      "change_pct": 10.32,
+      "volume": 8979906,
+      "trading_value_okrw": 1189.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 11.0,
+      "score": 12.3,
+      "rank": 1
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 56200,
+      "change_value": 0,
+      "change_pct": 8.08,
+      "volume": 7126071,
+      "trading_value_okrw": 4004.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 11.9,
       "rank": 2
     },
     {
       "code": "067310",
       "name": "하나마이크론",
       "market": "KOSDAQ",
-      "price": 36950,
+      "price": 36800,
       "change_value": 0,
-      "change_pct": 3.36,
-      "volume": 2784359,
-      "trading_value_okrw": 1028.0,
+      "change_pct": 2.94,
+      "volume": 2809494,
+      "trading_value_okrw": 1033.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 4.5,
+      "score": 4.0,
       "rank": 3
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-21",
-    "generated_at_kst": "2026-07-21 15:26:27",
+    "generated_at_kst": "2026-07-21 15:31:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 18,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 73.0",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 73.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,49 +25,49 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 73.0,
+      "score": 73.2,
       "leaders": 3,
-      "avg_change_pct": 5.86
+      "avg_change_pct": 5.73
     },
     {
       "sector": "지주사",
-      "score": 31.1,
+      "score": 30.6,
       "leaders": 1,
       "avg_change_pct": 6.29
     },
     {
       "sector": "전력",
-      "score": 28.0,
+      "score": 27.9,
       "leaders": 3,
-      "avg_change_pct": 5.2
+      "avg_change_pct": 5.17
     },
     {
       "sector": "원전",
-      "score": 24.1,
+      "score": 24.0,
       "leaders": 2,
       "avg_change_pct": 5.4
     },
     {
       "sector": "전자",
-      "score": 21.6,
+      "score": 21.5,
       "leaders": 2,
       "avg_change_pct": 3.53
     },
     {
       "sector": "금융",
-      "score": 20.7,
+      "score": 20.6,
       "leaders": 2,
       "avg_change_pct": 3.62
     },
     {
       "sector": "에너지",
-      "score": 17.1,
+      "score": 17.2,
       "leaders": 1,
-      "avg_change_pct": 2.53
+      "avg_change_pct": 2.69
     },
     {
       "sector": "인터넷",
-      "score": 15.1,
+      "score": 15.0,
       "leaders": 1,
       "avg_change_pct": 3.71
     }
@@ -77,30 +77,30 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1847000,
+      "price": 1836000,
       "change_value": 0,
-      "change_pct": 4.71,
-      "volume": 4263617,
-      "trading_value_okrw": 78749.0,
+      "change_pct": 4.08,
+      "volume": 4585099,
+      "trading_value_okrw": 84182.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 70.1,
+      "score": 69.5,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 260000,
+      "price": 259000,
       "change_value": 0,
-      "change_pct": 6.56,
-      "volume": 18459420,
-      "trading_value_okrw": 47994.0,
+      "change_pct": 6.15,
+      "volume": 20336441,
+      "trading_value_okrw": 52671.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 47.8,
+      "score": 48.6,
       "rank": 2
     },
     {
@@ -115,37 +115,37 @@
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 13.1,
+      "score": 12.7,
       "rank": 3
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 179900,
+      "price": 181000,
       "change_value": 0,
-      "change_pct": 6.32,
-      "volume": 2983256,
-      "trading_value_okrw": 5366.0,
+      "change_pct": 6.97,
+      "volume": 3104417,
+      "trading_value_okrw": 5618.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.0,
+      "score": 11.6,
       "rank": 4
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 11850,
+      "price": 11840,
       "change_value": 0,
-      "change_pct": 8.32,
-      "volume": 11474658,
-      "trading_value_okrw": 1359.0,
+      "change_pct": 8.23,
+      "volume": 11540134,
+      "trading_value_okrw": 1366.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 10.4,
+      "score": 10.3,
       "rank": 5
     },
     {
@@ -160,22 +160,22 @@
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 9.8,
+      "score": 9.6,
       "rank": 6
     },
     {
       "code": "003280",
       "name": "흥아해운",
       "market": "KOSPI",
-      "price": 1867,
+      "price": 1870,
       "change_value": 0,
-      "change_pct": 2.53,
-      "volume": 57961875,
-      "trading_value_okrw": 1082.0,
+      "change_pct": 2.69,
+      "volume": 58147235,
+      "trading_value_okrw": 1087.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 8.4,
+      "score": 8.5,
       "rank": 7
     },
     {
@@ -190,7 +190,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 7.1,
+      "score": 7.0,
       "rank": 8
     },
     {
@@ -205,7 +205,7 @@
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 5.8,
+      "score": 5.7,
       "rank": 9
     },
     {
@@ -220,8 +220,23 @@
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 5.1,
+      "score": 5.0,
       "rank": 10
+    },
+    {
+      "code": "006400",
+      "name": "삼성SDI",
+      "market": "KOSPI",
+      "price": 416500,
+      "change_value": 0,
+      "change_pct": 3.87,
+      "volume": 343599,
+      "trading_value_okrw": 1431.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 5.0,
+      "rank": 11
     },
     {
       "code": "066570",
@@ -235,8 +250,8 @@
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 5.1,
-      "rank": 11
+      "score": 5.0,
+      "rank": 12
     },
     {
       "code": "011070",
@@ -251,22 +266,22 @@
       "sector2": "",
       "sector": "전자",
       "score": 4.6,
-      "rank": 12
+      "rank": 13
     },
     {
-      "code": "006400",
-      "name": "삼성SDI",
+      "code": "000270",
+      "name": "기아",
       "market": "KOSPI",
-      "price": 414500,
+      "price": 144600,
       "change_value": 0,
-      "change_pct": 3.37,
-      "volume": 313082,
-      "trading_value_okrw": 1297.0,
-      "sector1": "2차전지",
+      "change_pct": 3.29,
+      "volume": 870746,
+      "trading_value_okrw": 1259.0,
+      "sector1": "자동차",
       "sector2": "",
-      "sector": "2차전지",
-      "score": 4.5,
-      "rank": 13
+      "sector": "자동차",
+      "score": 4.3,
+      "rank": 14
     },
     {
       "code": "034020",
@@ -280,8 +295,8 @@
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 4.3,
-      "rank": 14
+      "score": 4.2,
+      "rank": 15
     },
     {
       "code": "105560",
@@ -295,22 +310,7 @@
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 4.0,
-      "rank": 15
-    },
-    {
-      "code": "000270",
-      "name": "기아",
-      "market": "KOSPI",
-      "price": 143200,
-      "change_value": 0,
-      "change_pct": 2.29,
-      "volume": 763266,
-      "trading_value_okrw": 1092.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 3.3,
+      "score": 3.9,
       "rank": 16
     },
     {
@@ -340,7 +340,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 2.2,
+      "score": 2.1,
       "rank": 18
     }
   ]

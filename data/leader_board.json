@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-23",
-    "generated_at_kst": "2026-07-23 15:26:28",
+    "generated_at_kst": "2026-07-23 15:31:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 71.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,43 +25,43 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 72.2,
+      "score": 71.3,
       "leaders": 3,
-      "avg_change_pct": 5.12
+      "avg_change_pct": 5.34
     },
     {
       "sector": "에너지",
-      "score": 66.4,
+      "score": 66.0,
       "leaders": 3,
       "avg_change_pct": 29.99
     },
     {
       "sector": "전력",
-      "score": 46.1,
+      "score": 46.4,
       "leaders": 3,
-      "avg_change_pct": 14.03
+      "avg_change_pct": 14.28
     },
     {
       "sector": "건설",
       "score": 39.3,
       "leaders": 2,
-      "avg_change_pct": 15.29
+      "avg_change_pct": 15.46
     },
     {
       "sector": "2차전지",
-      "score": 35.5,
+      "score": 35.4,
       "leaders": 3,
       "avg_change_pct": 10.42
     },
     {
       "sector": "조선",
-      "score": 33.3,
+      "score": 33.2,
       "leaders": 2,
       "avg_change_pct": 13.46
     },
     {
       "sector": "인터넷",
-      "score": 31.6,
+      "score": 31.3,
       "leaders": 1,
       "avg_change_pct": 11.73
     },
@@ -77,15 +77,15 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1907000,
+      "price": 1919000,
       "change_value": 0,
-      "change_pct": 4.21,
-      "volume": 3778464,
-      "trading_value_okrw": 72055.0,
+      "change_pct": 4.86,
+      "volume": 4079998,
+      "trading_value_okrw": 78295.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 69.9,
+      "score": 70.6,
       "rank": 1
     },
     {
@@ -100,7 +100,7 @@
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 46.5,
+      "score": 45.4,
       "rank": 2
     },
     {
@@ -115,7 +115,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 40.8,
+      "score": 38.0,
       "rank": 3
     },
     {
@@ -125,8 +125,8 @@
       "price": 45550,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 2831197,
-      "trading_value_okrw": 1289.0,
+      "volume": 2885440,
+      "trading_value_okrw": 1314.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
@@ -152,15 +152,15 @@
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 14110,
+      "price": 14200,
       "change_value": 0,
-      "change_pct": 16.04,
-      "volume": 28311388,
-      "trading_value_okrw": 3994.0,
+      "change_pct": 16.78,
+      "volume": 28661355,
+      "trading_value_okrw": 4069.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 24.6,
+      "score": 25.2,
       "rank": 6
     },
     {
@@ -175,22 +175,22 @@
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 23.9,
+      "score": 23.7,
       "rank": 7
     },
     {
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 34300,
+      "price": 34400,
       "change_value": 0,
-      "change_pct": 17.87,
-      "volume": 7820702,
-      "trading_value_okrw": 2682.0,
+      "change_pct": 18.21,
+      "volume": 7924949,
+      "trading_value_okrw": 2726.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 21.7,
+      "score": 21.9,
       "rank": 8
     },
     {
@@ -205,7 +205,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 19.7,
+      "score": 19.5,
       "rank": 9
     },
     {
@@ -220,7 +220,7 @@
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 16.9,
+      "score": 16.6,
       "rank": 10
     },
     {
@@ -230,28 +230,13 @@
       "price": 306500,
       "change_value": 0,
       "change_pct": 14.37,
-      "volume": 542944,
-      "trading_value_okrw": 1664.0,
+      "volume": 556805,
+      "trading_value_okrw": 1706.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 16.0,
+      "score": 15.9,
       "rank": 11
-    },
-    {
-      "code": "009150",
-      "name": "삼성전기",
-      "market": "KOSPI",
-      "price": 1446000,
-      "change_value": 0,
-      "change_pct": 7.51,
-      "volume": 628724,
-      "trading_value_okrw": 9091.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 15.8,
-      "rank": 12
     },
     {
       "code": "035420",
@@ -265,7 +250,22 @@
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 15.7,
+      "score": 15.4,
+      "rank": 12
+    },
+    {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 1446000,
+      "change_value": 0,
+      "change_pct": 7.51,
+      "volume": 628724,
+      "trading_value_okrw": 9091.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 15.2,
       "rank": 13
     },
     {
@@ -280,7 +280,7 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 13.6,
+      "score": 13.4,
       "rank": 14
     },
     {
@@ -295,7 +295,7 @@
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 13.0,
+      "score": 12.9,
       "rank": 15
     },
     {
@@ -310,7 +310,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 10.0,
+      "score": 9.9,
       "rank": 16
     },
     {
@@ -340,7 +340,7 @@
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 9.0,
+      "score": 8.8,
       "rank": 18
     },
     {
@@ -355,7 +355,7 @@
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 8.8,
+      "score": 8.6,
       "rank": 19
     },
     {
@@ -370,7 +370,7 @@
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 8.2,
+      "score": 8.1,
       "rank": 20
     }
   ]

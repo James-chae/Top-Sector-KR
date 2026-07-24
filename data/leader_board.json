@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-24",
-    "generated_at_kst": "2026-07-24 09:26:29",
+    "generated_at_kst": "2026-07-24 09:31:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 42.2",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 15.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,47 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 42.2,
+      "score": 15.9,
       "leaders": 1,
-      "avg_change_pct": 1.36
+      "avg_change_pct": 3.67
+    },
+    {
+      "sector": "건설",
+      "score": 14.6,
+      "leaders": 1,
+      "avg_change_pct": 0.64
     }
   ],
   "leaders": [
     {
-      "code": "475150",
-      "name": "SK이터닉스",
+      "code": "322000",
+      "name": "HD현대에너지솔루션",
       "market": "KOSPI",
-      "price": 81700,
+      "price": 177800,
       "change_value": 0,
-      "change_pct": 1.36,
-      "volume": 4710056,
-      "trading_value_okrw": 3848.0,
+      "change_pct": 3.67,
+      "volume": 435379,
+      "trading_value_okrw": 774.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 26.6,
+      "score": 8.0,
       "rank": 1
+    },
+    {
+      "code": "028050",
+      "name": "삼성E&A",
+      "market": "KOSPI",
+      "price": 46950,
+      "change_value": 0,
+      "change_pct": 0.64,
+      "volume": 1988887,
+      "trading_value_okrw": 933.0,
+      "sector1": "건설",
+      "sector2": "",
+      "sector": "건설",
+      "score": 6.3,
+      "rank": 2
     }
   ]
 }

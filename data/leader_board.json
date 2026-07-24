@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-24",
-    "generated_at_kst": "2026-07-24 10:36:43",
+    "generated_at_kst": "2026-07-24 10:41:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
-    "sector_count": 4,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 50.9",
+    "leader_count": 7,
+    "sector_count": 5,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 49.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,33 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 50.9,
+      "score": 49.9,
       "leaders": 3,
-      "avg_change_pct": 9.06
+      "avg_change_pct": 8.03
+    },
+    {
+      "sector": "조선",
+      "score": 25.3,
+      "leaders": 1,
+      "avg_change_pct": 12.11
     },
     {
       "sector": "바이오",
-      "score": 20.0,
+      "score": 20.3,
       "leaders": 1,
       "avg_change_pct": 8.7
     },
     {
       "sector": "건설",
-      "score": 18.4,
+      "score": 17.9,
       "leaders": 1,
-      "avg_change_pct": 4.29
+      "avg_change_pct": 3.75
     },
     {
       "sector": "방산",
-      "score": 17.7,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 5.85
+      "avg_change_pct": 5.11
     }
   ],
   "leaders": [
@@ -53,31 +59,61 @@
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 84400,
+      "price": 83100,
       "change_value": 0,
-      "change_pct": 4.71,
-      "volume": 11822591,
-      "trading_value_okrw": 9978.0,
+      "change_pct": 3.1,
+      "volume": 12071238,
+      "trading_value_okrw": 10031.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 31.5,
+      "score": 29.7,
       "rank": 1
     },
     {
       "code": "322000",
       "name": "HD현대에너지솔루션",
       "market": "KOSPI",
-      "price": 196500,
+      "price": 191200,
       "change_value": 0,
-      "change_pct": 14.58,
-      "volume": 1101974,
-      "trading_value_okrw": 2165.0,
+      "change_pct": 11.49,
+      "volume": 1155066,
+      "trading_value_okrw": 2208.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 20.0,
+      "score": 17.0,
       "rank": 2
+    },
+    {
+      "code": "100090",
+      "name": "SK오션플랜트",
+      "market": "KOSPI",
+      "price": 19350,
+      "change_value": 0,
+      "change_pct": 12.11,
+      "volume": 6082007,
+      "trading_value_okrw": 1176.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 16.4,
+      "rank": 3
+    },
+    {
+      "code": "010060",
+      "name": "OCI홀딩스",
+      "market": "KOSPI",
+      "price": 270500,
+      "change_value": 0,
+      "change_pct": 9.51,
+      "volume": 528822,
+      "trading_value_okrw": 1430.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 13.0,
+      "rank": 4
     },
     {
       "code": "207940",
@@ -86,58 +122,43 @@
       "price": 1499000,
       "change_value": 0,
       "change_pct": 8.7,
-      "volume": 71489,
-      "trading_value_okrw": 1071.0,
+      "volume": 76419,
+      "trading_value_okrw": 1145.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 11.3,
-      "rank": 3
-    },
-    {
-      "code": "010060",
-      "name": "OCI홀딩스",
-      "market": "KOSPI",
-      "price": 266500,
-      "change_value": 0,
-      "change_pct": 7.89,
-      "volume": 492181,
-      "trading_value_okrw": 1311.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 11.2,
-      "rank": 4
-    },
-    {
-      "code": "012450",
-      "name": "한화에어로스페이스",
-      "market": "KOSPI",
-      "price": 1014000,
-      "change_value": 0,
-      "change_pct": 5.85,
-      "volume": 117679,
-      "trading_value_okrw": 1193.0,
-      "sector1": "방산",
-      "sector2": "",
-      "sector": "방산",
-      "score": 8.7,
+      "score": 11.4,
       "rank": 5
     },
     {
       "code": "028050",
       "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 48650,
+      "price": 48400,
       "change_value": 0,
-      "change_pct": 4.29,
-      "volume": 3071582,
-      "trading_value_okrw": 1494.0,
+      "change_pct": 3.75,
+      "volume": 3146304,
+      "trading_value_okrw": 1522.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 8.6,
+      "score": 8.1,
       "rank": 6
+    },
+    {
+      "code": "012450",
+      "name": "한화에어로스페이스",
+      "market": "KOSPI",
+      "price": 1007000,
+      "change_value": 0,
+      "change_pct": 5.11,
+      "volume": 119168,
+      "trading_value_okrw": 1200.0,
+      "sector1": "방산",
+      "sector2": "",
+      "sector": "방산",
+      "score": 8.0,
+      "rank": 7
     }
   ]
 }

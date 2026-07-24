@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-24",
-    "generated_at_kst": "2026-07-24 09:36:29",
+    "generated_at_kst": "2026-07-24 09:41:37",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
-    "sector_count": 2,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 28.4",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "건설 중심 강세 / 상위섹터 점수 16.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,78 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "에너지",
-      "score": 28.4,
-      "leaders": 3,
-      "avg_change_pct": 4.39
-    },
-    {
       "sector": "건설",
-      "score": 14.4,
+      "score": 16.2,
       "leaders": 1,
-      "avg_change_pct": 0.75
+      "avg_change_pct": 2.57
     }
   ],
   "leaders": [
     {
-      "code": "119850",
-      "name": "지엔씨에너지",
-      "market": "KOSDAQ",
-      "price": 48850,
-      "change_value": 0,
-      "change_pct": 7.24,
-      "volume": 1442896,
-      "trading_value_okrw": 704.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 11.0,
-      "rank": 1
-    },
-    {
-      "code": "322000",
-      "name": "HD현대에너지솔루션",
-      "market": "KOSPI",
-      "price": 178900,
-      "change_value": 0,
-      "change_pct": 4.31,
-      "volume": 500306,
-      "trading_value_okrw": 895.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 8.6,
-      "rank": 2
-    },
-    {
       "code": "028050",
       "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 47000,
+      "price": 47850,
       "change_value": 0,
-      "change_pct": 0.75,
-      "volume": 2076394,
-      "trading_value_okrw": 975.0,
+      "change_pct": 2.57,
+      "volume": 2188191,
+      "trading_value_okrw": 1047.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 5.9,
-      "rank": 3
-    },
-    {
-      "code": "010060",
-      "name": "OCI홀딩스",
-      "market": "KOSPI",
-      "price": 251000,
-      "change_value": 0,
-      "change_pct": 1.62,
-      "volume": 280295,
-      "trading_value_okrw": 703.0,
-      "sector1": "에너지",
-      "sector2": "",
-      "sector": "에너지",
-      "score": 5.0,
-      "rank": 4
+      "score": 7.6,
+      "rank": 1
     }
   ]
 }

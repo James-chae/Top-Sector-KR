@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 09:06:28",
+    "generated_at_kst": "2026-07-27 09:11:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 51.4",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 55.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 51.4,
+      "score": 55.3,
       "leaders": 1,
-      "avg_change_pct": 2.3
+      "avg_change_pct": 1.2
+    },
+    {
+      "sector": "인터넷",
+      "score": 30.0,
+      "leaders": 1,
+      "avg_change_pct": 9.16
     }
   ],
   "leaders": [
@@ -35,16 +41,31 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 255250,
+      "price": 252500,
       "change_value": 0,
-      "change_pct": 2.3,
-      "volume": 1096205,
-      "trading_value_okrw": 2798.0,
+      "change_pct": 1.2,
+      "volume": 1778575,
+      "trading_value_okrw": 4490.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 38.5,
+      "score": 38.1,
       "rank": 1
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "market": "KOSPI",
+      "price": 226500,
+      "change_value": 0,
+      "change_pct": 9.16,
+      "volume": 607038,
+      "trading_value_okrw": 1374.0,
+      "sector1": "인터넷",
+      "sector2": "",
+      "sector": "인터넷",
+      "score": 20.5,
+      "rank": 2
     }
   ]
 }

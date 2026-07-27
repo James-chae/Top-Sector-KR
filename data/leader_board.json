@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 10:36:31",
+    "generated_at_kst": "2026-07-27 10:41:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
+    "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 33.8",
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 33.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "인터넷",
-      "score": 33.8,
+      "score": 33.9,
       "leaders": 1,
-      "avg_change_pct": 8.43
+      "avg_change_pct": 8.67
     },
     {
       "sector": "바이오",
-      "score": 27.0,
+      "score": 26.9,
       "leaders": 1,
       "avg_change_pct": 7.8
     },
     {
+      "sector": "반도체",
+      "score": 22.6,
+      "leaders": 2,
+      "avg_change_pct": 2.72
+    },
+    {
       "sector": "전력",
-      "score": 19.6,
+      "score": 19.7,
       "leaders": 1,
-      "avg_change_pct": 1.02
+      "avg_change_pct": 1.17
     },
     {
       "sector": "통신",
-      "score": 17.3,
+      "score": 16.9,
       "leaders": 1,
-      "avg_change_pct": 1.8
-    },
-    {
-      "sector": "반도체",
-      "score": 15.2,
-      "leaders": 1,
-      "avg_change_pct": 2.77
+      "avg_change_pct": 1.5
     }
   ],
   "leaders": [
@@ -59,15 +59,15 @@
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 225000,
+      "price": 225500,
       "change_value": 0,
-      "change_pct": 8.43,
-      "volume": 1741214,
-      "trading_value_okrw": 3917.0,
+      "change_pct": 8.67,
+      "volume": 1762709,
+      "trading_value_okrw": 3974.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 18.0,
+      "score": 17.9,
       "rank": 1
     },
     {
@@ -77,58 +77,73 @@
       "price": 16170,
       "change_value": 0,
       "change_pct": 7.8,
-      "volume": 11022617,
-      "trading_value_okrw": 1782.0,
+      "volume": 11139572,
+      "trading_value_okrw": 1801.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 16.6,
+      "score": 16.4,
       "rank": 2
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 13870,
+      "price": 13890,
       "change_value": 0,
-      "change_pct": 1.02,
-      "volume": 11569684,
-      "trading_value_okrw": 1604.0,
+      "change_pct": 1.17,
+      "volume": 11743261,
+      "trading_value_okrw": 1631.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 9.6,
+      "score": 9.7,
       "rank": 3
-    },
-    {
-      "code": "017670",
-      "name": "SK텔레콤",
-      "market": "KOSPI",
-      "price": 101800,
-      "change_value": 0,
-      "change_pct": 1.8,
-      "volume": 1809159,
-      "trading_value_okrw": 1841.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 6.7,
-      "rank": 4
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 144900,
+      "price": 146600,
       "change_value": 0,
-      "change_pct": 2.77,
-      "volume": 878507,
-      "trading_value_okrw": 1272.0,
+      "change_pct": 3.97,
+      "volume": 891863,
+      "trading_value_okrw": 1307.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.0,
+      "score": 7.1,
+      "rank": 4
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "market": "KOSPI",
+      "price": 101500,
+      "change_value": 0,
+      "change_pct": 1.5,
+      "volume": 1833050,
+      "trading_value_okrw": 1860.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 6.3,
       "rank": 5
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "price": 179700,
+      "change_value": 0,
+      "change_pct": 1.47,
+      "volume": 944521,
+      "trading_value_okrw": 1697.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 5.5,
+      "rank": 6
     }
   ]
 }

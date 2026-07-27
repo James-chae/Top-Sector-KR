@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 15:31:34",
+    "generated_at_kst": "2026-07-27 15:36:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 12,
+    "leader_count": 13,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 74.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,51 +25,51 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 74.6,
+      "score": 76.1,
       "leaders": 3,
-      "avg_change_pct": 3.85
+      "avg_change_pct": 3.78
     },
     {
       "sector": "인터넷",
-      "score": 33.1,
+      "score": 32.7,
       "leaders": 1,
-      "avg_change_pct": 8.92
+      "avg_change_pct": 8.43
     },
     {
       "sector": "바이오",
       "score": 30.9,
       "leaders": 3,
-      "avg_change_pct": 3.82
+      "avg_change_pct": 3.89
     },
     {
       "sector": "로봇",
-      "score": 26.1,
+      "score": 25.9,
       "leaders": 1,
       "avg_change_pct": 13.68
     },
     {
       "sector": "금융",
-      "score": 19.7,
+      "score": 19.5,
       "leaders": 1,
-      "avg_change_pct": 7.78
+      "avg_change_pct": 7.29
     },
     {
       "sector": "전력",
-      "score": 19.0,
+      "score": 18.7,
       "leaders": 1,
       "avg_change_pct": 1.82
     },
     {
       "sector": "IT서비스",
-      "score": 14.1,
+      "score": 13.9,
       "leaders": 1,
-      "avg_change_pct": 4.06
+      "avg_change_pct": 3.82
     },
     {
-      "sector": "전자",
-      "score": 13.2,
+      "sector": "조선",
+      "score": 13.7,
       "leaders": 1,
-      "avg_change_pct": 2.13
+      "avg_change_pct": 1.02
     }
   ],
   "leaders": [
@@ -85,22 +85,22 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 69.2,
+      "score": 69.1,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 254500,
+      "price": 254000,
       "change_value": 0,
-      "change_pct": 2.0,
-      "volume": 20595552,
-      "trading_value_okrw": 52415.0,
+      "change_pct": 1.8,
+      "volume": 22679693,
+      "trading_value_okrw": 57606.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 56.0,
+      "score": 60.6,
       "rank": 2
     },
     {
@@ -115,22 +115,22 @@
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 16.6,
+      "score": 16.4,
       "rank": 3
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 226000,
+      "price": 225000,
       "change_value": 0,
-      "change_pct": 8.92,
-      "volume": 2622905,
-      "trading_value_okrw": 5927.0,
+      "change_pct": 8.43,
+      "volume": 2703746,
+      "trading_value_okrw": 6083.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 15.1,
+      "score": 14.7,
       "rank": 4
     },
     {
@@ -145,22 +145,22 @@
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 12.2,
+      "score": 11.8,
       "rank": 5
     },
     {
       "code": "316140",
       "name": "우리금융지주",
       "market": "KOSPI",
-      "price": 33250,
+      "price": 33100,
       "change_value": 0,
-      "change_pct": 7.78,
-      "volume": 4268965,
-      "trading_value_okrw": 1419.0,
+      "change_pct": 7.29,
+      "volume": 4564247,
+      "trading_value_okrw": 1510.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 10.1,
+      "score": 9.7,
       "rank": 6
     },
     {
@@ -175,7 +175,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.6,
+      "score": 8.5,
       "rank": 7
     },
     {
@@ -190,22 +190,22 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 7.6,
+      "score": 7.3,
       "rank": 8
     },
     {
       "code": "018260",
       "name": "삼성에스디에스",
       "market": "KOSPI",
-      "price": 218000,
+      "price": 217500,
       "change_value": 0,
-      "change_pct": 4.06,
-      "volume": 527174,
-      "trading_value_okrw": 1149.0,
+      "change_pct": 3.82,
+      "volume": 536977,
+      "trading_value_okrw": 1167.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 5.3,
+      "score": 5.0,
       "rank": 9
     },
     {
@@ -227,31 +227,46 @@
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 172800,
+      "price": 172300,
       "change_value": 0,
-      "change_pct": 2.13,
-      "volume": 829200,
-      "trading_value_okrw": 1432.0,
+      "change_pct": 1.83,
+      "volume": 873752,
+      "trading_value_okrw": 1505.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 3.7,
+      "score": 3.4,
       "rank": 11
     },
     {
       "code": "207940",
       "name": "삼성바이오로직스",
       "market": "KOSPI",
-      "price": 1541500,
+      "price": 1545000,
       "change_value": 0,
-      "change_pct": 1.55,
-      "volume": 93866,
-      "trading_value_okrw": 1446.0,
+      "change_pct": 1.78,
+      "volume": 98855,
+      "trading_value_okrw": 1527.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 2.9,
+      "score": 3.2,
       "rank": 12
+    },
+    {
+      "code": "042660",
+      "name": "한화오션",
+      "market": "KOSPI",
+      "price": 88800,
+      "change_value": 0,
+      "change_pct": 1.02,
+      "volume": 2046231,
+      "trading_value_okrw": 1817.0,
+      "sector1": "조선",
+      "sector2": "",
+      "sector": "조선",
+      "score": 3.2,
+      "rank": 13
     }
   ]
 }

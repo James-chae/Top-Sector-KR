@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 12:51:31",
+    "generated_at_kst": "2026-07-27 12:56:31",
     "mode": "closing",
     "session_state": "",
     "leader_count": 5,
     "sector_count": 5,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 34.1",
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 34.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "인터넷",
-      "score": 34.1,
+      "score": 34.8,
       "leaders": 1,
-      "avg_change_pct": 7.95
+      "avg_change_pct": 8.55
     },
     {
       "sector": "로봇",
-      "score": 28.0,
+      "score": 27.7,
       "leaders": 1,
-      "avg_change_pct": 15.24
+      "avg_change_pct": 14.98
     },
     {
       "sector": "바이오",
-      "score": 23.6,
+      "score": 23.3,
       "leaders": 1,
-      "avg_change_pct": 5.07
+      "avg_change_pct": 4.8
     },
     {
       "sector": "전력",
-      "score": 18.5,
+      "score": 18.8,
       "leaders": 1,
-      "avg_change_pct": 1.02
+      "avg_change_pct": 1.31
     },
     {
       "sector": "반도체",
       "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 3.83
+      "avg_change_pct": 3.76
     }
   ],
   "leaders": [
@@ -59,71 +59,71 @@
       "code": "319400",
       "name": "현대무벡스",
       "market": "KOSDAQ",
-      "price": 22150,
+      "price": 22100,
       "change_value": 0,
-      "change_pct": 15.24,
-      "volume": 5549385,
-      "trading_value_okrw": 1229.0,
+      "change_pct": 14.98,
+      "volume": 5569930,
+      "trading_value_okrw": 1230.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 18.9,
+      "score": 18.6,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 224000,
+      "price": 225250,
       "change_value": 0,
-      "change_pct": 7.95,
-      "volume": 2185121,
-      "trading_value_okrw": 4894.0,
+      "change_pct": 8.55,
+      "volume": 2204215,
+      "trading_value_okrw": 4964.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 16.1,
+      "score": 16.8,
       "rank": 2
     },
     {
       "code": "950160",
       "name": "코오롱티슈진",
       "market": "KOSDAQ",
-      "price": 15760,
+      "price": 15720,
       "change_value": 0,
-      "change_pct": 5.07,
-      "volume": 13033907,
-      "trading_value_okrw": 2054.0,
+      "change_pct": 4.8,
+      "volume": 13076513,
+      "trading_value_okrw": 2055.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 12.5,
+      "score": 12.2,
       "rank": 3
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 13870,
+      "price": 13910,
       "change_value": 0,
-      "change_pct": 1.02,
-      "volume": 12972812,
-      "trading_value_okrw": 1799.0,
+      "change_pct": 1.31,
+      "volume": 12989254,
+      "trading_value_okrw": 1806.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 8.0,
+      "score": 8.2,
       "rank": 4
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 146400,
+      "price": 146300,
       "change_value": 0,
-      "change_pct": 3.83,
-      "volume": 1065807,
-      "trading_value_okrw": 1560.0,
+      "change_pct": 3.76,
+      "volume": 1069875,
+      "trading_value_okrw": 1565.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",

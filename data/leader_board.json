@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 10:01:26",
+    "generated_at_kst": "2026-07-27 10:06:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 7,
+    "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 57.8",
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 35.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,141 +24,126 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 57.8,
-      "leaders": 3,
-      "avg_change_pct": 3.43
-    },
-    {
       "sector": "인터넷",
-      "score": 35.2,
+      "score": 35.6,
       "leaders": 1,
-      "avg_change_pct": 9.16
+      "avg_change_pct": 9.52
     },
     {
       "sector": "바이오",
-      "score": 30.4,
+      "score": 28.1,
       "leaders": 1,
-      "avg_change_pct": 10.73
+      "avg_change_pct": 8.33
+    },
+    {
+      "sector": "반도체",
+      "score": 22.0,
+      "leaders": 2,
+      "avg_change_pct": 3.52
     },
     {
       "sector": "전력",
       "score": 21.9,
       "leaders": 1,
-      "avg_change_pct": 3.06
+      "avg_change_pct": 3.2
     },
     {
       "sector": "통신",
-      "score": 18.1,
+      "score": 17.4,
       "leaders": 1,
-      "avg_change_pct": 3.0
+      "avg_change_pct": 2.2
     }
   ],
   "leaders": [
     {
-      "code": "000660",
-      "name": "SK하이닉스",
-      "market": "KOSPI",
-      "price": 1778000,
-      "change_value": 0,
-      "change_pct": 1.08,
-      "volume": 1142041,
-      "trading_value_okrw": 20305.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 66.7,
-      "rank": 1
-    },
-    {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 226500,
+      "price": 227250,
       "change_value": 0,
-      "change_pct": 9.16,
-      "volume": 1492384,
-      "trading_value_okrw": 3380.0,
+      "change_pct": 9.52,
+      "volume": 1520064,
+      "trading_value_okrw": 3454.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 20.8,
-      "rank": 2
+      "score": 21.0,
+      "rank": 1
     },
     {
       "code": "950160",
       "name": "코오롱티슈진",
       "market": "KOSDAQ",
-      "price": 16610,
+      "price": 16250,
       "change_value": 0,
-      "change_pct": 10.73,
-      "volume": 9349029,
-      "trading_value_okrw": 1552.0,
+      "change_pct": 8.33,
+      "volume": 9695160,
+      "trading_value_okrw": 1575.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 20.5,
-      "rank": 3
+      "score": 18.2,
+      "rank": 2
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 14150,
+      "price": 14170,
       "change_value": 0,
-      "change_pct": 3.06,
-      "volume": 9683479,
-      "trading_value_okrw": 1370.0,
+      "change_pct": 3.2,
+      "volume": 9755042,
+      "trading_value_okrw": 1382.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 12.4,
-      "rank": 4
+      "score": 12.5,
+      "rank": 3
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 150000,
+      "price": 147500,
       "change_value": 0,
-      "change_pct": 6.38,
-      "volume": 695957,
-      "trading_value_okrw": 1043.0,
+      "change_pct": 4.61,
+      "volume": 726405,
+      "trading_value_okrw": 1071.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.1,
-      "rank": 5
+      "score": 8.3,
+      "rank": 4
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 103000,
+      "price": 102200,
       "change_value": 0,
-      "change_pct": 3.0,
-      "volume": 1426034,
-      "trading_value_okrw": 1468.0,
+      "change_pct": 2.2,
+      "volume": 1470892,
+      "trading_value_okrw": 1503.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 8.4,
-      "rank": 6
+      "score": 7.6,
+      "rank": 5
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 182100,
+      "price": 181400,
       "change_value": 0,
-      "change_pct": 2.82,
-      "volume": 599378,
-      "trading_value_okrw": 1091.0,
+      "change_pct": 2.43,
+      "volume": 615649,
+      "trading_value_okrw": 1116.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.6,
-      "rank": 7
+      "score": 6.2,
+      "rank": 6
     }
   ]
 }

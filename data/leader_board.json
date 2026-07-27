@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 13:51:36",
+    "generated_at_kst": "2026-07-27 13:56:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 8,
+    "leader_count": 10,
     "sector_count": 7,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 35.5",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 73.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,16 +24,16 @@
   },
   "top_sectors": [
     {
-      "sector": "인터넷",
-      "score": 35.5,
-      "leaders": 1,
-      "avg_change_pct": 9.64
+      "sector": "반도체",
+      "score": 73.8,
+      "leaders": 3,
+      "avg_change_pct": 2.36
     },
     {
-      "sector": "바이오",
-      "score": 28.3,
-      "leaders": 2,
-      "avg_change_pct": 5.96
+      "sector": "인터넷",
+      "score": 35.4,
+      "leaders": 1,
+      "avg_change_pct": 9.64
     },
     {
       "sector": "로봇",
@@ -42,31 +42,61 @@
       "avg_change_pct": 15.24
     },
     {
+      "sector": "바이오",
+      "score": 27.9,
+      "leaders": 2,
+      "avg_change_pct": 5.59
+    },
+    {
       "sector": "전력",
-      "score": 20.3,
+      "score": 20.6,
       "leaders": 1,
-      "avg_change_pct": 2.77
+      "avg_change_pct": 3.06
     },
     {
       "sector": "금융",
-      "score": 20.1,
+      "score": 19.8,
       "leaders": 1,
-      "avg_change_pct": 8.59
-    },
-    {
-      "sector": "반도체",
-      "score": 17.6,
-      "leaders": 1,
-      "avg_change_pct": 4.89
+      "avg_change_pct": 8.27
     },
     {
       "sector": "전자",
-      "score": 12.1,
+      "score": 12.3,
       "leaders": 1,
-      "avg_change_pct": 1.6
+      "avg_change_pct": 1.8
     }
   ],
   "leaders": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 1780000,
+      "change_value": 0,
+      "change_pct": 1.19,
+      "volume": 2807484,
+      "trading_value_okrw": 49973.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 67.1,
+      "rank": 1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 252000,
+      "change_value": 0,
+      "change_pct": 1.0,
+      "volume": 15599358,
+      "trading_value_okrw": 39310.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 57.0,
+      "rank": 2
+    },
     {
       "code": "319400",
       "name": "현대무벡스",
@@ -74,28 +104,13 @@
       "price": 22150,
       "change_value": 0,
       "change_pct": 15.24,
-      "volume": 5824533,
-      "trading_value_okrw": 1290.0,
+      "volume": 5844785,
+      "trading_value_okrw": 1294.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
       "score": 18.8,
-      "rank": 1
-    },
-    {
-      "code": "950160",
-      "name": "코오롱티슈진",
-      "market": "KOSDAQ",
-      "price": 16530,
-      "change_value": 0,
-      "change_pct": 10.2,
-      "volume": 14120086,
-      "trading_value_okrw": 2334.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 17.7,
-      "rank": 2
+      "rank": 3
     },
     {
       "code": "035420",
@@ -104,43 +119,58 @@
       "price": 227500,
       "change_value": 0,
       "change_pct": 9.64,
-      "volume": 2356340,
-      "trading_value_okrw": 5360.0,
+      "volume": 2371373,
+      "trading_value_okrw": 5394.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 17.5,
-      "rank": 3
+      "score": 17.4,
+      "rank": 4
+    },
+    {
+      "code": "950160",
+      "name": "코오롱티슈진",
+      "market": "KOSDAQ",
+      "price": 16420,
+      "change_value": 0,
+      "change_pct": 9.47,
+      "volume": 14232557,
+      "trading_value_okrw": 2336.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 16.9,
+      "rank": 5
     },
     {
       "code": "316140",
       "name": "우리금융지주",
       "market": "KOSPI",
-      "price": 33500,
+      "price": 33400,
       "change_value": 0,
-      "change_pct": 8.59,
-      "volume": 3460879,
-      "trading_value_okrw": 1159.0,
+      "change_pct": 8.27,
+      "volume": 3492197,
+      "trading_value_okrw": 1166.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 11.2,
-      "rank": 4
+      "score": 10.9,
+      "rank": 6
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 14110,
+      "price": 14150,
       "change_value": 0,
-      "change_pct": 2.77,
-      "volume": 13531237,
-      "trading_value_okrw": 1909.0,
+      "change_pct": 3.06,
+      "volume": 13631136,
+      "trading_value_okrw": 1928.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 9.5,
-      "rank": 5
+      "score": 9.8,
+      "rank": 7
     },
     {
       "code": "036930",
@@ -149,28 +179,28 @@
       "price": 147900,
       "change_value": 0,
       "change_pct": 4.89,
-      "volume": 1127122,
-      "trading_value_okrw": 1667.0,
+      "volume": 1130795,
+      "trading_value_okrw": 1672.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
       "score": 7.4,
-      "rank": 6
+      "rank": 8
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 171900,
+      "price": 172250,
       "change_value": 0,
-      "change_pct": 1.6,
-      "volume": 654347,
-      "trading_value_okrw": 1124.0,
+      "change_pct": 1.8,
+      "volume": 662855,
+      "trading_value_okrw": 1141.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 3.3,
-      "rank": 7
+      "score": 3.5,
+      "rank": 9
     },
     {
       "code": "207940",
@@ -179,13 +209,13 @@
       "price": 1544000,
       "change_value": 0,
       "change_pct": 1.71,
-      "volume": 74312,
-      "trading_value_okrw": 1147.0,
+      "volume": 74984,
+      "trading_value_okrw": 1157.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
       "score": 3.2,
-      "rank": 8
+      "rank": 10
     }
   ]
 }

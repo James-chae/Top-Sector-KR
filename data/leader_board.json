@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-27",
-    "generated_at_kst": "2026-07-27 13:06:30",
+    "generated_at_kst": "2026-07-27 13:11:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 34.5",
+    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 34.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "인터넷",
-      "score": 34.5,
+      "score": 34.2,
       "leaders": 1,
-      "avg_change_pct": 8.43
+      "avg_change_pct": 8.19
     },
     {
       "sector": "로봇",
-      "score": 27.4,
+      "score": 27.2,
       "leaders": 1,
-      "avg_change_pct": 14.72
+      "avg_change_pct": 14.46
     },
     {
       "sector": "바이오",
-      "score": 25.3,
+      "score": 25.4,
       "leaders": 2,
-      "avg_change_pct": 3.65
+      "avg_change_pct": 3.76
     },
     {
       "sector": "금융",
-      "score": 18.9,
+      "score": 19.2,
       "leaders": 1,
-      "avg_change_pct": 7.86
+      "avg_change_pct": 8.1
     },
     {
       "sector": "반도체",
-      "score": 17.0,
+      "score": 16.9,
       "leaders": 1,
-      "avg_change_pct": 4.33
+      "avg_change_pct": 4.26
     }
   ],
   "leaders": [
@@ -59,90 +59,90 @@
       "code": "319400",
       "name": "현대무벡스",
       "market": "KOSDAQ",
-      "price": 22050,
+      "price": 22000,
       "change_value": 0,
-      "change_pct": 14.72,
-      "volume": 5612368,
-      "trading_value_okrw": 1237.0,
+      "change_pct": 14.46,
+      "volume": 5638644,
+      "trading_value_okrw": 1240.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 18.4,
+      "score": 18.1,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 225000,
+      "price": 224500,
       "change_value": 0,
-      "change_pct": 8.43,
-      "volume": 2229965,
-      "trading_value_okrw": 5017.0,
+      "change_pct": 8.19,
+      "volume": 2237336,
+      "trading_value_okrw": 5022.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 16.5,
+      "score": 16.2,
       "rank": 2
     },
     {
       "code": "950160",
       "name": "코오롱티슈진",
       "market": "KOSDAQ",
-      "price": 15840,
+      "price": 15860,
       "change_value": 0,
-      "change_pct": 5.6,
-      "volume": 13182742,
-      "trading_value_okrw": 2088.0,
+      "change_pct": 5.73,
+      "volume": 13220064,
+      "trading_value_okrw": 2096.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 12.9,
+      "score": 13.1,
       "rank": 3
     },
     {
       "code": "316140",
       "name": "우리금융지주",
       "market": "KOSPI",
-      "price": 33275,
+      "price": 33350,
       "change_value": 0,
-      "change_pct": 7.86,
-      "volume": 3052986,
-      "trading_value_okrw": 1015.0,
+      "change_pct": 8.1,
+      "volume": 3089128,
+      "trading_value_okrw": 1030.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 10.3,
+      "score": 10.6,
       "rank": 4
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 147100,
+      "price": 147000,
       "change_value": 0,
-      "change_pct": 4.33,
-      "volume": 1077678,
-      "trading_value_okrw": 1585.0,
+      "change_pct": 4.26,
+      "volume": 1082090,
+      "trading_value_okrw": 1590.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.0,
+      "score": 6.9,
       "rank": 5
     },
     {
       "code": "207940",
       "name": "삼성바이오로직스",
       "market": "KOSPI",
-      "price": 1544000,
+      "price": 1545000,
       "change_value": 0,
-      "change_pct": 1.71,
-      "volume": 65717,
-      "trading_value_okrw": 1014.0,
+      "change_pct": 1.78,
+      "volume": 66724,
+      "trading_value_okrw": 1030.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 3.2,
+      "score": 3.3,
       "rank": 6
     }
   ]

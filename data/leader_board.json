@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-28",
-    "generated_at_kst": "2026-07-28 09:51:30",
+    "generated_at_kst": "2026-07-28 09:56:35",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 28.2",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 25.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 28.2,
+      "score": 25.9,
       "leaders": 1,
-      "avg_change_pct": 12.67
+      "avg_change_pct": 10.46
     },
     {
       "sector": "바이오",
-      "score": 12.5,
+      "score": 11.9,
       "leaders": 1,
-      "avg_change_pct": 2.41
+      "avg_change_pct": 1.73
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "413630",
       "name": "씨피시스템",
       "market": "KOSDAQ",
-      "price": 4580,
+      "price": 4490,
       "change_value": 0,
-      "change_pct": 12.67,
-      "volume": 19165747,
-      "trading_value_okrw": 877.0,
+      "change_pct": 10.46,
+      "volume": 19846638,
+      "trading_value_okrw": 891.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 20.0,
+      "score": 17.7,
       "rank": 1
     },
     {
       "code": "068270",
       "name": "셀트리온",
       "market": "KOSPI",
-      "price": 183000,
+      "price": 181800,
       "change_value": 0,
-      "change_pct": 2.41,
-      "volume": 428376,
-      "trading_value_okrw": 783.0,
+      "change_pct": 1.73,
+      "volume": 452144,
+      "trading_value_okrw": 821.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 4.6,
+      "score": 3.9,
       "rank": 2
     }
   ]

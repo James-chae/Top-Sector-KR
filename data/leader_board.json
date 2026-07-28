@@ -1,11 +1,11 @@
 {
   "meta": {
     "trade_date": "2026-07-28",
-    "generated_at_kst": "2026-07-28 12:21:29",
+    "generated_at_kst": "2026-07-28 12:26:35",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
+    "leader_count": 2,
+    "sector_count": 2,
     "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 32.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
@@ -28,6 +28,12 @@
       "score": 32.7,
       "leaders": 1,
       "avg_change_pct": 15.01
+    },
+    {
+      "sector": "바이오",
+      "score": 12.6,
+      "leaders": 1,
+      "avg_change_pct": 1.01
     }
   ],
   "leaders": [
@@ -43,8 +49,23 @@
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 22.1,
+      "score": 22.0,
       "rank": 1
+    },
+    {
+      "code": "068270",
+      "name": "셀트리온",
+      "market": "KOSPI",
+      "price": 180500,
+      "change_value": 0,
+      "change_pct": 1.01,
+      "volume": 852644,
+      "trading_value_okrw": 1539.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 2.8,
+      "rank": 2
     }
   ]
 }

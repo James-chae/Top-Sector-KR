@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-28",
-    "generated_at_kst": "2026-07-28 13:21:29",
+    "generated_at_kst": "2026-07-28 13:26:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 26.9",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 30.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,9 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 26.9,
+      "score": 30.7,
       "leaders": 1,
-      "avg_change_pct": 9.1
-    },
-    {
-      "sector": "전력",
-      "score": 13.5,
-      "leaders": 1,
-      "avg_change_pct": 1.07
+      "avg_change_pct": 12.67
     }
   ],
   "leaders": [
@@ -41,31 +35,16 @@
       "code": "413630",
       "name": "씨피시스템",
       "market": "KOSDAQ",
-      "price": 4435,
+      "price": 4580,
       "change_value": 0,
-      "change_pct": 9.1,
-      "volume": 44566950,
-      "trading_value_okrw": 1976.0,
+      "change_pct": 12.67,
+      "volume": 44940828,
+      "trading_value_okrw": 2058.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 15.9,
+      "score": 19.6,
       "rank": 1
-    },
-    {
-      "code": "006340",
-      "name": "대원전선",
-      "market": "KOSPI",
-      "price": 14130,
-      "change_value": 0,
-      "change_pct": 1.07,
-      "volume": 10740455,
-      "trading_value_okrw": 1517.0,
-      "sector1": "전력",
-      "sector2": "",
-      "sector": "전력",
-      "score": 3.7,
-      "rank": 2
     }
   ]
 }

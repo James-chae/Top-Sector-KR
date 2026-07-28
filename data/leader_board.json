@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-28",
-    "generated_at_kst": "2026-07-28 09:11:36",
+    "generated_at_kst": "2026-07-28 09:31:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "인터넷 중심 강세 / 상위섹터 점수 18.3",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 29.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,26 +24,26 @@
   },
   "top_sectors": [
     {
-      "sector": "인터넷",
-      "score": 18.3,
+      "sector": "IT서비스",
+      "score": 29.3,
       "leaders": 1,
-      "avg_change_pct": 2.89
+      "avg_change_pct": 14.02
     }
   ],
   "leaders": [
     {
-      "code": "035420",
-      "name": "NAVER",
-      "market": "KOSPI",
-      "price": 231500,
+      "code": "413630",
+      "name": "씨피시스템",
+      "market": "KOSDAQ",
+      "price": 4635,
       "change_value": 0,
-      "change_pct": 2.89,
-      "volume": 419190,
-      "trading_value_okrw": 970.0,
-      "sector1": "인터넷",
+      "change_pct": 14.02,
+      "volume": 15742185,
+      "trading_value_okrw": 729.0,
+      "sector1": "IT서비스",
       "sector2": "",
-      "sector": "인터넷",
-      "score": 9.9,
+      "sector": "IT서비스",
+      "score": 21.5,
       "rank": 1
     }
   ]

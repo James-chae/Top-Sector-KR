@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-07-28",
-    "generated_at_kst": "2026-07-28 14:51:35",
+    "generated_at_kst": "2026-07-28 14:56:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 22.6",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "미용 중심 강세 / 상위섹터 점수 12.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,34 +24,13 @@
   },
   "top_sectors": [
     {
-      "sector": "IT서비스",
-      "score": 22.6,
-      "leaders": 1,
-      "avg_change_pct": 4.31
-    },
-    {
       "sector": "미용",
-      "score": 12.1,
+      "score": 12.3,
       "leaders": 1,
       "avg_change_pct": 2.57
     }
   ],
   "leaders": [
-    {
-      "code": "413630",
-      "name": "씨피시스템",
-      "market": "KOSDAQ",
-      "price": 4240,
-      "change_value": 0,
-      "change_pct": 4.31,
-      "volume": 53049187,
-      "trading_value_okrw": 2249.0,
-      "sector1": "IT서비스",
-      "sector2": "",
-      "sector": "IT서비스",
-      "score": 10.9,
-      "rank": 1
-    },
     {
       "code": "214450",
       "name": "파마리서치",
@@ -59,13 +38,13 @@
       "price": 379500,
       "change_value": 0,
       "change_pct": 2.57,
-      "volume": 289794,
-      "trading_value_okrw": 1099.0,
+      "volume": 302511,
+      "trading_value_okrw": 1148.0,
       "sector1": "미용",
       "sector2": "",
       "sector": "미용",
       "score": 3.4,
-      "rank": 2
+      "rank": 1
     }
   ]
 }

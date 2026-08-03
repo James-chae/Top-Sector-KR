@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-03",
-    "generated_at_kst": "2026-08-03 15:26:26",
+    "generated_at_kst": "2026-08-03 15:31:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 12,
     "sector_count": 8,
-    "market_bias": "로봇 중심 강세 / 상위섹터 점수 40.1",
+    "market_bias": "로봇 중심 강세 / 상위섹터 점수 40.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,49 +25,49 @@
   "top_sectors": [
     {
       "sector": "로봇",
-      "score": 40.1,
+      "score": 40.0,
       "leaders": 3,
       "avg_change_pct": 12.68
     },
     {
       "sector": "반도체",
-      "score": 33.9,
+      "score": 33.1,
       "leaders": 2,
-      "avg_change_pct": 3.23
+      "avg_change_pct": 3.04
     },
     {
       "sector": "통신",
-      "score": 21.8,
+      "score": 21.7,
       "leaders": 1,
       "avg_change_pct": 8.44
     },
     {
       "sector": "전력",
-      "score": 19.5,
+      "score": 19.4,
       "leaders": 2,
       "avg_change_pct": 2.02
     },
     {
+      "sector": "지주사",
+      "score": 16.4,
+      "leaders": 1,
+      "avg_change_pct": 5.81
+    },
+    {
       "sector": "에너지",
-      "score": 16.1,
+      "score": 15.9,
       "leaders": 1,
       "avg_change_pct": 1.76
     },
     {
-      "sector": "지주사",
-      "score": 15.8,
-      "leaders": 1,
-      "avg_change_pct": 5.3
-    },
-    {
       "sector": "화장품",
-      "score": 14.4,
+      "score": 14.3,
       "leaders": 1,
       "avg_change_pct": 4.69
     },
     {
       "sector": "자동차",
-      "score": 14.1,
+      "score": 13.9,
       "leaders": 1,
       "avg_change_pct": 2.84
     }
@@ -80,12 +80,12 @@
       "price": 215500,
       "change_value": 0,
       "change_pct": 17.25,
-      "volume": 582900,
-      "trading_value_okrw": 1256.0,
+      "volume": 588993,
+      "trading_value_okrw": 1269.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 18.4,
+      "score": 18.3,
       "rank": 1
     },
     {
@@ -95,12 +95,12 @@
       "price": 108700,
       "change_value": 0,
       "change_pct": 14.9,
-      "volume": 2785804,
-      "trading_value_okrw": 3028.0,
+      "volume": 2807956,
+      "trading_value_okrw": 3052.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 18.1,
+      "score": 17.8,
       "rank": 2
     },
     {
@@ -115,7 +115,7 @@
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 14.6,
+      "score": 13.4,
       "rank": 3
     },
     {
@@ -125,12 +125,12 @@
       "price": 9250,
       "change_value": 0,
       "change_pct": 8.44,
-      "volume": 14299772,
-      "trading_value_okrw": 1322.0,
+      "volume": 14369156,
+      "trading_value_okrw": 1329.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 12.5,
+      "score": 12.4,
       "rank": 4
     },
     {
@@ -140,27 +140,27 @@
       "price": 458500,
       "change_value": 0,
       "change_pct": 5.89,
-      "volume": 291244,
-      "trading_value_okrw": 1335.0,
+      "volume": 294070,
+      "trading_value_okrw": 1348.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 7.1,
+      "score": 7.0,
       "rank": 5
     },
     {
       "code": "000150",
       "name": "두산",
       "market": "KOSPI",
-      "price": 1232000,
+      "price": 1238000,
       "change_value": 0,
-      "change_pct": 5.3,
-      "volume": 108885,
-      "trading_value_okrw": 1341.0,
+      "change_pct": 5.81,
+      "volume": 114333,
+      "trading_value_okrw": 1415.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 6.5,
+      "score": 6.9,
       "rank": 6
     },
     {
@@ -175,22 +175,22 @@
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 5.7,
+      "score": 5.6,
       "rank": 7
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 128300,
+      "price": 127800,
       "change_value": 0,
-      "change_pct": 3.05,
-      "volume": 1733334,
-      "trading_value_okrw": 2223.0,
+      "change_pct": 2.65,
+      "volume": 1751133,
+      "trading_value_okrw": 2237.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.3,
+      "score": 4.7,
       "rank": 8
     },
     {
@@ -205,7 +205,7 @@
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 4.6,
+      "score": 4.4,
       "rank": 9
     },
     {
@@ -220,7 +220,7 @@
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 4.2,
+      "score": 4.1,
       "rank": 10
     },
     {
@@ -235,7 +235,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 3.9,
+      "score": 3.7,
       "rank": 11
     },
     {
@@ -250,7 +250,7 @@
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 3.1,
+      "score": 2.9,
       "rank": 12
     }
   ]

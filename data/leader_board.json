@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-04",
-    "generated_at_kst": "2026-08-04 09:41:27",
+    "generated_at_kst": "2026-08-04 09:46:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 47.3",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 52.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 47.3,
-      "leaders": 1,
-      "avg_change_pct": 20.3
+      "score": 52.3,
+      "leaders": 2,
+      "avg_change_pct": 22.84
     },
     {
       "sector": "인터넷",
-      "score": 31.7,
+      "score": 31.2,
       "leaders": 1,
-      "avg_change_pct": 10.36
+      "avg_change_pct": 9.88
     },
     {
       "sector": "전력",
-      "score": 24.2,
+      "score": 23.5,
       "leaders": 1,
-      "avg_change_pct": 5.03
+      "avg_change_pct": 4.58
     }
   ],
   "leaders": [
@@ -47,11 +47,11 @@
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 56000,
+      "price": 55850,
       "change_value": 0,
-      "change_pct": 20.3,
-      "volume": 5265984,
-      "trading_value_okrw": 2948.0,
+      "change_pct": 19.98,
+      "volume": 5882001,
+      "trading_value_okrw": 3285.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
@@ -59,34 +59,49 @@
       "rank": 1
     },
     {
+      "code": "119850",
+      "name": "지엔씨에너지",
+      "market": "KOSDAQ",
+      "price": 52800,
+      "change_value": 0,
+      "change_pct": 25.71,
+      "volume": 1950496,
+      "trading_value_okrw": 1029.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 30.1,
+      "rank": 2
+    },
+    {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 229000,
+      "price": 228000,
       "change_value": 0,
-      "change_pct": 10.36,
-      "volume": 1040851,
-      "trading_value_okrw": 2383.0,
+      "change_pct": 9.88,
+      "volume": 1102970,
+      "trading_value_okrw": 2514.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 19.7,
-      "rank": 2
+      "score": 18.9,
+      "rank": 3
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 13770,
+      "price": 13710,
       "change_value": 0,
-      "change_pct": 5.03,
-      "volume": 9566520,
-      "trading_value_okrw": 1317.0,
+      "change_pct": 4.58,
+      "volume": 9920385,
+      "trading_value_okrw": 1360.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 14.9,
-      "rank": 3
+      "score": 14.2,
+      "rank": 4
     }
   ]
 }

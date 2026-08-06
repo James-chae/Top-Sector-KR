@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 10:46:28",
+    "generated_at_kst": "2026-08-06 10:51:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 16.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 16.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,22 +24,22 @@
   },
   "top_sectors": [
     {
-      "sector": "자동차",
-      "score": 16.4,
-      "leaders": 1,
-      "avg_change_pct": 3.12
-    },
-    {
       "sector": "반도체",
-      "score": 16.3,
+      "score": 16.6,
       "leaders": 1,
-      "avg_change_pct": 5.44
+      "avg_change_pct": 5.73
     },
     {
       "sector": "건설",
+      "score": 16.4,
+      "leaders": 1,
+      "avg_change_pct": 4.65
+    },
+    {
+      "sector": "자동차",
       "score": 15.5,
       "leaders": 1,
-      "avg_change_pct": 3.85
+      "avg_change_pct": 2.3
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 108600,
+      "price": 108900,
       "change_value": 0,
-      "change_pct": 5.44,
-      "volume": 940129,
-      "trading_value_okrw": 1020.0,
+      "change_pct": 5.73,
+      "volume": 951473,
+      "trading_value_okrw": 1036.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.8,
+      "score": 8.0,
       "rank": 1
-    },
-    {
-      "code": "073240",
-      "name": "금호타이어",
-      "market": "KOSPI",
-      "price": 7610,
-      "change_value": 0,
-      "change_pct": 3.12,
-      "volume": 14313135,
-      "trading_value_okrw": 1089.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 7.7,
-      "rank": 2
     },
     {
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 32350,
+      "price": 32600,
       "change_value": 0,
-      "change_pct": 3.85,
-      "volume": 3404784,
-      "trading_value_okrw": 1101.0,
+      "change_pct": 4.65,
+      "volume": 3479145,
+      "trading_value_okrw": 1134.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 6.7,
+      "score": 7.5,
+      "rank": 2
+    },
+    {
+      "code": "073240",
+      "name": "금호타이어",
+      "market": "KOSPI",
+      "price": 7550,
+      "change_value": 0,
+      "change_pct": 2.3,
+      "volume": 14517844,
+      "trading_value_okrw": 1096.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 6.8,
       "rank": 3
     }
   ]

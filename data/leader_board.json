@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 09:31:27",
+    "generated_at_kst": "2026-08-06 09:36:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 21.7",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "자동차 중심 강세 / 상위섹터 점수 18.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "자동차",
-      "score": 21.7,
+      "score": 18.9,
       "leaders": 1,
-      "avg_change_pct": 8.27
+      "avg_change_pct": 5.69
+    },
+    {
+      "sector": "건설",
+      "score": 15.5,
+      "leaders": 1,
+      "avg_change_pct": 3.85
     },
     {
       "sector": "원전",
-      "score": 14.1,
+      "score": 14.3,
       "leaders": 1,
-      "avg_change_pct": 1.42
+      "avg_change_pct": 1.66
     }
   ],
   "leaders": [
@@ -41,31 +47,46 @@
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 7990,
+      "price": 7800,
       "change_value": 0,
-      "change_pct": 8.27,
-      "volume": 8810579,
-      "trading_value_okrw": 703.0,
+      "change_pct": 5.69,
+      "volume": 9237935,
+      "trading_value_okrw": 720.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 13.9,
+      "score": 11.1,
       "rank": 1
+    },
+    {
+      "code": "006360",
+      "name": "GS건설",
+      "market": "KOSPI",
+      "price": 32350,
+      "change_value": 0,
+      "change_pct": 3.85,
+      "volume": 2188097,
+      "trading_value_okrw": 707.0,
+      "sector1": "건설",
+      "sector2": "",
+      "sector": "건설",
+      "score": 7.7,
+      "rank": 2
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 16460,
+      "price": 16500,
       "change_value": 0,
-      "change_pct": 1.42,
-      "volume": 4429900,
-      "trading_value_okrw": 729.0,
+      "change_pct": 1.66,
+      "volume": 4696544,
+      "trading_value_okrw": 774.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 6.3,
-      "rank": 2
+      "score": 6.4,
+      "rank": 3
     }
   ]
 }

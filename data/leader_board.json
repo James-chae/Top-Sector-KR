@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 11:01:29",
+    "generated_at_kst": "2026-08-06 11:06:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "건설 중심 강세 / 상위섹터 점수 17.5",
+    "market_bias": "건설 중심 강세 / 상위섹터 점수 17.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "건설",
-      "score": 17.5,
+      "score": 17.8,
       "leaders": 1,
-      "avg_change_pct": 5.62
+      "avg_change_pct": 5.78
     },
     {
       "sector": "반도체",
       "score": 16.8,
       "leaders": 1,
-      "avg_change_pct": 5.92
+      "avg_change_pct": 5.83
     },
     {
       "sector": "자동차",
-      "score": 15.8,
+      "score": 16.0,
       "leaders": 1,
-      "avg_change_pct": 2.57
+      "avg_change_pct": 2.71
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 32900,
+      "price": 32950,
       "change_value": 0,
-      "change_pct": 5.62,
-      "volume": 3620309,
-      "trading_value_okrw": 1191.0,
+      "change_pct": 5.78,
+      "volume": 3691363,
+      "trading_value_okrw": 1216.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 8.5,
+      "score": 8.7,
       "rank": 1
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 109100,
+      "price": 109000,
       "change_value": 0,
-      "change_pct": 5.92,
-      "volume": 969993,
-      "trading_value_okrw": 1058.0,
+      "change_pct": 5.83,
+      "volume": 986175,
+      "trading_value_okrw": 1074.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.2,
+      "score": 8.1,
       "rank": 2
     },
     {
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 7570,
+      "price": 7580,
       "change_value": 0,
-      "change_pct": 2.57,
-      "volume": 14846542,
-      "trading_value_okrw": 1123.0,
+      "change_pct": 2.71,
+      "volume": 14946573,
+      "trading_value_okrw": 1132.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 7.0,
+      "score": 7.1,
       "rank": 3
     }
   ]

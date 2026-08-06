@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 12:01:34",
+    "generated_at_kst": "2026-08-06 12:06:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 6,
-    "market_bias": "건설 중심 강세 / 상위섹터 점수 18.9",
+    "market_bias": "건설 중심 강세 / 상위섹터 점수 19.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "건설",
-      "score": 18.9,
+      "score": 19.1,
       "leaders": 1,
-      "avg_change_pct": 6.42
+      "avg_change_pct": 6.58
+    },
+    {
+      "sector": "자동차",
+      "score": 18.2,
+      "leaders": 1,
+      "avg_change_pct": 4.88
     },
     {
       "sector": "반도체",
-      "score": 17.7,
+      "score": 18.1,
       "leaders": 1,
-      "avg_change_pct": 6.5
+      "avg_change_pct": 6.89
     },
     {
       "sector": "원전",
@@ -42,22 +48,16 @@
       "avg_change_pct": 4.68
     },
     {
-      "sector": "자동차",
-      "score": 17.5,
-      "leaders": 1,
-      "avg_change_pct": 4.2
-    },
-    {
       "sector": "통신",
-      "score": 16.5,
+      "score": 16.7,
       "leaders": 1,
-      "avg_change_pct": 1.04
+      "avg_change_pct": 1.21
     },
     {
       "sector": "화장품",
-      "score": 14.9,
+      "score": 15.3,
       "leaders": 1,
-      "avg_change_pct": 4.34
+      "avg_change_pct": 4.76
     }
   ],
   "leaders": [
@@ -65,45 +65,45 @@
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 33150,
+      "price": 33200,
       "change_value": 0,
-      "change_pct": 6.42,
-      "volume": 4278416,
-      "trading_value_okrw": 1418.0,
+      "change_pct": 6.58,
+      "volume": 4317390,
+      "trading_value_okrw": 1433.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 9.4,
+      "score": 9.5,
       "rank": 1
-    },
-    {
-      "code": "222800",
-      "name": "심텍",
-      "market": "KOSDAQ",
-      "price": 109700,
-      "change_value": 0,
-      "change_pct": 6.5,
-      "volume": 1110720,
-      "trading_value_okrw": 1218.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 8.7,
-      "rank": 2
     },
     {
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 7690,
+      "price": 7740,
       "change_value": 0,
-      "change_pct": 4.2,
-      "volume": 16007284,
-      "trading_value_okrw": 1230.0,
+      "change_pct": 4.88,
+      "volume": 16098244,
+      "trading_value_okrw": 1246.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 8.4,
+      "score": 9.1,
+      "rank": 2
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "market": "KOSDAQ",
+      "price": 110100,
+      "change_value": 0,
+      "change_pct": 6.89,
+      "volume": 1118875,
+      "trading_value_okrw": 1231.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 9.1,
       "rank": 3
     },
     {
@@ -113,8 +113,8 @@
       "price": 16990,
       "change_value": 0,
       "change_pct": 4.68,
-      "volume": 8276909,
-      "trading_value_okrw": 1406.0,
+      "volume": 8355106,
+      "trading_value_okrw": 1419.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
@@ -125,30 +125,30 @@
       "code": "069540",
       "name": "빛과전자",
       "market": "KOSDAQ",
-      "price": 2920,
+      "price": 2925,
       "change_value": 0,
-      "change_pct": 1.04,
-      "volume": 36811861,
-      "trading_value_okrw": 1074.0,
+      "change_pct": 1.21,
+      "volume": 36959693,
+      "trading_value_okrw": 1081.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 7.8,
+      "score": 8.0,
       "rank": 5
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 373000,
+      "price": 374500,
       "change_value": 0,
-      "change_pct": 4.34,
-      "volume": 289795,
-      "trading_value_okrw": 1080.0,
+      "change_pct": 4.76,
+      "volume": 291543,
+      "trading_value_okrw": 1091.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 6.2,
+      "score": 6.6,
       "rank": 6
     }
   ]

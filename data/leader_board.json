@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 11:11:28",
+    "generated_at_kst": "2026-08-06 11:16:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 4,
-    "market_bias": "건설 중심 강세 / 상위섹터 점수 17.6",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 17.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,28 +24,28 @@
   },
   "top_sectors": [
     {
+      "sector": "통신",
+      "score": 17.8,
+      "leaders": 1,
+      "avg_change_pct": 2.25
+    },
+    {
       "sector": "건설",
       "score": 17.6,
       "leaders": 1,
       "avg_change_pct": 5.62
     },
     {
-      "sector": "통신",
-      "score": 17.4,
-      "leaders": 1,
-      "avg_change_pct": 1.9
-    },
-    {
       "sector": "반도체",
-      "score": 16.5,
+      "score": 16.8,
       "leaders": 1,
-      "avg_change_pct": 5.63
+      "avg_change_pct": 5.83
     },
     {
       "sector": "자동차",
-      "score": 15.6,
+      "score": 15.0,
       "leaders": 1,
-      "avg_change_pct": 2.44
+      "avg_change_pct": 1.9
     }
   ],
   "leaders": [
@@ -53,15 +53,15 @@
       "code": "069540",
       "name": "빛과전자",
       "market": "KOSDAQ",
-      "price": 2945,
+      "price": 2955,
       "change_value": 0,
-      "change_pct": 1.9,
-      "volume": 34462871,
-      "trading_value_okrw": 1014.0,
+      "change_pct": 2.25,
+      "volume": 35081379,
+      "trading_value_okrw": 1036.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 8.8,
+      "score": 9.2,
       "rank": 1
     },
     {
@@ -71,8 +71,8 @@
       "price": 32900,
       "change_value": 0,
       "change_pct": 5.62,
-      "volume": 3735309,
-      "trading_value_okrw": 1228.0,
+      "volume": 3757435,
+      "trading_value_okrw": 1236.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
@@ -83,30 +83,30 @@
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 108800,
+      "price": 109000,
       "change_value": 0,
-      "change_pct": 5.63,
-      "volume": 992517,
-      "trading_value_okrw": 1079.0,
+      "change_pct": 5.83,
+      "volume": 997903,
+      "trading_value_okrw": 1087.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.8,
+      "score": 8.0,
       "rank": 3
     },
     {
       "code": "073240",
       "name": "금호타이어",
       "market": "KOSPI",
-      "price": 7560,
+      "price": 7520,
       "change_value": 0,
-      "change_pct": 2.44,
-      "volume": 15008771,
-      "trading_value_okrw": 1134.0,
+      "change_pct": 1.9,
+      "volume": 15098925,
+      "trading_value_okrw": 1135.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 6.8,
+      "score": 6.2,
       "rank": 4
     }
   ]

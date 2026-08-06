@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-06",
-    "generated_at_kst": "2026-08-06 13:11:26",
+    "generated_at_kst": "2026-08-06 13:16:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 6,
-    "market_bias": "건설 중심 강세 / 상위섹터 점수 23.0",
+    "market_bias": "건설 중심 강세 / 상위섹터 점수 22.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "건설",
-      "score": 23.0,
+      "score": 22.1,
       "leaders": 1,
-      "avg_change_pct": 8.83
+      "avg_change_pct": 7.87
+    },
+    {
+      "sector": "바이오",
+      "score": 20.0,
+      "leaders": 2,
+      "avg_change_pct": 3.56
     },
     {
       "sector": "자동차",
@@ -36,22 +42,16 @@
       "avg_change_pct": 6.1
     },
     {
-      "sector": "바이오",
-      "score": 19.2,
-      "leaders": 2,
-      "avg_change_pct": 2.92
-    },
-    {
       "sector": "원전",
-      "score": 16.1,
+      "score": 16.0,
       "leaders": 1,
-      "avg_change_pct": 2.83
+      "avg_change_pct": 2.71
     },
     {
       "sector": "화장품",
-      "score": 15.8,
+      "score": 15.5,
       "leaders": 1,
-      "avg_change_pct": 5.03
+      "avg_change_pct": 4.76
     },
     {
       "sector": "반도체",
@@ -65,15 +65,15 @@
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 33900,
+      "price": 33600,
       "change_value": 0,
-      "change_pct": 8.83,
-      "volume": 5649057,
-      "trading_value_okrw": 1915.0,
+      "change_pct": 7.87,
+      "volume": 5751257,
+      "trading_value_okrw": 1932.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 12.2,
+      "score": 11.3,
       "rank": 1
     },
     {
@@ -83,8 +83,8 @@
       "price": 7830,
       "change_value": 0,
       "change_pct": 6.1,
-      "volume": 17151455,
-      "trading_value_okrw": 1342.0,
+      "volume": 17189088,
+      "trading_value_okrw": 1345.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
@@ -92,48 +92,48 @@
       "rank": 2
     },
     {
+      "code": "196170",
+      "name": "알테오젠",
+      "market": "KOSDAQ",
+      "price": 291000,
+      "change_value": 0,
+      "change_pct": 5.05,
+      "volume": 381606,
+      "trading_value_okrw": 1110.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 6.6,
+      "rank": 3
+    },
+    {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 375500,
+      "price": 374500,
       "change_value": 0,
-      "change_pct": 5.03,
-      "volume": 320584,
-      "trading_value_okrw": 1203.0,
+      "change_pct": 4.76,
+      "volume": 322870,
+      "trading_value_okrw": 1209.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 6.8,
-      "rank": 3
+      "score": 6.5,
+      "rank": 4
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 16690,
+      "price": 16670,
       "change_value": 0,
-      "change_pct": 2.83,
-      "volume": 9314217,
-      "trading_value_okrw": 1554.0,
+      "change_pct": 2.71,
+      "volume": 9369015,
+      "trading_value_okrw": 1561.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 6.2,
-      "rank": 4
-    },
-    {
-      "code": "196170",
-      "name": "알테오젠",
-      "market": "KOSDAQ",
-      "price": 289000,
-      "change_value": 0,
-      "change_pct": 4.33,
-      "volume": 366445,
-      "trading_value_okrw": 1059.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 5.9,
+      "score": 6.0,
       "rank": 5
     },
     {
@@ -143,8 +143,8 @@
       "price": 106800,
       "change_value": 0,
       "change_pct": 3.69,
-      "volume": 1212447,
-      "trading_value_okrw": 1294.0,
+      "volume": 1218608,
+      "trading_value_okrw": 1301.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -155,15 +155,15 @@
       "code": "347850",
       "name": "디앤디파마텍",
       "market": "KOSDAQ",
-      "price": 53900,
+      "price": 54200,
       "change_value": 0,
-      "change_pct": 1.51,
-      "volume": 1917550,
-      "trading_value_okrw": 1033.0,
+      "change_pct": 2.07,
+      "volume": 1923610,
+      "trading_value_okrw": 1042.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 3.2,
+      "score": 3.8,
       "rank": 7
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-07",
-    "generated_at_kst": "2026-08-07 10:46:29",
+    "generated_at_kst": "2026-08-07 10:51:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 8,
+    "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.5",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 34.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,34 +24,34 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 42.5,
+      "sector": "에너지",
+      "score": 34.6,
       "leaders": 2,
-      "avg_change_pct": 10.96
+      "avg_change_pct": 4.5
     },
     {
-      "sector": "에너지",
-      "score": 34.4,
-      "leaders": 2,
-      "avg_change_pct": 4.48
+      "sector": "반도체",
+      "score": 30.7,
+      "leaders": 1,
+      "avg_change_pct": 17.82
     },
     {
       "sector": "통신",
-      "score": 26.5,
+      "score": 25.6,
       "leaders": 2,
-      "avg_change_pct": 4.88
+      "avg_change_pct": 3.98
     },
     {
       "sector": "2차전지",
-      "score": 16.8,
+      "score": 17.3,
       "leaders": 1,
-      "avg_change_pct": 3.28
+      "avg_change_pct": 3.63
     },
     {
       "sector": "전자",
-      "score": 14.3,
+      "score": 14.9,
       "leaders": 1,
-      "avg_change_pct": 2.4
+      "avg_change_pct": 2.91
     }
   ],
   "leaders": [
@@ -59,121 +59,106 @@
       "code": "017900",
       "name": "광전자",
       "market": "KOSPI",
-      "price": 8200,
+      "price": 8000,
       "change_value": 0,
-      "change_pct": 20.77,
-      "volume": 13308827,
-      "trading_value_okrw": 1091.0,
+      "change_pct": 17.82,
+      "volume": 13532204,
+      "trading_value_okrw": 1082.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 25.0,
+      "score": 22.0,
       "rank": 1
     },
     {
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 32500,
+      "price": 32450,
       "change_value": 0,
-      "change_pct": 6.91,
-      "volume": 13601650,
-      "trading_value_okrw": 4420.0,
+      "change_pct": 6.74,
+      "volume": 13842904,
+      "trading_value_okrw": 4492.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 17.7,
+      "score": 17.5,
       "rank": 2
     },
     {
       "code": "069540",
       "name": "빛과전자",
       "market": "KOSDAQ",
-      "price": 3160,
+      "price": 3110,
       "change_value": 0,
-      "change_pct": 8.59,
-      "volume": 32810005,
-      "trading_value_okrw": 1036.0,
+      "change_pct": 6.87,
+      "volume": 33220902,
+      "trading_value_okrw": 1033.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 15.7,
+      "score": 13.9,
       "rank": 3
-    },
-    {
-      "code": "009150",
-      "name": "삼성전기",
-      "market": "KOSPI",
-      "price": 1243000,
-      "change_value": 0,
-      "change_pct": 1.14,
-      "volume": 442755,
-      "trading_value_okrw": 5503.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 12.1,
-      "rank": 4
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 441000,
+      "price": 442500,
       "change_value": 0,
-      "change_pct": 3.28,
-      "volume": 379889,
-      "trading_value_okrw": 1675.0,
+      "change_pct": 3.63,
+      "volume": 390591,
+      "trading_value_okrw": 1728.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 6.6,
-      "rank": 5
+      "score": 7.0,
+      "rank": 4
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 11200,
+      "price": 11190,
       "change_value": 0,
-      "change_pct": 1.17,
-      "volume": 13123524,
-      "trading_value_okrw": 1469.0,
+      "change_pct": 1.08,
+      "volume": 13237510,
+      "trading_value_okrw": 1481.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 6.1,
-      "rank": 6
+      "score": 5.9,
+      "rank": 5
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 179400,
+      "price": 180300,
       "change_value": 0,
-      "change_pct": 2.4,
-      "volume": 723067,
-      "trading_value_okrw": 1297.0,
+      "change_pct": 2.91,
+      "volume": 738767,
+      "trading_value_okrw": 1331.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 5.1,
-      "rank": 7
+      "score": 5.6,
+      "rank": 6
     },
     {
       "code": "010060",
       "name": "OCI홀딩스",
       "market": "KOSPI",
-      "price": 249000,
+      "price": 249500,
       "change_value": 0,
-      "change_pct": 2.05,
-      "volume": 583504,
-      "trading_value_okrw": 1452.0,
+      "change_pct": 2.25,
+      "volume": 591414,
+      "trading_value_okrw": 1475.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 5.0,
-      "rank": 8
+      "score": 5.2,
+      "rank": 7
     }
   ]
 }

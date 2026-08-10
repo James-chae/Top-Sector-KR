@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-10",
-    "generated_at_kst": "2026-08-10 09:26:30",
+    "generated_at_kst": "2026-08-10 09:31:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 65.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 65.3,
-      "leaders": 2,
-      "avg_change_pct": 2.92
+      "score": 72.0,
+      "leaders": 3,
+      "avg_change_pct": 2.71
     },
     {
       "sector": "통신",
-      "score": 35.8,
+      "score": 39.8,
       "leaders": 1,
-      "avg_change_pct": 14.22
+      "avg_change_pct": 16.14
     }
   ],
   "leaders": [
@@ -41,31 +41,46 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1455000,
+      "price": 1466000,
       "change_value": 0,
-      "change_pct": 2.32,
-      "volume": 735024,
-      "trading_value_okrw": 10694.0,
+      "change_pct": 3.09,
+      "volume": 801154,
+      "trading_value_okrw": 11744.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.7,
+      "score": 68.4,
       "rank": 1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 234500,
+      "change_value": 0,
+      "change_pct": 1.52,
+      "volume": 3084654,
+      "trading_value_okrw": 7233.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 42.9,
+      "rank": 2
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 13090,
+      "price": 13310,
       "change_value": 0,
-      "change_pct": 14.22,
-      "volume": 9406036,
-      "trading_value_okrw": 1231.0,
+      "change_pct": 16.14,
+      "volume": 11850894,
+      "trading_value_okrw": 1577.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 26.7,
-      "rank": 2
+      "score": 29.9,
+      "rank": 3
     },
     {
       "code": "009150",
@@ -74,13 +89,13 @@
       "price": 1323000,
       "change_value": 0,
       "change_pct": 3.52,
-      "volume": 139344,
-      "trading_value_okrw": 1843.0,
+      "volume": 149853,
+      "trading_value_okrw": 1982.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 14.8,
-      "rank": 3
+      "score": 14.6,
+      "rank": 4
     }
   ]
 }

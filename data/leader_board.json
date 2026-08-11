@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-11",
-    "generated_at_kst": "2026-08-11 09:33:26",
+    "generated_at_kst": "2026-08-11 09:36:53",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "전력 중심 강세 / 상위섹터 점수 30.6",
+    "market_bias": "전력 중심 강세 / 상위섹터 점수 29.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "전력",
-      "score": 30.6,
+      "score": 29.4,
       "leaders": 1,
-      "avg_change_pct": 3.34
+      "avg_change_pct": 2.47
     },
     {
       "sector": "에너지",
-      "score": 25.5,
+      "score": 25.4,
       "leaders": 1,
-      "avg_change_pct": 2.41
+      "avg_change_pct": 2.55
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 15450,
+      "price": 15320,
       "change_value": 0,
-      "change_pct": 3.34,
-      "volume": 10172357,
-      "trading_value_okrw": 1571.0,
+      "change_pct": 2.47,
+      "volume": 10660265,
+      "trading_value_okrw": 1633.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 20.7,
+      "score": 19.3,
       "rank": 1
     },
     {
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 36100,
+      "price": 36150,
       "change_value": 0,
-      "change_pct": 2.41,
-      "volume": 4047225,
-      "trading_value_okrw": 1461.0,
+      "change_pct": 2.55,
+      "volume": 4225754,
+      "trading_value_okrw": 1527.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 15.9,
+      "score": 15.6,
       "rank": 2
     }
   ]

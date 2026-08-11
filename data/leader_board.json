@@ -1,7 +1,7 @@
 {
   "meta": {
     "trade_date": "2026-08-11",
-    "generated_at_kst": "2026-08-11 15:31:44",
+    "generated_at_kst": "2026-08-11 15:36:35",
     "mode": "closing",
     "session_state": "",
     "leader_count": 12,
@@ -27,7 +27,7 @@
       "sector": "반도체",
       "score": 64.5,
       "leaders": 3,
-      "avg_change_pct": 7.07
+      "avg_change_pct": 7.02
     },
     {
       "sector": "부동산",
@@ -43,9 +43,9 @@
     },
     {
       "sector": "에너지",
-      "score": 23.5,
+      "score": 23.2,
       "leaders": 1,
-      "avg_change_pct": 3.4
+      "avg_change_pct": 3.12
     },
     {
       "sector": "로봇",
@@ -57,19 +57,19 @@
       "sector": "인터넷",
       "score": 19.3,
       "leaders": 2,
-      "avg_change_pct": 2.23
+      "avg_change_pct": 2.04
+    },
+    {
+      "sector": "바이오",
+      "score": 17.8,
+      "leaders": 1,
+      "avg_change_pct": 4.73
     },
     {
       "sector": "전자",
       "score": 17.7,
       "leaders": 1,
       "avg_change_pct": 4.06
-    },
-    {
-      "sector": "바이오",
-      "score": 17.2,
-      "leaders": 1,
-      "avg_change_pct": 4.48
     }
   ],
   "leaders": [
@@ -137,30 +137,30 @@
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 180500,
+      "price": 180200,
       "change_value": 0,
-      "change_pct": 4.94,
-      "volume": 2243429,
-      "trading_value_okrw": 4049.0,
+      "change_pct": 4.77,
+      "volume": 2380106,
+      "trading_value_okrw": 4288.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.2,
+      "score": 10.3,
       "rank": 5
     },
     {
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 36450,
+      "price": 36350,
       "change_value": 0,
-      "change_pct": 3.4,
-      "volume": 9042920,
-      "trading_value_okrw": 3296.0,
+      "change_pct": 3.12,
+      "volume": 9105803,
+      "trading_value_okrw": 3309.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 9.2,
+      "score": 8.9,
       "rank": 6
     },
     {
@@ -179,6 +179,21 @@
       "rank": 7
     },
     {
+      "code": "068270",
+      "name": "셀트리온",
+      "market": "KOSPI",
+      "price": 210500,
+      "change_value": 0,
+      "change_pct": 4.73,
+      "volume": 886205,
+      "trading_value_okrw": 1865.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 7.1,
+      "rank": 8
+    },
+    {
       "code": "001820",
       "name": "삼화콘덴서",
       "market": "KOSPI",
@@ -191,47 +206,32 @@
       "sector2": "",
       "sector": "전자",
       "score": 6.8,
-      "rank": 8
-    },
-    {
-      "code": "068270",
-      "name": "셀트리온",
-      "market": "KOSPI",
-      "price": 210000,
-      "change_value": 0,
-      "change_pct": 4.48,
-      "volume": 845038,
-      "trading_value_okrw": 1774.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 6.7,
       "rank": 9
     },
     {
       "code": "035720",
       "name": "카카오",
       "market": "KOSPI",
-      "price": 40850,
+      "price": 40700,
       "change_value": 0,
-      "change_pct": 3.29,
-      "volume": 2513461,
-      "trading_value_okrw": 1026.0,
+      "change_pct": 2.91,
+      "volume": 2610323,
+      "trading_value_okrw": 1062.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 5.0,
+      "score": 4.7,
       "rank": 10
     },
     {
       "code": "028260",
       "name": "삼성물산",
       "market": "KOSPI",
-      "price": 345000,
+      "price": 344500,
       "change_value": 0,
-      "change_pct": 2.68,
-      "volume": 320111,
-      "trading_value_okrw": 1104.0,
+      "change_pct": 2.53,
+      "volume": 338849,
+      "trading_value_okrw": 1167.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
@@ -245,8 +245,8 @@
       "price": 214000,
       "change_value": 0,
       "change_pct": 1.18,
-      "volume": 621637,
-      "trading_value_okrw": 1330.0,
+      "volume": 646710,
+      "trading_value_okrw": 1383.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",

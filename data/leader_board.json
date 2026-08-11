@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-11",
-    "generated_at_kst": "2026-08-11 09:12:03",
+    "generated_at_kst": "2026-08-11 09:17:00",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "전력 중심 강세 / 상위섹터 점수 30.3",
+    "market_bias": "전력 중심 강세 / 상위섹터 점수 33.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "전력",
-      "score": 30.3,
+      "score": 33.2,
       "leaders": 1,
-      "avg_change_pct": 5.69
+      "avg_change_pct": 6.09
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 15800,
+      "price": 15860,
       "change_value": 0,
-      "change_pct": 5.69,
-      "volume": 5905213,
-      "trading_value_okrw": 933.0,
+      "change_pct": 6.09,
+      "volume": 7936678,
+      "trading_value_okrw": 1258.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 22.0,
+      "score": 24.0,
       "rank": 1
     }
   ]

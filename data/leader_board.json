@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-11",
-    "generated_at_kst": "2026-08-11 10:17:40",
+    "generated_at_kst": "2026-08-11 10:22:07",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 63.1",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 61.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 63.1,
+      "score": 61.8,
       "leaders": 3,
-      "avg_change_pct": 8.17
+      "avg_change_pct": 6.28
     },
     {
       "sector": "부동산",
-      "score": 51.1,
+      "score": 50.7,
       "leaders": 1,
       "avg_change_pct": 29.98
     },
     {
       "sector": "전력",
-      "score": 25.5,
+      "score": 25.4,
       "leaders": 1,
-      "avg_change_pct": 1.61
+      "avg_change_pct": 1.87
     },
     {
       "sector": "로봇",
-      "score": 24.3,
+      "score": 23.8,
       "leaders": 1,
-      "avg_change_pct": 8.94
+      "avg_change_pct": 8.47
     },
     {
       "sector": "에너지",
-      "score": 23.5,
+      "score": 22.5,
       "leaders": 1,
-      "avg_change_pct": 3.12
+      "avg_change_pct": 2.41
     }
   ],
   "leaders": [
@@ -59,15 +59,15 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 236000,
+      "price": 236250,
       "change_value": 0,
-      "change_pct": 2.61,
-      "volume": 5268686,
-      "trading_value_okrw": 12434.0,
+      "change_pct": 2.72,
+      "volume": 5873848,
+      "trading_value_okrw": 13876.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 56.9,
+      "score": 59.3,
       "rank": 1
     },
     {
@@ -77,87 +77,87 @@
       "price": 11490,
       "change_value": 0,
       "change_pct": 29.98,
-      "volume": 13118160,
-      "trading_value_okrw": 1507.0,
+      "volume": 13142975,
+      "trading_value_okrw": 1510.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 41.3,
+      "score": 40.9,
       "rank": 2
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 166100,
+      "price": 161200,
       "change_value": 0,
-      "change_pct": 14.71,
-      "volume": 1748647,
-      "trading_value_okrw": 2904.0,
+      "change_pct": 11.33,
+      "volume": 1857439,
+      "trading_value_okrw": 2994.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 27.6,
+      "score": 23.8,
       "rank": 3
-    },
-    {
-      "code": "058610",
-      "name": "에스피지",
-      "market": "KOSDAQ",
-      "price": 117000,
-      "change_value": 0,
-      "change_pct": 8.94,
-      "volume": 1140045,
-      "trading_value_okrw": 1333.0,
-      "sector1": "로봇",
-      "sector2": "",
-      "sector": "로봇",
-      "score": 15.0,
-      "rank": 4
-    },
-    {
-      "code": "080220",
-      "name": "제주반도체",
-      "market": "KOSDAQ",
-      "price": 94000,
-      "change_value": 0,
-      "change_pct": 7.18,
-      "volume": 1788165,
-      "trading_value_okrw": 1680.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 14.9,
-      "rank": 5
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 15190,
+      "price": 15230,
       "change_value": 0,
-      "change_pct": 1.61,
-      "volume": 12796297,
-      "trading_value_okrw": 1943.0,
+      "change_pct": 1.87,
+      "volume": 12928742,
+      "trading_value_okrw": 1969.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 14.7,
+      "score": 14.5,
+      "rank": 4
+    },
+    {
+      "code": "058610",
+      "name": "에스피지",
+      "market": "KOSDAQ",
+      "price": 116500,
+      "change_value": 0,
+      "change_pct": 8.47,
+      "volume": 1191565,
+      "trading_value_okrw": 1388.0,
+      "sector1": "로봇",
+      "sector2": "",
+      "sector": "로봇",
+      "score": 14.4,
+      "rank": 5
+    },
+    {
+      "code": "080220",
+      "name": "제주반도체",
+      "market": "KOSDAQ",
+      "price": 91900,
+      "change_value": 0,
+      "change_pct": 4.79,
+      "volume": 1899439,
+      "trading_value_okrw": 1745.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 12.3,
       "rank": 6
     },
     {
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 36350,
+      "price": 36100,
       "change_value": 0,
-      "change_pct": 3.12,
-      "volume": 5119330,
-      "trading_value_okrw": 1860.0,
+      "change_pct": 2.41,
+      "volume": 5212124,
+      "trading_value_okrw": 1881.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 12.9,
+      "score": 11.8,
       "rank": 7
     }
   ]

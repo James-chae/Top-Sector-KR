@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-12",
-    "generated_at_kst": "2026-08-12 10:32:12",
+    "generated_at_kst": "2026-08-12 10:37:16",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
+    "leader_count": 10,
     "sector_count": 7,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 75.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 75.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,45 +25,45 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 75.6,
+      "score": 75.1,
       "leaders": 3,
-      "avg_change_pct": 4.91
+      "avg_change_pct": 4.84
     },
     {
       "sector": "부동산",
-      "score": 49.6,
+      "score": 51.1,
       "leaders": 1,
-      "avg_change_pct": 25.5
+      "avg_change_pct": 26.54
     },
     {
       "sector": "화장품",
       "score": 39.3,
-      "leaders": 1,
-      "avg_change_pct": 23.17
+      "leaders": 2,
+      "avg_change_pct": 18.17
     },
     {
       "sector": "전자",
-      "score": 33.9,
+      "score": 35.6,
       "leaders": 1,
-      "avg_change_pct": 12.0
+      "avg_change_pct": 13.1
     },
     {
       "sector": "지주사",
-      "score": 31.2,
+      "score": 30.3,
       "leaders": 1,
-      "avg_change_pct": 8.04
+      "avg_change_pct": 7.3
     },
     {
       "sector": "전력",
-      "score": 30.1,
+      "score": 30.2,
       "leaders": 1,
-      "avg_change_pct": 8.82
+      "avg_change_pct": 8.88
     },
     {
       "sector": "2차전지",
-      "score": 19.0,
+      "score": 19.3,
       "leaders": 1,
-      "avg_change_pct": 6.42
+      "avg_change_pct": 6.75
     }
   ],
   "leaders": [
@@ -74,133 +74,148 @@
       "price": 251500,
       "change_value": 0,
       "change_pct": 5.01,
-      "volume": 8823378,
-      "trading_value_okrw": 22190.0,
+      "volume": 9286856,
+      "trading_value_okrw": 23356.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 72.6,
+      "score": 72.7,
       "rank": 1
     },
     {
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1463000,
+      "price": 1462000,
       "change_value": 0,
-      "change_pct": 2.67,
-      "volume": 1101275,
-      "trading_value_okrw": 16111.0,
+      "change_pct": 2.6,
+      "volume": 1131867,
+      "trading_value_okrw": 16547.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 50.2,
+      "score": 49.0,
       "rank": 2
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 14420,
+      "price": 14540,
       "change_value": 0,
-      "change_pct": 25.5,
-      "volume": 16785300,
-      "trading_value_okrw": 2420.0,
+      "change_pct": 26.54,
+      "volume": 17620856,
+      "trading_value_okrw": 2562.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 37.6,
+      "score": 38.7,
       "rank": 3
     },
     {
       "code": "161890",
       "name": "한국콜마",
       "market": "KOSPI",
-      "price": 132900,
+      "price": 133500,
       "change_value": 0,
-      "change_pct": 23.17,
-      "volume": 1343512,
-      "trading_value_okrw": 1785.0,
+      "change_pct": 23.73,
+      "volume": 1390747,
+      "trading_value_okrw": 1856.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 28.8,
+      "score": 29.3,
       "rank": 4
     },
     {
       "code": "066570",
       "name": "LG전자",
       "market": "KOSPI",
-      "price": 203500,
+      "price": 205500,
       "change_value": 0,
-      "change_pct": 12.0,
-      "volume": 1404388,
-      "trading_value_okrw": 2857.0,
+      "change_pct": 13.1,
+      "volume": 1477708,
+      "trading_value_okrw": 3036.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 20.8,
+      "score": 22.0,
       "rank": 5
     },
     {
       "code": "006340",
       "name": "대원전선",
       "market": "KOSPI",
-      "price": 15800,
+      "price": 15810,
       "change_value": 0,
-      "change_pct": 8.82,
-      "volume": 13260780,
-      "trading_value_okrw": 2095.0,
+      "change_pct": 8.88,
+      "volume": 13684003,
+      "trading_value_okrw": 2163.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 18.9,
+      "score": 18.8,
       "rank": 6
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1021000,
+      "price": 1014000,
       "change_value": 0,
-      "change_pct": 8.04,
-      "volume": 307325,
-      "trading_value_okrw": 3137.0,
+      "change_pct": 7.3,
+      "volume": 315950,
+      "trading_value_okrw": 3203.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 17.3,
+      "score": 16.3,
       "rank": 7
+    },
+    {
+      "code": "257720",
+      "name": "실리콘투",
+      "market": "KOSDAQ",
+      "price": 45100,
+      "change_value": 0,
+      "change_pct": 12.61,
+      "volume": 2252536,
+      "trading_value_okrw": 1015.0,
+      "sector1": "화장품",
+      "sector2": "",
+      "sector": "화장품",
+      "score": 16.1,
+      "rank": 8
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 173850,
+      "price": 173600,
       "change_value": 0,
-      "change_pct": 7.05,
-      "volume": 1272821,
-      "trading_value_okrw": 2212.0,
+      "change_pct": 6.9,
+      "volume": 1306641,
+      "trading_value_okrw": 2268.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 13.9,
-      "rank": 8
+      "score": 13.6,
+      "rank": 9
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 489000,
+      "price": 490500,
       "change_value": 0,
-      "change_pct": 6.42,
-      "volume": 244684,
-      "trading_value_okrw": 1196.0,
+      "change_pct": 6.75,
+      "volume": 249959,
+      "trading_value_okrw": 1226.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 10.0,
-      "rank": 9
+      "score": 10.2,
+      "rank": 10
     }
   ]
 }

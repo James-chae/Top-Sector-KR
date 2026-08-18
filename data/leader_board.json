@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-18",
-    "generated_at_kst": "2026-08-18 15:31:25",
+    "generated_at_kst": "2026-08-18 15:36:27",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 12,
+    "leader_count": 13,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 58.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 58.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 58.3,
+      "score": 58.4,
       "leaders": 3,
-      "avg_change_pct": 5.22
+      "avg_change_pct": 5.26
+    },
+    {
+      "sector": "전력",
+      "score": 17.9,
+      "leaders": 2,
+      "avg_change_pct": 1.11
     },
     {
       "sector": "화학",
-      "score": 17.9,
+      "score": 17.7,
       "leaders": 1,
-      "avg_change_pct": 4.76
+      "avg_change_pct": 4.6
     },
     {
       "sector": "북극항로",
-      "score": 16.7,
+      "score": 17.2,
       "leaders": 1,
-      "avg_change_pct": 6.24
+      "avg_change_pct": 6.59
     },
     {
       "sector": "부동산",
@@ -54,22 +60,16 @@
       "avg_change_pct": 5.04
     },
     {
-      "sector": "화장품",
-      "score": 14.1,
-      "leaders": 1,
-      "avg_change_pct": 3.85
-    },
-    {
       "sector": "금융",
-      "score": 13.8,
+      "score": 14.2,
       "leaders": 1,
       "avg_change_pct": 3.16
     },
     {
-      "sector": "2차전지",
-      "score": 11.8,
+      "sector": "화장품",
+      "score": 14.1,
       "leaders": 1,
-      "avg_change_pct": 2.18
+      "avg_change_pct": 3.85
     }
   ],
   "leaders": [
@@ -107,45 +107,45 @@
       "code": "007660",
       "name": "이수페타시스",
       "market": "KOSPI",
-      "price": 102800,
+      "price": 102900,
       "change_value": 0,
-      "change_pct": 7.53,
-      "volume": 1402928,
-      "trading_value_okrw": 1442.0,
+      "change_pct": 7.64,
+      "volume": 1427505,
+      "trading_value_okrw": 1468.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.8,
+      "score": 8.9,
       "rank": 3
     },
     {
       "code": "011200",
       "name": "HMM",
       "market": "KOSPI",
-      "price": 22575,
+      "price": 22650,
       "change_value": 0,
-      "change_pct": 6.24,
-      "volume": 5340295,
-      "trading_value_okrw": 1205.0,
+      "change_pct": 6.59,
+      "volume": 5577002,
+      "trading_value_okrw": 1263.0,
       "sector1": "북극항로",
       "sector2": "",
       "sector": "북극항로",
-      "score": 7.7,
+      "score": 8.1,
       "rank": 4
     },
     {
       "code": "093370",
       "name": "후성",
       "market": "KOSPI",
-      "price": 12990,
+      "price": 12970,
       "change_value": 0,
-      "change_pct": 4.76,
-      "volume": 13680380,
-      "trading_value_okrw": 1777.0,
+      "change_pct": 4.6,
+      "volume": 13740702,
+      "trading_value_okrw": 1782.0,
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
-      "score": 7.4,
+      "score": 7.3,
       "rank": 5
     },
     {
@@ -200,12 +200,12 @@
       "price": 310500,
       "change_value": 0,
       "change_pct": 3.16,
-      "volume": 455503,
-      "trading_value_okrw": 1414.0,
+      "volume": 492529,
+      "trading_value_okrw": 1529.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 4.3,
+      "score": 4.4,
       "rank": 9
     },
     {
@@ -245,13 +245,28 @@
       "price": 209000,
       "change_value": 0,
       "change_pct": 1.21,
-      "volume": 621588,
-      "trading_value_okrw": 1299.0,
+      "volume": 649071,
+      "trading_value_okrw": 1356.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
       "score": 2.3,
       "rank": 12
+    },
+    {
+      "code": "298040",
+      "name": "효성중공업",
+      "market": "KOSPI",
+      "price": 2984000,
+      "change_value": 0,
+      "change_pct": 1.02,
+      "volume": 48903,
+      "trading_value_okrw": 1459.0,
+      "sector1": "전력",
+      "sector2": "",
+      "sector": "전력",
+      "score": 2.1,
+      "rank": 13
     }
   ]
 }

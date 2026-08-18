@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-18",
-    "generated_at_kst": "2026-08-18 12:17:21",
+    "generated_at_kst": "2026-08-18 12:22:44",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 60.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 59.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 60.3,
+      "score": 59.7,
       "leaders": 3,
-      "avg_change_pct": 6.04
+      "avg_change_pct": 5.52
     },
     {
       "sector": "화학",
-      "score": 16.6,
+      "score": 17.1,
       "leaders": 1,
-      "avg_change_pct": 3.31
+      "avg_change_pct": 3.87
     }
   ],
   "leaders": [
@@ -41,60 +41,60 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1672000,
+      "price": 1665000,
       "change_value": 0,
-      "change_pct": 1.64,
-      "volume": 3329552,
-      "trading_value_okrw": 55670.0,
+      "change_pct": 1.22,
+      "volume": 3382682,
+      "trading_value_okrw": 56321.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.3,
+      "score": 66.9,
       "rank": 1
-    },
-    {
-      "code": "403870",
-      "name": "HPSP",
-      "market": "KOSDAQ",
-      "price": 43750,
-      "change_value": 0,
-      "change_pct": 8.29,
-      "volume": 5095237,
-      "trading_value_okrw": 2229.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 11.9,
-      "rank": 2
     },
     {
       "code": "067310",
       "name": "하나마이크론",
       "market": "KOSDAQ",
-      "price": 39600,
+      "price": 39450,
       "change_value": 0,
-      "change_pct": 8.2,
-      "volume": 5181282,
-      "trading_value_okrw": 2051.0,
+      "change_pct": 7.79,
+      "volume": 5210351,
+      "trading_value_okrw": 2055.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.6,
+      "score": 11.2,
+      "rank": 2
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 43450,
+      "change_value": 0,
+      "change_pct": 7.55,
+      "volume": 5133232,
+      "trading_value_okrw": 2230.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 11.1,
       "rank": 3
     },
     {
       "code": "093370",
       "name": "후성",
       "market": "KOSPI",
-      "price": 12810,
+      "price": 12880,
       "change_value": 0,
-      "change_pct": 3.31,
-      "volume": 10911658,
-      "trading_value_okrw": 1397.0,
+      "change_pct": 3.87,
+      "volume": 10944729,
+      "trading_value_okrw": 1409.0,
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
-      "score": 7.1,
+      "score": 7.6,
       "rank": 4
     }
   ]

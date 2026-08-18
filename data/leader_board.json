@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-18",
-    "generated_at_kst": "2026-08-18 12:06:32",
+    "generated_at_kst": "2026-08-18 12:12:47",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 60.5",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 60.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 60.5,
+      "score": 60.2,
       "leaders": 3,
-      "avg_change_pct": 6.28
+      "avg_change_pct": 6.04
     },
     {
       "sector": "지주사",
-      "score": 25.5,
+      "score": 25.1,
       "leaders": 1,
-      "avg_change_pct": 1.47
+      "avg_change_pct": 1.04
     },
     {
       "sector": "화학",
-      "score": 17.1,
+      "score": 16.8,
       "leaders": 1,
-      "avg_change_pct": 3.87
+      "avg_change_pct": 3.55
     },
     {
       "sector": "에너지",
-      "score": 14.6,
+      "score": 14.3,
       "leaders": 1,
-      "avg_change_pct": 1.37
+      "avg_change_pct": 1.11
     }
   ],
   "leaders": [
@@ -53,90 +53,90 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1680000,
+      "price": 1676000,
       "change_value": 0,
-      "change_pct": 2.13,
-      "volume": 3274224,
-      "trading_value_okrw": 55006.0,
+      "change_pct": 1.88,
+      "volume": 3300389,
+      "trading_value_okrw": 55314.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.8,
+      "score": 67.5,
       "rank": 1
-    },
-    {
-      "code": "067310",
-      "name": "하나마이크론",
-      "market": "KOSDAQ",
-      "price": 39950,
-      "change_value": 0,
-      "change_pct": 9.15,
-      "volume": 5126903,
-      "trading_value_okrw": 2048.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 12.6,
-      "rank": 2
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 43450,
+      "price": 43650,
       "change_value": 0,
-      "change_pct": 7.55,
-      "volume": 5015268,
-      "trading_value_okrw": 2179.0,
+      "change_pct": 8.04,
+      "volume": 5049616,
+      "trading_value_okrw": 2204.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 11.1,
+      "score": 11.6,
+      "rank": 2
+    },
+    {
+      "code": "067310",
+      "name": "하나마이크론",
+      "market": "KOSDAQ",
+      "price": 39600,
+      "change_value": 0,
+      "change_pct": 8.2,
+      "volume": 5151377,
+      "trading_value_okrw": 2039.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 11.6,
       "rank": 3
     },
     {
       "code": "093370",
       "name": "후성",
       "market": "KOSPI",
-      "price": 12880,
+      "price": 12840,
       "change_value": 0,
-      "change_pct": 3.87,
-      "volume": 10825453,
-      "trading_value_okrw": 1394.0,
+      "change_pct": 3.55,
+      "volume": 10878779,
+      "trading_value_okrw": 1396.0,
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
-      "score": 7.6,
+      "score": 7.3,
       "rank": 4
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1171000,
+      "price": 1166000,
       "change_value": 0,
-      "change_pct": 1.47,
-      "volume": 429267,
-      "trading_value_okrw": 5026.0,
+      "change_pct": 1.04,
+      "volume": 433007,
+      "trading_value_okrw": 5048.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 7.5,
+      "score": 7.1,
       "rank": 5
     },
     {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 59100,
+      "price": 58950,
       "change_value": 0,
-      "change_pct": 1.37,
-      "volume": 3045617,
-      "trading_value_okrw": 1799.0,
+      "change_pct": 1.11,
+      "volume": 3066418,
+      "trading_value_okrw": 1807.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 4.1,
+      "score": 3.8,
       "rank": 6
     }
   ]

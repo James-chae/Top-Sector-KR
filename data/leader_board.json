@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-19",
-    "generated_at_kst": "2026-08-19 12:06:26",
+    "generated_at_kst": "2026-08-19 12:11:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "레저 중심 강세 / 상위섹터 점수 38.4",
+    "market_bias": "레저 중심 강세 / 상위섹터 점수 39.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "레저",
-      "score": 38.4,
+      "score": 39.8,
       "leaders": 1,
-      "avg_change_pct": 20.0
+      "avg_change_pct": 21.33
     },
     {
       "sector": "반도체",
-      "score": 26.6,
+      "score": 26.4,
       "leaders": 2,
-      "avg_change_pct": 6.29
+      "avg_change_pct": 6.08
     },
     {
       "sector": "방산",
-      "score": 22.4,
+      "score": 22.1,
       "leaders": 1,
-      "avg_change_pct": 2.27
+      "avg_change_pct": 1.92
     },
     {
       "sector": "에너지",
-      "score": 15.9,
+      "score": 15.5,
       "leaders": 1,
-      "avg_change_pct": 1.37
+      "avg_change_pct": 1.03
     },
     {
       "sector": "화장품",
-      "score": 15.6,
+      "score": 15.3,
       "leaders": 1,
-      "avg_change_pct": 3.37
+      "avg_change_pct": 3.03
     }
   ],
   "leaders": [
@@ -59,90 +59,90 @@
       "code": "025980",
       "name": "아난티",
       "market": "KOSDAQ",
-      "price": 5400,
+      "price": 5460,
       "change_value": 0,
-      "change_pct": 20.0,
-      "volume": 31555580,
-      "trading_value_okrw": 1704.0,
+      "change_pct": 21.33,
+      "volume": 31714680,
+      "trading_value_okrw": 1731.0,
       "sector1": "레저",
       "sector2": "",
       "sector": "레저",
-      "score": 28.2,
+      "score": 29.5,
       "rank": 1
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 46350,
+      "price": 46300,
       "change_value": 0,
-      "change_pct": 8.68,
-      "volume": 4273633,
-      "trading_value_okrw": 1980.0,
+      "change_pct": 8.56,
+      "volume": 4316822,
+      "trading_value_okrw": 1998.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 13.0,
+      "score": 12.9,
       "rank": 2
     },
     {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1172000,
+      "price": 1168000,
       "change_value": 0,
-      "change_pct": 2.27,
-      "volume": 276364,
-      "trading_value_okrw": 3238.0,
+      "change_pct": 1.92,
+      "volume": 279197,
+      "trading_value_okrw": 3261.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 8.3,
+      "score": 8.0,
       "rank": 3
     },
     {
       "code": "257720",
       "name": "실리콘투",
       "market": "KOSDAQ",
-      "price": 46000,
+      "price": 45850,
       "change_value": 0,
-      "change_pct": 3.37,
-      "volume": 2900101,
-      "trading_value_okrw": 1334.0,
+      "change_pct": 3.03,
+      "volume": 2912369,
+      "trading_value_okrw": 1335.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 6.3,
+      "score": 6.0,
       "rank": 4
     },
     {
       "code": "007660",
       "name": "이수페타시스",
       "market": "KOSPI",
-      "price": 106900,
+      "price": 106600,
       "change_value": 0,
-      "change_pct": 3.89,
-      "volume": 1096124,
-      "trading_value_okrw": 1171.0,
+      "change_pct": 3.6,
+      "volume": 1104697,
+      "trading_value_okrw": 1177.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 6.2,
+      "score": 5.9,
       "rank": 5
     },
     {
       "code": "475150",
       "name": "SK이터닉스",
       "market": "KOSPI",
-      "price": 59300,
+      "price": 59100,
       "change_value": 0,
-      "change_pct": 1.37,
-      "volume": 3113299,
+      "change_pct": 1.03,
+      "volume": 3124338,
       "trading_value_okrw": 1846.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 5.3,
+      "score": 4.9,
       "rank": 6
     }
   ]

@@ -1,10 +1,10 @@
 {
   "meta": {
     "trade_date": "2026-08-19",
-    "generated_at_kst": "2026-08-19 15:31:26",
+    "generated_at_kst": "2026-08-19 15:36:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
+    "leader_count": 6,
     "sector_count": 5,
     "market_bias": "레저 중심 강세 / 상위섹터 점수 38.8",
     "filtered_etf": "ETF 제외 적용",
@@ -30,16 +30,16 @@
       "avg_change_pct": 18.89
     },
     {
-      "sector": "방산",
-      "score": 25.3,
-      "leaders": 1,
-      "avg_change_pct": 2.88
+      "sector": "반도체",
+      "score": 26.3,
+      "leaders": 2,
+      "avg_change_pct": 4.3
     },
     {
-      "sector": "반도체",
-      "score": 24.0,
+      "sector": "방산",
+      "score": 25.7,
       "leaders": 1,
-      "avg_change_pct": 7.15
+      "avg_change_pct": 2.71
     },
     {
       "sector": "화장품",
@@ -89,11 +89,11 @@
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1179000,
+      "price": 1177000,
       "change_value": 0,
-      "change_pct": 2.88,
-      "volume": 393135,
-      "trading_value_okrw": 4635.0,
+      "change_pct": 2.71,
+      "volume": 407636,
+      "trading_value_okrw": 4797.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
@@ -116,6 +116,21 @@
       "rank": 4
     },
     {
+      "code": "007660",
+      "name": "이수페타시스",
+      "market": "KOSPI",
+      "price": 104400,
+      "change_value": 0,
+      "change_pct": 1.46,
+      "volume": 1527317,
+      "trading_value_okrw": 1594.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 3.3,
+      "rank": 5
+    },
+    {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
@@ -128,7 +143,7 @@
       "sector2": "",
       "sector": "바이오",
       "score": 3.0,
-      "rank": 5
+      "rank": 6
     }
   ]
 }

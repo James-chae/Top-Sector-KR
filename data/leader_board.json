@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-19",
-    "generated_at_kst": "2026-08-19 10:11:26",
+    "generated_at_kst": "2026-08-19 10:16:27",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "방산 중심 강세 / 상위섹터 점수 25.3",
+    "market_bias": "방산 중심 강세 / 상위섹터 점수 25.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "방산",
-      "score": 25.3,
+      "score": 25.0,
       "leaders": 1,
-      "avg_change_pct": 6.54
+      "avg_change_pct": 6.37
     },
     {
       "sector": "반도체",
-      "score": 17.5,
+      "score": 19.6,
       "leaders": 1,
-      "avg_change_pct": 5.39
+      "avg_change_pct": 7.15
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1221000,
+      "price": 1219000,
       "change_value": 0,
-      "change_pct": 6.54,
-      "volume": 192351,
-      "trading_value_okrw": 2348.0,
+      "change_pct": 6.37,
+      "volume": 199821,
+      "trading_value_okrw": 2435.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 13.4,
+      "score": 12.9,
       "rank": 1
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 44950,
+      "price": 45700,
       "change_value": 0,
-      "change_pct": 5.39,
-      "volume": 2280260,
-      "trading_value_okrw": 1024.0,
+      "change_pct": 7.15,
+      "volume": 2447074,
+      "trading_value_okrw": 1118.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.9,
+      "score": 10.8,
       "rank": 2
     }
   ]

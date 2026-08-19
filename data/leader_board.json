@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-19",
-    "generated_at_kst": "2026-08-19 09:41:25",
+    "generated_at_kst": "2026-08-19 09:46:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "방산 중심 강세 / 상위섹터 점수 19.4",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "레저 중심 강세 / 상위섹터 점수 27.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,69 @@
   },
   "top_sectors": [
     {
-      "sector": "방산",
-      "score": 19.4,
+      "sector": "레저",
+      "score": 27.7,
       "leaders": 1,
-      "avg_change_pct": 2.44
+      "avg_change_pct": 11.56
+    },
+    {
+      "sector": "방산",
+      "score": 17.7,
+      "leaders": 1,
+      "avg_change_pct": 0.79
+    },
+    {
+      "sector": "반도체",
+      "score": 14.3,
+      "leaders": 1,
+      "avg_change_pct": 3.4
     }
   ],
   "leaders": [
     {
+      "code": "025980",
+      "name": "아난티",
+      "market": "KOSDAQ",
+      "price": 5020,
+      "change_value": 0,
+      "change_pct": 11.56,
+      "volume": 16575935,
+      "trading_value_okrw": 832.0,
+      "sector1": "레저",
+      "sector2": "",
+      "sector": "레저",
+      "score": 19.6,
+      "rank": 1
+    },
+    {
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1174000,
+      "price": 1155000,
       "change_value": 0,
-      "change_pct": 2.44,
-      "volume": 144652,
-      "trading_value_okrw": 1698.0,
+      "change_pct": 0.79,
+      "volume": 151268,
+      "trading_value_okrw": 1747.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
-      "score": 9.2,
-      "rank": 1
+      "score": 7.3,
+      "rank": 2
+    },
+    {
+      "code": "403870",
+      "name": "HPSP",
+      "market": "KOSDAQ",
+      "price": 44100,
+      "change_value": 0,
+      "change_pct": 3.4,
+      "volume": 1611295,
+      "trading_value_okrw": 710.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.5,
+      "rank": 3
     }
   ]
 }

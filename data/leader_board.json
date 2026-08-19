@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-19",
-    "generated_at_kst": "2026-08-19 13:36:30",
+    "generated_at_kst": "2026-08-19 13:41:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 4,
-    "market_bias": "레저 중심 강세 / 상위섹터 점수 42.7",
+    "leader_count": 6,
+    "sector_count": 5,
+    "market_bias": "레저 중심 강세 / 상위섹터 점수 41.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,33 @@
   "top_sectors": [
     {
       "sector": "레저",
-      "score": 42.7,
+      "score": 41.5,
       "leaders": 1,
-      "avg_change_pct": 22.67
+      "avg_change_pct": 21.56
     },
     {
       "sector": "반도체",
-      "score": 27.1,
+      "score": 26.9,
       "leaders": 2,
-      "avg_change_pct": 5.61
+      "avg_change_pct": 5.33
     },
     {
       "sector": "방산",
-      "score": 22.7,
+      "score": 22.8,
       "leaders": 1,
       "avg_change_pct": 1.75
     },
     {
-      "sector": "화장품",
-      "score": 15.1,
+      "sector": "에너지",
+      "score": 15.9,
       "leaders": 1,
-      "avg_change_pct": 2.7
+      "avg_change_pct": 1.37
+    },
+    {
+      "sector": "화장품",
+      "score": 15.3,
+      "leaders": 1,
+      "avg_change_pct": 2.81
     }
   ],
   "leaders": [
@@ -53,30 +59,30 @@
       "code": "025980",
       "name": "아난티",
       "market": "KOSDAQ",
-      "price": 5520,
+      "price": 5470,
       "change_value": 0,
-      "change_pct": 22.67,
-      "volume": 40082576,
-      "trading_value_okrw": 2212.0,
+      "change_pct": 21.56,
+      "volume": 40487118,
+      "trading_value_okrw": 2214.0,
       "sector1": "레저",
       "sector2": "",
       "sector": "레저",
-      "score": 31.1,
+      "score": 30.0,
       "rank": 1
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 45900,
+      "price": 45750,
       "change_value": 0,
-      "change_pct": 7.62,
-      "volume": 5315153,
-      "trading_value_okrw": 2439.0,
+      "change_pct": 7.27,
+      "volume": 5393855,
+      "trading_value_okrw": 2467.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 12.1,
+      "score": 11.8,
       "rank": 2
     },
     {
@@ -86,8 +92,8 @@
       "price": 1166000,
       "change_value": 0,
       "change_pct": 1.75,
-      "volume": 314831,
-      "trading_value_okrw": 3670.0,
+      "volume": 316772,
+      "trading_value_okrw": 3693.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
@@ -98,31 +104,46 @@
       "code": "007660",
       "name": "이수페타시스",
       "market": "KOSPI",
-      "price": 106600,
+      "price": 106400,
       "change_value": 0,
-      "change_pct": 3.6,
-      "volume": 1259292,
-      "trading_value_okrw": 1342.0,
+      "change_pct": 3.4,
+      "volume": 1267110,
+      "trading_value_okrw": 1348.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 5.9,
+      "score": 5.7,
       "rank": 4
     },
     {
       "code": "257720",
       "name": "실리콘투",
       "market": "KOSDAQ",
-      "price": 45700,
+      "price": 45750,
       "change_value": 0,
-      "change_pct": 2.7,
-      "volume": 3241139,
-      "trading_value_okrw": 1481.0,
+      "change_pct": 2.81,
+      "volume": 3255759,
+      "trading_value_okrw": 1489.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 5.4,
+      "score": 5.5,
       "rank": 5
+    },
+    {
+      "code": "475150",
+      "name": "SK이터닉스",
+      "market": "KOSPI",
+      "price": 59300,
+      "change_value": 0,
+      "change_pct": 1.37,
+      "volume": 3356810,
+      "trading_value_okrw": 1990.0,
+      "sector1": "에너지",
+      "sector2": "",
+      "sector": "에너지",
+      "score": 4.9,
+      "rank": 6
     }
   ]
 }

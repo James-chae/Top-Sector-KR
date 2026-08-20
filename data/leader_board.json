@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-20",
-    "generated_at_kst": "2026-08-20 15:31:29",
+    "generated_at_kst": "2026-08-20 15:36:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 15,
     "sector_count": 8,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.0",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 81.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 82.0,
+      "score": 81.9,
       "leaders": 3,
-      "avg_change_pct": 10.88
+      "avg_change_pct": 10.76
     },
     {
       "sector": "부동산",
@@ -43,25 +43,25 @@
     },
     {
       "sector": "지주사",
-      "score": 35.0,
+      "score": 35.3,
       "leaders": 2,
-      "avg_change_pct": 7.42
+      "avg_change_pct": 7.47
     },
     {
       "sector": "원전",
-      "score": 19.2,
+      "score": 19.4,
       "leaders": 1,
-      "avg_change_pct": 7.93
+      "avg_change_pct": 7.78
     },
     {
       "sector": "금융",
-      "score": 18.9,
+      "score": 19.2,
       "leaders": 1,
       "avg_change_pct": 7.61
     },
     {
       "sector": "인터넷",
-      "score": 18.1,
+      "score": 18.4,
       "leaders": 1,
       "avg_change_pct": 5.53
     },
@@ -122,30 +122,30 @@
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1122000,
+      "price": 1123000,
       "change_value": 0,
-      "change_pct": 11.75,
-      "volume": 801841,
-      "trading_value_okrw": 8996.0,
+      "change_pct": 11.85,
+      "volume": 850705,
+      "trading_value_okrw": 9553.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 18.2,
+      "score": 18.7,
       "rank": 4
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 191800,
+      "price": 191200,
       "change_value": 0,
-      "change_pct": 10.42,
-      "volume": 3440315,
-      "trading_value_okrw": 6598.0,
+      "change_pct": 10.07,
+      "volume": 3573767,
+      "trading_value_okrw": 6833.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.5,
+      "score": 15.3,
       "rank": 5
     },
     {
@@ -182,11 +182,11 @@
       "code": "028260",
       "name": "삼성물산",
       "market": "KOSPI",
-      "price": 374500,
+      "price": 374000,
       "change_value": 0,
-      "change_pct": 7.93,
-      "volume": 438361,
-      "trading_value_okrw": 1641.0,
+      "change_pct": 7.78,
+      "volume": 463426,
+      "trading_value_okrw": 1733.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
@@ -200,12 +200,12 @@
       "price": 297000,
       "change_value": 0,
       "change_pct": 7.61,
-      "volume": 548340,
-      "trading_value_okrw": 1628.0,
+      "volume": 581361,
+      "trading_value_okrw": 1726.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 8.8,
+      "score": 8.9,
       "rank": 9
     },
     {
@@ -230,12 +230,12 @@
       "price": 219500,
       "change_value": 0,
       "change_pct": 5.53,
-      "volume": 912039,
-      "trading_value_okrw": 2001.0,
+      "volume": 961819,
+      "trading_value_okrw": 2111.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 7.0,
+      "score": 7.1,
       "rank": 11
     },
     {
@@ -257,30 +257,30 @@
       "code": "010060",
       "name": "OCI홀딩스",
       "market": "KOSPI",
-      "price": 290500,
+      "price": 290000,
       "change_value": 0,
-      "change_pct": 4.68,
-      "volume": 344362,
-      "trading_value_okrw": 1000.0,
+      "change_pct": 4.5,
+      "volume": 348438,
+      "trading_value_okrw": 1010.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 5.4,
+      "score": 5.2,
       "rank": 13
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 501000,
+      "price": 499500,
       "change_value": 0,
-      "change_pct": 2.87,
-      "volume": 368051,
-      "trading_value_okrw": 1843.0,
+      "change_pct": 2.57,
+      "volume": 390181,
+      "trading_value_okrw": 1948.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 4.2,
+      "score": 4.0,
       "rank": 14
     },
     {

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-20",
-    "generated_at_kst": "2026-08-20 09:11:28",
+    "generated_at_kst": "2026-08-20 09:16:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 88.6",
+    "leader_count": 4,
+    "sector_count": 3,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 88.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 88.6,
+      "score": 88.5,
       "leaders": 2,
-      "avg_change_pct": 4.98
+      "avg_change_pct": 6.16
+    },
+    {
+      "sector": "바이오",
+      "score": 25.8,
+      "leaders": 1,
+      "avg_change_pct": 9.06
     },
     {
       "sector": "지주사",
-      "score": 21.4,
+      "score": 22.6,
       "leaders": 1,
-      "avg_change_pct": 3.39
+      "avg_change_pct": 4.08
     }
   ],
   "leaders": [
@@ -41,46 +47,61 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1598000,
+      "price": 1618000,
       "change_value": 0,
-      "change_pct": 6.53,
-      "volume": 463851,
-      "trading_value_okrw": 7412.0,
+      "change_pct": 7.87,
+      "volume": 562004,
+      "trading_value_okrw": 9093.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 71.7,
+      "score": 73.1,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 256000,
+      "price": 258500,
       "change_value": 0,
-      "change_pct": 3.43,
-      "volume": 2364321,
-      "trading_value_okrw": 6052.0,
+      "change_pct": 4.44,
+      "volume": 2731837,
+      "trading_value_okrw": 7061.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 57.5,
+      "score": 55.9,
       "rank": 2
+    },
+    {
+      "code": "196170",
+      "name": "알테오젠",
+      "market": "KOSDAQ",
+      "price": 331000,
+      "change_value": 0,
+      "change_pct": 9.06,
+      "volume": 332033,
+      "trading_value_okrw": 1099.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 17.0,
+      "rank": 3
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1038000,
+      "price": 1045000,
       "change_value": 0,
-      "change_pct": 3.39,
-      "volume": 102558,
-      "trading_value_okrw": 1064.0,
+      "change_pct": 4.08,
+      "volume": 123543,
+      "trading_value_okrw": 1291.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 12.8,
-      "rank": 3
+      "score": 13.3,
+      "rank": 4
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-20",
-    "generated_at_kst": "2026-08-20 09:06:28",
+    "generated_at_kst": "2026-08-20 09:11:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 90.6",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 88.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 90.6,
+      "score": 88.6,
       "leaders": 2,
-      "avg_change_pct": 4.9
+      "avg_change_pct": 4.98
+    },
+    {
+      "sector": "지주사",
+      "score": 21.4,
+      "leaders": 1,
+      "avg_change_pct": 3.39
     }
   ],
   "leaders": [
@@ -35,31 +41,46 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1600000,
+      "price": 1598000,
       "change_value": 0,
-      "change_pct": 6.67,
-      "volume": 308167,
-      "trading_value_okrw": 4930.0,
+      "change_pct": 6.53,
+      "volume": 463851,
+      "trading_value_okrw": 7412.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 71.9,
+      "score": 71.7,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 255250,
+      "price": 256000,
       "change_value": 0,
-      "change_pct": 3.13,
-      "volume": 1698486,
-      "trading_value_okrw": 4335.0,
+      "change_pct": 3.43,
+      "volume": 2364321,
+      "trading_value_okrw": 6052.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 61.4,
+      "score": 57.5,
       "rank": 2
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 1038000,
+      "change_value": 0,
+      "change_pct": 3.39,
+      "volume": 102558,
+      "trading_value_okrw": 1064.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 12.8,
+      "rank": 3
     }
   ]
 }

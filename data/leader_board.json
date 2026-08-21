@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-21",
-    "generated_at_kst": "2026-08-21 11:36:27",
+    "generated_at_kst": "2026-08-21 11:41:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.6",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 82.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 82.6,
+      "score": 82.7,
       "leaders": 3,
-      "avg_change_pct": 5.21
-    },
-    {
-      "sector": "제조",
-      "score": 26.3,
-      "leaders": 1,
-      "avg_change_pct": 11.93
+      "avg_change_pct": 5.24
     },
     {
       "sector": "증권",
@@ -42,16 +36,22 @@
       "avg_change_pct": 6.58
     },
     {
-      "sector": "금융",
-      "score": 18.0,
+      "sector": "제조",
+      "score": 25.4,
       "leaders": 1,
-      "avg_change_pct": 7.41
+      "avg_change_pct": 10.99
+    },
+    {
+      "sector": "금융",
+      "score": 17.9,
+      "leaders": 1,
+      "avg_change_pct": 7.24
     },
     {
       "sector": "레저",
-      "score": 16.2,
+      "score": 17.1,
       "leaders": 1,
-      "avg_change_pct": 3.64
+      "avg_change_pct": 4.6
     }
   ],
   "leaders": [
@@ -62,8 +62,8 @@
       "price": 1761000,
       "change_value": 0,
       "change_pct": 4.14,
-      "volume": 2467539,
-      "trading_value_okrw": 43453.0,
+      "volume": 2510166,
+      "trading_value_okrw": 44204.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -74,15 +74,15 @@
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 279750,
+      "price": 280000,
       "change_value": 0,
-      "change_pct": 3.23,
-      "volume": 13703992,
-      "trading_value_okrw": 38336.0,
+      "change_pct": 3.32,
+      "volume": 14012568,
+      "trading_value_okrw": 39235.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 61.6,
+      "score": 62.1,
       "rank": 2
     },
     {
@@ -92,27 +92,27 @@
       "price": 207000,
       "change_value": 0,
       "change_pct": 8.26,
-      "volume": 5803300,
-      "trading_value_okrw": 12012.0,
+      "volume": 5853334,
+      "trading_value_okrw": 12116.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 26.7,
+      "score": 26.5,
       "rank": 3
     },
     {
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 8350,
+      "price": 8280,
       "change_value": 0,
-      "change_pct": 11.93,
-      "volume": 20401541,
-      "trading_value_okrw": 1703.0,
+      "change_pct": 10.99,
+      "volume": 20640934,
+      "trading_value_okrw": 1709.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 16.1,
+      "score": 15.1,
       "rank": 4
     },
     {
@@ -122,42 +122,42 @@
       "price": 2995,
       "change_value": 0,
       "change_pct": 6.58,
-      "volume": 66173568,
-      "trading_value_okrw": 1981.0,
+      "volume": 66415384,
+      "trading_value_okrw": 1989.0,
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 14.6,
+      "score": 14.5,
       "rank": 5
     },
     {
       "code": "032830",
       "name": "삼성생명",
       "market": "KOSPI",
-      "price": 319000,
+      "price": 318500,
       "change_value": 0,
-      "change_pct": 7.41,
-      "volume": 357353,
-      "trading_value_okrw": 1139.0,
+      "change_pct": 7.24,
+      "volume": 363257,
+      "trading_value_okrw": 1156.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 9.2,
+      "score": 9.0,
       "rank": 6
     },
     {
       "code": "025980",
       "name": "아난티",
       "market": "KOSDAQ",
-      "price": 5410,
+      "price": 5460,
       "change_value": 0,
-      "change_pct": 3.64,
-      "volume": 22276506,
-      "trading_value_okrw": 1205.0,
+      "change_pct": 4.6,
+      "volume": 22361728,
+      "trading_value_okrw": 1220.0,
       "sector1": "레저",
       "sector2": "",
       "sector": "레저",
-      "score": 7.1,
+      "score": 8.1,
       "rank": 7
     }
   ]

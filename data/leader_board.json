@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-21",
-    "generated_at_kst": "2026-08-21 10:16:34",
+    "generated_at_kst": "2026-08-21 10:21:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
+    "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 70.5",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 77.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 70.5,
-      "leaders": 2,
-      "avg_change_pct": 5.15
-    },
-    {
-      "sector": "제조",
-      "score": 34.9,
-      "leaders": 1,
-      "avg_change_pct": 20.24
+      "score": 77.3,
+      "leaders": 3,
+      "avg_change_pct": 4.14
     },
     {
       "sector": "증권",
-      "score": 31.6,
+      "score": 32.3,
       "leaders": 1,
-      "avg_change_pct": 12.46
+      "avg_change_pct": 13.17
+    },
+    {
+      "sector": "제조",
+      "score": 31.3,
+      "leaders": 1,
+      "avg_change_pct": 16.89
     },
     {
       "sector": "부동산",
-      "score": 29.4,
+      "score": 25.9,
       "leaders": 1,
-      "avg_change_pct": 5.18
+      "avg_change_pct": 2.3
     }
   ],
   "leaders": [
@@ -53,76 +53,91 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1761000,
+      "price": 1766000,
       "change_value": 0,
-      "change_pct": 4.14,
-      "volume": 1671804,
-      "trading_value_okrw": 29440.0,
+      "change_pct": 4.44,
+      "volume": 1749702,
+      "trading_value_okrw": 30899.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 69.3,
+      "score": 69.6,
       "rank": 1
     },
     {
-      "code": "001210",
-      "name": "금호전기",
+      "code": "005930",
+      "name": "삼성전자",
       "market": "KOSPI",
-      "price": 8970,
+      "price": 274500,
       "change_value": 0,
-      "change_pct": 20.24,
-      "volume": 16953985,
-      "trading_value_okrw": 1520.0,
-      "sector1": "제조",
+      "change_pct": 1.29,
+      "volume": 8002762,
+      "trading_value_okrw": 21967.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "제조",
-      "score": 25.1,
+      "sector": "반도체",
+      "score": 48.2,
       "rank": 2
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 203000,
+      "price": 204000,
       "change_value": 0,
-      "change_pct": 6.17,
-      "volume": 3813638,
-      "trading_value_okrw": 7741.0,
+      "change_pct": 6.69,
+      "volume": 3972370,
+      "trading_value_okrw": 8103.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 23.6,
+      "score": 24.1,
       "rank": 3
     },
     {
       "code": "001510",
       "name": "SK증권",
       "market": "KOSPI",
-      "price": 3160,
+      "price": 3180,
       "change_value": 0,
-      "change_pct": 12.46,
-      "volume": 54553611,
-      "trading_value_okrw": 1723.0,
+      "change_pct": 13.17,
+      "volume": 55339134,
+      "trading_value_okrw": 1759.0,
       "sector1": "증권",
       "sector2": "",
       "sector": "증권",
-      "score": 21.3,
+      "score": 21.9,
       "rank": 4
+    },
+    {
+      "code": "001210",
+      "name": "금호전기",
+      "market": "KOSPI",
+      "price": 8720,
+      "change_value": 0,
+      "change_pct": 16.89,
+      "volume": 17155406,
+      "trading_value_okrw": 1495.0,
+      "sector1": "제조",
+      "sector2": "",
+      "sector": "제조",
+      "score": 21.6,
+      "rank": 5
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 16460,
+      "price": 16010,
       "change_value": 0,
-      "change_pct": 5.18,
-      "volume": 21063650,
-      "trading_value_okrw": 3467.0,
+      "change_pct": 2.3,
+      "volume": 21326386,
+      "trading_value_okrw": 3414.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 14.8,
-      "rank": 5
+      "score": 11.4,
+      "rank": 6
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-21",
-    "generated_at_kst": "2026-08-21 09:46:28",
+    "generated_at_kst": "2026-08-21 09:51:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
+    "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 70.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 77.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 70.2,
-      "leaders": 2,
-      "avg_change_pct": 4.96
+      "score": 77.4,
+      "leaders": 3,
+      "avg_change_pct": 4.65
     },
     {
       "sector": "제조",
-      "score": 44.0,
+      "score": 40.0,
       "leaders": 1,
-      "avg_change_pct": 27.75
+      "avg_change_pct": 24.66
     },
     {
       "sector": "증권",
-      "score": 38.7,
+      "score": 35.1,
       "leaders": 1,
-      "avg_change_pct": 18.33
+      "avg_change_pct": 15.48
     },
     {
       "sector": "부동산",
-      "score": 36.1,
+      "score": 31.2,
       "leaders": 1,
-      "avg_change_pct": 10.86
+      "avg_change_pct": 7.16
     }
   ],
   "leaders": [
@@ -53,76 +53,91 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1750000,
+      "price": 1762000,
       "change_value": 0,
-      "change_pct": 3.49,
-      "volume": 1021882,
-      "trading_value_okrw": 17882.0,
+      "change_pct": 4.2,
+      "volume": 1215106,
+      "trading_value_okrw": 21410.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 68.6,
+      "score": 69.3,
       "rank": 1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 275000,
+      "change_value": 0,
+      "change_pct": 1.48,
+      "volume": 5428650,
+      "trading_value_okrw": 14928.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 47.4,
+      "rank": 2
     },
     {
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 9530,
+      "price": 9300,
       "change_value": 0,
-      "change_pct": 27.75,
-      "volume": 14629033,
+      "change_pct": 24.66,
+      "volume": 14997561,
       "trading_value_okrw": 1394.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 34.5,
-      "rank": 2
-    },
-    {
-      "code": "001510",
-      "name": "SK증권",
-      "market": "KOSPI",
-      "price": 3325,
-      "change_value": 0,
-      "change_pct": 18.33,
-      "volume": 45432235,
-      "trading_value_okrw": 1510.0,
-      "sector1": "증권",
-      "sector2": "",
-      "sector": "증권",
-      "score": 28.9,
+      "score": 30.6,
       "rank": 3
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 203500,
+      "price": 207000,
       "change_value": 0,
-      "change_pct": 6.43,
-      "volume": 2299613,
-      "trading_value_okrw": 4679.0,
+      "change_pct": 8.26,
+      "volume": 2672515,
+      "trading_value_okrw": 5532.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 23.7,
+      "score": 25.4,
       "rank": 4
+    },
+    {
+      "code": "001510",
+      "name": "SK증권",
+      "market": "KOSPI",
+      "price": 3245,
+      "change_value": 0,
+      "change_pct": 15.48,
+      "volume": 47546580,
+      "trading_value_okrw": 1542.0,
+      "sector1": "증권",
+      "sector2": "",
+      "sector": "증권",
+      "score": 25.2,
+      "rank": 5
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17350,
+      "price": 16770,
       "change_value": 0,
-      "change_pct": 10.86,
-      "volume": 16389604,
-      "trading_value_okrw": 2843.0,
+      "change_pct": 7.16,
+      "volume": 17446414,
+      "trading_value_okrw": 2925.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 23.0,
-      "rank": 5
+      "score": 17.9,
+      "rank": 6
     }
   ]
 }

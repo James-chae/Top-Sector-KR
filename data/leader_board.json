@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 10:18:40",
+    "generated_at_kst": "2026-08-24 10:23:44",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 58.0",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,19 +25,19 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 58.0,
-      "leaders": 2,
-      "avg_change_pct": 2.05
+      "score": 76.5,
+      "leaders": 1,
+      "avg_change_pct": 1.79
     },
     {
       "sector": "2차전지",
-      "score": 23.0,
+      "score": 23.1,
       "leaders": 1,
-      "avg_change_pct": 8.68
+      "avg_change_pct": 8.47
     },
     {
       "sector": "인터넷",
-      "score": 17.6,
+      "score": 17.8,
       "leaders": 1,
       "avg_change_pct": 2.25
     }
@@ -47,46 +47,31 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1768000,
+      "price": 1761000,
       "change_value": 0,
-      "change_pct": 2.2,
-      "volume": 1297351,
-      "trading_value_okrw": 22937.0,
+      "change_pct": 1.79,
+      "volume": 1326400,
+      "trading_value_okrw": 23357.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 59.2,
+      "score": 58.5,
       "rank": 1
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 519500,
+      "price": 518500,
       "change_value": 0,
-      "change_pct": 8.68,
-      "volume": 318187,
-      "trading_value_okrw": 1652.0,
+      "change_pct": 8.47,
+      "volume": 334914,
+      "trading_value_okrw": 1736.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 12.9,
+      "score": 12.8,
       "rank": 2
-    },
-    {
-      "code": "009150",
-      "name": "삼성전기",
-      "market": "KOSPI",
-      "price": 1341000,
-      "change_value": 0,
-      "change_pct": 1.9,
-      "volume": 202982,
-      "trading_value_okrw": 2721.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 8.7,
-      "rank": 3
     },
     {
       "code": "035420",
@@ -95,13 +80,13 @@
       "price": 227000,
       "change_value": 0,
       "change_pct": 2.25,
-      "volume": 799092,
-      "trading_value_okrw": 1813.0,
+      "volume": 832324,
+      "trading_value_okrw": 1889.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
       "score": 7.1,
-      "rank": 4
+      "rank": 3
     }
   ]
 }

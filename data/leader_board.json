@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 12:18:37",
+    "generated_at_kst": "2026-08-24 12:23:37",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 46.2",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 46.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 46.2,
+      "score": 46.1,
       "leaders": 1,
       "avg_change_pct": 29.96
     },
     {
       "sector": "2차전지",
-      "score": 22.7,
+      "score": 22.8,
       "leaders": 1,
       "avg_change_pct": 7.74
     },
     {
       "sector": "화장품",
-      "score": 16.8,
+      "score": 16.6,
       "leaders": 1,
-      "avg_change_pct": 6.88
+      "avg_change_pct": 6.62
     }
   ],
   "leaders": [
@@ -50,12 +50,12 @@
       "price": 540000,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 489817,
-      "trading_value_okrw": 2645.0,
+      "volume": 490117,
+      "trading_value_okrw": 2646.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 33.6,
+      "score": 33.5,
       "rank": 1
     },
     {
@@ -65,8 +65,8 @@
       "price": 515000,
       "change_value": 0,
       "change_pct": 7.74,
-      "volume": 450586,
-      "trading_value_okrw": 2320.0,
+      "volume": 454774,
+      "trading_value_okrw": 2342.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -77,15 +77,15 @@
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 411500,
+      "price": 410500,
       "change_value": 0,
-      "change_pct": 6.88,
-      "volume": 245722,
-      "trading_value_okrw": 1011.0,
+      "change_pct": 6.62,
+      "volume": 248332,
+      "trading_value_okrw": 1019.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 8.3,
+      "score": 8.0,
       "rank": 3
     }
   ]

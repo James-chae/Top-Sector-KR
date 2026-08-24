@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 13:58:37",
+    "generated_at_kst": "2026-08-24 14:03:38",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 7,
-    "sector_count": 5,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 46.6",
+    "leader_count": 8,
+    "sector_count": 6,
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 47.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 46.6,
+      "score": 47.3,
       "leaders": 2,
-      "avg_change_pct": 25.38
+      "avg_change_pct": 26.05
     },
     {
       "sector": "2차전지",
-      "score": 33.2,
+      "score": 33.3,
       "leaders": 2,
-      "avg_change_pct": 12.29
+      "avg_change_pct": 12.34
     },
     {
       "sector": "IT서비스",
@@ -43,15 +43,21 @@
     },
     {
       "sector": "화장품",
-      "score": 15.4,
+      "score": 15.3,
       "leaders": 1,
-      "avg_change_pct": 5.19
+      "avg_change_pct": 5.06
     },
     {
       "sector": "통신",
-      "score": 13.0,
+      "score": 12.8,
       "leaders": 1,
-      "avg_change_pct": 1.96
+      "avg_change_pct": 1.76
+    },
+    {
+      "sector": "전자",
+      "score": 12.1,
+      "leaders": 1,
+      "avg_change_pct": 2.52
     }
   ],
   "leaders": [
@@ -62,8 +68,8 @@
       "price": 540000,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 504518,
-      "trading_value_okrw": 2724.0,
+      "volume": 509976,
+      "trading_value_okrw": 2753.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
@@ -74,15 +80,15 @@
       "code": "008930",
       "name": "한미사이언스",
       "market": "KOSPI",
-      "price": 54300,
+      "price": 54900,
       "change_value": 0,
-      "change_pct": 20.8,
-      "volume": 2714074,
-      "trading_value_okrw": 1473.0,
+      "change_pct": 22.14,
+      "volume": 2780285,
+      "trading_value_okrw": 1526.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 22.7,
+      "score": 24.1,
       "rank": 2
     },
     {
@@ -92,8 +98,8 @@
       "price": 38150,
       "change_value": 0,
       "change_pct": 17.2,
-      "volume": 2781468,
-      "trading_value_okrw": 1061.0,
+      "volume": 2790337,
+      "trading_value_okrw": 1064.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
@@ -104,11 +110,11 @@
       "code": "066970",
       "name": "엘앤에프",
       "market": "KOSPI",
-      "price": 122100,
+      "price": 122200,
       "change_value": 0,
-      "change_pct": 16.84,
-      "volume": 873881,
-      "trading_value_okrw": 1067.0,
+      "change_pct": 16.94,
+      "volume": 885377,
+      "trading_value_okrw": 1081.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -122,8 +128,8 @@
       "price": 515000,
       "change_value": 0,
       "change_pct": 7.74,
-      "volume": 531707,
-      "trading_value_okrw": 2738.0,
+      "volume": 538506,
+      "trading_value_okrw": 2773.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -134,31 +140,46 @@
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 405000,
+      "price": 404500,
       "change_value": 0,
-      "change_pct": 5.19,
-      "volume": 294812,
-      "trading_value_okrw": 1193.0,
+      "change_pct": 5.06,
+      "volume": 297710,
+      "trading_value_okrw": 1204.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 6.4,
+      "score": 6.3,
       "rank": 6
+    },
+    {
+      "code": "066570",
+      "name": "LG전자",
+      "market": "KOSPI",
+      "price": 199400,
+      "change_value": 0,
+      "change_pct": 2.52,
+      "volume": 503850,
+      "trading_value_okrw": 1004.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 3.6,
+      "rank": 7
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 104200,
+      "price": 104000,
       "change_value": 0,
-      "change_pct": 1.96,
-      "volume": 1322322,
-      "trading_value_okrw": 1377.0,
+      "change_pct": 1.76,
+      "volume": 1335294,
+      "trading_value_okrw": 1388.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 3.6,
-      "rank": 7
+      "score": 3.4,
+      "rank": 8
     }
   ]
 }

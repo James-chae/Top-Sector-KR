@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 13:18:38",
+    "generated_at_kst": "2026-08-24 13:23:39",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 45.7",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 45.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 45.7,
+      "score": 45.5,
       "leaders": 2,
-      "avg_change_pct": 24.49
+      "avg_change_pct": 24.27
     },
     {
       "sector": "IT서비스",
-      "score": 29.4,
+      "score": 29.6,
       "leaders": 1,
-      "avg_change_pct": 19.2
+      "avg_change_pct": 19.35
     },
     {
       "sector": "2차전지",
-      "score": 22.4,
+      "score": 22.5,
       "leaders": 1,
       "avg_change_pct": 7.11
     },
     {
       "sector": "화장품",
-      "score": 16.3,
+      "score": 16.2,
       "leaders": 1,
-      "avg_change_pct": 6.23
+      "avg_change_pct": 6.1
     },
     {
       "sector": "통신",
-      "score": 12.6,
+      "score": 13.0,
       "leaders": 1,
-      "avg_change_pct": 2.05
+      "avg_change_pct": 2.25
     }
   ],
   "leaders": [
@@ -62,42 +62,42 @@
       "price": 540000,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 503241,
-      "trading_value_okrw": 2717.0,
+      "volume": 503414,
+      "trading_value_okrw": 2718.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 33.1,
+      "score": 33.0,
       "rank": 1
-    },
-    {
-      "code": "008930",
-      "name": "한미사이언스",
-      "market": "KOSPI",
-      "price": 53500,
-      "change_value": 0,
-      "change_pct": 19.02,
-      "volume": 2368971,
-      "trading_value_okrw": 1267.0,
-      "sector1": "바이오",
-      "sector2": "",
-      "sector": "바이오",
-      "score": 20.9,
-      "rank": 2
     },
     {
       "code": "124500",
       "name": "아이티센글로벌",
       "market": "KOSDAQ",
-      "price": 38800,
+      "price": 38850,
       "change_value": 0,
-      "change_pct": 19.2,
-      "volume": 2676260,
-      "trading_value_okrw": 1038.0,
+      "change_pct": 19.35,
+      "volume": 2681731,
+      "trading_value_okrw": 1041.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 20.8,
+      "score": 21.0,
+      "rank": 2
+    },
+    {
+      "code": "008930",
+      "name": "한미사이언스",
+      "market": "KOSPI",
+      "price": 53300,
+      "change_value": 0,
+      "change_pct": 18.58,
+      "volume": 2386273,
+      "trading_value_okrw": 1271.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 20.4,
       "rank": 3
     },
     {
@@ -107,8 +107,8 @@
       "price": 512000,
       "change_value": 0,
       "change_pct": 7.11,
-      "volume": 500702,
-      "trading_value_okrw": 2563.0,
+      "volume": 503526,
+      "trading_value_okrw": 2578.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -119,30 +119,30 @@
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 409000,
+      "price": 408500,
       "change_value": 0,
-      "change_pct": 6.23,
-      "volume": 274600,
-      "trading_value_okrw": 1123.0,
+      "change_pct": 6.1,
+      "volume": 277274,
+      "trading_value_okrw": 1132.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 7.5,
+      "score": 7.4,
       "rank": 5
     },
     {
       "code": "017670",
       "name": "SK텔레콤",
       "market": "KOSPI",
-      "price": 104300,
+      "price": 104500,
       "change_value": 0,
-      "change_pct": 2.05,
-      "volume": 1162885,
-      "trading_value_okrw": 1212.0,
+      "change_pct": 2.25,
+      "volume": 1205191,
+      "trading_value_okrw": 1259.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 3.6,
+      "score": 3.8,
       "rank": 6
     }
   ]

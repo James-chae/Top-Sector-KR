@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 11:13:38",
+    "generated_at_kst": "2026-08-24 11:18:37",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 22.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 22.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 22.2,
+      "score": 22.5,
       "leaders": 1,
       "avg_change_pct": 1.14
     },
     {
       "sector": "2차전지",
-      "score": 21.9,
+      "score": 22.4,
       "leaders": 1,
-      "avg_change_pct": 7.11
+      "avg_change_pct": 7.53
     },
     {
       "sector": "인터넷",
@@ -47,15 +47,15 @@
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 512000,
+      "price": 514000,
       "change_value": 0,
-      "change_pct": 7.11,
-      "volume": 407627,
-      "trading_value_okrw": 2087.0,
+      "change_pct": 7.53,
+      "volume": 412418,
+      "trading_value_okrw": 2119.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 10.7,
+      "score": 11.2,
       "rank": 1
     },
     {
@@ -65,12 +65,12 @@
       "price": 1331000,
       "change_value": 0,
       "change_pct": 1.14,
-      "volume": 269714,
-      "trading_value_okrw": 3589.0,
+      "volume": 275740,
+      "trading_value_okrw": 3670.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.2,
+      "score": 7.3,
       "rank": 2
     },
     {
@@ -80,12 +80,12 @@
       "price": 224500,
       "change_value": 0,
       "change_pct": 1.13,
-      "volume": 1056692,
-      "trading_value_okrw": 2372.0,
+      "volume": 1064564,
+      "trading_value_okrw": 2389.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 5.4,
+      "score": 5.3,
       "rank": 3
     }
   ]

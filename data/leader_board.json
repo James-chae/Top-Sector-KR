@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 10:23:44",
+    "generated_at_kst": "2026-08-24 10:28:43",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.5",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 76.5,
+      "score": 76.0,
       "leaders": 1,
-      "avg_change_pct": 1.79
+      "avg_change_pct": 1.68
     },
     {
       "sector": "2차전지",
-      "score": 23.1,
+      "score": 23.3,
       "leaders": 1,
-      "avg_change_pct": 8.47
+      "avg_change_pct": 8.58
     },
     {
       "sector": "인터넷",
-      "score": 17.8,
+      "score": 17.7,
       "leaders": 1,
-      "avg_change_pct": 2.25
+      "avg_change_pct": 2.03
     }
   ],
   "leaders": [
@@ -47,26 +47,26 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1761000,
+      "price": 1759000,
       "change_value": 0,
-      "change_pct": 1.79,
-      "volume": 1326400,
-      "trading_value_okrw": 23357.0,
+      "change_pct": 1.68,
+      "volume": 1352304,
+      "trading_value_okrw": 23787.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 58.5,
+      "score": 58.0,
       "rank": 1
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 518500,
+      "price": 519000,
       "change_value": 0,
-      "change_pct": 8.47,
-      "volume": 334914,
-      "trading_value_okrw": 1736.0,
+      "change_pct": 8.58,
+      "volume": 341122,
+      "trading_value_okrw": 1770.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -77,15 +77,15 @@
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 227000,
+      "price": 226500,
       "change_value": 0,
-      "change_pct": 2.25,
-      "volume": 832324,
-      "trading_value_okrw": 1889.0,
+      "change_pct": 2.03,
+      "volume": 857221,
+      "trading_value_okrw": 1941.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 7.1,
+      "score": 6.9,
       "rank": 3
     }
   ]

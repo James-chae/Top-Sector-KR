@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 10:48:41",
+    "generated_at_kst": "2026-08-24 10:53:38",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 23.3",
+    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 23.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,13 +25,13 @@
   "top_sectors": [
     {
       "sector": "2차전지",
-      "score": 23.3,
+      "score": 23.2,
       "leaders": 1,
       "avg_change_pct": 8.37
     },
     {
       "sector": "인터넷",
-      "score": 18.9,
+      "score": 18.8,
       "leaders": 1,
       "avg_change_pct": 2.93
     }
@@ -44,12 +44,12 @@
       "price": 518000,
       "change_value": 0,
       "change_pct": 8.37,
-      "volume": 370388,
-      "trading_value_okrw": 1918.0,
+      "volume": 376635,
+      "trading_value_okrw": 1950.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 12.5,
+      "score": 12.3,
       "rank": 1
     },
     {
@@ -59,12 +59,12 @@
       "price": 228500,
       "change_value": 0,
       "change_pct": 2.93,
-      "volume": 929061,
-      "trading_value_okrw": 2122.0,
+      "volume": 941362,
+      "trading_value_okrw": 2151.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 7.6,
+      "score": 7.5,
       "rank": 2
     }
   ]

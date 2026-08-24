@@ -1,11 +1,11 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 11:58:47",
+    "generated_at_kst": "2026-08-24 12:03:41",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
+    "leader_count": 3,
+    "sector_count": 3,
     "market_bias": "바이오 중심 강세 / 상위섹터 점수 46.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
@@ -34,6 +34,12 @@
       "score": 22.6,
       "leaders": 1,
       "avg_change_pct": 7.53
+    },
+    {
+      "sector": "통신",
+      "score": 11.5,
+      "leaders": 1,
+      "avg_change_pct": 1.37
     }
   ],
   "leaders": [
@@ -44,8 +50,8 @@
       "price": 540000,
       "change_value": 0,
       "change_pct": 29.96,
-      "volume": 479199,
-      "trading_value_okrw": 2587.0,
+      "volume": 480577,
+      "trading_value_okrw": 2595.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
@@ -59,13 +65,28 @@
       "price": 514000,
       "change_value": 0,
       "change_pct": 7.53,
-      "volume": 441060,
-      "trading_value_okrw": 2267.0,
+      "volume": 443750,
+      "trading_value_okrw": 2280.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
       "score": 10.9,
       "rank": 2
+    },
+    {
+      "code": "017670",
+      "name": "SK텔레콤",
+      "market": "KOSPI",
+      "price": 103600,
+      "change_value": 0,
+      "change_pct": 1.37,
+      "volume": 967540,
+      "trading_value_okrw": 1002.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 3.0,
+      "rank": 3
     }
   ]
 }

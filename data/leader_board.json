@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-24",
-    "generated_at_kst": "2026-08-24 10:53:38",
+    "generated_at_kst": "2026-08-24 10:58:45",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 23.2",
+    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 21.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "2차전지",
-      "score": 23.2,
+      "score": 21.6,
       "leaders": 1,
-      "avg_change_pct": 8.37
+      "avg_change_pct": 6.9
     },
     {
       "sector": "인터넷",
-      "score": 18.8,
+      "score": 18.0,
       "leaders": 1,
-      "avg_change_pct": 2.93
+      "avg_change_pct": 2.25
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 518000,
+      "price": 511000,
       "change_value": 0,
-      "change_pct": 8.37,
-      "volume": 376635,
-      "trading_value_okrw": 1950.0,
+      "change_pct": 6.9,
+      "volume": 382988,
+      "trading_value_okrw": 1957.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 12.3,
+      "score": 10.7,
       "rank": 1
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 228500,
+      "price": 227000,
       "change_value": 0,
-      "change_pct": 2.93,
-      "volume": 941362,
-      "trading_value_okrw": 2151.0,
+      "change_pct": 2.25,
+      "volume": 953218,
+      "trading_value_okrw": 2163.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 7.5,
+      "score": 6.6,
       "rank": 2
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-25",
-    "generated_at_kst": "2026-08-25 12:16:27",
+    "generated_at_kst": "2026-08-25 12:21:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 5,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 41.2",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 39.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,33 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 41.2,
+      "score": 39.4,
       "leaders": 1,
-      "avg_change_pct": 20.44
+      "avg_change_pct": 18.74
     },
     {
       "sector": "지주사",
-      "score": 32.8,
+      "score": 33.1,
       "leaders": 1,
-      "avg_change_pct": 20.38
+      "avg_change_pct": 20.68
     },
     {
       "sector": "원전",
-      "score": 30.2,
+      "score": 30.8,
       "leaders": 2,
-      "avg_change_pct": 8.99
+      "avg_change_pct": 9.5
     },
     {
       "sector": "반도체",
-      "score": 18.3,
+      "score": 19.1,
       "leaders": 1,
-      "avg_change_pct": 7.51
+      "avg_change_pct": 8.19
     },
     {
       "sector": "화장품",
-      "score": 18.1,
+      "score": 18.3,
       "leaders": 1,
-      "avg_change_pct": 6.59
+      "avg_change_pct": 6.72
     }
   ],
   "leaders": [
@@ -59,90 +59,90 @@
       "code": "041190",
       "name": "우리기술투자",
       "market": "KOSDAQ",
-      "price": 7070,
+      "price": 6970,
       "change_value": 0,
-      "change_pct": 20.44,
-      "volume": 32092028,
-      "trading_value_okrw": 2268.0,
+      "change_pct": 18.74,
+      "volume": 32558417,
+      "trading_value_okrw": 2269.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 29.5,
+      "score": 27.7,
       "rank": 1
     },
     {
       "code": "000880",
       "name": "한화",
       "market": "KOSPI",
-      "price": 121100,
+      "price": 121400,
       "change_value": 0,
-      "change_pct": 20.38,
-      "volume": 1194030,
-      "trading_value_okrw": 1445.0,
+      "change_pct": 20.68,
+      "volume": 1199203,
+      "trading_value_okrw": 1455.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 23.2,
+      "score": 23.4,
       "rank": 2
     },
     {
       "code": "000720",
       "name": "현대건설",
       "market": "KOSPI",
-      "price": 119100,
+      "price": 119600,
       "change_value": 0,
-      "change_pct": 12.78,
-      "volume": 1251670,
-      "trading_value_okrw": 1490.0,
+      "change_pct": 13.26,
+      "volume": 1278092,
+      "trading_value_okrw": 1528.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 15.7,
+      "score": 16.1,
       "rank": 3
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 47250,
+      "price": 47550,
       "change_value": 0,
-      "change_pct": 7.51,
-      "volume": 2191531,
-      "trading_value_okrw": 1035.0,
+      "change_pct": 8.19,
+      "volume": 2248824,
+      "trading_value_okrw": 1069.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 9.7,
+      "score": 10.4,
       "rank": 4
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 76800,
+      "price": 77200,
       "change_value": 0,
-      "change_pct": 5.21,
-      "volume": 2891526,
-      "trading_value_okrw": 2220.0,
+      "change_pct": 5.75,
+      "volume": 2918543,
+      "trading_value_okrw": 2253.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 9.6,
+      "score": 10.2,
       "rank": 5
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 436500,
+      "price": 437000,
       "change_value": 0,
-      "change_pct": 6.59,
-      "volume": 290417,
-      "trading_value_okrw": 1267.0,
+      "change_pct": 6.72,
+      "volume": 300036,
+      "trading_value_okrw": 1311.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 8.9,
+      "score": 9.1,
       "rank": 6
     }
   ]

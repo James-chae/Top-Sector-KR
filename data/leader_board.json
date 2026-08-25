@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-25",
-    "generated_at_kst": "2026-08-25 09:46:27",
+    "generated_at_kst": "2026-08-25 09:51:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 28.3",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 29.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 28.3,
+      "score": 29.1,
       "leaders": 1,
-      "avg_change_pct": 11.07
+      "avg_change_pct": 11.75
     },
     {
       "sector": "원전",
-      "score": 21.5,
+      "score": 19.4,
       "leaders": 1,
-      "avg_change_pct": 6.99
+      "avg_change_pct": 4.66
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "041190",
       "name": "우리기술투자",
       "market": "KOSDAQ",
-      "price": 6520,
+      "price": 6560,
       "change_value": 0,
-      "change_pct": 11.07,
-      "volume": 15547537,
-      "trading_value_okrw": 1013.0,
+      "change_pct": 11.75,
+      "volume": 16253911,
+      "trading_value_okrw": 1066.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 19.8,
+      "score": 20.4,
       "rank": 1
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 78100,
+      "price": 76400,
       "change_value": 0,
-      "change_pct": 6.99,
-      "volume": 1655151,
-      "trading_value_okrw": 1292.0,
+      "change_pct": 4.66,
+      "volume": 1811024,
+      "trading_value_okrw": 1383.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 12.3,
+      "score": 9.9,
       "rank": 2
     }
   ]

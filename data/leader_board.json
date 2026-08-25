@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-25",
-    "generated_at_kst": "2026-08-25 09:51:26",
+    "generated_at_kst": "2026-08-25 09:56:26",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 29.1",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 28.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,69 @@
   },
   "top_sectors": [
     {
-      "sector": "금융",
-      "score": 29.1,
+      "sector": "지주사",
+      "score": 28.4,
       "leaders": 1,
-      "avg_change_pct": 11.75
+      "avg_change_pct": 16.3
+    },
+    {
+      "sector": "금융",
+      "score": 27.7,
+      "leaders": 1,
+      "avg_change_pct": 10.56
     },
     {
       "sector": "원전",
-      "score": 19.4,
+      "score": 19.9,
       "leaders": 1,
-      "avg_change_pct": 4.66
+      "avg_change_pct": 4.93
     }
   ],
   "leaders": [
     {
+      "code": "000880",
+      "name": "한화",
+      "market": "KOSPI",
+      "price": 117000,
+      "change_value": 0,
+      "change_pct": 16.3,
+      "volume": 872865,
+      "trading_value_okrw": 1021.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 19.9,
+      "rank": 1
+    },
+    {
       "code": "041190",
       "name": "우리기술투자",
       "market": "KOSDAQ",
-      "price": 6560,
+      "price": 6490,
       "change_value": 0,
-      "change_pct": 11.75,
-      "volume": 16253911,
-      "trading_value_okrw": 1066.0,
+      "change_pct": 10.56,
+      "volume": 16639569,
+      "trading_value_okrw": 1079.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 20.4,
-      "rank": 1
+      "score": 19.1,
+      "rank": 2
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 76400,
+      "price": 76600,
       "change_value": 0,
-      "change_pct": 4.66,
-      "volume": 1811024,
-      "trading_value_okrw": 1383.0,
+      "change_pct": 4.93,
+      "volume": 1906096,
+      "trading_value_okrw": 1460.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 9.9,
-      "rank": 2
+      "score": 10.2,
+      "rank": 3
     }
   ]
 }

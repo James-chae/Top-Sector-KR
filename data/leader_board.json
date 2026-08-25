@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-25",
-    "generated_at_kst": "2026-08-25 10:21:29",
+    "generated_at_kst": "2026-08-25 10:26:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 33.4",
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 35.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 33.4,
+      "score": 35.4,
       "leaders": 1,
-      "avg_change_pct": 20.87
+      "avg_change_pct": 22.71
     },
     {
       "sector": "금융",
-      "score": 28.3,
+      "score": 27.7,
       "leaders": 1,
-      "avg_change_pct": 10.73
+      "avg_change_pct": 10.22
     },
     {
       "sector": "원전",
-      "score": 18.4,
+      "score": 18.1,
       "leaders": 1,
-      "avg_change_pct": 2.88
+      "avg_change_pct": 2.47
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "000880",
       "name": "한화",
       "market": "KOSPI",
-      "price": 121600,
+      "price": 123450,
       "change_value": 0,
-      "change_pct": 20.87,
-      "volume": 968944,
-      "trading_value_okrw": 1178.0,
+      "change_pct": 22.71,
+      "volume": 991118,
+      "trading_value_okrw": 1223.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 24.4,
+      "score": 26.3,
       "rank": 1
     },
     {
       "code": "041190",
       "name": "우리기술투자",
       "market": "KOSDAQ",
-      "price": 6500,
+      "price": 6470,
       "change_value": 0,
-      "change_pct": 10.73,
-      "volume": 18921134,
-      "trading_value_okrw": 1229.0,
+      "change_pct": 10.22,
+      "volume": 19112594,
+      "trading_value_okrw": 1236.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 19.2,
+      "score": 18.6,
       "rank": 2
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 75100,
+      "price": 74800,
       "change_value": 0,
-      "change_pct": 2.88,
-      "volume": 2252881,
-      "trading_value_okrw": 1691.0,
+      "change_pct": 2.47,
+      "volume": 2314775,
+      "trading_value_okrw": 1731.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 8.2,
+      "score": 7.8,
       "rank": 3
     }
   ]

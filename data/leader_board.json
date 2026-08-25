@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-25",
-    "generated_at_kst": "2026-08-25 12:26:27",
+    "generated_at_kst": "2026-08-25 12:31:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 6,
+    "leader_count": 7,
     "sector_count": 5,
-    "market_bias": "금융 중심 강세 / 상위섹터 점수 40.2",
+    "market_bias": "금융 중심 강세 / 상위섹터 점수 39.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "금융",
-      "score": 40.2,
+      "score": 39.2,
       "leaders": 1,
-      "avg_change_pct": 19.42
-    },
-    {
-      "sector": "지주사",
-      "score": 32.8,
-      "leaders": 1,
-      "avg_change_pct": 20.48
+      "avg_change_pct": 18.4
     },
     {
       "sector": "원전",
-      "score": 31.4,
+      "score": 32.4,
       "leaders": 2,
-      "avg_change_pct": 9.96
+      "avg_change_pct": 10.79
+    },
+    {
+      "sector": "지주사",
+      "score": 32.2,
+      "leaders": 1,
+      "avg_change_pct": 19.88
     },
     {
       "sector": "반도체",
-      "score": 19.2,
-      "leaders": 1,
-      "avg_change_pct": 8.19
+      "score": 23.8,
+      "leaders": 2,
+      "avg_change_pct": 6.88
     },
     {
       "sector": "화장품",
@@ -59,75 +59,75 @@
       "code": "041190",
       "name": "우리기술투자",
       "market": "KOSDAQ",
-      "price": 7010,
+      "price": 6950,
       "change_value": 0,
-      "change_pct": 19.42,
-      "volume": 32953330,
-      "trading_value_okrw": 2310.0,
+      "change_pct": 18.4,
+      "volume": 33527341,
+      "trading_value_okrw": 2330.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 28.4,
+      "score": 27.4,
       "rank": 1
     },
     {
       "code": "000880",
       "name": "한화",
       "market": "KOSPI",
-      "price": 121200,
+      "price": 120600,
       "change_value": 0,
-      "change_pct": 20.48,
-      "volume": 1202557,
-      "trading_value_okrw": 1457.0,
+      "change_pct": 19.88,
+      "volume": 1206132,
+      "trading_value_okrw": 1454.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 23.2,
+      "score": 22.5,
       "rank": 2
     },
     {
       "code": "000720",
       "name": "현대건설",
       "market": "KOSPI",
-      "price": 120700,
+      "price": 121600,
       "change_value": 0,
-      "change_pct": 14.3,
-      "volume": 1342160,
-      "trading_value_okrw": 1619.0,
+      "change_pct": 15.15,
+      "volume": 1370452,
+      "trading_value_okrw": 1666.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 17.3,
+      "score": 18.2,
       "rank": 3
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 47550,
+      "price": 47900,
       "change_value": 0,
-      "change_pct": 8.19,
-      "volume": 2315880,
-      "trading_value_okrw": 1101.0,
+      "change_pct": 8.99,
+      "volume": 2393775,
+      "trading_value_okrw": 1146.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.5,
+      "score": 11.3,
       "rank": 4
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 77100,
+      "price": 77700,
       "change_value": 0,
-      "change_pct": 5.62,
-      "volume": 2956272,
-      "trading_value_okrw": 2279.0,
+      "change_pct": 6.44,
+      "volume": 3017093,
+      "trading_value_okrw": 2344.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 10.0,
+      "score": 10.9,
       "rank": 5
     },
     {
@@ -137,13 +137,28 @@
       "price": 436000,
       "change_value": 0,
       "change_pct": 6.47,
-      "volume": 301837,
-      "trading_value_okrw": 1316.0,
+      "volume": 305406,
+      "trading_value_okrw": 1331.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
       "score": 8.8,
       "rank": 6
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 173900,
+      "change_value": 0,
+      "change_pct": 4.76,
+      "volume": 598712,
+      "trading_value_okrw": 1041.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.6,
+      "rank": 7
     }
   ]
 }

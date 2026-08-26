@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-26",
-    "generated_at_kst": "2026-08-26 09:21:31",
+    "generated_at_kst": "2026-08-26 09:26:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 76.7",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 75.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 76.7,
+      "score": 75.7,
       "leaders": 3,
-      "avg_change_pct": 1.9
+      "avg_change_pct": 1.2
     }
   ],
   "leaders": [
@@ -35,45 +35,45 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1713000,
+      "price": 1695000,
       "change_value": 0,
-      "change_pct": 2.09,
-      "volume": 442999,
-      "trading_value_okrw": 7588.0,
+      "change_pct": 1.01,
+      "volume": 490539,
+      "trading_value_okrw": 8314.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.4,
+      "score": 66.2,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 262000,
+      "price": 260500,
       "change_value": 0,
-      "change_pct": 1.95,
-      "volume": 2507482,
-      "trading_value_okrw": 6569.0,
+      "change_pct": 1.36,
+      "volume": 2759270,
+      "trading_value_okrw": 7187.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 59.8,
+      "score": 58.9,
       "rank": 2
     },
     {
       "code": "005935",
       "name": "삼성전자우",
       "market": "KOSPI",
-      "price": 197750,
+      "price": 196900,
       "change_value": 0,
-      "change_pct": 1.67,
-      "volume": 635192,
-      "trading_value_okrw": 1256.0,
+      "change_pct": 1.23,
+      "volume": 680423,
+      "trading_value_okrw": 1339.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 12.8,
+      "score": 12.0,
       "rank": 3
     }
   ]

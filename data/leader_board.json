@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-26",
-    "generated_at_kst": "2026-08-26 10:21:30",
+    "generated_at_kst": "2026-08-26 10:26:29",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "원전 중심 강세 / 상위섹터 점수 41.2",
+    "market_bias": "원전 중심 강세 / 상위섹터 점수 44.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "원전",
-      "score": 41.2,
+      "score": 44.2,
       "leaders": 3,
-      "avg_change_pct": 11.71
+      "avg_change_pct": 11.24
     },
     {
       "sector": "바이오",
-      "score": 27.1,
+      "score": 26.6,
       "leaders": 1,
-      "avg_change_pct": 9.98
+      "avg_change_pct": 9.38
     },
     {
       "sector": "건설",
-      "score": 23.4,
+      "score": 21.8,
       "leaders": 1,
-      "avg_change_pct": 8.71
+      "avg_change_pct": 7.0
     },
     {
       "sector": "부동산",
-      "score": 17.8,
+      "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 2.34
+      "avg_change_pct": 1.04
     }
   ],
   "leaders": [
@@ -53,90 +53,90 @@
       "code": "052690",
       "name": "한전기술",
       "market": "KOSPI",
-      "price": 128200,
+      "price": 129500,
       "change_value": 0,
-      "change_pct": 18.05,
-      "volume": 1143259,
-      "trading_value_okrw": 1465.0,
+      "change_pct": 19.24,
+      "volume": 1194520,
+      "trading_value_okrw": 1546.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 24.5,
+      "score": 25.9,
       "rank": 1
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 19040,
+      "price": 19190,
       "change_value": 0,
-      "change_pct": 8.06,
-      "volume": 8582288,
-      "trading_value_okrw": 1634.0,
+      "change_pct": 8.91,
+      "volume": 9252563,
+      "trading_value_okrw": 1775.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 17.3,
+      "score": 18.8,
       "rank": 2
     },
     {
       "code": "128940",
       "name": "한미약품",
       "market": "KOSPI",
-      "price": 551000,
+      "price": 548000,
       "change_value": 0,
-      "change_pct": 9.98,
-      "volume": 299271,
-      "trading_value_okrw": 1648.0,
+      "change_pct": 9.38,
+      "volume": 306033,
+      "trading_value_okrw": 1677.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 17.0,
+      "score": 16.4,
       "rank": 3
     },
     {
-      "code": "015760",
-      "name": "한국전력",
+      "code": "034020",
+      "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 35650,
+      "price": 85200,
       "change_value": 0,
-      "change_pct": 9.02,
-      "volume": 3582915,
-      "trading_value_okrw": 1277.0,
+      "change_pct": 5.58,
+      "volume": 2797404,
+      "trading_value_okrw": 2383.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 15.4,
+      "score": 16.2,
       "rank": 4
     },
     {
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 38050,
+      "price": 37450,
       "change_value": 0,
-      "change_pct": 8.71,
-      "volume": 3075280,
-      "trading_value_okrw": 1170.0,
+      "change_pct": 7.0,
+      "volume": 3205029,
+      "trading_value_okrw": 1200.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 14.5,
+      "score": 12.8,
       "rank": 5
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 15740,
+      "price": 15540,
       "change_value": 0,
-      "change_pct": 2.34,
-      "volume": 7120789,
-      "trading_value_okrw": 1120.0,
+      "change_pct": 1.04,
+      "volume": 7217133,
+      "trading_value_okrw": 1121.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 9.0,
+      "score": 7.6,
       "rank": 6
     }
   ]

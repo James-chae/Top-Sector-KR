@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-26",
-    "generated_at_kst": "2026-08-26 09:41:28",
+    "generated_at_kst": "2026-08-26 09:46:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "원전 중심 강세 / 상위섹터 점수 29.4",
+    "leader_count": 5,
+    "sector_count": 3,
+    "market_bias": "원전 중심 강세 / 상위섹터 점수 40.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,62 +25,98 @@
   "top_sectors": [
     {
       "sector": "원전",
-      "score": 29.4,
-      "leaders": 2,
-      "avg_change_pct": 5.56
+      "score": 40.2,
+      "leaders": 3,
+      "avg_change_pct": 10.13
     },
     {
       "sector": "바이오",
-      "score": 23.3,
+      "score": 23.8,
       "leaders": 1,
-      "avg_change_pct": 7.39
+      "avg_change_pct": 7.78
+    },
+    {
+      "sector": "통신",
+      "score": 20.6,
+      "leaders": 1,
+      "avg_change_pct": 2.37
     }
   ],
   "leaders": [
     {
-      "code": "047040",
-      "name": "대우건설",
+      "code": "052690",
+      "name": "한전기술",
       "market": "KOSPI",
-      "price": 18750,
+      "price": 130100,
       "change_value": 0,
-      "change_pct": 6.41,
-      "volume": 5477947,
-      "trading_value_okrw": 1027.0,
+      "change_pct": 19.8,
+      "volume": 818119,
+      "trading_value_okrw": 1064.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 14.6,
+      "score": 26.2,
       "rank": 1
     },
     {
       "code": "128940",
       "name": "한미약품",
       "market": "KOSPI",
-      "price": 538000,
+      "price": 540000,
       "change_value": 0,
-      "change_pct": 7.39,
-      "volume": 210669,
-      "trading_value_okrw": 1133.0,
+      "change_pct": 7.78,
+      "volume": 222952,
+      "trading_value_okrw": 1203.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 14.4,
+      "score": 14.8,
       "rank": 2
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 18720,
+      "change_value": 0,
+      "change_pct": 6.24,
+      "volume": 5951745,
+      "trading_value_okrw": 1114.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 14.7,
+      "rank": 3
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 84500,
+      "price": 84200,
       "change_value": 0,
-      "change_pct": 4.71,
-      "volume": 1593563,
-      "trading_value_okrw": 1346.0,
+      "change_pct": 4.34,
+      "volume": 1842294,
+      "trading_value_okrw": 1551.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 13.5,
-      "rank": 3
+      "score": 13.9,
+      "rank": 4
+    },
+    {
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 13820,
+      "change_value": 0,
+      "change_pct": 2.37,
+      "volume": 8258125,
+      "trading_value_okrw": 1141.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 11.7,
+      "rank": 5
     }
   ]
 }

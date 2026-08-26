@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-26",
-    "generated_at_kst": "2026-08-26 09:36:30",
+    "generated_at_kst": "2026-08-26 09:41:28",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
+    "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 24.6",
+    "market_bias": "원전 중심 강세 / 상위섹터 점수 29.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,63 @@
   },
   "top_sectors": [
     {
-      "sector": "바이오",
-      "score": 24.6,
-      "leaders": 1,
-      "avg_change_pct": 8.98
+      "sector": "원전",
+      "score": 29.4,
+      "leaders": 2,
+      "avg_change_pct": 5.56
     },
     {
-      "sector": "원전",
-      "score": 20.8,
+      "sector": "바이오",
+      "score": 23.3,
       "leaders": 1,
-      "avg_change_pct": 4.34
+      "avg_change_pct": 7.39
     }
   ],
   "leaders": [
     {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 18750,
+      "change_value": 0,
+      "change_pct": 6.41,
+      "volume": 5477947,
+      "trading_value_okrw": 1027.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 14.6,
+      "rank": 1
+    },
+    {
       "code": "128940",
       "name": "한미약품",
       "market": "KOSPI",
-      "price": 546000,
+      "price": 538000,
       "change_value": 0,
-      "change_pct": 8.98,
-      "volume": 191614,
-      "trading_value_okrw": 1046.0,
+      "change_pct": 7.39,
+      "volume": 210669,
+      "trading_value_okrw": 1133.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 16.0,
-      "rank": 1
+      "score": 14.4,
+      "rank": 2
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 84200,
+      "price": 84500,
       "change_value": 0,
-      "change_pct": 4.34,
-      "volume": 1292277,
-      "trading_value_okrw": 1088.0,
+      "change_pct": 4.71,
+      "volume": 1593563,
+      "trading_value_okrw": 1346.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 12.0,
-      "rank": 2
+      "score": 13.5,
+      "rank": 3
     }
   ]
 }

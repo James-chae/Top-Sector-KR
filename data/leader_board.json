@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-26",
-    "generated_at_kst": "2026-08-26 10:31:47",
+    "generated_at_kst": "2026-08-26 10:36:30",
     "mode": "closing",
     "session_state": "",
     "leader_count": 6,
     "sector_count": 4,
-    "market_bias": "원전 중심 강세 / 상위섹터 점수 43.6",
+    "market_bias": "원전 중심 강세 / 상위섹터 점수 42.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "원전",
-      "score": 43.6,
+      "score": 42.7,
       "leaders": 3,
-      "avg_change_pct": 10.38
+      "avg_change_pct": 9.43
     },
     {
       "sector": "바이오",
-      "score": 28.1,
+      "score": 28.5,
       "leaders": 1,
-      "avg_change_pct": 10.78
+      "avg_change_pct": 11.18
     },
     {
       "sector": "건설",
-      "score": 21.1,
+      "score": 21.5,
       "leaders": 1,
-      "avg_change_pct": 6.14
+      "avg_change_pct": 6.57
     },
     {
       "sector": "부동산",
-      "score": 16.6,
+      "score": 17.4,
       "leaders": 1,
-      "avg_change_pct": 1.24
+      "avg_change_pct": 2.15
     }
   ],
   "leaders": [
@@ -53,90 +53,90 @@
       "code": "052690",
       "name": "한전기술",
       "market": "KOSPI",
-      "price": 127900,
+      "price": 126200,
       "change_value": 0,
-      "change_pct": 17.77,
-      "volume": 1225997,
-      "trading_value_okrw": 1568.0,
+      "change_pct": 16.21,
+      "volume": 1250230,
+      "trading_value_okrw": 1577.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 24.4,
+      "score": 22.6,
       "rank": 1
-    },
-    {
-      "code": "047040",
-      "name": "대우건설",
-      "market": "KOSPI",
-      "price": 19100,
-      "change_value": 0,
-      "change_pct": 8.4,
-      "volume": 9590924,
-      "trading_value_okrw": 1831.0,
-      "sector1": "원전",
-      "sector2": "",
-      "sector": "원전",
-      "score": 18.3,
-      "rank": 2
     },
     {
       "code": "128940",
       "name": "한미약품",
       "market": "KOSPI",
-      "price": 555000,
+      "price": 557000,
       "change_value": 0,
-      "change_pct": 10.78,
-      "volume": 310825,
-      "trading_value_okrw": 1725.0,
+      "change_pct": 11.18,
+      "volume": 320254,
+      "trading_value_okrw": 1783.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 17.7,
+      "score": 18.1,
+      "rank": 2
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 18900,
+      "change_value": 0,
+      "change_pct": 7.26,
+      "volume": 9849367,
+      "trading_value_okrw": 1861.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 17.0,
       "rank": 3
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 84700,
+      "price": 84600,
       "change_value": 0,
-      "change_pct": 4.96,
-      "volume": 2915122,
-      "trading_value_okrw": 2469.0,
+      "change_pct": 4.83,
+      "volume": 3006015,
+      "trading_value_okrw": 2543.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 15.6,
+      "score": 15.4,
       "rank": 4
     },
     {
       "code": "006360",
       "name": "GS건설",
       "market": "KOSPI",
-      "price": 37150,
+      "price": 37300,
       "change_value": 0,
-      "change_pct": 6.14,
-      "volume": 3339146,
-      "trading_value_okrw": 1240.0,
+      "change_pct": 6.57,
+      "volume": 3383772,
+      "trading_value_okrw": 1262.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 12.0,
+      "score": 12.3,
       "rank": 5
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 15570,
+      "price": 15710,
       "change_value": 0,
-      "change_pct": 1.24,
-      "volume": 7275477,
-      "trading_value_okrw": 1132.0,
+      "change_pct": 2.15,
+      "volume": 7321317,
+      "trading_value_okrw": 1150.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 7.7,
+      "score": 8.5,
       "rank": 6
     }
   ]

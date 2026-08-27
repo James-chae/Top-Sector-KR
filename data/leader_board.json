@@ -1,7 +1,7 @@
 {
   "meta": {
     "trade_date": "2026-08-27",
-    "generated_at_kst": "2026-08-27 15:31:30",
+    "generated_at_kst": "2026-08-27 15:36:28",
     "mode": "closing",
     "session_state": "",
     "leader_count": 14,
@@ -30,16 +30,16 @@
       "avg_change_pct": 5.6
     },
     {
-      "sector": "2차전지",
-      "score": 41.6,
+      "sector": "전력",
+      "score": 41.9,
       "leaders": 3,
-      "avg_change_pct": 8.3
+      "avg_change_pct": 16.97
     },
     {
-      "sector": "전력",
-      "score": 41.5,
+      "sector": "2차전지",
+      "score": 41.7,
       "leaders": 3,
-      "avg_change_pct": 16.93
+      "avg_change_pct": 8.3
     },
     {
       "sector": "통신",
@@ -49,27 +49,27 @@
     },
     {
       "sector": "원전",
-      "score": 30.5,
+      "score": 30.6,
       "leaders": 1,
       "avg_change_pct": 4.71
     },
     {
       "sector": "방산",
-      "score": 17.3,
+      "score": 17.8,
       "leaders": 1,
-      "avg_change_pct": 5.89
+      "avg_change_pct": 5.8
     },
     {
       "sector": "건설",
-      "score": 14.5,
+      "score": 14.8,
       "leaders": 1,
-      "avg_change_pct": 3.63
+      "avg_change_pct": 3.83
     },
     {
       "sector": "금융",
-      "score": 11.3,
+      "score": 11.2,
       "leaders": 1,
-      "avg_change_pct": 1.02
+      "avg_change_pct": 1.3
     }
   ],
   "leaders": [
@@ -155,8 +155,8 @@
       "price": 201500,
       "change_value": 0,
       "change_pct": 13.91,
-      "volume": 881096,
-      "trading_value_okrw": 1775.0,
+      "volume": 894619,
+      "trading_value_okrw": 1802.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
@@ -182,15 +182,15 @@
       "code": "267260",
       "name": "HD현대일렉트릭",
       "market": "KOSPI",
-      "price": 820000,
+      "price": 821000,
       "change_value": 0,
-      "change_pct": 11.87,
-      "volume": 208520,
-      "trading_value_okrw": 1709.0,
+      "change_pct": 12.01,
+      "volume": 226757,
+      "trading_value_okrw": 1861.0,
       "sector1": "전력",
       "sector2": "",
       "sector": "전력",
-      "score": 13.9,
+      "score": 14.3,
       "rank": 8
     },
     {
@@ -200,12 +200,12 @@
       "price": 20000,
       "change_value": 0,
       "change_pct": 4.71,
-      "volume": 21918082,
-      "trading_value_okrw": 4383.0,
+      "volume": 22050039,
+      "trading_value_okrw": 4410.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 13.5,
+      "score": 13.6,
       "rank": 9
     },
     {
@@ -227,11 +227,11 @@
       "code": "012450",
       "name": "한화에어로스페이스",
       "market": "KOSPI",
-      "price": 1151000,
+      "price": 1150000,
       "change_value": 0,
-      "change_pct": 5.89,
-      "volume": 127356,
-      "trading_value_okrw": 1465.0,
+      "change_pct": 5.8,
+      "volume": 139562,
+      "trading_value_okrw": 1604.0,
       "sector1": "방산",
       "sector2": "",
       "sector": "방산",
@@ -245,8 +245,8 @@
       "price": 370500,
       "change_value": 0,
       "change_pct": 5.56,
-      "volume": 413823,
-      "trading_value_okrw": 1533.0,
+      "volume": 432249,
+      "trading_value_okrw": 1601.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -257,30 +257,30 @@
       "code": "028050",
       "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 50000,
+      "price": 50100,
       "change_value": 0,
-      "change_pct": 3.63,
-      "volume": 2418805,
-      "trading_value_okrw": 1209.0,
+      "change_pct": 3.83,
+      "volume": 2456433,
+      "trading_value_okrw": 1230.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 5.5,
+      "score": 5.7,
       "rank": 13
     },
     {
-      "code": "105560",
-      "name": "KB금융",
+      "code": "055550",
+      "name": "신한지주",
       "market": "KOSPI",
-      "price": 168300,
+      "price": 108800,
       "change_value": 0,
-      "change_pct": 1.02,
-      "volume": 671806,
-      "trading_value_okrw": 1130.0,
+      "change_pct": 1.3,
+      "volume": 933989,
+      "trading_value_okrw": 1016.0,
       "sector1": "금융",
       "sector2": "",
       "sector": "금융",
-      "score": 2.5,
+      "score": 2.7,
       "rank": 14
     }
   ]

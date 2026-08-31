@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 12:08:06",
+    "generated_at_kst": "2026-08-31 12:13:06",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 37.9",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 37.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 37.9,
+      "score": 37.4,
       "leaders": 1,
-      "avg_change_pct": 17.42
+      "avg_change_pct": 17.04
     },
     {
       "sector": "2차전지",
-      "score": 21.1,
+      "score": 21.8,
       "leaders": 1,
-      "avg_change_pct": 7.36
+      "avg_change_pct": 7.96
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12540,
+      "price": 12500,
       "change_value": 0,
-      "change_pct": 17.42,
-      "volume": 17853644,
-      "trading_value_okrw": 2238.0,
+      "change_pct": 17.04,
+      "volume": 17898556,
+      "trading_value_okrw": 2237.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 26.4,
+      "score": 25.8,
       "rank": 1
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 125500,
+      "price": 126200,
       "change_value": 0,
-      "change_pct": 7.36,
-      "volume": 1192208,
-      "trading_value_okrw": 1496.0,
+      "change_pct": 7.96,
+      "volume": 1208056,
+      "trading_value_okrw": 1524.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 11.4,
+      "score": 12.0,
       "rank": 2
     }
   ]

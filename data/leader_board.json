@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 09:33:05",
+    "generated_at_kst": "2026-08-31 09:38:08",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 29.4",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 27.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 29.4,
+      "score": 27.8,
       "leaders": 1,
-      "avg_change_pct": 9.93
+      "avg_change_pct": 8.8
     },
     {
       "sector": "2차전지",
-      "score": 21.0,
+      "score": 20.9,
       "leaders": 1,
-      "avg_change_pct": 1.75
+      "avg_change_pct": 1.93
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 11740,
+      "price": 11620,
       "change_value": 0,
-      "change_pct": 9.93,
-      "volume": 8789300,
-      "trading_value_okrw": 1031.0,
+      "change_pct": 8.8,
+      "volume": 9080707,
+      "trading_value_okrw": 1055.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 20.8,
+      "score": 19.1,
       "rank": 1
     },
     {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 581000,
+      "price": 582000,
       "change_value": 0,
-      "change_pct": 1.75,
-      "volume": 235597,
-      "trading_value_okrw": 1368.0,
+      "change_pct": 1.93,
+      "volume": 246746,
+      "trading_value_okrw": 1436.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 11.6,
+      "score": 11.3,
       "rank": 2
     }
   ]

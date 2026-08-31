@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 12:48:06",
+    "generated_at_kst": "2026-08-31 12:53:06",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 37.1",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 37.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 37.1,
+      "score": 37.2,
       "leaders": 1,
-      "avg_change_pct": 17.04
+      "avg_change_pct": 17.13
     },
     {
       "sector": "2차전지",
-      "score": 26.6,
+      "score": 26.2,
       "leaders": 2,
-      "avg_change_pct": 7.37
+      "avg_change_pct": 7.0
     }
   ],
   "leaders": [
@@ -41,11 +41,11 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12500,
+      "price": 12510,
       "change_value": 0,
-      "change_pct": 17.04,
-      "volume": 18242485,
-      "trading_value_okrw": 2280.0,
+      "change_pct": 17.13,
+      "volume": 18278607,
+      "trading_value_okrw": 2286.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
@@ -56,30 +56,30 @@
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 125700,
+      "price": 125800,
       "change_value": 0,
-      "change_pct": 7.53,
-      "volume": 1282116,
-      "trading_value_okrw": 1611.0,
+      "change_pct": 7.61,
+      "volume": 1289776,
+      "trading_value_okrw": 1622.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 11.4,
+      "score": 11.5,
       "rank": 2
     },
     {
       "code": "066970",
       "name": "엘앤에프",
       "market": "KOSPI",
-      "price": 144500,
+      "price": 143400,
       "change_value": 0,
-      "change_pct": 7.2,
-      "volume": 697466,
-      "trading_value_okrw": 1007.0,
+      "change_pct": 6.38,
+      "volume": 718944,
+      "trading_value_okrw": 1030.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 9.6,
+      "score": 8.8,
       "rank": 3
     }
   ]

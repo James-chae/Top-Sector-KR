@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 10:18:08",
+    "generated_at_kst": "2026-08-31 10:23:06",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 40.2",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 41.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 40.2,
+      "score": 41.5,
       "leaders": 1,
-      "avg_change_pct": 17.7
+      "avg_change_pct": 19.1
     },
     {
       "sector": "부동산",
-      "score": 21.6,
+      "score": 22.4,
       "leaders": 1,
-      "avg_change_pct": 1.18
+      "avg_change_pct": 2.12
     },
     {
       "sector": "2차전지",
-      "score": 19.8,
+      "score": 19.4,
       "leaders": 1,
-      "avg_change_pct": 6.42
+      "avg_change_pct": 6.16
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12570,
+      "price": 12720,
       "change_value": 0,
-      "change_pct": 17.7,
-      "volume": 14755069,
-      "trading_value_okrw": 1854.0,
+      "change_pct": 19.1,
+      "volume": 15015636,
+      "trading_value_okrw": 1909.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 29.5,
+      "score": 30.7,
       "rank": 1
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17220,
+      "price": 17380,
       "change_value": 0,
-      "change_pct": 1.18,
-      "volume": 10036836,
-      "trading_value_okrw": 1728.0,
+      "change_pct": 2.12,
+      "volume": 10146783,
+      "trading_value_okrw": 1763.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 11.3,
+      "score": 12.0,
       "rank": 2
     },
     {
       "code": "096770",
       "name": "SK이노베이션",
       "market": "KOSPI",
-      "price": 124400,
+      "price": 124100,
       "change_value": 0,
-      "change_pct": 6.42,
-      "volume": 828931,
-      "trading_value_okrw": 1031.0,
+      "change_pct": 6.16,
+      "volume": 840164,
+      "trading_value_okrw": 1042.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 11.2,
+      "score": 10.8,
       "rank": 3
     }
   ]

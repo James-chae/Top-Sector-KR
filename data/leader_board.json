@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 12:43:09",
+    "generated_at_kst": "2026-08-31 12:48:06",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 38.0",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 37.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 38.0,
+      "score": 37.1,
       "leaders": 1,
-      "avg_change_pct": 17.88
+      "avg_change_pct": 17.04
     },
     {
       "sector": "2차전지",
-      "score": 26.5,
+      "score": 26.6,
       "leaders": 2,
-      "avg_change_pct": 7.33
+      "avg_change_pct": 7.37
     }
   ],
   "leaders": [
@@ -41,15 +41,15 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12590,
+      "price": 12500,
       "change_value": 0,
-      "change_pct": 17.88,
-      "volume": 18191886,
-      "trading_value_okrw": 2290.0,
+      "change_pct": 17.04,
+      "volume": 18242485,
+      "trading_value_okrw": 2280.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 26.3,
+      "score": 25.4,
       "rank": 1
     },
     {
@@ -59,8 +59,8 @@
       "price": 125700,
       "change_value": 0,
       "change_pct": 7.53,
-      "volume": 1272365,
-      "trading_value_okrw": 1599.0,
+      "volume": 1282116,
+      "trading_value_okrw": 1611.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
@@ -71,11 +71,11 @@
       "code": "066970",
       "name": "엘앤에프",
       "market": "KOSPI",
-      "price": 144400,
+      "price": 144500,
       "change_value": 0,
-      "change_pct": 7.12,
-      "volume": 694021,
-      "trading_value_okrw": 1002.0,
+      "change_pct": 7.2,
+      "volume": 697466,
+      "trading_value_okrw": 1007.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",

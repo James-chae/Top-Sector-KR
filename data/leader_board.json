@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 10:03:05",
+    "generated_at_kst": "2026-08-31 10:08:06",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 45.2",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 42.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 45.2,
+      "score": 42.8,
       "leaders": 1,
-      "avg_change_pct": 21.25
+      "avg_change_pct": 19.57
     },
     {
       "sector": "부동산",
-      "score": 22.5,
+      "score": 21.7,
       "leaders": 1,
-      "avg_change_pct": 1.7
+      "avg_change_pct": 1.0
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12950,
+      "price": 12770,
       "change_value": 0,
-      "change_pct": 21.25,
-      "volume": 13825444,
-      "trading_value_okrw": 1790.0,
+      "change_pct": 19.57,
+      "volume": 14161182,
+      "trading_value_okrw": 1808.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 34.7,
+      "score": 32.3,
       "rank": 1
     },
     {
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17310,
+      "price": 17190,
       "change_value": 0,
-      "change_pct": 1.7,
-      "volume": 9076409,
-      "trading_value_okrw": 1571.0,
+      "change_pct": 1.0,
+      "volume": 9506496,
+      "trading_value_okrw": 1634.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 12.5,
+      "score": 11.6,
       "rank": 2
     }
   ]

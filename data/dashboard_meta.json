@@ -1,16 +1,16 @@
 {
-  "trade_date": "2026-08-31",
-  "generated_at_kst": "2026-08-31 20:33:04 KST",
+  "trade_date": "2026-09-01",
+  "generated_at_kst": "2026-09-01 08:01:32 KST",
   "mode": "closing",
   "session_state": "",
   "pipeline_ok": true,
   "source": "run_kr_pipeline_real",
   "counts": {
-    "latest_krx_rows": 3923,
+    "latest_krx_rows": 3922,
     "market_raw_rows": 2628,
     "leader_count": 15,
     "sector_count": 8,
-    "calendar_days": 108
+    "calendar_days": 109
   },
   "notes": "real pipeline: fetch -> market_raw -> score -> calendar"
 }

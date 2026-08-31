@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-08-31",
-    "generated_at_kst": "2026-08-31 09:18:08",
+    "generated_at_kst": "2026-08-31 09:23:09",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 33.8",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 23.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "제조",
-      "score": 33.8,
-      "leaders": 1,
-      "avg_change_pct": 12.92
-    },
-    {
       "sector": "2차전지",
-      "score": 20.3,
+      "score": 23.0,
       "leaders": 1,
-      "avg_change_pct": 2.8
-    },
-    {
-      "sector": "부동산",
-      "score": 20.1,
-      "leaders": 1,
-      "avg_change_pct": 2.29
+      "avg_change_pct": 3.68
     }
   ],
   "leaders": [
     {
-      "code": "001210",
-      "name": "금호전기",
-      "market": "KOSPI",
-      "price": 12060,
-      "change_value": 0,
-      "change_pct": 12.92,
-      "volume": 6790197,
-      "trading_value_okrw": 818.0,
-      "sector1": "제조",
-      "sector2": "",
-      "sector": "제조",
-      "score": 25.7,
-      "rank": 1
-    },
-    {
-      "code": "002990",
-      "name": "금호건설",
-      "market": "KOSPI",
-      "price": 17410,
-      "change_value": 0,
-      "change_pct": 2.29,
-      "volume": 4109112,
-      "trading_value_okrw": 715.0,
-      "sector1": "부동산",
-      "sector2": "",
-      "sector": "부동산",
-      "score": 12.4,
-      "rank": 2
-    },
-    {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 587000,
+      "price": 592000,
       "change_value": 0,
-      "change_pct": 2.8,
-      "volume": 149708,
-      "trading_value_okrw": 878.0,
+      "change_pct": 3.68,
+      "volume": 191608,
+      "trading_value_okrw": 1134.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 12.1,
-      "rank": 3
+      "score": 14.1,
+      "rank": 1
     }
   ]
 }

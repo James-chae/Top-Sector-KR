@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 10:26:37",
+    "generated_at_kst": "2026-09-02 10:31:36",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 29.7",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 29.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 29.7,
+      "score": 29.1,
       "leaders": 2,
-      "avg_change_pct": 5.34
+      "avg_change_pct": 4.84
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3205,
+      "price": 3175,
       "change_value": 0,
-      "change_pct": 7.19,
-      "volume": 35266385,
-      "trading_value_okrw": 1130.0,
+      "change_pct": 6.19,
+      "volume": 36052313,
+      "trading_value_okrw": 1144.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 18.4,
+      "score": 17.2,
       "rank": 1
     },
     {
@@ -53,12 +53,12 @@
       "price": 311500,
       "change_value": 0,
       "change_pct": 3.49,
-      "volume": 411507,
-      "trading_value_okrw": 1281.0,
+      "volume": 419451,
+      "trading_value_okrw": 1306.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.6,
+      "score": 10.5,
       "rank": 2
     }
   ]

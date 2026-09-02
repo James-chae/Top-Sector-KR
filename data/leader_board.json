@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 14:46:37",
+    "generated_at_kst": "2026-09-02 14:51:38",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 25.5",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 26.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 25.5,
+      "score": 26.7,
       "leaders": 1,
-      "avg_change_pct": 3.64
+      "avg_change_pct": 4.85
     },
     {
       "sector": "바이오",
-      "score": 19.2,
+      "score": 19.6,
       "leaders": 1,
-      "avg_change_pct": 1.51
+      "avg_change_pct": 2.01
     },
     {
       "sector": "반도체",
-      "score": 15.0,
+      "score": 15.1,
       "leaders": 1,
-      "avg_change_pct": 1.97
+      "avg_change_pct": 2.08
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17100,
+      "price": 17300,
       "change_value": 0,
-      "change_pct": 3.64,
-      "volume": 19283593,
-      "trading_value_okrw": 3297.0,
+      "change_pct": 4.85,
+      "volume": 19396480,
+      "trading_value_okrw": 3355.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 11.3,
+      "score": 12.3,
       "rank": 1
     },
     {
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3035,
+      "price": 3050,
       "change_value": 0,
-      "change_pct": 1.51,
-      "volume": 51389775,
-      "trading_value_okrw": 1559.0,
+      "change_pct": 2.01,
+      "volume": 51681961,
+      "trading_value_okrw": 1576.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 9.3,
+      "score": 9.7,
       "rank": 2
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 176400,
+      "price": 176600,
       "change_value": 0,
-      "change_pct": 1.97,
-      "volume": 930024,
-      "trading_value_okrw": 1640.0,
+      "change_pct": 2.08,
+      "volume": 936213,
+      "trading_value_okrw": 1653.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 4.9,
+      "score": 5.0,
       "rank": 3
     }
   ]

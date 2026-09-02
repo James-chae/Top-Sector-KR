@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 11:21:37",
+    "generated_at_kst": "2026-09-02 11:26:37",
     "mode": "closing",
     "session_state": "",
     "leader_count": 5,
     "sector_count": 4,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 30.5",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 30.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,7 +25,7 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 30.5,
+      "score": 30.8,
       "leaders": 1,
       "avg_change_pct": 10.42
     },
@@ -37,15 +37,15 @@
     },
     {
       "sector": "반도체",
-      "score": 17.4,
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 4.39
+      "avg_change_pct": 3.99
     },
     {
       "sector": "전자",
-      "score": 16.7,
+      "score": 16.3,
       "leaders": 1,
-      "avg_change_pct": 4.27
+      "avg_change_pct": 3.91
     }
   ],
   "leaders": [
@@ -56,72 +56,72 @@
       "price": 18220,
       "change_value": 0,
       "change_pct": 10.42,
-      "volume": 11592997,
-      "trading_value_okrw": 2112.0,
+      "volume": 11969417,
+      "trading_value_okrw": 2180.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 19.2,
+      "score": 19.4,
       "rank": 1
     },
     {
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3075,
+      "price": 3085,
       "change_value": 0,
-      "change_pct": 2.84,
-      "volume": 41806017,
-      "trading_value_okrw": 1285.0,
+      "change_pct": 3.18,
+      "volume": 41933154,
+      "trading_value_okrw": 1293.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 12.6,
+      "score": 12.9,
       "rank": 2
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 310000,
+      "price": 309000,
       "change_value": 0,
-      "change_pct": 2.99,
-      "volume": 488020,
-      "trading_value_okrw": 1512.0,
+      "change_pct": 2.66,
+      "volume": 492419,
+      "trading_value_okrw": 1521.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 8.7,
+      "score": 8.3,
       "rank": 3
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 180600,
+      "price": 179900,
       "change_value": 0,
-      "change_pct": 4.39,
-      "volume": 627137,
-      "trading_value_okrw": 1132.0,
+      "change_pct": 3.99,
+      "volume": 638429,
+      "trading_value_okrw": 1148.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.5,
+      "score": 8.1,
       "rank": 4
     },
     {
       "code": "001820",
       "name": "삼화콘덴서",
       "market": "KOSPI",
-      "price": 117300,
+      "price": 116900,
       "change_value": 0,
-      "change_pct": 4.27,
-      "volume": 883424,
-      "trading_value_okrw": 1036.0,
+      "change_pct": 3.91,
+      "volume": 888127,
+      "trading_value_okrw": 1038.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 8.1,
+      "score": 7.7,
       "rank": 5
     }
   ]

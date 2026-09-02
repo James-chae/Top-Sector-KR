@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 13:11:38",
+    "generated_at_kst": "2026-09-02 13:16:38",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 28.7",
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 30.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 28.7,
+      "score": 30.3,
       "leaders": 1,
-      "avg_change_pct": 5.45
+      "avg_change_pct": 6.79
     },
     {
       "sector": "바이오",
-      "score": 20.1,
+      "score": 20.3,
       "leaders": 1,
-      "avg_change_pct": 1.51
+      "avg_change_pct": 1.67
     },
     {
       "sector": "전자",
-      "score": 14.2,
+      "score": 13.8,
       "leaders": 1,
-      "avg_change_pct": 2.22
+      "avg_change_pct": 1.82
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17400,
+      "price": 17620,
       "change_value": 0,
-      "change_pct": 5.45,
-      "volume": 17256914,
-      "trading_value_okrw": 3002.0,
+      "change_pct": 6.79,
+      "volume": 17490950,
+      "trading_value_okrw": 3081.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 15.2,
+      "score": 16.6,
       "rank": 1
     },
     {
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3035,
+      "price": 3040,
       "change_value": 0,
-      "change_pct": 1.51,
-      "volume": 48383613,
-      "trading_value_okrw": 1468.0,
+      "change_pct": 1.67,
+      "volume": 48555524,
+      "trading_value_okrw": 1476.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.4,
+      "score": 10.6,
       "rank": 2
     },
     {
       "code": "001820",
       "name": "삼화콘덴서",
       "market": "KOSPI",
-      "price": 115000,
+      "price": 114550,
       "change_value": 0,
-      "change_pct": 2.22,
-      "volume": 989068,
-      "trading_value_okrw": 1137.0,
+      "change_pct": 1.82,
+      "volume": 1009155,
+      "trading_value_okrw": 1155.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 5.3,
+      "score": 4.9,
       "rank": 3
     }
   ]

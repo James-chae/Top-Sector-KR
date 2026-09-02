@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 10:41:34",
+    "generated_at_kst": "2026-09-02 10:46:35",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 1,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 28.0",
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 27.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 28.0,
+      "score": 27.2,
       "leaders": 2,
-      "avg_change_pct": 3.83
+      "avg_change_pct": 3.17
     }
   ],
   "leaders": [
@@ -35,30 +35,30 @@
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3120,
+      "price": 3085,
       "change_value": 0,
-      "change_pct": 4.35,
-      "volume": 37950608,
-      "trading_value_okrw": 1184.0,
+      "change_pct": 3.18,
+      "volume": 38654331,
+      "trading_value_okrw": 1192.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 15.1,
+      "score": 13.8,
       "rank": 1
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 311000,
+      "price": 310500,
       "change_value": 0,
-      "change_pct": 3.32,
-      "volume": 439690,
-      "trading_value_okrw": 1367.0,
+      "change_pct": 3.16,
+      "volume": 447164,
+      "trading_value_okrw": 1388.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 10.0,
+      "score": 9.7,
       "rank": 2
     }
   ]

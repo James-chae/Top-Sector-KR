@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 14:41:37",
+    "generated_at_kst": "2026-09-02 14:46:37",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "부동산 중심 강세 / 상위섹터 점수 25.8",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "부동산 중심 강세 / 상위섹터 점수 25.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "부동산",
-      "score": 25.8,
+      "score": 25.5,
       "leaders": 1,
-      "avg_change_pct": 3.82
+      "avg_change_pct": 3.64
+    },
+    {
+      "sector": "바이오",
+      "score": 19.2,
+      "leaders": 1,
+      "avg_change_pct": 1.51
     },
     {
       "sector": "반도체",
       "score": 15.0,
       "leaders": 1,
-      "avg_change_pct": 1.91
+      "avg_change_pct": 1.97
     }
   ],
   "leaders": [
@@ -41,31 +47,46 @@
       "code": "002990",
       "name": "금호건설",
       "market": "KOSPI",
-      "price": 17130,
+      "price": 17100,
       "change_value": 0,
-      "change_pct": 3.82,
-      "volume": 19245393,
-      "trading_value_okrw": 3296.0,
+      "change_pct": 3.64,
+      "volume": 19283593,
+      "trading_value_okrw": 3297.0,
       "sector1": "부동산",
       "sector2": "",
       "sector": "부동산",
-      "score": 11.6,
+      "score": 11.3,
       "rank": 1
+    },
+    {
+      "code": "067290",
+      "name": "JW신약",
+      "market": "KOSDAQ",
+      "price": 3035,
+      "change_value": 0,
+      "change_pct": 1.51,
+      "volume": 51389775,
+      "trading_value_okrw": 1559.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 9.3,
+      "rank": 2
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 176300,
+      "price": 176400,
       "change_value": 0,
-      "change_pct": 1.91,
-      "volume": 924512,
-      "trading_value_okrw": 1629.0,
+      "change_pct": 1.97,
+      "volume": 930024,
+      "trading_value_okrw": 1640.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
       "score": 4.9,
-      "rank": 2
+      "rank": 3
     }
   ]
 }

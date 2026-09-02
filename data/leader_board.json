@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-02",
-    "generated_at_kst": "2026-09-02 00:49:47",
+    "generated_at_kst": "2026-09-02 09:56:34",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "바이오 중심 강세 / 상위섹터 점수 30.6",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 30.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,9 @@
   "top_sectors": [
     {
       "sector": "바이오",
-      "score": 30.6,
+      "score": 30.3,
       "leaders": 1,
-      "avg_change_pct": 9.93
-    },
-    {
-      "sector": "전자",
-      "score": 18.4,
-      "leaders": 1,
-      "avg_change_pct": 4.44
+      "avg_change_pct": 9.7
     }
   ],
   "leaders": [
@@ -41,31 +35,16 @@
       "code": "067290",
       "name": "JW신약",
       "market": "KOSDAQ",
-      "price": 3287,
+      "price": 3280,
       "change_value": 0,
-      "change_pct": 9.93,
-      "volume": 28999753,
-      "trading_value_okrw": 953.0,
+      "change_pct": 9.7,
+      "volume": 30820154,
+      "trading_value_okrw": 1010.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 22.3,
+      "score": 21.8,
       "rank": 1
-    },
-    {
-      "code": "001820",
-      "name": "삼화콘덴서",
-      "market": "KOSPI",
-      "price": 117500,
-      "change_value": 0,
-      "change_pct": 4.44,
-      "volume": 651641,
-      "trading_value_okrw": 765.0,
-      "sector1": "전자",
-      "sector2": "",
-      "sector": "전자",
-      "score": 10.4,
-      "rank": 2
     }
   ]
 }

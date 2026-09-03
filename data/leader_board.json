@@ -1,7 +1,7 @@
 {
   "meta": {
     "trade_date": "2026-09-04",
-    "generated_at_kst": "2026-09-04 06:57:39",
+    "generated_at_kst": "2026-09-04 08:01:41",
     "mode": "closing",
     "session_state": "",
     "leader_count": 20,
@@ -48,10 +48,10 @@
       "avg_change_pct": 18.84
     },
     {
-      "sector": "조선",
-      "score": 30.7,
+      "sector": "자동차",
+      "score": 26.7,
       "leaders": 3,
-      "avg_change_pct": 6.39
+      "avg_change_pct": 1.93
     },
     {
       "sector": "건자재",
@@ -66,10 +66,10 @@
       "avg_change_pct": 6.37
     },
     {
-      "sector": "2차전지",
-      "score": 22.4,
+      "sector": "조선",
+      "score": 24.3,
       "leaders": 2,
-      "avg_change_pct": 4.41
+      "avg_change_pct": 5.83
     }
   ],
   "leaders": [
@@ -149,21 +149,6 @@
       "rank": 5
     },
     {
-      "code": "100090",
-      "name": "SK오션플랜트",
-      "market": "KOSPI",
-      "price": 12900,
-      "change_value": 0,
-      "change_pct": 7.5,
-      "volume": 7862815,
-      "trading_value_okrw": 1014.0,
-      "sector1": "조선",
-      "sector2": "",
-      "sector": "조선",
-      "score": 9.6,
-      "rank": 6
-    },
-    {
       "code": "088350",
       "name": "한화생명",
       "market": "KOSPI",
@@ -176,7 +161,7 @@
       "sector2": "",
       "sector": "보험",
       "score": 9.5,
-      "rank": 7
+      "rank": 6
     },
     {
       "code": "105560",
@@ -191,7 +176,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 9.5,
-      "rank": 8
+      "rank": 7
     },
     {
       "code": "000810",
@@ -206,7 +191,7 @@
       "sector2": "",
       "sector": "보험",
       "score": 8.7,
-      "rank": 9
+      "rank": 8
     },
     {
       "code": "000720",
@@ -221,7 +206,7 @@
       "sector2": "",
       "sector": "원전",
       "score": 7.9,
-      "rank": 10
+      "rank": 9
     },
     {
       "code": "373220",
@@ -236,7 +221,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 7.7,
-      "rank": 11
+      "rank": 10
     },
     {
       "code": "034020",
@@ -251,7 +236,7 @@
       "sector2": "",
       "sector": "원전",
       "score": 7.6,
-      "rank": 12
+      "rank": 11
     },
     {
       "code": "055550",
@@ -266,7 +251,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 6.4,
-      "rank": 13
+      "rank": 12
     },
     {
       "code": "086790",
@@ -281,7 +266,7 @@
       "sector2": "",
       "sector": "금융",
       "score": 5.5,
-      "rank": 14
+      "rank": 13
     },
     {
       "code": "329180",
@@ -296,7 +281,7 @@
       "sector2": "",
       "sector": "조선",
       "score": 5.5,
-      "rank": 15
+      "rank": 14
     },
     {
       "code": "005490",
@@ -311,7 +296,7 @@
       "sector2": "",
       "sector": "2차전지",
       "score": 5.4,
-      "rank": 16
+      "rank": 15
     },
     {
       "code": "047040",
@@ -326,7 +311,7 @@
       "sector2": "",
       "sector": "원전",
       "score": 5.3,
-      "rank": 17
+      "rank": 16
     },
     {
       "code": "004310",
@@ -341,7 +326,7 @@
       "sector2": "",
       "sector": "바이오",
       "score": 4.5,
-      "rank": 18
+      "rank": 17
     },
     {
       "code": "012330",
@@ -356,7 +341,7 @@
       "sector2": "",
       "sector": "자동차",
       "score": 4.3,
-      "rank": 19
+      "rank": 18
     },
     {
       "code": "005380",
@@ -371,6 +356,21 @@
       "sector2": "",
       "sector": "자동차",
       "score": 4.3,
+      "rank": 19
+    },
+    {
+      "code": "000270",
+      "name": "기아",
+      "market": "KOSPI",
+      "price": 127400,
+      "change_value": 0,
+      "change_pct": 2.41,
+      "volume": 814638,
+      "trading_value_okrw": 1037.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 4.1,
       "rank": 20
     }
   ]

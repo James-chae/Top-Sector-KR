@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-04",
-    "generated_at_kst": "2026-09-04 10:01:47",
+    "generated_at_kst": "2026-09-04 10:06:45",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.3",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 72.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 72.3,
+      "score": 72.6,
       "leaders": 3,
-      "avg_change_pct": 2.17
+      "avg_change_pct": 2.42
     },
     {
       "sector": "로봇",
-      "score": 43.1,
+      "score": 43.7,
       "leaders": 1,
-      "avg_change_pct": 20.72
+      "avg_change_pct": 21.33
     }
   ],
   "leaders": [
@@ -41,60 +41,60 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1638000,
+      "price": 1640000,
       "change_value": 0,
-      "change_pct": 2.63,
-      "volume": 744871,
-      "trading_value_okrw": 12200.0,
+      "change_pct": 2.76,
+      "volume": 774898,
+      "trading_value_okrw": 12708.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.9,
+      "score": 68.0,
       "rank": 1
     },
     {
       "code": "005930",
       "name": "삼성전자",
       "market": "KOSPI",
-      "price": 253750,
+      "price": 254000,
       "change_value": 0,
-      "change_pct": 1.5,
-      "volume": 3157010,
-      "trading_value_okrw": 8010.0,
+      "change_pct": 1.6,
+      "volume": 3303659,
+      "trading_value_okrw": 8391.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 45.3,
+      "score": 45.7,
       "rank": 2
     },
     {
       "code": "108490",
       "name": "로보티즈",
       "market": "KOSDAQ",
-      "price": 300000,
+      "price": 301500,
       "change_value": 0,
-      "change_pct": 20.72,
-      "volume": 686906,
-      "trading_value_okrw": 2060.0,
+      "change_pct": 21.33,
+      "volume": 701567,
+      "trading_value_okrw": 2115.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 31.9,
+      "score": 32.4,
       "rank": 3
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 1380000,
+      "price": 1387000,
       "change_value": 0,
-      "change_pct": 2.37,
-      "volume": 151189,
-      "trading_value_okrw": 2086.0,
+      "change_pct": 2.89,
+      "volume": 156673,
+      "trading_value_okrw": 2173.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 13.5,
+      "score": 14.1,
       "rank": 4
     }
   ]

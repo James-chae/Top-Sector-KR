@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-08",
-    "generated_at_kst": "2026-09-08 09:11:32",
+    "generated_at_kst": "2026-09-08 09:16:31",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "원전 중심 강세 / 상위섹터 점수 29.4",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "원전",
-      "score": 29.4,
+      "sector": "반도체",
+      "score": 85.2,
       "leaders": 1,
-      "avg_change_pct": 5.69
+      "avg_change_pct": 2.02
+    },
+    {
+      "sector": "원전",
+      "score": 29.2,
+      "leaders": 1,
+      "avg_change_pct": 5.57
     }
   ],
   "leaders": [
     {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 1819000,
+      "change_value": 0,
+      "change_pct": 2.02,
+      "volume": 376009,
+      "trading_value_okrw": 6839.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 67.2,
+      "rank": 1
+    },
+    {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 92900,
+      "price": 92800,
       "change_value": 0,
-      "change_pct": 5.69,
-      "volume": 1120132,
-      "trading_value_okrw": 1040.0,
+      "change_pct": 5.57,
+      "volume": 1532684,
+      "trading_value_okrw": 1422.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 20.8,
-      "rank": 1
+      "score": 19.7,
+      "rank": 2
     }
   ]
 }

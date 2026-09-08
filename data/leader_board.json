@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-08",
-    "generated_at_kst": "2026-09-08 09:16:31",
+    "generated_at_kst": "2026-09-08 09:21:32",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
+    "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.2",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 75.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 85.2,
-      "leaders": 1,
-      "avg_change_pct": 2.02
+      "score": 75.6,
+      "leaders": 2,
+      "avg_change_pct": 2.36
     },
     {
       "sector": "원전",
-      "score": 29.2,
-      "leaders": 1,
-      "avg_change_pct": 5.57
+      "score": 32.3,
+      "leaders": 2,
+      "avg_change_pct": 5.67
     }
   ],
   "leaders": [
@@ -41,31 +41,61 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1819000,
+      "price": 1844000,
       "change_value": 0,
-      "change_pct": 2.02,
-      "volume": 376009,
-      "trading_value_okrw": 6839.0,
+      "change_pct": 3.42,
+      "volume": 523645,
+      "trading_value_okrw": 9656.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 67.2,
+      "score": 68.6,
       "rank": 1
+    },
+    {
+      "code": "005930",
+      "name": "삼성전자",
+      "market": "KOSPI",
+      "price": 273500,
+      "change_value": 0,
+      "change_pct": 1.3,
+      "volume": 1781891,
+      "trading_value_okrw": 4873.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 34.6,
+      "rank": 2
     },
     {
       "code": "034020",
       "name": "두산에너빌리티",
       "market": "KOSPI",
-      "price": 92800,
+      "price": 92200,
       "change_value": 0,
-      "change_pct": 5.57,
-      "volume": 1532684,
-      "trading_value_okrw": 1422.0,
+      "change_pct": 4.89,
+      "volume": 1795436,
+      "trading_value_okrw": 1655.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 19.7,
-      "rank": 2
+      "score": 16.6,
+      "rank": 3
+    },
+    {
+      "code": "047040",
+      "name": "대우건설",
+      "market": "KOSPI",
+      "price": 19600,
+      "change_value": 0,
+      "change_pct": 6.46,
+      "volume": 5759362,
+      "trading_value_okrw": 1128.0,
+      "sector1": "원전",
+      "sector2": "",
+      "sector": "원전",
+      "score": 15.7,
+      "rank": 4
     }
   ]
 }

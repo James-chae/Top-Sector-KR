@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-09",
-    "generated_at_kst": "2026-09-09 09:02:13",
+    "generated_at_kst": "2026-09-09 09:06:49",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 77.1",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 81.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 77.1,
+      "score": 81.9,
       "leaders": 1,
-      "avg_change_pct": 0.95
+      "avg_change_pct": 1.23
     }
   ],
   "leaders": [
@@ -35,15 +35,15 @@
       "code": "000660",
       "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 1810000,
+      "price": 1815000,
       "change_value": 0,
-      "change_pct": 0.95,
-      "volume": 102972,
-      "trading_value_okrw": 1863.0,
+      "change_pct": 1.23,
+      "volume": 211185,
+      "trading_value_okrw": 3833.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 66.5,
+      "score": 66.3,
       "rank": 1
     }
   ]

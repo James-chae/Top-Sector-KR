@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-10",
-    "generated_at_kst": "2026-09-10 10:54:24",
+    "generated_at_kst": "2026-09-10 10:56:32",
     "mode": "closing",
     "session_state": "",
     "leader_count": 5,
     "sector_count": 4,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 37.4",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 37.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,27 +25,27 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 37.4,
+      "score": 37.5,
       "leaders": 2,
-      "avg_change_pct": 22.35
+      "avg_change_pct": 22.49
     },
     {
       "sector": "반도체",
       "score": 15.7,
       "leaders": 1,
-      "avg_change_pct": 2.42
+      "avg_change_pct": 2.18
     },
     {
       "sector": "로봇",
       "score": 15.4,
       "leaders": 1,
-      "avg_change_pct": 2.74
+      "avg_change_pct": 2.9
     },
     {
       "sector": "통신",
-      "score": 14.4,
+      "score": 14.5,
       "leaders": 1,
-      "avg_change_pct": 1.31
+      "avg_change_pct": 1.57
     }
   ],
   "leaders": [
@@ -56,71 +56,71 @@
       "price": 15400,
       "change_value": 0,
       "change_pct": 27.38,
-      "volume": 16701070,
-      "trading_value_okrw": 2571.0,
+      "volume": 16739236,
+      "trading_value_okrw": 2577.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 20.8,
+      "score": 20.7,
       "rank": 1
     },
     {
       "code": "003280",
       "name": "흥아해운",
       "market": "KOSPI",
-      "price": 2065,
+      "price": 2070,
       "change_value": 0,
-      "change_pct": 17.33,
-      "volume": 74198219,
-      "trading_value_okrw": 1532.0,
+      "change_pct": 17.61,
+      "volume": 75246569,
+      "trading_value_okrw": 1557.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 17.2,
+      "score": 17.4,
       "rank": 2
-    },
-    {
-      "code": "036930",
-      "name": "주성엔지니어링",
-      "market": "KOSDAQ",
-      "price": 211500,
-      "change_value": 0,
-      "change_pct": 2.42,
-      "volume": 782698,
-      "trading_value_okrw": 1655.0,
-      "sector1": "반도체",
-      "sector2": "",
-      "sector": "반도체",
-      "score": 5.6,
-      "rank": 3
     },
     {
       "code": "069540",
       "name": "빛과전자",
       "market": "KOSDAQ",
-      "price": 3860,
+      "price": 3870,
       "change_value": 0,
-      "change_pct": 1.31,
-      "volume": 29079689,
-      "trading_value_okrw": 1122.0,
+      "change_pct": 1.57,
+      "volume": 29252796,
+      "trading_value_okrw": 1132.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 5.6,
-      "rank": 4
+      "score": 5.7,
+      "rank": 3
     },
     {
       "code": "108490",
       "name": "로보티즈",
       "market": "KOSDAQ",
-      "price": 318500,
+      "price": 319000,
       "change_value": 0,
-      "change_pct": 2.74,
-      "volume": 489270,
-      "trading_value_okrw": 1558.0,
+      "change_pct": 2.9,
+      "volume": 491682,
+      "trading_value_okrw": 1568.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
+      "score": 5.5,
+      "rank": 4
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 211000,
+      "change_value": 0,
+      "change_pct": 2.18,
+      "volume": 793224,
+      "trading_value_okrw": 1673.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
       "score": 5.5,
       "rank": 5
     }

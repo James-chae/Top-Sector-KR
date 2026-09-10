@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-10",
-    "generated_at_kst": "2026-09-10 12:21:31",
+    "generated_at_kst": "2026-09-10 12:24:22",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
-    "sector_count": 6,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.2",
+    "leader_count": 8,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,39 +25,33 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 42.2,
+      "score": 42.3,
       "leaders": 3,
-      "avg_change_pct": 8.76
+      "avg_change_pct": 8.71
     },
     {
       "sector": "에너지",
-      "score": 38.2,
+      "score": 38.6,
       "leaders": 2,
-      "avg_change_pct": 15.39
+      "avg_change_pct": 15.88
     },
     {
       "sector": "철강",
-      "score": 18.6,
+      "score": 18.0,
       "leaders": 1,
-      "avg_change_pct": 9.54
+      "avg_change_pct": 8.79
     },
     {
       "sector": "로봇",
-      "score": 16.5,
+      "score": 16.4,
       "leaders": 1,
-      "avg_change_pct": 3.55
-    },
-    {
-      "sector": "통신",
-      "score": 14.6,
-      "leaders": 1,
-      "avg_change_pct": 1.44
+      "avg_change_pct": 3.39
     },
     {
       "sector": "조선",
-      "score": 12.0,
+      "score": 12.2,
       "leaders": 1,
-      "avg_change_pct": 1.4
+      "avg_change_pct": 1.51
     }
   ],
   "leaders": [
@@ -65,15 +59,15 @@
       "code": "024060",
       "name": "흥구석유",
       "market": "KOSDAQ",
-      "price": 14700,
+      "price": 14790,
       "change_value": 0,
-      "change_pct": 21.59,
-      "volume": 18570784,
-      "trading_value_okrw": 2729.0,
+      "change_pct": 22.33,
+      "volume": 18613501,
+      "trading_value_okrw": 2752.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 23.2,
+      "score": 23.8,
       "rank": 1
     },
     {
@@ -83,118 +77,103 @@
       "price": 236000,
       "change_value": 0,
       "change_pct": 14.29,
-      "volume": 2039330,
-      "trading_value_okrw": 4812.0,
+      "volume": 2094612,
+      "trading_value_okrw": 4943.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 20.4,
+      "score": 20.6,
       "rank": 2
     },
     {
       "code": "003280",
       "name": "흥아해운",
       "market": "KOSPI",
-      "price": 1922,
+      "price": 1926,
       "change_value": 0,
-      "change_pct": 9.2,
-      "volume": 90355578,
-      "trading_value_okrw": 1736.0,
+      "change_pct": 9.43,
+      "volume": 90451536,
+      "trading_value_okrw": 1742.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 15.5,
+      "score": 15.7,
       "rank": 3
     },
     {
       "code": "092790",
       "name": "넥스틸",
       "market": "KOSPI",
-      "price": 14580,
+      "price": 14480,
       "change_value": 0,
-      "change_pct": 9.54,
-      "volume": 7308276,
+      "change_pct": 8.79,
+      "volume": 7361532,
       "trading_value_okrw": 1065.0,
       "sector1": "철강",
       "sector2": "",
       "sector": "철강",
-      "score": 9.9,
+      "score": 9.3,
       "rank": 4
     },
     {
       "code": "403870",
       "name": "HPSP",
       "market": "KOSDAQ",
-      "price": 59700,
+      "price": 59500,
       "change_value": 0,
-      "change_pct": 6.61,
-      "volume": 2872386,
-      "trading_value_okrw": 1714.0,
+      "change_pct": 6.25,
+      "volume": 2912948,
+      "trading_value_okrw": 1733.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.6,
+      "score": 8.3,
       "rank": 5
     },
     {
       "code": "042700",
       "name": "한미반도체",
       "market": "KOSPI",
-      "price": 264000,
+      "price": 264500,
       "change_value": 0,
-      "change_pct": 5.39,
-      "volume": 651385,
-      "trading_value_okrw": 1719.0,
+      "change_pct": 5.59,
+      "volume": 671680,
+      "trading_value_okrw": 1776.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 7.5,
+      "score": 7.8,
       "rank": 6
     },
     {
       "code": "108490",
       "name": "로보티즈",
       "market": "KOSDAQ",
-      "price": 321000,
+      "price": 320500,
       "change_value": 0,
-      "change_pct": 3.55,
-      "volume": 547956,
-      "trading_value_okrw": 1758.0,
+      "change_pct": 3.39,
+      "volume": 551408,
+      "trading_value_okrw": 1767.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 6.1,
+      "score": 6.0,
       "rank": 7
-    },
-    {
-      "code": "069540",
-      "name": "빛과전자",
-      "market": "KOSDAQ",
-      "price": 3865,
-      "change_value": 0,
-      "change_pct": 1.44,
-      "volume": 33029655,
-      "trading_value_okrw": 1276.0,
-      "sector1": "통신",
-      "sector2": "",
-      "sector": "통신",
-      "score": 5.4,
-      "rank": 8
     },
     {
       "code": "329180",
       "name": "HD현대중공업",
       "market": "KOSPI",
-      "price": 470000,
+      "price": 470500,
       "change_value": 0,
-      "change_pct": 1.4,
-      "volume": 238874,
-      "trading_value_okrw": 1122.0,
+      "change_pct": 1.51,
+      "volume": 240835,
+      "trading_value_okrw": 1133.0,
       "sector1": "조선",
       "sector2": "",
       "sector": "조선",
-      "score": 3.2,
-      "rank": 9
+      "score": 3.3,
+      "rank": 8
     }
   ]
 }

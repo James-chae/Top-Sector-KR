@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import json
+import os
+import shutil
+from datetime import datetime
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -29,18 +32,89 @@ def build_paths() -> Paths:
 def read_json(path: Path, default: Any = None) -> Any:
     if not path.exists():
         return default
+
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except Exception:
-        return default
+        return json.loads(
+            path.read_text(
+                encoding="utf-8-sig"
+            )
+        )
+
+    except Exception as exc:
+        raise RuntimeError(
+            f"JSON 읽기 실패 - 기존 기록 보호를 위해 중단: "
+            f"{path} / {type(exc).__name__}: {exc}"
+        ) from exc
 
 
 def write_json(path: Path, payload: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(
-        json.dumps(payload, ensure_ascii=False, indent=2),
+    path.parent.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    temp_path = path.with_suffix(
+        path.suffix + ".tmp"
+    )
+
+    temp_path.write_text(
+        json.dumps(
+            payload,
+            ensure_ascii=False,
+            indent=2
+        ),
         encoding="utf-8",
     )
+
+    os.replace(
+        temp_path,
+        path
+    )
+
+
+def backup_history(
+    root: Path,
+    history_path: Path
+) -> None:
+
+    backup_dir = (
+        root.parent
+        / "Top-Sector-KR_History_Backups"
+    )
+
+    backup_dir.mkdir(
+        parents=True,
+        exist_ok=True
+    )
+
+    stamp = datetime.now().strftime(
+        "%Y%m%d_%H%M%S"
+    )
+
+    destination = (
+        backup_dir
+        / f"sector_calendar_history_{stamp}.json"
+    )
+
+    shutil.copy2(
+        history_path,
+        destination
+    )
+
+    backups = sorted(
+        backup_dir.glob(
+            "sector_calendar_history_*.json"
+        ),
+        key=lambda item: item.stat().st_mtime,
+        reverse=True
+    )
+
+    # 최근 30개만 유지
+    for old_backup in backups[30:]:
+        try:
+            old_backup.unlink()
+        except OSError:
+            pass
 
 
 def normalize_sector_item(item: dict[str, Any]) -> dict[str, Any]:
@@ -116,9 +190,72 @@ def main() -> None:
             "[ERROR] data/leader_board.json 이 없습니다. 먼저 scripts/score_leaders.py 를 실행하세요."
         )
 
-    existing_payload = read_json(paths.sector_calendar_history, default=None)
-    payload = build_payload(leader_board, existing_payload)
-    write_json(paths.sector_calendar_history, payload)
+    existing_payload = read_json(
+        paths.sector_calendar_history,
+        default=None
+    )
+
+    if not isinstance(
+        existing_payload,
+        dict
+    ):
+        raise SystemExit(
+            "[ERROR] 기존 sector_calendar_history.json이 "
+            "없거나 구조가 비정상입니다. 자동 덮어쓰기를 차단합니다."
+        )
+
+    existing_history = existing_payload.get(
+        "history"
+    )
+
+    if not isinstance(
+        existing_history,
+        list
+    ):
+        raise SystemExit(
+            "[ERROR] 기존 history 구조가 비정상입니다."
+        )
+
+    # 이미 장기간 운영된 대시보드이므로
+    # 갑자기 1~2일로 줄어든 정상 JSON도 차단
+    if len(existing_history) < 30:
+        raise SystemExit(
+            f"[ERROR] 기존 기록이 {len(existing_history)}일뿐입니다. "
+            "기록 유실 가능성이 있어 자동 덮어쓰기를 차단합니다."
+        )
+
+    backup_history(
+        paths.root,
+        paths.sector_calendar_history
+    )
+
+    payload = build_payload(
+        leader_board,
+        existing_payload
+    )
+
+    # 기존 기록보다 갑자기 줄어드는 결과 금지
+    new_history = payload.get(
+        "history",
+        []
+    )
+
+    expected_min = min(
+        len(existing_history),
+        120
+    )
+
+    if len(new_history) < expected_min:
+        raise SystemExit(
+            f"[ERROR] 기록 감소 감지: "
+            f"{len(existing_history)} -> {len(new_history)}. "
+            "저장을 차단합니다."
+        )
+
+    write_json(
+        paths.sector_calendar_history,
+        payload
+    )
 
     print("[OK] update_sector_calendar.py completed")
     print(f" - root: {paths.root}")

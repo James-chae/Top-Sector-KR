@@ -43,9 +43,24 @@ REM  "You have unstaged changes" 에러로 매번 거부되어 자동화가
 REM  통째로 계속 실패하는 문제가 있었음.
 REM  -> pull 직전에 관련 없는 수정사항을 잠깐 치워두고(stash),
 REM     pull이 끝나면 다시 복원한다.
+REM
+REM  주의(2026-09-17 재발 방지): 이 저장소에 예전부터 남아있던
+REM  낡은 stash(예: temp-before-rebase) 때문에, "일단 pop부터
+REM  하고 보는" 방식은 엉뚱한 낡은 stash를 복원해서 데이터
+REM  파일에 git 충돌 마커(<<<<<<<)를 심어버리는 사고가 실제로
+REM  발생했음. 그래서 반드시 "이번 실행에서 내가 직접 stash를
+REM  만들었을 때만" pop 하도록 개수를 비교해서 확인한다.
 REM ============================================================
+set STASH_MADE=0
+for /f %%i in ('git rev-list --walk-reflogs --count refs/stash 2^>nul') do set STASH_COUNT_BEFORE=%%i
+if not defined STASH_COUNT_BEFORE set STASH_COUNT_BEFORE=0
+
 echo [GIT] stash unrelated tracked changes before pull>>task_run_log.txt
 git stash push --quiet -m "auto-stash-before-pull" >>task_run_log.txt 2>&1
+
+for /f %%i in ('git rev-list --walk-reflogs --count refs/stash 2^>nul') do set STASH_COUNT_AFTER=%%i
+if not defined STASH_COUNT_AFTER set STASH_COUNT_AFTER=0
+if not "%STASH_COUNT_AFTER%"=="%STASH_COUNT_BEFORE%" set STASH_MADE=1
 
 echo [GIT] pull --rebase origin main>>task_run_log.txt
 git pull --rebase origin main >>task_run_log.txt 2>&1
@@ -90,8 +105,12 @@ call :popstash
 goto :gitfail
 
 :popstash
-echo [GIT] restore stashed changes>>task_run_log.txt
-git stash pop --quiet >>task_run_log.txt 2>&1
+if "%STASH_MADE%"=="1" (
+  echo [GIT] restore stashed changes>>task_run_log.txt
+  git stash pop --quiet >>task_run_log.txt 2>&1
+) else (
+  echo [GIT] nothing was stashed this run - skip pop>>task_run_log.txt
+)
 goto :eof
 
 :nochanges

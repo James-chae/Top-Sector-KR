@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-17",
-    "generated_at_kst": "2026-09-17 09:11:10",
+    "generated_at_kst": "2026-09-17 09:21:10",
     "mode": "closing",
     "session_state": "",
     "leader_count": 1,
     "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 43.9",
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 21.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,26 +24,26 @@
   },
   "top_sectors": [
     {
-      "sector": "반도체",
-      "score": 43.9,
+      "sector": "통신",
+      "score": 21.3,
       "leaders": 1,
-      "avg_change_pct": 0.79
+      "avg_change_pct": 2.05
     }
   ],
   "leaders": [
     {
-      "code": "005930",
-      "name": "삼성전자",
-      "market": "KOSPI",
-      "price": 255500,
-      "change_value": 2000,
-      "change_pct": 0.79,
-      "volume": 1083096,
-      "trading_value_okrw": 2767.0,
-      "sector1": "반도체",
+      "code": "010170",
+      "name": "대한광통신",
+      "market": "KOSDAQ",
+      "price": 16430,
+      "change_value": 330,
+      "change_pct": 2.05,
+      "volume": 6396059,
+      "trading_value_okrw": 1050.0,
+      "sector1": "통신",
       "sector2": "",
-      "sector": "반도체",
-      "score": 31.0,
+      "sector": "통신",
+      "score": 12.7,
       "rank": 1
     }
   ]

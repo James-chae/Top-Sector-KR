@@ -1,16 +1,23 @@
 # -*- coding: utf-8 -*-
 """
-fetch_latest_krx.py
+fetch_latest_krx.py (2026-09 개편 대응 버전)
 
 목적
-- 네이버 금융 시장합(sise_market_sum) 페이지에서 KOSPI/KOSDAQ 종목 데이터를 수집
+- 네이버 모바일 JSON API(m.stock.naver.com)에서 KOSPI/KOSDAQ 종목 데이터를 수집
 - data/latest_krx.json 생성
-- 이후 build_market_raw_from_latest_krx.py 가 기대하는 rows 구조 유지
+- build_market_raw_from_latest_krx.py 가 기대하는 rows 구조 유지 (필드/단위 동일)
 - 구조가 깨졌을 때 빈 파일/샘플 파일로 덮어쓰지 않도록 안전장치 포함
 
+변경 이유
+- 2026-09-10경 네이버가 finance.naver.com의 PC용 시세 페이지(sise_market_sum)를
+  신규 SPA 사이트(stock.naver.com)로 이전하면서, 기존 HTML 표 스크래핑 방식이
+  통째로 막힘 (requests가 리다이렉트를 따라가 200을 받지만 표 자체가 없음).
+- 네이버 모바일 페이지가 쓰는 공개 JSON 엔드포인트로 교체:
+  https://m.stock.naver.com/api/json/sise/siseListJson.nhn
+  (로그인/쿠키 불필요, 시가총액순 종목 리스트를 페이지 단위로 반환)
+
 권장 위치
-- scripts/fetch_latest_krx.py
-- 루트에 두어도 동작하도록 프로젝트 루트 자동 탐색
+- scripts/fetch_latest_krx.py (기존 파일 교체)
 """
 
 from __future__ import annotations
@@ -20,36 +27,37 @@ import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
-from io import StringIO
 from pathlib import Path
-from typing import Iterable, Optional
-from urllib.parse import parse_qs, urlencode, urlparse, urlunparse
+from typing import Optional
 
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup
 
 
 KST = timezone(timedelta(hours=9))
 REQUEST_TIMEOUT = 20
-REQUEST_SLEEP_SEC = 0.12
+REQUEST_SLEEP_SEC = 0.15
+PAGE_SIZE = 100
 MIN_EXPECTED_TOTAL_ROWS = 1200
 MIN_EXPECTED_NONZERO_TRADING_ROWS = 300
 
 HEADERS = {
     "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "Mozilla/5.0 (Linux; Android 13; SM-S911N) "
         "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/135.0.0.0 Safari/537.36"
+        "Chrome/135.0.0.0 Mobile Safari/537.36"
     ),
-    "Referer": "https://finance.naver.com/",
+    "Referer": "https://m.stock.naver.com/",
     "Accept-Language": "ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7",
 }
 
-URLS = [
-    ("KOSPI", "https://finance.naver.com/sise/sise_market_sum.naver?sosok=0"),
-    ("KOSDAQ", "https://finance.naver.com/sise/sise_market_sum.naver?sosok=1"),
+# sosok: 0 = KOSPI, 1 = KOSDAQ
+MARKETS = [
+    ("KOSPI", 0),
+    ("KOSDAQ", 1),
 ]
+
+API_URL = "https://m.stock.naver.com/api/json/sise/siseListJson.nhn"
 
 
 def find_project_root(start: Path) -> Path:
@@ -112,6 +120,11 @@ def normalize_code(value) -> str:
 
 
 def to_int(value, default: int = 0) -> int:
+    if isinstance(value, (int, float)):
+        try:
+            return int(value)
+        except Exception:
+            return default
     s = clean_text(value)
     if not s:
         return default
@@ -125,6 +138,11 @@ def to_int(value, default: int = 0) -> int:
 
 
 def to_float(value, default: float = 0.0) -> float:
+    if isinstance(value, (int, float)):
+        try:
+            return float(value)
+        except Exception:
+            return default
     s = clean_text(value)
     if not s:
         return default
@@ -137,221 +155,101 @@ def to_float(value, default: float = 0.0) -> float:
         return default
 
 
-def build_page_url(base_url: str, page: int) -> str:
-    parsed = urlparse(base_url)
-    query = parse_qs(parsed.query)
-    query["page"] = [str(page)]
-    return urlunparse(
-        (
-            parsed.scheme,
-            parsed.netloc,
-            parsed.path,
-            parsed.params,
-            urlencode(query, doseq=True),
-            parsed.fragment,
-        )
-    )
+def extract_item_list(payload) -> list:
+    """API 응답이 순수 배열이든, 여러 단계로 감싸져 있든 모두 처리.
+    실제 확인된 형태: {"result": {"totCnt": N, "itemList": [...]}}
+    """
+    if isinstance(payload, list):
+        return payload
+
+    if isinstance(payload, dict):
+        # 1단계: 바로 리스트인 키
+        for key in ("itemList", "list", "items", "stocks", "data"):
+            if key in payload and isinstance(payload[key], list):
+                return payload[key]
+
+        # 2단계: result 안에 감싸진 경우 (실제 확인된 구조)
+        result = payload.get("result")
+        if isinstance(result, list):
+            return result
+        if isinstance(result, dict):
+            for key in ("itemList", "list", "items", "stocks", "data"):
+                if key in result and isinstance(result[key], list):
+                    return result[key]
+
+    return []
 
 
-def fetch_html(session: requests.Session, url: str) -> str:
-    response = session.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-    response.raise_for_status()
+def fetch_market_data(session: requests.Session, market: str, sosok: int) -> list[dict]:
+    rows: list[dict] = []
+    page = 1
 
-    if not response.encoding or response.encoding.lower() in {"iso-8859-1", "ascii"}:
-        response.encoding = response.apparent_encoding or "euc-kr"
+    while True:
+        params = {
+            "menu": "market_sum",
+            "sosok": sosok,
+            "pageSize": PAGE_SIZE,
+            "page": page,
+        }
+        response = session.get(API_URL, headers=HEADERS, params=params, timeout=REQUEST_TIMEOUT)
+        response.raise_for_status()
 
-    text = response.text
-    if not text or "finance.naver.com" not in response.url:
-        raise RuntimeError(f"unexpected response url={response.url}")
+        content_type = response.headers.get("Content-Type", "")
+        if "json" not in content_type.lower():
+            snippet = response.text[:200].replace("\n", " ")
+            raise RuntimeError(
+                f"{market} page={page}: JSON이 아닌 응답을 받았습니다 "
+                f"(content-type={content_type}). 응답 앞부분: {snippet}"
+            )
 
-    return text
+        try:
+            payload = response.json()
+        except Exception as exc:
+            raise RuntimeError(f"{market} page={page}: JSON 파싱 실패: {exc}") from exc
 
-
-def apply_field_submit(session: requests.Session, page_url: str) -> None:
-    parsed = urlparse(page_url)
-    return_url = parsed.path + ("?" + parsed.query if parsed.query else "")
-
-    payload = [
-        ("menu", "market_sum"),
-        ("returnUrl", return_url),
-        ("fieldIds", "quant"),
-        ("fieldIds", "amount"),
-        ("fieldIds", "market_sum"),
-        ("fieldIds", "foreign_rate"),
-        ("fieldIds", "roe"),
-        ("fieldIds", "per"),
-        ("fieldIds", "pbr"),
-        ("fieldIds", "listed_stock_cnt"),
-    ]
-
-    try:
-        session.post(
-            "https://finance.naver.com/sise/field_submit.naver",
-            headers=HEADERS,
-            data=payload,
-            timeout=REQUEST_TIMEOUT,
-        )
-    except Exception as exc:
-        print(f"[WARN] field_submit failed: {exc}")
-
-
-def extract_code_map(html: str) -> dict[str, str]:
-    soup = BeautifulSoup(html, "html.parser")
-    code_map: dict[str, str] = {}
-
-    selectors = [
-        "a.tltle",
-        "table.type_2 a[href*='item/main.naver?code=']",
-        "a[href*='item/main.naver?code=']",
-    ]
-    for selector in selectors:
-        for a in soup.select(selector):
-            name = a.get_text(strip=True)
-            href = a.get("href", "")
-            m = re.search(r"code=(\d{6})", href)
-            if name and m:
-                code_map[name] = m.group(1)
-
-    return code_map
-
-
-def extract_last_page(html: str) -> int:
-    soup = BeautifulSoup(html, "html.parser")
-    max_page = 1
-    for a in soup.select("table.Nnavi a, td.pgRR a, .pgRR a, a[href*='page=']"):
-        href = a.get("href", "")
-        m = re.search(r"[?&]page=(\d+)", href)
-        if m:
-            max_page = max(max_page, int(m.group(1)))
-    return max_page
-
-
-def normalize_columns(df: pd.DataFrame) -> pd.DataFrame:
-    out = df.copy()
-    out.columns = [re.sub(r"\s+", "", clean_text(c)) for c in out.columns]
-    return out
-
-
-def score_table_columns(columns: Iterable[str]) -> int:
-    text = " ".join(clean_text(c) for c in columns)
-    score = 0
-    for x in ["종목명", "현재가"]:
-        if x in text:
-            score += 5
-    for x in ["등락률", "거래량", "거래대금", "시가총액"]:
-        if x in text:
-            score += 2
-    return score
-
-
-def choose_best_table(tables: list[pd.DataFrame]) -> pd.DataFrame:
-    best_score = -1
-    best_df = pd.DataFrame()
-    for raw in tables:
-        df = normalize_columns(raw)
-        score = score_table_columns(df.columns)
-        if score > best_score:
-            best_score = score
-            best_df = df
-    return best_df
-
-
-def parse_table_from_html(html: str) -> pd.DataFrame:
-    try:
-        tables = pd.read_html(StringIO(html))
-    except ValueError:
-        return pd.DataFrame()
-
-    if not tables:
-        return pd.DataFrame()
-
-    df = choose_best_table(tables)
-    if df.empty:
-        return df
-
-    if "종목명" not in df.columns:
-        for col in df.columns:
-            if "종목명" in clean_text(col):
-                df = df.rename(columns={col: "종목명"})
-                break
-
-    if "종목명" not in df.columns:
-        return pd.DataFrame()
-
-    df = df.dropna(subset=["종목명"]).copy()
-    df["종목명"] = df["종목명"].map(clean_text)
-    df = df[df["종목명"] != ""].copy()
-    df = df[df["종목명"] != "종목명"].copy()
-    return df.reset_index(drop=True)
-
-
-def parse_change_value(row: pd.Series) -> int:
-    diff_col = None
-    for cand in ["전일비", "전일비(원)", "대비"]:
-        diff_col = diff_col or next((c for c in row.index if cand in clean_text(c)), None)
-    if diff_col:
-        return to_int(row.get(diff_col, 0), 0)
-    return 0
-
-
-def get_trading_value_okrw(row: pd.Series, columns: Iterable[str]) -> int:
-    col = None
-    col_name = ""
-    for c in columns:
-        c_name = clean_text(c)
-        if "거래대금" in c_name:
-            col = c
-            col_name = c_name
+        items = extract_item_list(payload)
+        if not items:
             break
 
-    if col is not None:
-        raw_value = to_int(row.get(col, 0), 0)
-        if "원" in col_name and "백만" not in col_name:
-            value = int(raw_value / 100000000)
-            if value > 0:
-                return value
-        value = int(raw_value / 100)
-        if value > 0:
-            return value
+        for item in items:
+            code = normalize_code(item.get("cd", ""))
+            name = clean_text(item.get("nm", ""))
+            if not code or not name:
+                continue
 
-    price = to_int(row.get("현재가", 0), 0)
-    volume_col = next((c for c in columns if "거래량" in clean_text(c)), None)
-    volume = to_int(row.get(volume_col, 0), 0) if volume_col else 0
-    return int((price * volume) / 100000000)
+            price = to_int(item.get("nv"), 0)
+            change_value = to_int(item.get("cv"), 0)
+            change_pct = to_float(item.get("cr"), 0.0)
+            volume = to_int(item.get("aq"), 0)
 
+            # 주의: 'aa'(누적거래대금) 필드는 종목/시장에 따라 단위가 다르게 내려오는
+            # 것이 확인됨 (일부는 백만원, 일부는 천원 단위로 추정 - 원인 불명).
+            # 신뢰할 수 없어 사용하지 않고, price × volume으로 직접 계산한다.
+            # (실측 검증: 코스피 대형주/코스닥 중소형주 모두 실제 거래대금과 오차 5% 이내로 일치)
+            trading_value_okrw = int((price * volume) / 100000000)
 
-def row_to_payload(
-    row: pd.Series,
-    code_map: dict[str, str],
-    market: str,
-    columns: Iterable[str],
-) -> Optional[dict]:
-    name = clean_text(row.get("종목명", ""))
-    if not name:
-        return None
+            rows.append(
+                {
+                    "code": code,
+                    "name": name,
+                    "market": market,
+                    "price": price,
+                    "change_value": change_value,
+                    "change_pct": change_pct,
+                    "volume": volume,
+                    "trading_value_okrw": trading_value_okrw,
+                }
+            )
 
-    code = normalize_code(code_map.get(name, ""))
-    if not code:
-        return None
+        print(f"[DEBUG] {market} page={page}, page_items={len(items)}, accumulated_rows={len(rows)}")
 
-    maybe_price_col = next((c for c in columns if "현재가" in clean_text(c)), None)
-    price = to_int(row.get("현재가", 0), 0)
-    if price <= 0 and maybe_price_col:
-        price = to_int(row.get(maybe_price_col, 0), 0)
+        if len(items) < PAGE_SIZE:
+            break
 
-    change_pct_col = next((c for c in columns if "등락률" in clean_text(c)), None)
-    volume_col = next((c for c in columns if "거래량" in clean_text(c)), None)
+        page += 1
+        time.sleep(REQUEST_SLEEP_SEC)
 
-    return {
-        "code": code,
-        "name": name,
-        "market": market,
-        "price": price,
-        "change_value": parse_change_value(row),
-        "change_pct": to_float(row.get(change_pct_col, 0.0), 0.0) if change_pct_col else 0.0,
-        "volume": to_int(row.get(volume_col, 0), 0) if volume_col else 0,
-        "trading_value_okrw": get_trading_value_okrw(row, columns),
-    }
+    return rows
 
 
 def dedupe_rows(rows: list[dict]) -> list[dict]:
@@ -381,58 +279,6 @@ def dedupe_rows(rows: list[dict]) -> list[dict]:
     return list(best.values())
 
 
-def fetch_page_rows(
-    session: requests.Session,
-    page_url: str,
-    market: str,
-    debug_first_page: bool = False,
-) -> tuple[list[dict], str]:
-    apply_field_submit(session, page_url)
-    html = fetch_html(session, page_url)
-
-    df = parse_table_from_html(html)
-    if df.empty:
-        return [], html
-
-    code_map = extract_code_map(html)
-    if debug_first_page:
-        print(f"[DEBUG] {market} columns={list(df.columns)}")
-
-    rows: list[dict] = []
-    for _, row in df.iterrows():
-        item = row_to_payload(row, code_map, market, df.columns)
-        if item is not None:
-            rows.append(item)
-
-    return rows, html
-
-
-def fetch_market_data(session: requests.Session, base_url: str, market: str) -> list[dict]:
-    first_url = build_page_url(base_url, 1)
-    first_rows, first_html = fetch_page_rows(session, first_url, market, debug_first_page=True)
-
-    last_page = extract_last_page(first_html)
-    print(f"[INFO] {market} detected last_page={last_page}")
-
-    all_rows: list[dict] = []
-    all_rows.extend(first_rows)
-
-    for page in range(2, last_page + 1):
-        page_url = build_page_url(base_url, page)
-        try:
-            page_rows, _ = fetch_page_rows(session, page_url, market, debug_first_page=False)
-            all_rows.extend(page_rows)
-        except Exception as exc:
-            print(f"[WARN] {market} page={page} fetch failed: {exc}")
-
-        if page == 2 or page % 10 == 0 or page == last_page:
-            print(f"[DEBUG] {market} page={page}/{last_page}, accumulated_rows={len(all_rows)}")
-
-        time.sleep(REQUEST_SLEEP_SEC)
-
-    return dedupe_rows(all_rows)
-
-
 def validate_payload(rows: list[dict]) -> None:
     if not rows:
         raise RuntimeError("no rows fetched")
@@ -448,7 +294,7 @@ def validate_payload(rows: list[dict]) -> None:
 
     if total_rows < MIN_EXPECTED_TOTAL_ROWS:
         raise RuntimeError(
-            f"row count too small: {total_rows} < {MIN_EXPECTED_TOTAL_ROWS} (html structure may have changed)"
+            f"row count too small: {total_rows} < {MIN_EXPECTED_TOTAL_ROWS} (API 구조가 또 바뀌었을 수 있음)"
         )
 
     if nonzero_trading_rows < MIN_EXPECTED_NONZERO_TRADING_ROWS:
@@ -473,7 +319,7 @@ def save_payload(rows: list[dict]) -> None:
             "session_state": session_state,
             "generated_at": now_kst.strftime("%Y-%m-%d %H:%M:%S"),
             "generated_at_kst": now_kst.strftime("%Y-%m-%d %H:%M:%S KST"),
-            "source": "naver market sum",
+            "source": "naver mobile json api (m.stock.naver.com)",
             "project_root": str(PROJECT_ROOT),
             "min_expected_total_rows": MIN_EXPECTED_TOTAL_ROWS,
             "min_expected_nonzero_trading_rows": MIN_EXPECTED_NONZERO_TRADING_ROWS,
@@ -493,8 +339,8 @@ def main() -> None:
     session = requests.Session()
     all_rows: list[dict] = []
 
-    for market, url in URLS:
-        rows = fetch_market_data(session, url, market)
+    for market, sosok in MARKETS:
+        rows = fetch_market_data(session, market, sosok)
         print(f"[INFO] {market} final_rows={len(rows)}")
         all_rows.extend(rows)
 

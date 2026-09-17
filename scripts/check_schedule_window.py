@@ -67,28 +67,24 @@ def classify_session(dt: datetime) -> SessionResult:
             note="07:50~07:59는 reset 구간",
         )
 
-    if hhmm < 2000:
-        minute = dt.minute
-        should_run = (minute % 5 == 3)
+    if hhmm <= 2003:
+        # 2026-09-17 버그 수정: 예전에는 "현재 분(minute)이 정확히
+        # 5의 배수+3일 때만"(예: 08:03, 08:08...) 실행하도록
+        # 했었는데, GitHub Actions의 cron 트리거는 실제로는 몇 분씩
+        # 밀려서 실행되는 경우가 흔해서(예: :23분 예약이 :27분에
+        # 실행), 그때마다 "분이 안 맞는다"며 파이프라인 실행 자체를
+        # 건너뛰는 조용한 버그가 있었다.
+        # -> 크론 스케줄 자체가 이미 5분 간격으로 트리거하므로,
+        #    이 스크립트에서는 시간대 범위 안인지만 확인하고
+        #    분 단위 정확도는 더 이상 요구하지 않는다.
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
             hhmm=hhmm,
             is_weekday=True,
             session_state="live_update_window",
             board_label="장중/주간 갱신",
-            should_run_pipeline=should_run,
-            note="08:03~19:58는 5분 단위 갱신 구간(정각 회피)",
-        )
-
-    if hhmm == 2003:
-        return SessionResult(
-            input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
-            hhmm=hhmm,
-            is_weekday=True,
-            session_state="final_update",
-            board_label="최종 반영",
             should_run_pipeline=True,
-            note="20:03는 당일 최종 반영 시점",
+            note="08:00~20:03는 언제든 실행 가능 (분 단위 정확도 요구 제거, 2026-09-17)",
         )
 
     return SessionResult(
@@ -141,6 +137,7 @@ def run_default_samples() -> None:
         "2026-04-21 07:55",
         "2026-04-21 08:03",
         "2026-04-21 08:08",
+        "2026-04-21 13:27",
         "2026-04-21 19:58",
         "2026-04-21 20:03",
         "2026-04-21 20:05",

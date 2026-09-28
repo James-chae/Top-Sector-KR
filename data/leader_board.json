@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-28",
-    "generated_at_kst": "2026-09-28 01:11:44",
+    "generated_at_kst": "2026-09-28 01:24:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 5,
-    "sector_count": 5,
-    "market_bias": "에너지 중심 강세 / 상위섹터 점수 31.2",
+    "leader_count": 6,
+    "sector_count": 6,
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 29.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,33 +25,39 @@
   "top_sectors": [
     {
       "sector": "에너지",
-      "score": 31.2,
+      "score": 29.8,
       "leaders": 1,
-      "avg_change_pct": 13.18
+      "avg_change_pct": 11.82
     },
     {
       "sector": "원전",
-      "score": 26.3,
+      "score": 26.5,
       "leaders": 1,
-      "avg_change_pct": 9.12
+      "avg_change_pct": 9.23
     },
     {
       "sector": "전자",
-      "score": 23.2,
+      "score": 22.5,
       "leaders": 1,
-      "avg_change_pct": 9.35
+      "avg_change_pct": 8.79
+    },
+    {
+      "sector": "2차전지",
+      "score": 17.9,
+      "leaders": 1,
+      "avg_change_pct": 5.9
     },
     {
       "sector": "양자암호",
-      "score": 18.0,
+      "score": 17.1,
       "leaders": 1,
-      "avg_change_pct": 4.12
+      "avg_change_pct": 3.4
     },
     {
       "sector": "통신",
-      "score": 15.6,
+      "score": 15.3,
       "leaders": 1,
-      "avg_change_pct": 1.36
+      "avg_change_pct": 1.24
     }
   ],
   "leaders": [
@@ -59,76 +65,91 @@
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 33050,
-      "change_value": 3850,
-      "change_pct": 13.18,
-      "volume": 5226906,
-      "trading_value_okrw": 1727.0,
+      "price": 32650,
+      "change_value": 3450,
+      "change_pct": 11.82,
+      "volume": 5596745,
+      "trading_value_okrw": 1827.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 20.8,
+      "score": 19.2,
       "rank": 1
     },
     {
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 19030,
-      "change_value": 1590,
-      "change_pct": 9.12,
-      "volume": 7612082,
-      "trading_value_okrw": 1448.0,
+      "price": 19050,
+      "change_value": 1610,
+      "change_pct": 9.23,
+      "volume": 8131889,
+      "trading_value_okrw": 1549.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 16.7,
+      "score": 16.6,
       "rank": 2
     },
     {
       "code": "011070",
       "name": "LG이노텍",
       "market": "KOSPI",
-      "price": 585000,
-      "change_value": 50000,
-      "change_pct": 9.35,
-      "volume": 225568,
-      "trading_value_okrw": 1319.0,
+      "price": 582000,
+      "change_value": 47000,
+      "change_pct": 8.79,
+      "volume": 236910,
+      "trading_value_okrw": 1378.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 13.9,
+      "score": 13.0,
       "rank": 3
+    },
+    {
+      "code": "096770",
+      "name": "SK이노베이션",
+      "market": "KOSPI",
+      "price": 158000,
+      "change_value": 8800,
+      "change_pct": 5.9,
+      "volume": 668699,
+      "trading_value_okrw": 1056.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 9.3,
+      "rank": 4
     },
     {
       "code": "356680",
       "name": "엑스게이트",
       "market": "KOSDAQ",
-      "price": 18970,
-      "change_value": 750,
-      "change_pct": 4.12,
-      "volume": 5405551,
-      "trading_value_okrw": 1025.0,
+      "price": 18840,
+      "change_value": 620,
+      "change_pct": 3.4,
+      "volume": 5586535,
+      "trading_value_okrw": 1052.0,
       "sector1": "보안",
       "sector2": "양자암호",
       "sector": "양자암호",
-      "score": 9.5,
-      "rank": 4
+      "score": 8.4,
+      "rank": 5
     },
     {
       "code": "010170",
       "name": "대한광통신",
       "market": "KOSDAQ",
-      "price": 17940,
-      "change_value": 240,
-      "change_pct": 1.36,
-      "volume": 5870945,
-      "trading_value_okrw": 1053.0,
+      "price": 17920,
+      "change_value": 220,
+      "change_pct": 1.24,
+      "volume": 6094109,
+      "trading_value_okrw": 1092.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 7.0,
-      "rank": 5
+      "score": 6.6,
+      "rank": 6
     }
   ]
 }

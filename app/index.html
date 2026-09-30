@@ -48,6 +48,7 @@
       <button class="tab-btn active" data-tab="dashboard">주도주</button>
       <button class="tab-btn" data-tab="calendar">주도섹터달력</button>
       <button class="tab-btn" data-tab="schedule">일정</button>
+      <button class="tab-btn" data-tab="leadercal">주도주달력</button>
     </nav>
 
     <main>
@@ -185,9 +186,192 @@
           </div>
         </div>
       </section>
+
+      <section id="screen-leadercal" class="screen">
+        <div class="calendar-layout">
+          <div class="main-col">
+            <section class="panel">
+              <div class="section-head">
+                <div>
+                  <h2>주도주 달력</h2>
+                  <p class="sub">1순위 주도섹터의 주도주 · 월~금 표시</p>
+                </div>
+                <div class="calendar-nav">
+                  <button id="prevLeaderMonthBtn" class="nav-btn">◀ 이전달</button>
+                  <button id="todayLeaderMonthBtn" class="nav-btn">오늘</button>
+                  <button id="nextLeaderMonthBtn" class="nav-btn">다음달 ▶</button>
+                </div>
+              </div>
+              <div class="calendar-headline" id="leaderMonthLabel">-</div>
+              <div class="weekday-grid" id="leaderWeekdayGrid"></div>
+              <div class="calendar-grid" id="leaderCalendarGrid"></div>
+            </section>
+            <div id="leader-calendar-extra"></div>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 
   <script src="app.js"></script>
+  <script>
+    // 주도주달력 탭 (독립 동작: 오류가 나도 기존 탭에 영향 없음)
+    try {
+      (function () {
+        const LEADER_CAL_DEFAULT = { version: 1, days: {} };
+        const leaderCal = {
+          data: LEADER_CAL_DEFAULT,
+          baseMonth: null,
+          viewMonth: null
+        };
+
+        function monthIndex(d) {
+          return d.getFullYear() * 12 + d.getMonth();
+        }
+
+        function monthFromIndex(idx) {
+          return new Date(Math.floor(idx / 12), idx % 12, 1);
+        }
+
+        async function loadLeaderCalendar() {
+          const [calendar, board] = await Promise.all([
+            safeFetchJson(`../data/leader_stock_calendar_history.json`, LEADER_CAL_DEFAULT),
+            safeFetchJson(`../data/leader_board.json`, {})
+          ]);
+          leaderCal.data = calendar && typeof calendar.days === "object" && calendar.days ? calendar : LEADER_CAL_DEFAULT;
+          const parsed = parseYmdLocal(board?.meta?.trade_date);
+          const base = parsed || new Date();
+          leaderCal.baseMonth = new Date(base.getFullYear(), base.getMonth(), 1);
+          leaderCal.viewMonth = leaderCal.baseMonth;
+        }
+
+        function buildLeaderMonthCells(dateObj, days) {
+          const year = dateObj.getFullYear();
+          const month = dateObj.getMonth();
+          const firstDay = new Date(year, month, 1);
+          const lastDay = new Date(year, month + 1, 0).getDate();
+
+          const cells = [];
+          const firstWeekday = firstDay.getDay();
+          const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1;
+
+          for (let i = 0; i < mondayOffset; i += 1) {
+            cells.push({ empty: true, day: "", stocks: [] });
+          }
+
+          for (let day = 1; day <= lastDay; day += 1) {
+            const d = new Date(year, month, day);
+            const weekday = d.getDay();
+            if (weekday === 0 || weekday === 6) continue;
+            const dateStr = formatDate(d);
+            const found = days[dateStr];
+            cells.push({
+              empty: false,
+              date: dateStr,
+              day,
+              sector: found?.sector || "",
+              stocks: Array.isArray(found?.stocks) ? found.stocks : []
+            });
+          }
+          return cells;
+        }
+
+        function renderLeaderCalendarCell(item) {
+          if (item.empty) {
+            return `<div class="calendar-cell" style="visibility:hidden;"></div>`;
+          }
+
+          const today = new Date();
+          const todayStr = formatDate(new Date(today.getFullYear(), today.getMonth(), today.getDate()));
+          const isToday = item.date === todayStr;
+
+          const colorClass = item.sector ? getSectorColorClass(item.sector) : "";
+          const body = item.stocks.length
+            ? item.stocks
+                .map((name) => `<div class="calendar-sector-item ${colorClass}">${escapeHtml(name)}</div>`)
+                .join("")
+            : `<div class="calendar-sector-item" style="color:#8fa0bf;">기록 없음</div>`;
+
+          return `
+            <div class="calendar-cell ${isToday ? "is-today" : ""}">
+              <div class="calendar-day">${item.day}</div>
+              <div class="calendar-sector-list">${body}</div>
+            </div>
+          `;
+        }
+
+        function renderLeaderCalendar() {
+          try {
+            setWeekdays("leaderWeekdayGrid");
+
+            const label = document.getElementById("leaderMonthLabel");
+            const grid = document.getElementById("leaderCalendarGrid");
+            if (!label || !grid || !leaderCal.viewMonth) return;
+
+            const current = leaderCal.viewMonth;
+            label.textContent = `${current.getFullYear()}년 ${current.getMonth() + 1}월`;
+
+            const cells = buildLeaderMonthCells(current, leaderCal.data.days || {});
+            grid.innerHTML = cells.map(renderLeaderCalendarCell).join("");
+
+            const baseIdx = monthIndex(leaderCal.baseMonth);
+            const viewIdx = monthIndex(current);
+            const prev = document.getElementById("prevLeaderMonthBtn");
+            const next = document.getElementById("nextLeaderMonthBtn");
+            if (prev) prev.disabled = viewIdx <= baseIdx - 6;
+            if (next) next.disabled = viewIdx >= baseIdx + 1;
+          } catch (error) {
+            console.warn("leader calendar render failed", error);
+          }
+        }
+
+        function moveLeaderMonth(delta) {
+          try {
+            if (!leaderCal.baseMonth || !leaderCal.viewMonth) return;
+            const baseIdx = monthIndex(leaderCal.baseMonth);
+            const target = monthIndex(leaderCal.viewMonth) + delta;
+            if (target < baseIdx - 6 || target > baseIdx + 1) return;
+            leaderCal.viewMonth = monthFromIndex(target);
+            renderLeaderCalendar();
+          } catch (error) {
+            console.warn("leader calendar nav failed", error);
+          }
+        }
+
+        async function initLeaderCalendar() {
+          try {
+            await loadLeaderCalendar();
+            renderLeaderCalendar();
+          } catch (error) {
+            console.warn("leader calendar init failed", error);
+          }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+          try {
+            document.getElementById("prevLeaderMonthBtn")?.addEventListener("click", () => moveLeaderMonth(-1));
+            document.getElementById("nextLeaderMonthBtn")?.addEventListener("click", () => moveLeaderMonth(1));
+            document.getElementById("todayLeaderMonthBtn")?.addEventListener("click", () => {
+              try {
+                if (!leaderCal.baseMonth) return;
+                leaderCal.viewMonth = leaderCal.baseMonth;
+                renderLeaderCalendar();
+              } catch (error) {
+                console.warn("leader calendar today failed", error);
+              }
+            });
+            document.getElementById("refreshBtn")?.addEventListener("click", () => {
+              initLeaderCalendar();
+            });
+            initLeaderCalendar();
+          } catch (error) {
+            console.warn("leader calendar bind failed", error);
+          }
+        });
+      })();
+    } catch (error) {
+      console.warn("leader calendar script failed", error);
+    }
+  </script>
 </body>
 </html>

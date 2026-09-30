@@ -26,6 +26,7 @@ FETCH_SCRIPT = SCRIPTS_DIR / "fetch_latest_krx.py"
 BUILD_SCRIPT = SCRIPTS_DIR / "build_market_raw_from_latest_krx.py"
 SCORE_SCRIPT = SCRIPTS_DIR / "score_leaders.py"
 CALENDAR_SCRIPT = SCRIPTS_DIR / "update_sector_calendar.py"
+LEADER_CAL_SCRIPT = SCRIPTS_DIR / "update_leader_stock_calendar.py"
 
 LATEST_PATH = DATA_DIR / "latest_krx.json"
 MARKET_RAW_PATH = DATA_DIR / "market_raw.json"
@@ -189,6 +190,11 @@ def main() -> None:
     calendar_payload = validate_calendar()
 
     write_dashboard_meta(latest_payload, market_raw_payload, leader_payload, calendar_payload)
+
+    try:
+        run_step("Update leader stock calendar", [sys.executable, str(LEADER_CAL_SCRIPT)])
+    except Exception as exc:
+        print(f"[WARN] leader stock calendar skipped: {exc}")
 
     print("\n[OK] KR pipeline completed successfully")
 

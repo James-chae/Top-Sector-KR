@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-09-30",
-    "generated_at_kst": "2026-09-30 16:36:43",
+    "generated_at_kst": "2026-09-30 16:41:11",
     "mode": "closing",
     "session_state": "",
     "leader_count": 11,
     "sector_count": 7,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 57.4",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 57.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,45 +25,45 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 57.4,
+      "score": 57.3,
       "leaders": 3,
-      "avg_change_pct": 3.19
+      "avg_change_pct": 3.11
     },
     {
       "sector": "전자",
-      "score": 30.9,
+      "score": 31.0,
       "leaders": 2,
-      "avg_change_pct": 11.78
+      "avg_change_pct": 11.88
     },
     {
       "sector": "지주사",
-      "score": 25.8,
+      "score": 25.7,
       "leaders": 1,
-      "avg_change_pct": 1.61
-    },
-    {
-      "sector": "에너지",
-      "score": 19.5,
-      "leaders": 1,
-      "avg_change_pct": 5.08
+      "avg_change_pct": 1.52
     },
     {
       "sector": "화학",
-      "score": 19.3,
+      "score": 19.4,
       "leaders": 1,
       "avg_change_pct": 6.37
     },
     {
+      "sector": "에너지",
+      "score": 19.4,
+      "leaders": 1,
+      "avg_change_pct": 4.92
+    },
+    {
       "sector": "원전",
-      "score": 18.9,
+      "score": 19.0,
       "leaders": 2,
-      "avg_change_pct": 2.02
+      "avg_change_pct": 2.05
     },
     {
       "sector": "자동차",
-      "score": 14.9,
+      "score": 15.4,
       "leaders": 1,
-      "avg_change_pct": 4.22
+      "avg_change_pct": 4.63
     }
   ],
   "leaders": [
@@ -74,8 +74,8 @@
       "price": 1785000,
       "change_value": 20000,
       "change_pct": 1.13,
-      "volume": 2931640,
-      "trading_value_okrw": 52329.0,
+      "volume": 2931730,
+      "trading_value_okrw": 52331.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -86,15 +86,15 @@
       "code": "043260",
       "name": "성호전자",
       "market": "KOSDAQ",
-      "price": 26600,
-      "change_value": 2950,
-      "change_pct": 12.47,
-      "volume": 5390369,
-      "trading_value_okrw": 1433.0,
+      "price": 26650,
+      "change_value": 3000,
+      "change_pct": 12.68,
+      "volume": 5402656,
+      "trading_value_okrw": 1439.0,
       "sector1": "전자",
       "sector2": "",
       "sector": "전자",
-      "score": 15.3,
+      "score": 15.5,
       "rank": 2
     },
     {
@@ -104,7 +104,7 @@
       "price": 15040,
       "change_value": 1500,
       "change_pct": 11.08,
-      "volume": 10220444,
+      "volume": 10221964,
       "trading_value_okrw": 1537.0,
       "sector1": "전자",
       "sector2": "",
@@ -119,8 +119,8 @@
       "price": 15020,
       "change_value": 900,
       "change_pct": 6.37,
-      "volume": 9291390,
-      "trading_value_okrw": 1395.0,
+      "volume": 9296443,
+      "trading_value_okrw": 1396.0,
       "sector1": "화학",
       "sector2": "",
       "sector": "화학",
@@ -131,45 +131,45 @@
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 34150,
-      "change_value": 1650,
-      "change_pct": 5.08,
-      "volume": 5771117,
-      "trading_value_okrw": 1970.0,
+      "price": 34100,
+      "change_value": 1600,
+      "change_pct": 4.92,
+      "volume": 5774895,
+      "trading_value_okrw": 1969.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 8.6,
+      "score": 8.5,
       "rank": 5
     },
     {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 232000,
-      "change_value": 10000,
-      "change_pct": 4.5,
-      "volume": 1245573,
-      "trading_value_okrw": 2889.0,
+      "price": 231500,
+      "change_value": 9500,
+      "change_pct": 4.28,
+      "volume": 1246364,
+      "trading_value_okrw": 2885.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 8.3,
+      "score": 8.1,
       "rank": 6
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 1136000,
-      "change_value": 18000,
-      "change_pct": 1.61,
-      "volume": 433501,
-      "trading_value_okrw": 4924.0,
+      "price": 1135000,
+      "change_value": 17000,
+      "change_pct": 1.52,
+      "volume": 433558,
+      "trading_value_okrw": 4920.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 7.8,
+      "score": 7.7,
       "rank": 7
     },
     {
@@ -179,8 +179,8 @@
       "price": 63400,
       "change_value": 2400,
       "change_pct": 3.93,
-      "volume": 3346336,
-      "trading_value_okrw": 2121.0,
+      "volume": 3348122,
+      "trading_value_okrw": 2122.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
@@ -191,15 +191,15 @@
       "code": "012330",
       "name": "현대모비스",
       "market": "KOSPI",
-      "price": 382500,
-      "change_value": 15500,
-      "change_pct": 4.22,
-      "volume": 322394,
-      "trading_value_okrw": 1233.0,
+      "price": 384000,
+      "change_value": 17000,
+      "change_pct": 4.63,
+      "volume": 329387,
+      "trading_value_okrw": 1264.0,
       "sector1": "자동차",
       "sector2": "",
       "sector": "자동차",
-      "score": 5.8,
+      "score": 6.3,
       "rank": 9
     },
     {
@@ -209,7 +209,7 @@
       "price": 81600,
       "change_value": 1900,
       "change_pct": 2.38,
-      "volume": 1413422,
+      "volume": 1413689,
       "trading_value_okrw": 1153.0,
       "sector1": "원전",
       "sector2": "",
@@ -221,15 +221,15 @@
       "code": "047040",
       "name": "대우건설",
       "market": "KOSPI",
-      "price": 17660,
-      "change_value": 290,
-      "change_pct": 1.67,
-      "volume": 5692486,
-      "trading_value_okrw": 1005.0,
+      "price": 17670,
+      "change_value": 300,
+      "change_pct": 1.73,
+      "volume": 5699477,
+      "trading_value_okrw": 1007.0,
       "sector1": "원전",
       "sector2": "",
       "sector": "원전",
-      "score": 4.0,
+      "score": 4.1,
       "rank": 11
     }
   ]

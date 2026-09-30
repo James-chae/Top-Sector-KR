@@ -2,13 +2,39 @@
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from dataclasses import dataclass
 from datetime import datetime
+from pathlib import Path
 from zoneinfo import ZoneInfo
 
 
 KST = ZoneInfo("Asia/Seoul")
+
+# 2026-09-30 버그 수정: 추석(9/24~25) 등 "평일이지만 KRX 휴장일"에도
+# 이 스크립트가 평일 여부만 보고 실행을 허용해서, 네이버가 내려주는
+# 마지막 거래일(직전 영업일) 데이터를 그날 데이터인 것처럼 착각해
+# 주도섹터 달력에 중복 기록하는 사고가 있었다.
+# -> data/krx_holidays.json에 등록된 날짜는 평일이어도 주말과 똑같이
+#    취급해서 실행하지 않는다. 파일이 없으면 기존처럼 주말 기준으로만
+#    동작한다(README에 명시된 원래 설계 의도).
+HOLIDAY_FILE = Path(__file__).resolve().parent.parent / "data" / "krx_holidays.json"
+
+
+def load_holidays() -> set[str]:
+    try:
+        with open(HOLIDAY_FILE, encoding="utf-8") as f:
+            data = json.load(f)
+        return set(data.get("holidays", []))
+    except FileNotFoundError:
+        return set()
+    except Exception:
+        return set()
+
+
+def is_market_holiday(dt: datetime) -> bool:
+    return dt.strftime("%Y-%m-%d") in load_holidays()
 
 
 @dataclass
@@ -45,6 +71,17 @@ def classify_session(dt: datetime) -> SessionResult:
             note="주말은 자동 갱신 없이 마지막 정상 데이터 유지",
         )
 
+    if is_market_holiday(dt):
+        return SessionResult(
+            input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
+            hhmm=hhmm,
+            is_weekday=True,
+            session_state="holiday_hold",
+            board_label="휴장일 유지",
+            should_run_pipeline=False,
+            note="data/krx_holidays.json에 등록된 KRX 휴장일 - 마지막 정상 데이터 유지",
+        )
+
     if hhmm < 750:
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
@@ -68,15 +105,6 @@ def classify_session(dt: datetime) -> SessionResult:
         )
 
     if hhmm <= 2003:
-        # 2026-09-17 버그 수정: 예전에는 "현재 분(minute)이 정확히
-        # 5의 배수+3일 때만"(예: 08:03, 08:08...) 실행하도록
-        # 했었는데, GitHub Actions의 cron 트리거는 실제로는 몇 분씩
-        # 밀려서 실행되는 경우가 흔해서(예: :23분 예약이 :27분에
-        # 실행), 그때마다 "분이 안 맞는다"며 파이프라인 실행 자체를
-        # 건너뛰는 조용한 버그가 있었다.
-        # -> 크론 스케줄 자체가 이미 5분 간격으로 트리거하므로,
-        #    이 스크립트에서는 시간대 범위 안인지만 확인하고
-        #    분 단위 정확도는 더 이상 요구하지 않는다.
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
             hhmm=hhmm,
@@ -84,7 +112,7 @@ def classify_session(dt: datetime) -> SessionResult:
             session_state="live_update_window",
             board_label="장중/주간 갱신",
             should_run_pipeline=True,
-            note="08:00~20:03는 언제든 실행 가능 (분 단위 정확도 요구 제거, 2026-09-17)",
+            note="08:00~20:03는 언제든 실행 가능 (분 단위 정확도 요구 없음)",
         )
 
     return SessionResult(
@@ -138,6 +166,7 @@ def run_default_samples() -> None:
         "2026-04-21 08:03",
         "2026-04-21 08:08",
         "2026-04-21 13:27",
+        "2026-09-24 10:00",  # 추석 연휴 - 평일이지만 휴장일이어야 함
         "2026-04-21 19:58",
         "2026-04-21 20:03",
         "2026-04-21 20:05",

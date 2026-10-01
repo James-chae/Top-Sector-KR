@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-01",
-    "generated_at_kst": "2026-10-01 09:56:13",
+    "generated_at_kst": "2026-10-01 10:02:16",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 19.3",
+    "leader_count": 3,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 24.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,26 +25,62 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 19.3,
+      "score": 24.8,
+      "leaders": 2,
+      "avg_change_pct": 1.19
+    },
+    {
+      "sector": "기타",
+      "score": 24.1,
       "leaders": 1,
-      "avg_change_pct": 1.72
+      "avg_change_pct": 14.67
     }
   ],
   "leaders": [
     {
-      "code": "036930",
-      "name": "주성엔지니어링",
+      "code": "490470",
+      "name": "세미파이브",
       "market": "KOSDAQ",
-      "price": 236500,
-      "change_value": 4000,
-      "change_pct": 1.72,
-      "volume": 468565,
-      "trading_value_okrw": 1108.0,
+      "price": 20950,
+      "change_value": 2680,
+      "change_pct": 14.67,
+      "volume": 5129867,
+      "trading_value_okrw": 1074.0,
+      "sector1": "기타",
+      "sector2": "",
+      "sector": "기타",
+      "score": 15.4,
+      "rank": 1
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "price": 197300,
+      "change_value": 2100,
+      "change_pct": 1.08,
+      "volume": 647200,
+      "trading_value_okrw": 1276.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.5,
-      "rank": 1
+      "score": 10.0,
+      "rank": 2
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 235500,
+      "change_value": 3000,
+      "change_pct": 1.29,
+      "volume": 489266,
+      "trading_value_okrw": 1152.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 9.1,
+      "rank": 3
     }
   ]
 }

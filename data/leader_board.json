@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-01",
-    "generated_at_kst": "2026-10-01 09:41:13",
+    "generated_at_kst": "2026-10-01 09:46:13",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "자동차 중심 강세 / 상위섹터 점수 20.2",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 19.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "자동차",
-      "score": 20.2,
-      "leaders": 1,
-      "avg_change_pct": 4.36
-    },
-    {
       "sector": "반도체",
-      "score": 19.1,
+      "score": 19.6,
       "leaders": 1,
-      "avg_change_pct": 1.51
+      "avg_change_pct": 1.94
     }
   ],
   "leaders": [
     {
-      "code": "012330",
-      "name": "현대모비스",
-      "market": "KOSPI",
-      "price": 383000,
-      "change_value": 16000,
-      "change_pct": 4.36,
-      "volume": 205788,
-      "trading_value_okrw": 788.0,
-      "sector1": "자동차",
-      "sector2": "",
-      "sector": "자동차",
-      "score": 12.2,
-      "rank": 1
-    },
-    {
       "code": "036930",
       "name": "주성엔지니어링",
       "market": "KOSDAQ",
-      "price": 236000,
-      "change_value": 3500,
-      "change_pct": 1.51,
-      "volume": 386119,
-      "trading_value_okrw": 911.0,
+      "price": 237000,
+      "change_value": 4500,
+      "change_pct": 1.94,
+      "volume": 425813,
+      "trading_value_okrw": 1009.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 10.8,
-      "rank": 2
+      "score": 11.0,
+      "rank": 1
     }
   ]
 }

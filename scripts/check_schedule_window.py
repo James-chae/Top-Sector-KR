@@ -100,19 +100,30 @@ def classify_session(dt: datetime) -> SessionResult:
             is_weekday=True,
             session_state="reset",
             board_label="reset",
-            should_run_pipeline=True,
-            note="07:50~07:59는 reset 구간",
+            should_run_pipeline=False,
+            note="07:50~07:59는 reset 구간 - 네이버가 전일 애프터마켓 포함 값을 내려주므로 실행 안 함",
         )
 
-    if hhmm <= 2003:
+    if hhmm < 900:
+        return SessionResult(
+            input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
+            hhmm=hhmm,
+            is_weekday=True,
+            session_state="preopen_hold",
+            board_label="전일 유지",
+            should_run_pipeline=False,
+            note="09:00 전까지는 전일 15:35 기준 데이터 유지",
+        )
+
+    if hhmm <= 1535:
         return SessionResult(
             input_time=dt.strftime("%Y-%m-%d %H:%M:%S %Z"),
             hhmm=hhmm,
             is_weekday=True,
             session_state="live_update_window",
-            board_label="장중/주간 갱신",
+            board_label="장중 갱신",
             should_run_pipeline=True,
-            note="08:00~20:03는 언제든 실행 가능 (분 단위 정확도 요구 없음)",
+            note="09:00~15:35는 언제든 실행 가능 (15:30 이후 애프터마켓 합산 방지)",
         )
 
     return SessionResult(
@@ -122,7 +133,7 @@ def classify_session(dt: datetime) -> SessionResult:
         session_state="final_hold",
         board_label="최종 유지",
         should_run_pipeline=False,
-        note="20:03 이후는 최종 데이터 유지",
+        note="15:35 이후는 최종 데이터 유지",
     )
 
 
@@ -167,9 +178,9 @@ def run_default_samples() -> None:
         "2026-04-21 08:08",
         "2026-04-21 13:27",
         "2026-09-24 10:00",  # 추석 연휴 - 평일이지만 휴장일이어야 함
-        "2026-04-21 19:58",
-        "2026-04-21 20:03",
-        "2026-04-21 20:05",
+        "2026-04-21 15:33",
+        "2026-04-21 15:35",
+        "2026-04-21 15:36",
     ]
 
     print("[기본 샘플 테스트 시작]")

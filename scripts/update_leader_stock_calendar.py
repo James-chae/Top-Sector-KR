@@ -48,7 +48,7 @@ SECTOR_CALENDAR_PATH = DATA_DIR / "sector_calendar_history.json"
 OUTPUT_PATH = DATA_DIR / "leader_stock_calendar_history.json"
 
 RECORD_START_HHMM = 900   # 09:00 이전 데이터는 전일/프리마켓 값이라 기록하지 않음
-FINAL_HHMM = 2000         # 20:00 이후 실행에서 확정
+FINAL_HHMM = 1530         # 15:30 이후 실행에서 확정
 STOCK_LIMIT = 3           # app.js getSectorLeaderItems 와 동일
 BACKFILL_MONTHS = 6
 

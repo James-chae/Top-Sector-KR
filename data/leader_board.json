@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-06",
-    "generated_at_kst": "2026-10-06 09:11:11",
+    "generated_at_kst": "2026-10-06 09:16:11",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 37.7",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 42.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,15 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 37.7,
+      "score": 42.2,
       "leaders": 1,
-      "avg_change_pct": 4.3
+      "avg_change_pct": 4.36
+    },
+    {
+      "sector": "지주사",
+      "score": 25.8,
+      "leaders": 1,
+      "avg_change_pct": 1.55
     }
   ],
   "leaders": [
@@ -35,16 +41,31 @@
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 1649000,
-      "change_value": 68000,
-      "change_pct": 4.3,
-      "volume": 107107,
-      "trading_value_okrw": 1766.0,
+      "price": 1650000,
+      "change_value": 69000,
+      "change_pct": 4.36,
+      "volume": 141230,
+      "trading_value_okrw": 2330.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 27.3,
+      "score": 30.4,
       "rank": 1
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 1178000,
+      "change_value": 18000,
+      "change_pct": 1.55,
+      "volume": 113448,
+      "trading_value_okrw": 1336.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 16.5,
+      "rank": 2
     }
   ]
 }

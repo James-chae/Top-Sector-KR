@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-07",
-    "generated_at_kst": "2026-10-07 02:12:02",
+    "generated_at_kst": "2026-10-07 04:40:24",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "보안 중심 강세 / 상위섹터 점수 31.5",
+    "leader_count": 6,
+    "sector_count": 5,
+    "market_bias": "통신 중심 강세 / 상위섹터 점수 36.5",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,126 @@
   },
   "top_sectors": [
     {
+      "sector": "통신",
+      "score": 36.5,
+      "leaders": 2,
+      "avg_change_pct": 12.12
+    },
+    {
       "sector": "보안",
-      "score": 31.5,
+      "score": 35.6,
       "leaders": 1,
-      "avg_change_pct": 11.7
+      "avg_change_pct": 14.39
+    },
+    {
+      "sector": "지주사",
+      "score": 27.4,
+      "leaders": 1,
+      "avg_change_pct": 1.03
     },
     {
       "sector": "철강",
-      "score": 28.9,
+      "score": 24.4,
       "leaders": 1,
-      "avg_change_pct": 13.06
+      "avg_change_pct": 8.11
     },
     {
-      "sector": "통신",
-      "score": 26.2,
+      "sector": "화장품",
+      "score": 17.0,
       "leaders": 1,
-      "avg_change_pct": 5.79
+      "avg_change_pct": 5.96
     }
   ],
   "leaders": [
     {
+      "code": "038500",
+      "name": "삼표시멘트",
+      "market": "KOSDAQ",
+      "price": 8130,
+      "change_value": 1380,
+      "change_pct": 20.44,
+      "volume": 13713593,
+      "trading_value_okrw": 1114.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 24.6,
+      "rank": 1
+    },
+    {
       "code": "042510",
       "name": "라온시큐어",
       "market": "KOSDAQ",
-      "price": 16610,
-      "change_value": 1740,
-      "change_pct": 11.7,
-      "volume": 12757917,
-      "trading_value_okrw": 2119.0,
+      "price": 17010,
+      "change_value": 2140,
+      "change_pct": 14.39,
+      "volume": 16410339,
+      "trading_value_okrw": 2791.0,
       "sector1": "보안",
       "sector2": "",
       "sector": "보안",
-      "score": 20.2,
-      "rank": 1
+      "score": 22.6,
+      "rank": 2
     },
     {
       "code": "012210",
       "name": "삼미금속",
       "market": "KOSDAQ",
-      "price": 13940,
-      "change_value": 1610,
-      "change_pct": 13.06,
-      "volume": 10574366,
-      "trading_value_okrw": 1474.0,
+      "price": 13330,
+      "change_value": 1000,
+      "change_pct": 8.11,
+      "volume": 13716547,
+      "trading_value_okrw": 1828.0,
       "sector1": "철강",
       "sector2": "",
       "sector": "철강",
-      "score": 19.2,
-      "rank": 2
+      "score": 13.8,
+      "rank": 3
     },
     {
       "code": "069540",
       "name": "빛과전자",
       "market": "KOSDAQ",
-      "price": 5300,
-      "change_value": 290,
-      "change_pct": 5.79,
-      "volume": 31940418,
-      "trading_value_okrw": 1692.0,
+      "price": 5200,
+      "change_value": 190,
+      "change_pct": 3.79,
+      "volume": 41645004,
+      "trading_value_okrw": 2165.0,
       "sector1": "통신",
       "sector2": "",
       "sector": "통신",
-      "score": 16.0,
-      "rank": 3
+      "score": 13.6,
+      "rank": 4
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 1173000,
+      "change_value": 12000,
+      "change_pct": 1.03,
+      "volume": 366477,
+      "trading_value_okrw": 4298.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 10.7,
+      "rank": 5
+    },
+    {
+      "code": "278470",
+      "name": "에이피알",
+      "market": "KOSPI",
+      "price": 382500,
+      "change_value": 21500,
+      "change_pct": 5.96,
+      "volume": 274782,
+      "trading_value_okrw": 1051.0,
+      "sector1": "화장품",
+      "sector2": "",
+      "sector": "화장품",
+      "score": 8.3,
+      "rank": 6
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-13",
-    "generated_at_kst": "2026-10-13 03:11:28",
+    "generated_at_kst": "2026-10-13 03:26:54",
     "mode": "closing",
     "session_state": "",
     "leader_count": 2,
     "sector_count": 2,
-    "market_bias": "제조 중심 강세 / 상위섹터 점수 34.2",
+    "market_bias": "제조 중심 강세 / 상위섹터 점수 30.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "제조",
-      "score": 34.2,
+      "score": 30.9,
       "leaders": 1,
-      "avg_change_pct": 11.11
+      "avg_change_pct": 8.13
     },
     {
       "sector": "보안",
-      "score": 30.2,
+      "score": 28.6,
       "leaders": 1,
-      "avg_change_pct": 12.6
+      "avg_change_pct": 11.19
     }
   ],
   "leaders": [
@@ -41,30 +41,30 @@
       "code": "001210",
       "name": "금호전기",
       "market": "KOSPI",
-      "price": 12300,
-      "change_value": 1230,
-      "change_pct": 11.11,
-      "volume": 23884286,
-      "trading_value_okrw": 2937.0,
+      "price": 11970,
+      "change_value": 900,
+      "change_pct": 8.13,
+      "volume": 24429083,
+      "trading_value_okrw": 2924.0,
       "sector1": "제조",
       "sector2": "",
       "sector": "제조",
-      "score": 20.9,
+      "score": 17.6,
       "rank": 1
     },
     {
       "code": "042510",
       "name": "라온시큐어",
       "market": "KOSDAQ",
-      "price": 18410,
-      "change_value": 2060,
-      "change_pct": 12.6,
-      "volume": 11953936,
-      "trading_value_okrw": 2200.0,
+      "price": 18180,
+      "change_value": 1830,
+      "change_pct": 11.19,
+      "volume": 12134179,
+      "trading_value_okrw": 2205.0,
       "sector1": "보안",
       "sector2": "",
       "sector": "보안",
-      "score": 18.7,
+      "score": 17.1,
       "rank": 2
     }
   ]

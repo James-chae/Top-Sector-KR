@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-19",
-    "generated_at_kst": "2026-10-19 01:00:19",
+    "generated_at_kst": "2026-10-19 03:33:45",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "2차전지 중심 강세 / 상위섹터 점수 20.4",
+    "leader_count": 5,
+    "sector_count": 4,
+    "market_bias": "바이오 중심 강세 / 상위섹터 점수 45.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,105 @@
   },
   "top_sectors": [
     {
-      "sector": "2차전지",
-      "score": 20.4,
+      "sector": "바이오",
+      "score": 45.3,
       "leaders": 1,
-      "avg_change_pct": 3.77
+      "avg_change_pct": 29.9
+    },
+    {
+      "sector": "2차전지",
+      "score": 35.5,
+      "leaders": 2,
+      "avg_change_pct": 7.98
+    },
+    {
+      "sector": "반도체",
+      "score": 30.8,
+      "leaders": 1,
+      "avg_change_pct": 2.03
+    },
+    {
+      "sector": "자동차",
+      "score": 15.4,
+      "leaders": 1,
+      "avg_change_pct": 4.01
     }
   ],
   "leaders": [
     {
+      "code": "010580",
+      "name": "에스엠벡셀",
+      "market": "KOSPI",
+      "price": 4040,
+      "change_value": 930,
+      "change_pct": 29.9,
+      "volume": 26685894,
+      "trading_value_okrw": 1078.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 36.6,
+      "rank": 1
+    },
+    {
       "code": "006400",
       "name": "삼성SDI",
       "market": "KOSPI",
-      "price": 550000,
-      "change_value": 20000,
-      "change_pct": 3.77,
-      "volume": 257939,
-      "trading_value_okrw": 1418.0,
+      "price": 583000,
+      "change_value": 53000,
+      "change_pct": 10.0,
+      "volume": 617808,
+      "trading_value_okrw": 3601.0,
       "sector1": "2차전지",
       "sector2": "",
       "sector": "2차전지",
-      "score": 10.8,
-      "rank": 1
+      "score": 18.9,
+      "rank": 2
+    },
+    {
+      "code": "005935",
+      "name": "삼성전자우",
+      "market": "KOSPI",
+      "price": 170600,
+      "change_value": 3400,
+      "change_pct": 2.03,
+      "volume": 2656221,
+      "trading_value_okrw": 4531.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 13.4,
+      "rank": 3
+    },
+    {
+      "code": "373220",
+      "name": "LG에너지솔루션",
+      "market": "KOSPI",
+      "price": 427000,
+      "change_value": 24000,
+      "change_pct": 5.96,
+      "volume": 391212,
+      "trading_value_okrw": 1670.0,
+      "sector1": "2차전지",
+      "sector2": "",
+      "sector": "2차전지",
+      "score": 10.1,
+      "rank": 4
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 324500,
+      "change_value": 12500,
+      "change_pct": 4.01,
+      "volume": 336141,
+      "trading_value_okrw": 1090.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 6.7,
+      "rank": 5
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-23",
-    "generated_at_kst": "2026-10-23 01:21:48",
+    "generated_at_kst": "2026-10-23 03:39:54",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 63.6",
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 50.8",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 63.6,
+      "score": 50.8,
       "leaders": 1,
-      "avg_change_pct": 100.81
+      "avg_change_pct": 82.16
     },
     {
       "sector": "건설",
-      "score": 38.4,
+      "score": 35.6,
       "leaders": 1,
-      "avg_change_pct": 8.66
+      "avg_change_pct": 9.21
     },
     {
       "sector": "의료기기",
-      "score": 22.3,
+      "score": 20.0,
       "leaders": 1,
-      "avg_change_pct": 14.93
+      "avg_change_pct": 10.53
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "000150",
       "name": "디티에스",
       "market": "KOSDAQ",
-      "price": 37150,
-      "change_value": 18650,
-      "change_pct": 100.81,
-      "volume": 10708685,
-      "trading_value_okrw": 3978.0,
+      "price": 33700,
+      "change_value": 15200,
+      "change_pct": 82.16,
+      "volume": 15415295,
+      "trading_value_okrw": 5194.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 47.6,
+      "score": 32.8,
       "rank": 1
     },
     {
       "code": "028050",
       "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 60200,
-      "change_value": 4800,
-      "change_pct": 8.66,
-      "volume": 7365019,
-      "trading_value_okrw": 4433.0,
+      "price": 60500,
+      "change_value": 5100,
+      "change_pct": 9.21,
+      "volume": 9333303,
+      "trading_value_okrw": 5646.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 21.3,
+      "score": 17.6,
       "rank": 2
     },
     {
       "code": "065450",
       "name": "빅텍",
       "market": "KOSDAQ",
-      "price": 4310,
-      "change_value": 560,
-      "change_pct": 14.93,
-      "volume": 24982732,
-      "trading_value_okrw": 1076.0,
+      "price": 4145,
+      "change_value": 395,
+      "change_pct": 10.53,
+      "volume": 32639188,
+      "trading_value_okrw": 1352.0,
       "sector1": "의료기기",
       "sector2": "",
       "sector": "의료기기",
-      "score": 13.6,
+      "score": 10.6,
       "rank": 3
     }
   ]

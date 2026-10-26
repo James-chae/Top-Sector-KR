@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-10-23",
-    "generated_at_kst": "2026-10-23 03:39:54",
+    "trade_date": "2026-10-26",
+    "generated_at_kst": "2026-10-26 00:43:53",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 50.8",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 84.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "지주사",
-      "score": 50.8,
+      "sector": "반도체",
+      "score": 84.0,
       "leaders": 1,
-      "avg_change_pct": 82.16
-    },
-    {
-      "sector": "건설",
-      "score": 35.6,
-      "leaders": 1,
-      "avg_change_pct": 9.21
-    },
-    {
-      "sector": "의료기기",
-      "score": 20.0,
-      "leaders": 1,
-      "avg_change_pct": 10.53
+      "avg_change_pct": 0.78
     }
   ],
   "leaders": [
     {
-      "code": "000150",
-      "name": "디티에스",
-      "market": "KOSDAQ",
-      "price": 33700,
-      "change_value": 15200,
-      "change_pct": 82.16,
-      "volume": 15415295,
-      "trading_value_okrw": 5194.0,
-      "sector1": "지주사",
-      "sector2": "",
-      "sector": "지주사",
-      "score": 32.8,
-      "rank": 1
-    },
-    {
-      "code": "028050",
-      "name": "삼성E&A",
+      "code": "000660",
+      "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 60500,
-      "change_value": 5100,
-      "change_pct": 9.21,
-      "volume": 9333303,
-      "trading_value_okrw": 5646.0,
-      "sector1": "건설",
+      "price": 1287000,
+      "change_value": 10000,
+      "change_pct": 0.78,
+      "volume": 662243,
+      "trading_value_okrw": 8523.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "건설",
-      "score": 17.6,
-      "rank": 2
-    },
-    {
-      "code": "065450",
-      "name": "빅텍",
-      "market": "KOSDAQ",
-      "price": 4145,
-      "change_value": 395,
-      "change_pct": 10.53,
-      "volume": 32639188,
-      "trading_value_okrw": 1352.0,
-      "sector1": "의료기기",
-      "sector2": "",
-      "sector": "의료기기",
-      "score": 10.6,
-      "rank": 3
+      "sector": "반도체",
+      "score": 66.0,
+      "rank": 1
     }
   ]
 }

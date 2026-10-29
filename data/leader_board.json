@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-10-29",
-    "generated_at_kst": "2026-10-29 02:15:55",
+    "generated_at_kst": "2026-10-29 04:41:33",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 2,
-    "market_bias": "반도체 중심 강세 / 상위섹터 점수 27.0",
+    "leader_count": 7,
+    "sector_count": 5,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 59.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,62 +25,140 @@
   "top_sectors": [
     {
       "sector": "반도체",
-      "score": 27.0,
-      "leaders": 2,
-      "avg_change_pct": 9.4
+      "score": 59.9,
+      "leaders": 3,
+      "avg_change_pct": 6.46
     },
     {
       "sector": "지주사",
-      "score": 25.9,
+      "score": 28.4,
       "leaders": 1,
-      "avg_change_pct": 1.95
+      "avg_change_pct": 2.82
+    },
+    {
+      "sector": "통신",
+      "score": 20.2,
+      "leaders": 1,
+      "avg_change_pct": 9.63
+    },
+    {
+      "sector": "자동차",
+      "score": 13.9,
+      "leaders": 1,
+      "avg_change_pct": 2.7
+    },
+    {
+      "sector": "전자",
+      "score": 12.9,
+      "leaders": 1,
+      "avg_change_pct": 1.92
     }
   ],
   "leaders": [
     {
-      "code": "017900",
-      "name": "광전자",
+      "code": "000660",
+      "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 9400,
-      "change_value": 1410,
-      "change_pct": 17.65,
-      "volume": 12146523,
-      "trading_value_okrw": 1141.0,
+      "price": 1526000,
+      "change_value": 39000,
+      "change_pct": 2.62,
+      "volume": 3490471,
+      "trading_value_okrw": 53264.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 21.2,
+      "score": 68.1,
       "rank": 1
+    },
+    {
+      "code": "017900",
+      "name": "광전자",
+      "market": "KOSPI",
+      "price": 9180,
+      "change_value": 1190,
+      "change_pct": 14.89,
+      "volume": 13489807,
+      "trading_value_okrw": 1238.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 18.1,
+      "rank": 2
+    },
+    {
+      "code": "327260",
+      "name": "RF머트리얼즈",
+      "market": "KOSDAQ",
+      "price": 38150,
+      "change_value": 3350,
+      "change_pct": 9.63,
+      "volume": 2921634,
+      "trading_value_okrw": 1114.0,
+      "sector1": "통신",
+      "sector2": "",
+      "sector": "통신",
+      "score": 11.4,
+      "rank": 3
     },
     {
       "code": "402340",
       "name": "SK스퀘어",
       "market": "KOSPI",
-      "price": 939000,
-      "change_value": 18000,
-      "change_pct": 1.95,
-      "volume": 464916,
-      "trading_value_okrw": 4365.0,
+      "price": 947000,
+      "change_value": 26000,
+      "change_pct": 2.82,
+      "volume": 647940,
+      "trading_value_okrw": 6135.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 9.0,
-      "rank": 2
+      "score": 10.4,
+      "rank": 4
+    },
+    {
+      "code": "005380",
+      "name": "현대차",
+      "market": "KOSPI",
+      "price": 304000,
+      "change_value": 8000,
+      "change_pct": 2.7,
+      "volume": 455862,
+      "trading_value_okrw": 1385.0,
+      "sector1": "자동차",
+      "sector2": "",
+      "sector": "자동차",
+      "score": 4.5,
+      "rank": 5
+    },
+    {
+      "code": "072950",
+      "name": "빛샘전자",
+      "market": "KOSDAQ",
+      "price": 15950,
+      "change_value": 300,
+      "change_pct": 1.92,
+      "volume": 6880767,
+      "trading_value_okrw": 1097.0,
+      "sector1": "전자",
+      "sector2": "",
+      "sector": "전자",
+      "score": 4.1,
+      "rank": 6
     },
     {
       "code": "080220",
       "name": "제주반도체",
       "market": "KOSDAQ",
-      "price": 70300,
-      "change_value": 800,
-      "change_pct": 1.15,
-      "volume": 1557953,
-      "trading_value_okrw": 1095.0,
+      "price": 70800,
+      "change_value": 1300,
+      "change_pct": 1.87,
+      "volume": 1769323,
+      "trading_value_okrw": 1252.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 3.1,
-      "rank": 3
+      "score": 3.6,
+      "rank": 7
     }
   ]
 }

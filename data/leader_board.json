@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-10-30",
-    "generated_at_kst": "2026-10-30 04:41:19",
+    "trade_date": "2026-11-02",
+    "generated_at_kst": "2026-11-02 01:50:21",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "보안 중심 강세 / 상위섹터 점수 29.9",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 85.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "보안",
-      "score": 29.9,
+      "sector": "반도체",
+      "score": 85.2,
       "leaders": 1,
-      "avg_change_pct": 16.52
-    },
-    {
-      "sector": "2차전지",
-      "score": 20.4,
-      "leaders": 1,
-      "avg_change_pct": 1.49
-    },
-    {
-      "sector": "로봇",
-      "score": 16.7,
-      "leaders": 1,
-      "avg_change_pct": 4.28
+      "avg_change_pct": 1.2
     }
   ],
   "leaders": [
     {
-      "code": "042510",
-      "name": "라온시큐어",
-      "market": "KOSDAQ",
-      "price": 19400,
-      "change_value": 2750,
-      "change_pct": 16.52,
-      "volume": 6642415,
-      "trading_value_okrw": 1288.0,
-      "sector1": "보안",
-      "sector2": "",
-      "sector": "보안",
-      "score": 20.7,
-      "rank": 1
-    },
-    {
-      "code": "030530",
-      "name": "원익홀딩스",
-      "market": "KOSDAQ",
-      "price": 29250,
-      "change_value": 1200,
-      "change_pct": 4.28,
-      "volume": 4190254,
-      "trading_value_okrw": 1225.0,
-      "sector1": "로봇",
-      "sector2": "",
-      "sector": "로봇",
-      "score": 7.7,
-      "rank": 2
-    },
-    {
-      "code": "006400",
-      "name": "삼성SDI",
+      "code": "000660",
+      "name": "SK하이닉스",
       "market": "KOSPI",
-      "price": 546000,
-      "change_value": 8000,
-      "change_pct": 1.49,
-      "volume": 532420,
-      "trading_value_okrw": 2907.0,
-      "sector1": "2차전지",
+      "price": 1435000,
+      "change_value": 17000,
+      "change_pct": 1.2,
+      "volume": 1042009,
+      "trading_value_okrw": 14952.0,
+      "sector1": "반도체",
       "sector2": "",
-      "sector": "2차전지",
-      "score": 7.2,
-      "rank": 3
+      "sector": "반도체",
+      "score": 67.2,
+      "rank": 1
     }
   ]
 }

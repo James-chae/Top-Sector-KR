@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-03",
-    "generated_at_kst": "2026-11-03 03:43:10",
+    "generated_at_kst": "2026-11-03 03:53:26",
     "mode": "closing",
     "session_state": "",
     "leader_count": 4,
     "sector_count": 3,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 47.2",
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 47.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 47.2,
+      "score": 47.1,
       "leaders": 1,
       "avg_change_pct": 29.97
     },
     {
       "sector": "IT서비스",
-      "score": 25.3,
+      "score": 24.8,
       "leaders": 2,
-      "avg_change_pct": 6.05
+      "avg_change_pct": 5.62
     },
     {
       "sector": "항공/여행",
-      "score": 19.1,
+      "score": 18.9,
       "leaders": 1,
-      "avg_change_pct": 4.02
+      "avg_change_pct": 3.85
     }
   ],
   "leaders": [
@@ -50,12 +50,12 @@
       "price": 175200,
       "change_value": 40400,
       "change_pct": 29.97,
-      "volume": 1054373,
+      "volume": 1054678,
       "trading_value_okrw": 1847.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 36.6,
+      "score": 36.5,
       "rank": 1
     },
     {
@@ -65,42 +65,42 @@
       "price": 29900,
       "change_value": 2450,
       "change_pct": 8.93,
-      "volume": 3610178,
-      "trading_value_okrw": 1079.0,
+      "volume": 3636874,
+      "trading_value_okrw": 1087.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 13.4,
+      "score": 13.3,
       "rank": 2
     },
     {
       "code": "003490",
       "name": "대한항공",
       "market": "KOSPI",
-      "price": 29750,
-      "change_value": 1150,
-      "change_pct": 4.02,
-      "volume": 4627086,
-      "trading_value_okrw": 1376.0,
+      "price": 29700,
+      "change_value": 1100,
+      "change_pct": 3.85,
+      "volume": 4696843,
+      "trading_value_okrw": 1394.0,
       "sector1": "항공/여행",
       "sector2": "",
       "sector": "항공/여행",
-      "score": 9.7,
+      "score": 9.5,
       "rank": 3
     },
     {
       "code": "053800",
       "name": "안랩",
       "market": "KOSDAQ",
-      "price": 119900,
-      "change_value": 3700,
-      "change_pct": 3.18,
-      "volume": 970514,
-      "trading_value_okrw": 1163.0,
+      "price": 118900,
+      "change_value": 2700,
+      "change_pct": 2.32,
+      "volume": 976607,
+      "trading_value_okrw": 1161.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 7.4,
+      "score": 6.5,
       "rank": 4
     }
   ]

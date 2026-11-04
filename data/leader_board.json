@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-04",
-    "generated_at_kst": "2026-11-04 02:43:48",
+    "generated_at_kst": "2026-11-04 02:58:00",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 4,
+    "leader_count": 5,
     "sector_count": 4,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 27.3",
+    "market_bias": "에너지 중심 강세 / 상위섹터 점수 25.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,90 +24,105 @@
   },
   "top_sectors": [
     {
-      "sector": "지주사",
-      "score": 27.3,
+      "sector": "에너지",
+      "score": 25.9,
       "leaders": 1,
-      "avg_change_pct": 8.5
+      "avg_change_pct": 6.57
     },
     {
-      "sector": "에너지",
-      "score": 23.9,
+      "sector": "지주사",
+      "score": 25.7,
       "leaders": 1,
-      "avg_change_pct": 4.87
+      "avg_change_pct": 6.79
     },
     {
       "sector": "반도체",
-      "score": 21.8,
-      "leaders": 1,
-      "avg_change_pct": 8.99
+      "score": 24.3,
+      "leaders": 2,
+      "avg_change_pct": 5.95
     },
     {
       "sector": "건설",
-      "score": 16.8,
+      "score": 17.3,
       "leaders": 1,
-      "avg_change_pct": 3.73
+      "avg_change_pct": 4.06
     }
   ],
   "leaders": [
     {
-      "code": "180640",
-      "name": "한진칼",
-      "market": "KOSPI",
-      "price": 190100,
-      "change_value": 14900,
-      "change_pct": 8.5,
-      "volume": 1365919,
-      "trading_value_okrw": 2596.0,
-      "sector1": "지주사",
-      "sector2": "",
-      "sector": "지주사",
-      "score": 14.8,
-      "rank": 1
-    },
-    {
       "code": "009830",
       "name": "한화솔루션",
       "market": "KOSPI",
-      "price": 24750,
-      "change_value": 1150,
-      "change_pct": 4.87,
-      "volume": 7761181,
-      "trading_value_okrw": 1920.0,
+      "price": 25150,
+      "change_value": 1550,
+      "change_pct": 6.57,
+      "volume": 8052160,
+      "trading_value_okrw": 2025.0,
       "sector1": "에너지",
       "sector2": "",
       "sector": "에너지",
-      "score": 13.1,
+      "score": 14.9,
+      "rank": 1
+    },
+    {
+      "code": "180640",
+      "name": "한진칼",
+      "market": "KOSPI",
+      "price": 187100,
+      "change_value": 11900,
+      "change_pct": 6.79,
+      "volume": 1436204,
+      "trading_value_okrw": 2687.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 13.0,
       "rank": 2
     },
     {
       "code": "222800",
       "name": "심텍",
       "market": "KOSDAQ",
-      "price": 122400,
-      "change_value": 10100,
-      "change_pct": 8.99,
-      "volume": 1094614,
-      "trading_value_okrw": 1339.0,
+      "price": 121900,
+      "change_value": 9600,
+      "change_pct": 8.55,
+      "volume": 1134878,
+      "trading_value_okrw": 1383.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 12.4,
+      "score": 12.0,
       "rank": 3
     },
     {
       "code": "028050",
       "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 63900,
-      "change_value": 2300,
-      "change_pct": 3.73,
-      "volume": 2034035,
-      "trading_value_okrw": 1299.0,
+      "price": 64100,
+      "change_value": 2500,
+      "change_pct": 4.06,
+      "volume": 2106181,
+      "trading_value_okrw": 1350.0,
       "sector1": "건설",
       "sector2": "",
       "sector": "건설",
-      "score": 7.6,
+      "score": 7.9,
       "rank": 4
+    },
+    {
+      "code": "036930",
+      "name": "주성엔지니어링",
+      "market": "KOSDAQ",
+      "price": 160300,
+      "change_value": 5200,
+      "change_pct": 3.35,
+      "volume": 635283,
+      "trading_value_okrw": 1018.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 5.8,
+      "rank": 5
     }
   ]
 }

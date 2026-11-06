@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-06",
-    "generated_at_kst": "2026-11-06 02:50:43",
+    "generated_at_kst": "2026-11-06 03:19:18",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 15.0",
+    "leader_count": 3,
+    "sector_count": 3,
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 26.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,21 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 15.0,
+      "score": 26.9,
       "leaders": 1,
-      "avg_change_pct": 4.78
+      "avg_change_pct": 13.71
+    },
+    {
+      "sector": "인터넷",
+      "score": 13.0,
+      "leaders": 1,
+      "avg_change_pct": 2.11
+    },
+    {
+      "sector": "바이오",
+      "score": 12.6,
+      "leaders": 1,
+      "avg_change_pct": 2.47
     }
   ],
   "leaders": [
@@ -35,16 +47,46 @@
       "code": "180640",
       "name": "한진칼",
       "market": "KOSPI",
-      "price": 199500,
-      "change_value": 9100,
-      "change_pct": 4.78,
-      "volume": 517713,
-      "trading_value_okrw": 1032.0,
+      "price": 216500,
+      "change_value": 26100,
+      "change_pct": 13.71,
+      "volume": 829075,
+      "trading_value_okrw": 1794.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 6.4,
+      "score": 16.4,
       "rank": 1
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "market": "KOSPI",
+      "price": 476500,
+      "change_value": 11500,
+      "change_pct": 2.47,
+      "volume": 219406,
+      "trading_value_okrw": 1045.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 4.0,
+      "rank": 2
+    },
+    {
+      "code": "035420",
+      "name": "NAVER",
+      "market": "KOSPI",
+      "price": 188800,
+      "change_value": 3900,
+      "change_pct": 2.11,
+      "volume": 645920,
+      "trading_value_okrw": 1219.0,
+      "sector1": "인터넷",
+      "sector2": "",
+      "sector": "인터넷",
+      "score": 4.0,
+      "rank": 3
     }
   ]
 }

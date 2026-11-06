@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-06",
-    "generated_at_kst": "2026-11-06 03:19:18",
+    "generated_at_kst": "2026-11-06 05:26:49",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "지주사 중심 강세 / 상위섹터 점수 26.9",
+    "leader_count": 5,
+    "sector_count": 5,
+    "market_bias": "지주사 중심 강세 / 상위섹터 점수 21.9",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,68 +25,110 @@
   "top_sectors": [
     {
       "sector": "지주사",
-      "score": 26.9,
+      "score": 21.9,
       "leaders": 1,
-      "avg_change_pct": 13.71
+      "avg_change_pct": 7.41
+    },
+    {
+      "sector": "서비스",
+      "score": 20.5,
+      "leaders": 1,
+      "avg_change_pct": 10.4
     },
     {
       "sector": "인터넷",
-      "score": 13.0,
+      "score": 19.8,
       "leaders": 1,
-      "avg_change_pct": 2.11
+      "avg_change_pct": 4.33
+    },
+    {
+      "sector": "로봇",
+      "score": 19.0,
+      "leaders": 1,
+      "avg_change_pct": 8.16
     },
     {
       "sector": "바이오",
-      "score": 12.6,
+      "score": 12.0,
       "leaders": 1,
-      "avg_change_pct": 2.47
+      "avg_change_pct": 1.51
     }
   ],
   "leaders": [
     {
-      "code": "180640",
-      "name": "한진칼",
+      "code": "089860",
+      "name": "롯데렌탈",
       "market": "KOSPI",
-      "price": 216500,
-      "change_value": 26100,
-      "change_pct": 13.71,
-      "volume": 829075,
-      "trading_value_okrw": 1794.0,
-      "sector1": "지주사",
+      "price": 58400,
+      "change_value": 5500,
+      "change_pct": 10.4,
+      "volume": 1859161,
+      "trading_value_okrw": 1085.0,
+      "sector1": "서비스",
       "sector2": "",
-      "sector": "지주사",
-      "score": 16.4,
+      "sector": "서비스",
+      "score": 11.8,
       "rank": 1
     },
     {
-      "code": "128940",
-      "name": "한미약품",
-      "market": "KOSPI",
-      "price": 476500,
-      "change_value": 11500,
-      "change_pct": 2.47,
-      "volume": 219406,
-      "trading_value_okrw": 1045.0,
-      "sector1": "바이오",
+      "code": "030530",
+      "name": "원익홀딩스",
+      "market": "KOSDAQ",
+      "price": 29150,
+      "change_value": 2200,
+      "change_pct": 8.16,
+      "volume": 4045624,
+      "trading_value_okrw": 1179.0,
+      "sector1": "로봇",
       "sector2": "",
-      "sector": "바이오",
-      "score": 4.0,
+      "sector": "로봇",
+      "score": 10.1,
       "rank": 2
+    },
+    {
+      "code": "180640",
+      "name": "한진칼",
+      "market": "KOSPI",
+      "price": 204500,
+      "change_value": 14100,
+      "change_pct": 7.41,
+      "volume": 1155600,
+      "trading_value_okrw": 2363.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 10.0,
+      "rank": 3
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 188800,
-      "change_value": 3900,
-      "change_pct": 2.11,
-      "volume": 645920,
-      "trading_value_okrw": 1219.0,
+      "price": 192900,
+      "change_value": 8000,
+      "change_pct": 4.33,
+      "volume": 1370837,
+      "trading_value_okrw": 2644.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 4.0,
-      "rank": 3
+      "score": 7.2,
+      "rank": 4
+    },
+    {
+      "code": "128940",
+      "name": "한미약품",
+      "market": "KOSPI",
+      "price": 472000,
+      "change_value": 7000,
+      "change_pct": 1.51,
+      "volume": 270687,
+      "trading_value_okrw": 1277.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 2.8,
+      "rank": 5
     }
   ]
 }

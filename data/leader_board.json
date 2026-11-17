@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-11-16",
-    "generated_at_kst": "2026-11-16 05:05:13",
+    "trade_date": "2026-11-17",
+    "generated_at_kst": "2026-11-17 04:47:58",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "우주 중심 강세 / 상위섹터 점수 32.5",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "건설 중심 강세 / 상위섹터 점수 13.3",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "우주",
-      "score": 32.5,
+      "sector": "건설",
+      "score": 13.3,
       "leaders": 1,
-      "avg_change_pct": 20.08
-    },
-    {
-      "sector": "금융",
-      "score": 11.4,
-      "leaders": 1,
-      "avg_change_pct": 1.13
+      "avg_change_pct": 1.32
     }
   ],
   "leaders": [
     {
-      "code": "100790",
-      "name": "미래에셋벤처투자",
-      "market": "KOSDAQ",
-      "price": 15070,
-      "change_value": 2520,
-      "change_pct": 20.08,
-      "volume": 5667656,
-      "trading_value_okrw": 854.0,
-      "sector1": "금융",
-      "sector2": "우주",
-      "sector": "우주",
-      "score": 24.4,
-      "rank": 1
-    },
-    {
-      "code": "105560",
-      "name": "KB금융",
+      "code": "028050",
+      "name": "삼성E&A",
       "market": "KOSPI",
-      "price": 160800,
-      "change_value": 1800,
-      "change_pct": 1.13,
-      "volume": 524790,
-      "trading_value_okrw": 843.0,
-      "sector1": "금융",
+      "price": 69300,
+      "change_value": 900,
+      "change_pct": 1.32,
+      "volume": 1564737,
+      "trading_value_okrw": 1084.0,
+      "sector1": "건설",
       "sector2": "",
-      "sector": "금융",
-      "score": 3.3,
-      "rank": 2
+      "sector": "건설",
+      "score": 4.6,
+      "rank": 1
     }
   ]
 }

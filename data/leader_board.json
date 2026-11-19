@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-19",
-    "generated_at_kst": "2026-11-19 03:51:49",
+    "generated_at_kst": "2026-11-19 04:02:29",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
+    "leader_count": 4,
     "sector_count": 2,
-    "market_bias": "엔터 중심 강세 / 상위섹터 점수 30.9",
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 66.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,19 +24,34 @@
   },
   "top_sectors": [
     {
+      "sector": "반도체",
+      "score": 66.0,
+      "leaders": 2,
+      "avg_change_pct": 2.08
+    },
+    {
       "sector": "엔터",
       "score": 30.9,
       "leaders": 2,
-      "avg_change_pct": 10.61
-    },
-    {
-      "sector": "반도체",
-      "score": 30.1,
-      "leaders": 1,
-      "avg_change_pct": 1.48
+      "avg_change_pct": 10.43
     }
   ],
   "leaders": [
+    {
+      "code": "000660",
+      "name": "SK하이닉스",
+      "market": "KOSPI",
+      "price": 1159000,
+      "change_value": 15000,
+      "change_pct": 1.31,
+      "volume": 1448217,
+      "trading_value_okrw": 16784.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 66.8,
+      "rank": 1
+    },
     {
       "code": "352820",
       "name": "하이브",
@@ -44,43 +59,43 @@
       "price": 186600,
       "change_value": 20000,
       "change_pct": 12.0,
-      "volume": 694479,
-      "trading_value_okrw": 1295.0,
+      "volume": 737680,
+      "trading_value_okrw": 1376.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 17.5,
-      "rank": 1
+      "score": 17.6,
+      "rank": 2
     },
     {
       "code": "009150",
       "name": "삼성전기",
       "market": "KOSPI",
-      "price": 822000,
-      "change_value": 12000,
-      "change_pct": 1.48,
-      "volume": 417207,
-      "trading_value_okrw": 3429.0,
+      "price": 833000,
+      "change_value": 23000,
+      "change_pct": 2.84,
+      "volume": 438828,
+      "trading_value_okrw": 3655.0,
       "sector1": "반도체",
       "sector2": "",
       "sector": "반도체",
-      "score": 15.5,
-      "rank": 2
+      "score": 17.1,
+      "rank": 3
     },
     {
       "code": "041510",
       "name": "에스엠",
       "market": "KOSDAQ",
-      "price": 96000,
-      "change_value": 8100,
-      "change_pct": 9.22,
-      "volume": 1078399,
-      "trading_value_okrw": 1035.0,
+      "price": 95700,
+      "change_value": 7800,
+      "change_pct": 8.87,
+      "volume": 1099498,
+      "trading_value_okrw": 1052.0,
       "sector1": "엔터",
       "sector2": "",
       "sector": "엔터",
-      "score": 13.8,
-      "rank": 3
+      "score": 13.3,
+      "rank": 4
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-20",
-    "generated_at_kst": "2026-11-20 03:44:20",
+    "generated_at_kst": "2026-11-20 03:55:23",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 3,
-    "market_bias": "항공/여행 중심 강세 / 상위섹터 점수 37.7",
+    "market_bias": "항공/여행 중심 강세 / 상위섹터 점수 39.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,21 +25,21 @@
   "top_sectors": [
     {
       "sector": "항공/여행",
-      "score": 37.7,
+      "score": 39.0,
       "leaders": 1,
-      "avg_change_pct": 21.26
+      "avg_change_pct": 22.46
     },
     {
       "sector": "지주사",
-      "score": 22.3,
+      "score": 22.7,
       "leaders": 1,
-      "avg_change_pct": 10.19
+      "avg_change_pct": 10.65
     },
     {
       "sector": "바이오",
-      "score": 15.0,
+      "score": 14.3,
       "leaders": 1,
-      "avg_change_pct": 4.11
+      "avg_change_pct": 3.36
     }
   ],
   "leaders": [
@@ -47,45 +47,45 @@
       "code": "104620",
       "name": "노랑풍선",
       "market": "KOSDAQ",
-      "price": 5020,
-      "change_value": 880,
-      "change_pct": 21.26,
-      "volume": 17615979,
-      "trading_value_okrw": 884.0,
+      "price": 5070,
+      "change_value": 930,
+      "change_pct": 22.46,
+      "volume": 18017815,
+      "trading_value_okrw": 913.0,
       "sector1": "항공/여행",
       "sector2": "",
       "sector": "항공/여행",
-      "score": 29.5,
+      "score": 30.7,
       "rank": 1
     },
     {
       "code": "180640",
       "name": "한진칼",
       "market": "KOSPI",
-      "price": 238000,
-      "change_value": 22000,
-      "change_pct": 10.19,
-      "volume": 410443,
-      "trading_value_okrw": 976.0,
+      "price": 239000,
+      "change_value": 23000,
+      "change_pct": 10.65,
+      "volume": 414585,
+      "trading_value_okrw": 990.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 13.8,
+      "score": 14.2,
       "rank": 2
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 179800,
-      "change_value": 7100,
-      "change_pct": 4.11,
-      "volume": 435131,
-      "trading_value_okrw": 782.0,
+      "price": 178500,
+      "change_value": 5800,
+      "change_pct": 3.36,
+      "volume": 448681,
+      "trading_value_okrw": 800.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 7.1,
+      "score": 6.3,
       "rank": 3
     }
   ]

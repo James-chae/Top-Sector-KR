@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-23",
-    "generated_at_kst": "2026-11-23 03:08:57",
+    "generated_at_kst": "2026-11-23 03:37:48",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 2,
-    "sector_count": 2,
-    "market_bias": "화장품 중심 강세 / 상위섹터 점수 19.2",
+    "leader_count": 1,
+    "sector_count": 1,
+    "market_bias": "로봇 중심 강세 / 상위섹터 점수 15.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,48 +24,27 @@
   },
   "top_sectors": [
     {
-      "sector": "화장품",
-      "score": 19.2,
-      "leaders": 1,
-      "avg_change_pct": 8.49
-    },
-    {
       "sector": "로봇",
-      "score": 14.0,
+      "score": 15.7,
       "leaders": 1,
-      "avg_change_pct": 1.28
+      "avg_change_pct": 3.05
     }
   ],
   "leaders": [
     {
-      "code": "278470",
-      "name": "에이피알",
-      "market": "KOSPI",
-      "price": 255500,
-      "change_value": 20000,
-      "change_pct": 8.49,
-      "volume": 329753,
-      "trading_value_okrw": 842.0,
-      "sector1": "화장품",
-      "sector2": "",
-      "sector": "화장품",
-      "score": 11.1,
-      "rank": 1
-    },
-    {
       "code": "030530",
       "name": "원익홀딩스",
       "market": "KOSDAQ",
-      "price": 31550,
-      "change_value": 400,
-      "change_pct": 1.28,
-      "volume": 3095417,
-      "trading_value_okrw": 976.0,
+      "price": 32100,
+      "change_value": 950,
+      "change_pct": 3.05,
+      "volume": 3264859,
+      "trading_value_okrw": 1048.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 5.5,
-      "rank": 2
+      "score": 7.0,
+      "rank": 1
     }
   ]
 }

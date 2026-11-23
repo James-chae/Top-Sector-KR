@@ -1,12 +1,12 @@
 {
   "meta": {
-    "trade_date": "2026-11-20",
-    "generated_at_kst": "2026-11-20 05:58:50",
+    "trade_date": "2026-11-23",
+    "generated_at_kst": "2026-11-23 03:08:57",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 3,
-    "sector_count": 3,
-    "market_bias": "항공/여행 중심 강세 / 상위섹터 점수 27.8",
+    "leader_count": 2,
+    "sector_count": 2,
+    "market_bias": "화장품 중심 강세 / 상위섹터 점수 19.2",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,69 +24,48 @@
   },
   "top_sectors": [
     {
-      "sector": "항공/여행",
-      "score": 27.8,
+      "sector": "화장품",
+      "score": 19.2,
       "leaders": 1,
-      "avg_change_pct": 11.84
+      "avg_change_pct": 8.49
     },
     {
-      "sector": "지주사",
-      "score": 20.6,
+      "sector": "로봇",
+      "score": 14.0,
       "leaders": 1,
-      "avg_change_pct": 8.56
-    },
-    {
-      "sector": "바이오",
-      "score": 12.1,
-      "leaders": 1,
-      "avg_change_pct": 1.16
+      "avg_change_pct": 1.28
     }
   ],
   "leaders": [
     {
-      "code": "104620",
-      "name": "노랑풍선",
-      "market": "KOSDAQ",
-      "price": 4630,
-      "change_value": 490,
-      "change_pct": 11.84,
-      "volume": 22078037,
-      "trading_value_okrw": 1022.0,
-      "sector1": "항공/여행",
+      "code": "278470",
+      "name": "에이피알",
+      "market": "KOSPI",
+      "price": 255500,
+      "change_value": 20000,
+      "change_pct": 8.49,
+      "volume": 329753,
+      "trading_value_okrw": 842.0,
+      "sector1": "화장품",
       "sector2": "",
-      "sector": "항공/여행",
-      "score": 19.2,
+      "sector": "화장품",
+      "score": 11.1,
       "rank": 1
     },
     {
-      "code": "180640",
-      "name": "한진칼",
-      "market": "KOSPI",
-      "price": 234500,
-      "change_value": 18500,
-      "change_pct": 8.56,
-      "volume": 520625,
-      "trading_value_okrw": 1220.0,
-      "sector1": "지주사",
-      "sector2": "",
-      "sector": "지주사",
-      "score": 11.5,
-      "rank": 2
-    },
-    {
-      "code": "196170",
-      "name": "알테오젠",
+      "code": "030530",
+      "name": "원익홀딩스",
       "market": "KOSDAQ",
-      "price": 174700,
-      "change_value": 2000,
-      "change_pct": 1.16,
-      "volume": 574609,
-      "trading_value_okrw": 1003.0,
-      "sector1": "바이오",
+      "price": 31550,
+      "change_value": 400,
+      "change_pct": 1.28,
+      "volume": 3095417,
+      "trading_value_okrw": 976.0,
+      "sector1": "로봇",
       "sector2": "",
-      "sector": "바이오",
-      "score": 3.6,
-      "rank": 3
+      "sector": "로봇",
+      "score": 5.5,
+      "rank": 2
     }
   ]
 }

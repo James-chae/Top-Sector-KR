@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-23",
-    "generated_at_kst": "2026-11-23 03:37:48",
+    "generated_at_kst": "2026-11-23 06:04:30",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 1,
-    "sector_count": 1,
-    "market_bias": "로봇 중심 강세 / 상위섹터 점수 15.7",
+    "leader_count": 5,
+    "sector_count": 4,
+    "market_bias": "반도체 중심 강세 / 상위섹터 점수 33.7",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -24,27 +24,105 @@
   },
   "top_sectors": [
     {
-      "sector": "로봇",
-      "score": 15.7,
+      "sector": "반도체",
+      "score": 33.7,
+      "leaders": 2,
+      "avg_change_pct": 2.5
+    },
+    {
+      "sector": "지주사",
+      "score": 23.6,
       "leaders": 1,
-      "avg_change_pct": 3.05
+      "avg_change_pct": 1.18
+    },
+    {
+      "sector": "화장품",
+      "score": 22.1,
+      "leaders": 1,
+      "avg_change_pct": 10.19
+    },
+    {
+      "sector": "로봇",
+      "score": 16.9,
+      "leaders": 1,
+      "avg_change_pct": 3.69
     }
   ],
   "leaders": [
     {
+      "code": "009150",
+      "name": "삼성전기",
+      "market": "KOSPI",
+      "price": 785500,
+      "change_value": 11500,
+      "change_pct": 1.49,
+      "volume": 803152,
+      "trading_value_okrw": 6308.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 13.1,
+      "rank": 1
+    },
+    {
+      "code": "278470",
+      "name": "에이피알",
+      "market": "KOSPI",
+      "price": 259500,
+      "change_value": 24000,
+      "change_pct": 10.19,
+      "volume": 518120,
+      "trading_value_okrw": 1344.0,
+      "sector1": "화장품",
+      "sector2": "",
+      "sector": "화장품",
+      "score": 12.8,
+      "rank": 2
+    },
+    {
+      "code": "402340",
+      "name": "SK스퀘어",
+      "market": "KOSPI",
+      "price": 685000,
+      "change_value": 8000,
+      "change_pct": 1.18,
+      "volume": 553209,
+      "trading_value_okrw": 3789.0,
+      "sector1": "지주사",
+      "sector2": "",
+      "sector": "지주사",
+      "score": 8.2,
+      "rank": 3
+    },
+    {
       "code": "030530",
       "name": "원익홀딩스",
       "market": "KOSDAQ",
-      "price": 32100,
-      "change_value": 950,
-      "change_pct": 3.05,
-      "volume": 3264859,
-      "trading_value_okrw": 1048.0,
+      "price": 32300,
+      "change_value": 1150,
+      "change_pct": 3.69,
+      "volume": 4265952,
+      "trading_value_okrw": 1377.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 7.0,
-      "rank": 1
+      "score": 7.5,
+      "rank": 4
+    },
+    {
+      "code": "222800",
+      "name": "심텍",
+      "market": "KOSDAQ",
+      "price": 103200,
+      "change_value": 3500,
+      "change_pct": 3.51,
+      "volume": 1276736,
+      "trading_value_okrw": 1317.0,
+      "sector1": "반도체",
+      "sector2": "",
+      "sector": "반도체",
+      "score": 6.3,
+      "rank": 5
     }
   ]
 }

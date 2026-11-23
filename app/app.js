@@ -385,7 +385,7 @@ function buildWeekdayMonthCells(dateObj, history) {
 
   const cells = [];
   const firstWeekday = firstDay.getDay();
-  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1;
+  const mondayOffset = firstWeekday === 0 || firstWeekday === 6 ? 0 : firstWeekday - 1;
 
   for (let i = 0; i < mondayOffset; i += 1) {
     cells.push({ empty: true, day: "", sectors: [] });
@@ -611,7 +611,7 @@ function buildScheduleCells(dateObj, events) {
 
   const cells = [];
   const firstWeekday = firstDay.getDay();
-  const mondayOffset = firstWeekday === 0 ? 6 : firstWeekday - 1;
+  const mondayOffset = firstWeekday === 0 || firstWeekday === 6 ? 0 : firstWeekday - 1;
 
   for (let i = 0; i < mondayOffset; i += 1) {
     cells.push({ empty: true, day: "", events: [] });

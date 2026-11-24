@@ -2,6 +2,14 @@
 chcp 65001 > nul
 setlocal EnableExtensions
 
+REM 실행 중 git reset --hard가 이 파일을 덮어써도 cmd가 엉뚱한 줄을 읽지 않도록
+REM 임시 복사본으로 실행한다. 작업 폴더는 아래 cd /d 절대경로로 고정된다.
+if /i not "%~1"=="--inner" (
+  copy /y "%~f0" "%TEMP%\kr_pipeline_task_run.bat" >nul || exit /b 1
+  call "%TEMP%\kr_pipeline_task_run.bat" --inner
+  exit /b
+)
+
 cd /d "C:\Users\solom\OneDrive\바탕 화면\Top Sector\Top-Sector-KR"
 
 REM ============================================================
@@ -16,6 +24,21 @@ set GIT_HTTP_LOW_SPEED_TIME=20
 
 echo ==================================================>>task_run_log.txt
 echo [%date% %time%] START>>task_run_log.txt
+
+REM ============================================================
+REM  2026-11 장애 대응: pull --rebase 충돌로 push 실패 커밋이
+REM  1,707개 쌓였음.
+REM  -> rebase를 쓰지 않는다. 시작할 때 origin/main과 똑같이 맞추고,
+REM     history 파일은 파이프라인이 원격 최신본을 읽어 이어 쓴다.
+REM ============================================================
+echo [GIT] sync to origin/main>>task_run_log.txt
+git rebase --abort >nul 2>&1
+git fetch origin main >>task_run_log.txt 2>&1
+if errorlevel 1 goto :gitfail
+git checkout -f main >>task_run_log.txt 2>&1
+if errorlevel 1 goto :gitfail
+git reset --hard origin/main >>task_run_log.txt 2>&1
+if errorlevel 1 goto :gitfail
 
 echo [PIPELINE] run_kr_pipeline.py>>task_run_log.txt
 "C:\Program Files\Python312\python.exe" "C:\Users\solom\OneDrive\바탕 화면\Top Sector\Top-Sector-KR\scripts\run_kr_pipeline.py" >>task_run_log.txt 2>&1
@@ -35,83 +58,44 @@ echo [GIT] commit>>task_run_log.txt
 git commit -m "chore: auto update KR dashboard data" >>task_run_log.txt 2>&1
 if errorlevel 1 goto :gitfail
 
-REM ============================================================
-REM  2026-09-15~17 장애 대응: scripts\fetch_latest_krx.py 등
-REM  data/config 외의 파일이 (줄바꿈 CRLF/LF 변환 등으로) 계속
-REM  "수정됨" 상태로 남아있으면, git pull --rebase가
-REM  "You have unstaged changes" 에러로 매번 거부되어 자동화가
-REM  통째로 계속 실패하는 문제가 있었음.
-REM  -> pull 직전에 관련 없는 수정사항을 잠깐 치워두고(stash),
-REM     pull이 끝나면 다시 복원한다.
-REM
-REM  주의(2026-09-17 재발 방지): 이 저장소에 예전부터 남아있던
-REM  낡은 stash(예: temp-before-rebase) 때문에, "일단 pop부터
-REM  하고 보는" 방식은 엉뚱한 낡은 stash를 복원해서 데이터
-REM  파일에 git 충돌 마커(<<<<<<<)를 심어버리는 사고가 실제로
-REM  발생했음. 그래서 반드시 "이번 실행에서 내가 직접 stash를
-REM  만들었을 때만" pop 하도록 개수를 비교해서 확인한다.
-REM ============================================================
-set STASH_MADE=0
-for /f %%i in ('git rev-list --walk-reflogs --count refs/stash 2^>nul') do set STASH_COUNT_BEFORE=%%i
-if not defined STASH_COUNT_BEFORE set STASH_COUNT_BEFORE=0
-
-echo [GIT] stash unrelated tracked changes before pull>>task_run_log.txt
-git stash push --quiet -m "auto-stash-before-pull" >>task_run_log.txt 2>&1
-
-for /f %%i in ('git rev-list --walk-reflogs --count refs/stash 2^>nul') do set STASH_COUNT_AFTER=%%i
-if not defined STASH_COUNT_AFTER set STASH_COUNT_AFTER=0
-if not "%STASH_COUNT_AFTER%"=="%STASH_COUNT_BEFORE%" set STASH_MADE=1
-
-echo [GIT] pull --rebase origin main>>task_run_log.txt
-git pull --rebase origin main >>task_run_log.txt 2>&1
-if errorlevel 1 goto :rebasefix
-
-goto :push
-
-:rebasefix
-echo [GIT] rebase conflict detected - try keep local generated json>>task_run_log.txt
-
-git checkout --ours data\dashboard_meta.json >>task_run_log.txt 2>&1
-git checkout --ours data\latest_krx.json >>task_run_log.txt 2>&1
-git checkout --ours data\leader_board.json >>task_run_log.txt 2>&1
-git checkout --ours data\market_raw.json >>task_run_log.txt 2>&1
-git checkout --ours data\sector_calendar_history.json >>task_run_log.txt 2>&1
-
-git add data\dashboard_meta.json data\latest_krx.json data\leader_board.json data\market_raw.json data\sector_calendar_history.json >>task_run_log.txt 2>&1
-git rebase --continue >>task_run_log.txt 2>&1
-if errorlevel 1 goto :rebaseabort
-
-goto :push
-
-:rebaseabort
-REM rebase --continue까지 실패하면 rebase 상태로 계속 남아있게 되어
-REM 다음 5분 실행이 전부 막히므로, 반드시 rebase를 중단시켜 원상복구한다.
-echo [GIT][ERROR] rebase --continue failed, aborting rebase to unblock next run>>task_run_log.txt
-git rebase --abort >>task_run_log.txt 2>&1
-goto :restore_stash_then_gitfail
-
+set RETRIED=0
 :push
+REM 안전장치: 로컬 커밋이 2개 이상이면 push하지 않고 버린다.
+set AHEAD=0
+for /f %%i in ('git rev-list --count origin/main..HEAD 2^>nul') do set AHEAD=%%i
+if %AHEAD% GEQ 2 goto :dropcommits
+
 echo [GIT] push origin main>>task_run_log.txt
 git push origin main >>task_run_log.txt 2>&1
-if errorlevel 1 goto :restore_stash_then_gitfail
+if not errorlevel 1 goto :success
+if "%RETRIED%"=="1" goto :dropcommits
 
-call :popstash
+REM push 거부(원격에 새 커밋) -> 원격에 다시 맞추고 1회만 재생성 후 재시도
+set RETRIED=1
+echo [GIT] push rejected - resync and regenerate once>>task_run_log.txt
+git fetch origin main >>task_run_log.txt 2>&1
+if errorlevel 1 goto :dropcommits
+git reset --hard origin/main >>task_run_log.txt 2>&1
+if errorlevel 1 goto :dropcommits
+"C:\Program Files\Python312\python.exe" "C:\Users\solom\OneDrive\바탕 화면\Top Sector\Top-Sector-KR\scripts\run_kr_pipeline.py" >>task_run_log.txt 2>&1
+if errorlevel 1 goto :dropcommits
+git add data\*.json config\scoring_config.json >>task_run_log.txt 2>&1
+if errorlevel 1 goto :dropcommits
+git diff --cached --quiet
+if %errorlevel%==0 goto :nochanges
+git commit -m "chore: auto update KR dashboard data" >>task_run_log.txt 2>&1
+if errorlevel 1 goto :dropcommits
+goto :push
+
+:success
 echo [%date% %time%] END - SUCCESS>>task_run_log.txt
 echo.>>task_run_log.txt
 exit /b 0
 
-:restore_stash_then_gitfail
-call :popstash
+:dropcommits
+echo [GIT][ERROR] push failed - discard local commit>>task_run_log.txt
+git reset --hard origin/main >>task_run_log.txt 2>&1
 goto :gitfail
-
-:popstash
-if "%STASH_MADE%"=="1" (
-  echo [GIT] restore stashed changes>>task_run_log.txt
-  git stash pop --quiet >>task_run_log.txt 2>&1
-) else (
-  echo [GIT] nothing was stashed this run - skip pop>>task_run_log.txt
-)
-goto :eof
 
 :nochanges
 echo [GIT] no data changes to commit>>task_run_log.txt

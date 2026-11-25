@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 10:36:24",
+    "generated_at_kst": "2026-11-25 10:41:23",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 38.9",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 39.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 38.9,
+      "score": 39.6,
       "leaders": 2,
-      "avg_change_pct": 15.23
+      "avg_change_pct": 15.94
     },
     {
       "sector": "화장품",
-      "score": 25.6,
+      "score": 25.0,
       "leaders": 1,
-      "avg_change_pct": 10.44
+      "avg_change_pct": 9.87
     }
   ],
   "leaders": [
@@ -44,42 +44,42 @@
       "price": 142900,
       "change_value": 21400,
       "change_pct": 17.61,
-      "volume": 1067413,
-      "trading_value_okrw": 1525.0,
+      "volume": 1074301,
+      "trading_value_okrw": 1535.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 25.9,
+      "score": 25.8,
       "rank": 1
     },
     {
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 39950,
-      "change_value": 4550,
-      "change_pct": 12.85,
-      "volume": 3068362,
-      "trading_value_okrw": 1225.0,
+      "price": 40450,
+      "change_value": 5050,
+      "change_pct": 14.27,
+      "volume": 3121890,
+      "trading_value_okrw": 1262.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 20.2,
+      "score": 21.7,
       "rank": 2
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 291000,
-      "change_value": 27500,
-      "change_pct": 10.44,
-      "volume": 400611,
-      "trading_value_okrw": 1165.0,
+      "price": 289500,
+      "change_value": 26000,
+      "change_pct": 9.87,
+      "volume": 407911,
+      "trading_value_okrw": 1180.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 16.7,
+      "score": 16.1,
       "rank": 3
     }
   ]

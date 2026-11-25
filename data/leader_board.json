@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 15:56:23",
+    "generated_at_kst": "2026-11-25 16:01:23",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 9,
+    "leader_count": 10,
     "sector_count": 7,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 52.5",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 52.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,21 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 52.5,
+      "score": 52.6,
       "leaders": 2,
-      "avg_change_pct": 24.38
+      "avg_change_pct": 24.45
     },
     {
       "sector": "지주사",
       "score": 37.4,
       "leaders": 1,
       "avg_change_pct": 25.14
+    },
+    {
+      "sector": "로봇",
+      "score": 28.5,
+      "leaders": 2,
+      "avg_change_pct": 5.46
     },
     {
       "sector": "화장품",
@@ -43,15 +49,9 @@
     },
     {
       "sector": "바이오",
-      "score": 23.2,
+      "score": 22.7,
       "leaders": 2,
-      "avg_change_pct": 5.02
-    },
-    {
-      "sector": "로봇",
-      "score": 21.8,
-      "leaders": 1,
-      "avg_change_pct": 9.11
+      "avg_change_pct": 4.54
     },
     {
       "sector": "식품/음료",
@@ -74,7 +74,7 @@
       "price": 157900,
       "change_value": 36400,
       "change_pct": 29.96,
-      "volume": 1935293,
+      "volume": 1935294,
       "trading_value_okrw": 3055.0,
       "sector1": "IT서비스",
       "sector2": "",
@@ -89,7 +89,7 @@
       "price": 110000,
       "change_value": 22100,
       "change_pct": 25.14,
-      "volume": 1283324,
+      "volume": 1283508,
       "trading_value_okrw": 1411.0,
       "sector1": "지주사",
       "sector2": "",
@@ -101,15 +101,15 @@
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 42050,
-      "change_value": 6650,
-      "change_pct": 18.79,
-      "volume": 8671147,
-      "trading_value_okrw": 3646.0,
+      "price": 42100,
+      "change_value": 6700,
+      "change_pct": 18.93,
+      "volume": 8677021,
+      "trading_value_okrw": 3653.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 27.0,
+      "score": 27.2,
       "rank": 3
     },
     {
@@ -131,30 +131,30 @@
       "code": "060720",
       "name": "KH바텍",
       "market": "KOSDAQ",
-      "price": 13300,
-      "change_value": 1110,
-      "change_pct": 9.11,
-      "volume": 8799355,
-      "trading_value_okrw": 1170.0,
+      "price": 13340,
+      "change_value": 1150,
+      "change_pct": 9.43,
+      "volume": 8807100,
+      "trading_value_okrw": 1174.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 12.9,
+      "score": 13.2,
       "rank": 5
     },
     {
-      "code": "196170",
-      "name": "알테오젠",
+      "code": "090710",
+      "name": "휴림로봇",
       "market": "KOSDAQ",
-      "price": 169600,
-      "change_value": 9900,
-      "change_pct": 6.2,
-      "volume": 833726,
-      "trading_value_okrw": 1413.0,
-      "sector1": "바이오",
+      "price": 7540,
+      "change_value": 110,
+      "change_pct": 1.48,
+      "volume": 26036110,
+      "trading_value_okrw": 1963.0,
+      "sector1": "로봇",
       "sector2": "",
-      "sector": "바이오",
-      "score": 8.9,
+      "sector": "로봇",
+      "score": 10.0,
       "rank": 6
     },
     {
@@ -173,6 +173,21 @@
       "rank": 7
     },
     {
+      "code": "196170",
+      "name": "알테오젠",
+      "market": "KOSDAQ",
+      "price": 168100,
+      "change_value": 8400,
+      "change_pct": 5.26,
+      "volume": 833730,
+      "trading_value_okrw": 1401.0,
+      "sector1": "바이오",
+      "sector2": "",
+      "sector": "바이오",
+      "score": 7.9,
+      "rank": 8
+    },
+    {
       "code": "068270",
       "name": "셀트리온",
       "market": "KOSPI",
@@ -185,7 +200,7 @@
       "sector2": "",
       "sector": "바이오",
       "score": 6.4,
-      "rank": 8
+      "rank": 9
     },
     {
       "code": "035420",
@@ -200,7 +215,7 @@
       "sector2": "",
       "sector": "인터넷",
       "score": 4.3,
-      "rank": 9
+      "rank": 10
     }
   ]
 }

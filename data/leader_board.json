@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 15:06:24",
+    "generated_at_kst": "2026-11-25 15:11:22",
     "mode": "closing",
     "session_state": "",
-    "leader_count": 10,
+    "leader_count": 9,
     "sector_count": 7,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 51.8",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 53.1",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,45 +25,45 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 51.8,
+      "score": 53.1,
       "leaders": 2,
-      "avg_change_pct": 23.1
+      "avg_change_pct": 24.16
     },
     {
       "sector": "지주사",
-      "score": 38.1,
+      "score": 42.2,
       "leaders": 1,
-      "avg_change_pct": 25.94
-    },
-    {
-      "sector": "로봇",
-      "score": 28.2,
-      "leaders": 2,
-      "avg_change_pct": 4.75
+      "avg_change_pct": 29.69
     },
     {
       "sector": "화장품",
-      "score": 26.6,
+      "score": 27.4,
       "leaders": 1,
-      "avg_change_pct": 9.49
+      "avg_change_pct": 10.25
     },
     {
       "sector": "바이오",
       "score": 22.5,
       "leaders": 2,
-      "avg_change_pct": 4.43
+      "avg_change_pct": 4.41
+    },
+    {
+      "sector": "로봇",
+      "score": 21.8,
+      "leaders": 1,
+      "avg_change_pct": 8.78
     },
     {
       "sector": "식품/음료",
-      "score": 17.4,
+      "score": 17.5,
       "leaders": 1,
-      "avg_change_pct": 6.62
+      "avg_change_pct": 6.78
     },
     {
       "sector": "인터넷",
-      "score": 13.4,
+      "score": 13.5,
       "leaders": 1,
-      "avg_change_pct": 1.79
+      "avg_change_pct": 1.92
     }
   ],
   "leaders": [
@@ -74,148 +74,133 @@
       "price": 157900,
       "change_value": 36400,
       "change_pct": 29.96,
-      "volume": 1931929,
-      "trading_value_okrw": 3050.0,
+      "volume": 1932946,
+      "trading_value_okrw": 3052.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 37.0,
+      "score": 36.9,
       "rank": 1
     },
     {
       "code": "018064",
       "name": "한진칼우",
       "market": "KOSPI",
-      "price": 110700,
-      "change_value": 22800,
-      "change_pct": 25.94,
-      "volume": 1139783,
-      "trading_value_okrw": 1261.0,
+      "price": 114000,
+      "change_value": 26100,
+      "change_pct": 29.69,
+      "volume": 1189574,
+      "trading_value_okrw": 1356.0,
       "sector1": "지주사",
       "sector2": "",
       "sector": "지주사",
-      "score": 28.9,
+      "score": 32.8,
       "rank": 2
     },
     {
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 41150,
-      "change_value": 5750,
-      "change_pct": 16.24,
-      "volume": 8379999,
-      "trading_value_okrw": 3448.0,
+      "price": 41900,
+      "change_value": 6500,
+      "change_pct": 18.36,
+      "volume": 8477434,
+      "trading_value_okrw": 3552.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 25.4,
+      "score": 27.6,
       "rank": 3
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 288500,
-      "change_value": 25000,
-      "change_pct": 9.49,
-      "volume": 810947,
-      "trading_value_okrw": 2339.0,
+      "price": 290500,
+      "change_value": 27000,
+      "change_pct": 10.25,
+      "volume": 820476,
+      "trading_value_okrw": 2383.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 14.7,
+      "score": 15.5,
       "rank": 4
     },
     {
       "code": "060720",
       "name": "KH바텍",
       "market": "KOSDAQ",
-      "price": 13200,
-      "change_value": 1010,
-      "change_pct": 8.29,
-      "volume": 8641952,
-      "trading_value_okrw": 1140.0,
+      "price": 13260,
+      "change_value": 1070,
+      "change_pct": 8.78,
+      "volume": 8672969,
+      "trading_value_okrw": 1150.0,
       "sector1": "로봇",
       "sector2": "",
       "sector": "로봇",
-      "score": 12.5,
+      "score": 12.9,
       "rank": 5
-    },
-    {
-      "code": "090710",
-      "name": "휴림로봇",
-      "market": "KOSDAQ",
-      "price": 7520,
-      "change_value": 90,
-      "change_pct": 1.21,
-      "volume": 25445587,
-      "trading_value_okrw": 1913.0,
-      "sector1": "로봇",
-      "sector2": "",
-      "sector": "로봇",
-      "score": 10.3,
-      "rank": 6
     },
     {
       "code": "003230",
       "name": "삼양식품",
       "market": "KOSPI",
-      "price": 1305000,
-      "change_value": 81000,
-      "change_pct": 6.62,
-      "volume": 77579,
-      "trading_value_okrw": 1012.0,
+      "price": 1307000,
+      "change_value": 83000,
+      "change_pct": 6.78,
+      "volume": 78357,
+      "trading_value_okrw": 1024.0,
       "sector1": "식품/음료",
       "sector2": "",
       "sector": "식품/음료",
-      "score": 8.8,
-      "rank": 7
+      "score": 9.0,
+      "rank": 6
     },
     {
       "code": "196170",
       "name": "알테오젠",
       "market": "KOSDAQ",
-      "price": 168500,
-      "change_value": 8800,
-      "change_pct": 5.51,
-      "volume": 769468,
-      "trading_value_okrw": 1296.0,
+      "price": 168800,
+      "change_value": 9100,
+      "change_pct": 5.7,
+      "volume": 780721,
+      "trading_value_okrw": 1317.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 8.5,
-      "rank": 8
+      "score": 8.7,
+      "rank": 7
     },
     {
       "code": "068270",
       "name": "셀트리온",
       "market": "KOSPI",
-      "price": 216000,
-      "change_value": 7000,
-      "change_pct": 3.35,
-      "volume": 553294,
-      "trading_value_okrw": 1195.0,
+      "price": 215500,
+      "change_value": 6500,
+      "change_pct": 3.11,
+      "volume": 559568,
+      "trading_value_okrw": 1205.0,
       "sector1": "바이오",
       "sector2": "",
       "sector": "바이오",
-      "score": 6.0,
-      "rank": 9
+      "score": 5.8,
+      "rank": 8
     },
     {
       "code": "035420",
       "name": "NAVER",
       "market": "KOSPI",
-      "price": 158900,
-      "change_value": 2800,
-      "change_pct": 1.79,
-      "volume": 730773,
-      "trading_value_okrw": 1161.0,
+      "price": 159100,
+      "change_value": 3000,
+      "change_pct": 1.92,
+      "volume": 738983,
+      "trading_value_okrw": 1175.0,
       "sector1": "인터넷",
       "sector2": "",
       "sector": "인터넷",
-      "score": 4.5,
-      "rank": 10
+      "score": 4.6,
+      "rank": 9
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 12:51:24",
+    "generated_at_kst": "2026-11-25 12:56:22",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 37.3",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 37.6",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,13 +25,13 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 37.3,
+      "score": 37.6,
       "leaders": 2,
-      "avg_change_pct": 13.81
+      "avg_change_pct": 14.1
     },
     {
       "sector": "화장품",
-      "score": 28.8,
+      "score": 28.9,
       "leaders": 1,
       "avg_change_pct": 12.9
     }
@@ -41,15 +41,15 @@
       "code": "053800",
       "name": "안랩",
       "market": "KOSDAQ",
-      "price": 143400,
-      "change_value": 21900,
-      "change_pct": 18.02,
-      "volume": 1419880,
-      "trading_value_okrw": 2036.0,
+      "price": 143900,
+      "change_value": 22400,
+      "change_pct": 18.44,
+      "volume": 1433477,
+      "trading_value_okrw": 2062.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 24.8,
+      "score": 25.3,
       "rank": 1
     },
     {
@@ -59,8 +59,8 @@
       "price": 297500,
       "change_value": 34000,
       "change_pct": 12.9,
-      "volume": 576300,
-      "trading_value_okrw": 1714.0,
+      "volume": 588427,
+      "trading_value_okrw": 1750.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
@@ -71,15 +71,15 @@
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 38800,
-      "change_value": 3400,
-      "change_pct": 9.6,
-      "volume": 4000632,
-      "trading_value_okrw": 1552.0,
+      "price": 38850,
+      "change_value": 3450,
+      "change_pct": 9.75,
+      "volume": 4026971,
+      "trading_value_okrw": 1564.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 15.5,
+      "score": 15.6,
       "rank": 3
     }
   ]

@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 12:06:24",
+    "generated_at_kst": "2026-11-25 12:11:22",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 35.8",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 35.0",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,9 +25,9 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 35.8,
+      "score": 35.0,
       "leaders": 2,
-      "avg_change_pct": 12.14
+      "avg_change_pct": 11.51
     },
     {
       "sector": "화장품",
@@ -41,15 +41,15 @@
       "code": "053800",
       "name": "안랩",
       "market": "KOSDAQ",
-      "price": 141400,
-      "change_value": 19900,
-      "change_pct": 16.38,
-      "volume": 1360973,
-      "trading_value_okrw": 1924.0,
+      "price": 140200,
+      "change_value": 18700,
+      "change_pct": 15.39,
+      "volume": 1366170,
+      "trading_value_okrw": 1915.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 23.7,
+      "score": 22.6,
       "rank": 1
     },
     {
@@ -59,27 +59,27 @@
       "price": 291500,
       "change_value": 28000,
       "change_pct": 10.63,
-      "volume": 510835,
-      "trading_value_okrw": 1489.0,
+      "volume": 515293,
+      "trading_value_okrw": 1502.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 16.2,
+      "score": 16.1,
       "rank": 2
     },
     {
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 38200,
-      "change_value": 2800,
-      "change_pct": 7.91,
-      "volume": 3852936,
+      "price": 38100,
+      "change_value": 2700,
+      "change_pct": 7.63,
+      "volume": 3863511,
       "trading_value_okrw": 1471.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 14.2,
+      "score": 13.9,
       "rank": 3
     }
   ]

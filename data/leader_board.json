@@ -1,12 +1,12 @@
 {
   "meta": {
     "trade_date": "2026-11-25",
-    "generated_at_kst": "2026-11-25 12:16:21",
+    "generated_at_kst": "2026-11-25 12:21:21",
     "mode": "closing",
     "session_state": "",
     "leader_count": 3,
     "sector_count": 2,
-    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 34.3",
+    "market_bias": "IT서비스 중심 강세 / 상위섹터 점수 35.4",
     "filtered_etf": "ETF 제외 적용",
     "source_status": "score_leaders_from_market_raw_real",
     "config": {
@@ -25,15 +25,15 @@
   "top_sectors": [
     {
       "sector": "IT서비스",
-      "score": 34.3,
+      "score": 35.4,
       "leaders": 2,
-      "avg_change_pct": 10.94
+      "avg_change_pct": 11.91
     },
     {
       "sector": "화장품",
-      "score": 27.1,
+      "score": 26.8,
       "leaders": 1,
-      "avg_change_pct": 11.76
+      "avg_change_pct": 11.39
     }
   ],
   "leaders": [
@@ -41,45 +41,45 @@
       "code": "053800",
       "name": "안랩",
       "market": "KOSDAQ",
-      "price": 139500,
-      "change_value": 18000,
-      "change_pct": 14.81,
-      "volume": 1371128,
-      "trading_value_okrw": 1912.0,
+      "price": 140500,
+      "change_value": 19000,
+      "change_pct": 15.64,
+      "volume": 1376115,
+      "trading_value_okrw": 1933.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 21.9,
+      "score": 22.7,
       "rank": 1
     },
     {
       "code": "278470",
       "name": "에이피알",
       "market": "KOSPI",
-      "price": 294500,
-      "change_value": 31000,
-      "change_pct": 11.76,
-      "volume": 522395,
-      "trading_value_okrw": 1538.0,
+      "price": 293500,
+      "change_value": 30000,
+      "change_pct": 11.39,
+      "volume": 526873,
+      "trading_value_okrw": 1546.0,
       "sector1": "화장품",
       "sector2": "",
       "sector": "화장품",
-      "score": 17.3,
+      "score": 16.9,
       "rank": 2
     },
     {
       "code": "263860",
       "name": "지니언스",
       "market": "KOSDAQ",
-      "price": 37900,
-      "change_value": 2500,
-      "change_pct": 7.06,
-      "volume": 3888671,
-      "trading_value_okrw": 1473.0,
+      "price": 38300,
+      "change_value": 2900,
+      "change_pct": 8.19,
+      "volume": 3898212,
+      "trading_value_okrw": 1493.0,
       "sector1": "IT서비스",
       "sector2": "",
       "sector": "IT서비스",
-      "score": 13.2,
+      "score": 14.3,
       "rank": 3
     }
   ]
